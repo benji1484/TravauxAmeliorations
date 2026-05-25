@@ -64,7 +64,7 @@
                   "Property": "Nombre d'OS Réhab"
                 }
               },
-              "queryRef": "Mesure.Nombre d'agréments Réhab",
+              "queryRef": "Mesure.Nombre d'OS Réhab",
               "nativeQueryRef": "Nombre d'OS Réhab"
             }
           ]

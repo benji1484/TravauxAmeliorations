@@ -173,7 +173,7 @@
                   "Property": "Nombre d'UG vacantes depuis plus de trois mois"
                 }
               },
-              "queryRef": "Mesure.Nb Jour Vac Plus 3 Mois",
+              "queryRef": "Mesure.Nombre d'UG vacantes depuis plus de trois mois",
               "nativeQueryRef": "Dont à plus de 3 mois 1",
               "displayName": "Dont à plus de 3 mois "
             },
@@ -373,7 +373,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Nb Jour Vac Plus 3 Mois"
+            "metadata": "Mesure.Nombre d'UG vacantes depuis plus de trois mois"
           }
         },
         {

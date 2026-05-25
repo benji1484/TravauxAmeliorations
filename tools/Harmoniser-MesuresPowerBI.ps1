@@ -39,7 +39,7 @@ function Escape-JsonString {
 function Get-MeasureBlocks {
     param([string]$Text, [string]$FileName = "Mesure.tmdl")
 
-    $matches = [regex]::Matches($Text, "(?m)^\s*measure\s+(?:'((?:''|[^'])*)'|([^\r\n=]+?))(?:\s*=|\s*$)")
+    $matches = [regex]::Matches($Text, "(?m)^[\t ]*measure\s+(?:'((?:''|[^'])*)'|([^\r\n=]+?))(?:\s*=|[\t ]*$)")
     $blocks = @()
 
     for ($i = 0; $i -lt $matches.Count; $i++) {
@@ -552,7 +552,7 @@ function Convert-MeasureName {
 function Rename-MeasureDeclarations {
     param([string]$Text, [hashtable]$RenameMap)
 
-    $pattern = "(?m)^(\s*)measure\s+(?:'((?:''|[^'])*)'|([^\r\n=]+?))(?<tail>\s*=.*|\s*)$"
+    $pattern = "(?m)^([\t ]*)measure\s+(?:'((?:''|[^'])*)'|([^\r\n=]+?))(?<tail>\s*=.*|[\t ]*)$"
     return [regex]::Replace($Text, $pattern, {
         param($match)
         $oldName = if ($match.Groups[2].Success) {
@@ -587,15 +587,16 @@ function Update-MeasureMetadata {
         $measureBlock = $Text.Substring($block.Start, $block.End - $block.Start)
         if ($RowsByNewName.ContainsKey($block.Name)) {
             $row = $RowsByNewName[$block.Name]
-            $measureBlock = [regex]::Replace($measureBlock, "(?m)^\s*description:\s*.*\r?\n", "")
-            $measureBlock = [regex]::Replace($measureBlock, "(?m)^\s*displayFolder:\s*.*\r?\n", "")
+            $measureBlock = [regex]::Replace($measureBlock, "(?m)^[\t ]*description:\s*.*\r?\n", "")
+            $measureBlock = [regex]::Replace($measureBlock, "(?m)^[\t ]*displayFolder:\s*.*\r?\n", "")
 
             $description = ($row.Description -replace "[\r\n]+", " ")
             $description = Normalize-Spaces $description
             $folder = Normalize-Spaces $row.Folder
-            $metadata = "`t`tdescription: $description`r`n`t`tdisplayFolder: $folder`r`n"
+            $descriptionLines = "`t/// $description`r`n"
+            $metadata = "`t`tdisplayFolder: $folder`r`n"
 
-            $propertyMatch = [regex]::Match($measureBlock, "(?m)^\s*(formatString|lineageTag|annotation|isHidden|summarizeBy):")
+            $propertyMatch = [regex]::Match($measureBlock, "(?m)^[\t ]*(formatString|lineageTag|annotation|isHidden|summarizeBy):")
             if ($propertyMatch.Success) {
                 $measureBlock = $measureBlock.Insert($propertyMatch.Index, $metadata)
             } else {
@@ -603,6 +604,8 @@ function Update-MeasureMetadata {
                 $trailing = $measureBlock.Substring($trimmed.Length)
                 $measureBlock = $trimmed + "`r`n" + $metadata + $trailing
             }
+
+            $measureBlock = $descriptionLines + $measureBlock
         }
 
         [void]$builder.Append($measureBlock)
@@ -619,6 +622,7 @@ function Replace-MeasureReferencesInText {
     $updated = $Text
     foreach ($row in ($Rows | Where-Object { $_.OldName -ne $_.NewName } | Sort-Object { $_.OldName.Length } -Descending)) {
         $updated = $updated.Replace("[" + $row.OldName + "]", "[" + $row.NewName + "]")
+        $updated = $updated.Replace('EXTERNALMEASURE("' + $row.OldName + '"', 'EXTERNALMEASURE("' + $row.NewName + '"')
     }
     return $updated
 }
@@ -715,8 +719,8 @@ foreach ($file in $tmdlFiles) {
     }
 }
 
-$parentReports = Get-ParentReportDirectories
-foreach ($dir in $parentReports) {
+$reportDirs = Get-AllReportDirectories
+foreach ($dir in $reportDirs) {
     $definition = Join-Path $dir.FullName "definition"
     if (-not (Test-Path -LiteralPath $definition)) {
         continue
@@ -736,4 +740,4 @@ Write-Host "Harmonisation appliquee."
 Write-Host "Mesures analysees : $($rows.Count)"
 Write-Host "Mesures renommees : $(($rows | Where-Object { $_.OldName -ne $_.NewName }).Count)"
 Write-Host "Mesures conservees dans A verifier : $(($rows | Where-Object { $_.Candidate }).Count)"
-Write-Host "Rapports parent mis a jour : $($parentReports.Count)"
+Write-Host "Rapports mis a jour : $($reportDirs.Count)"

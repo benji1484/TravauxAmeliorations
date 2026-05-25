@@ -67,10 +67,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons M"
+                  "Property": "Nombre de livraisons logements mensuelles"
                 }
               },
-              "queryRef": "Mesure.# Livraisons M",
+              "queryRef": "Mesure.Nombre de livraisons logements mensuelles",
               "nativeQueryRef": "Logements livrés",
               "displayName": "Logements livrés"
             },
@@ -284,7 +284,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "vacance financière YTD"
+            "Property": "Vacance financière cumul annuel"
           }
         },
         "type": "Advanced",
@@ -300,7 +300,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "obj_2024-vacancefi"
+            "Property": "Objectif 2024 de vacance financière"
           }
         },
         "type": "Advanced",
@@ -316,7 +316,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Dép obj vacance logement"
+            "Property": "Taux d'atteinte de l'objectif vacance logements"
           }
         },
         "type": "Advanced",
@@ -332,7 +332,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Objectif_Total_Vacance"
+            "Property": "Objectif total de vacance"
           }
         },
         "type": "Advanced",
@@ -363,7 +363,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Livraisons mensuelles"
+            "Property": "Nombre de livraisons mensuelles"
           }
         },
         "type": "Advanced",
@@ -426,7 +426,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Livraisons M"
+            "Property": "Nombre de livraisons logements mensuelles"
           }
         },
         "type": "Advanced",
@@ -453,7 +453,7 @@
                               "Source": "m"
                             }
                           },
-                          "Property": "# Livraisons M"
+                          "Property": "Nombre de livraisons logements mensuelles"
                         }
                       },
                       "Right": {

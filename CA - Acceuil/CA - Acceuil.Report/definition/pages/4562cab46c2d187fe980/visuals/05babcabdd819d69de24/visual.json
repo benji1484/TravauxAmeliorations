@@ -27,7 +27,7 @@
                   "Property": "DDC - Livraisons à date"
                 }
               },
-              "queryRef": "Mesure.Livraisons à date",
+              "queryRef": "Mesure.DDC - Livraisons à date",
               "nativeQueryRef": "Livraisons",
               "displayName": "Livraisons"
             }
@@ -168,7 +168,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.Livraisons à date",
+            "metadata": "Mesure.DDC - Livraisons à date",
             "id": "field-c6e8d9ba-f489-161c-13ff-95046f3a5645",
             "order": 0
           }
@@ -197,7 +197,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.Livraisons à date",
+            "metadata": "Mesure.DDC - Livraisons à date",
             "id": "field-18478259-2717-d472-2db7-09dde5266460",
             "order": 1
           }
@@ -373,7 +373,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Livraisons à date",
+            "metadata": "Mesure.DDC - Livraisons à date",
             "id": "field-c6e8d9ba-f489-161c-13ff-95046f3a5645"
           }
         },
@@ -414,7 +414,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Livraisons à date",
+            "metadata": "Mesure.DDC - Livraisons à date",
             "id": "field-18478259-2717-d472-2db7-09dde5266460"
           }
         }
@@ -476,7 +476,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Livraisons à date",
+            "metadata": "Mesure.DDC - Livraisons à date",
             "id": "field-c6e8d9ba-f489-161c-13ff-95046f3a5645"
           }
         },
@@ -503,7 +503,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Livraisons à date",
+            "metadata": "Mesure.DDC - Livraisons à date",
             "id": "field-18478259-2717-d472-2db7-09dde5266460"
           }
         }

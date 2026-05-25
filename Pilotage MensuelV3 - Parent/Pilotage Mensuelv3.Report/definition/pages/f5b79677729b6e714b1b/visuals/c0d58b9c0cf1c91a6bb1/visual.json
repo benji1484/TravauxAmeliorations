@@ -28,7 +28,7 @@
               },
               "queryRef": "Mesure.Taux Vac commerces",
               "nativeQueryRef": "Nombre de logements en vacance commerciale",
-              "displayName": "Vacance commerciale"
+              "displayName": "Nombre de logements en vacance commerciale"
             }
           ]
         }

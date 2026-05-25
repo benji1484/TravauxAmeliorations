@@ -26,7 +26,7 @@
                   "Property": "Dette présents"
                 }
               },
-              "queryRef": "Mesure.Dette positive des locataires présents",
+              "queryRef": "Mesure.Dette présents",
               "nativeQueryRef": "Dette Locataires Ordinaires présents",
               "displayName": "Dette Locataires Ordinaires présents"
             }

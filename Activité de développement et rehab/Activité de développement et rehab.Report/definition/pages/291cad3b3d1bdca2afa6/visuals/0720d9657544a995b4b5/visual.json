@@ -94,7 +94,7 @@
                   "Property": "Nombre logements programmés"
                 }
               },
-              "queryRef": "Mesure.Nombre d'equivalents logements",
+              "queryRef": "Mesure.Nombre logements programmés",
               "nativeQueryRef": "Nombre logements programmés"
             }
           ]
@@ -343,7 +343,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Nombre d'equivalents logements"
+            "metadata": "Mesure.Nombre logements programmés"
           }
         }
       ],

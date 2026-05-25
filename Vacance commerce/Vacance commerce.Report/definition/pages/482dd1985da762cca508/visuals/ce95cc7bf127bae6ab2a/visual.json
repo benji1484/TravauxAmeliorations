@@ -126,7 +126,7 @@
                   "Property": "Sorties cumul annuel"
                 }
               },
-              "queryRef": "Mesure.# Sorties YTD",
+              "queryRef": "Mesure.Sorties cumul annuel",
               "nativeQueryRef": "Sorties cumul annuel"
             },
             {
@@ -142,7 +142,7 @@
               },
               "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
               "nativeQueryRef": "Entrées cumulées annuelles historiques",
-              "displayName": "Entrées YTD"
+              "displayName": "Entrées cumulées annuelles historiques"
             }
           ]
         }
@@ -398,7 +398,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.# Sorties YTD"
+            "metadata": "Mesure.Sorties cumul annuel"
           }
         },
         {

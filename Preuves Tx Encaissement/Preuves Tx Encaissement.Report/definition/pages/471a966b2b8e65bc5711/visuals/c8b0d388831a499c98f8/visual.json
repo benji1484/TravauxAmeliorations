@@ -75,7 +75,7 @@
                   "Property": "Dette positive hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Soldes positifs M",
+              "queryRef": "Mesure.Dette positive hors passages en perte",
               "nativeQueryRef": "€ Soldes débiteurs + PP",
               "displayName": "€ Soldes débiteurs + PP"
             },
@@ -90,7 +90,7 @@
                   "Property": "Dette positive du mois précédent"
                 }
               },
-              "queryRef": "Mesure.SoldePositifsM1",
+              "queryRef": "Mesure.Dette positive du mois précédent",
               "nativeQueryRef": "€ Solde débiteurs m1 + PP m1",
               "displayName": "€ Solde débiteurs m1 + PP m1"
             },
@@ -120,7 +120,7 @@
                   "Property": "Passages en perte cumulés annuels historique"
                 }
               },
-              "queryRef": "Mesure.PassagesEnPerteAnnuel",
+              "queryRef": "Mesure.Passages en perte cumulés annuels historique",
               "nativeQueryRef": "PP YTD",
               "displayName": "PP YTD"
             },
@@ -135,7 +135,7 @@
                   "Property": "Passages en perte du mois précédent"
                 }
               },
-              "queryRef": "Mesure.CumulPassagesEnPerteMoisPrecedent",
+              "queryRef": "Mesure.Passages en perte du mois précédent",
               "nativeQueryRef": "PPM1 YTD",
               "displayName": "PPM1 YTD"
             },
@@ -165,7 +165,7 @@
                   "Property": "Quittancement mois précédent Total Cumule Annuel"
                 }
               },
-              "queryRef": "Mesure.Quittancement_m1_Total_Annuel",
+              "queryRef": "Mesure.Quittancement mois précédent Total Cumule Annuel",
               "nativeQueryRef": "Quittancement cumulé (m1)",
               "displayName": "Quittancement cumulé (m1)"
             },
@@ -319,7 +319,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Soldes positifs M"
+            "metadata": "Mesure.Dette positive hors passages en perte"
           }
         },
         {
@@ -333,7 +333,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.SoldePositifsM1"
+            "metadata": "Mesure.Dette positive du mois précédent"
           }
         },
         {
@@ -375,7 +375,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Quittancement_m1_Total_Annuel"
+            "metadata": "Mesure.Quittancement mois précédent Total Cumule Annuel"
           }
         }
       ],

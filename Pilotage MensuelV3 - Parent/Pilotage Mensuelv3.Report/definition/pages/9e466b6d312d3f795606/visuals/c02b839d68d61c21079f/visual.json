@@ -137,7 +137,7 @@
               },
               "queryRef": "Mesure.Vacance financière commerciale logements",
               "nativeQueryRef": "Nombre de logements en vacance commerciale",
-              "displayName": "Vacance commerciale"
+              "displayName": "Nombre de logements en vacance commerciale"
             },
             {
               "field": {

@@ -26,7 +26,7 @@
                   "Property": "Taux de vacance financière recalculé cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.Tx de vacance fi YTD recalcul",
+              "queryRef": "Mesure.Taux de vacance financière recalculé cumulé annuel",
               "nativeQueryRef": "Vacance annuelle TCC",
               "displayName": "Vacance annuelle TCC"
             }

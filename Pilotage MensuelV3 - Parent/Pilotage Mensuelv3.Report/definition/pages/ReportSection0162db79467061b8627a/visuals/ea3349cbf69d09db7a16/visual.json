@@ -28,7 +28,7 @@
               },
               "queryRef": "Mesure.Sorties cumul annuel",
               "nativeQueryRef": "Sorties cumul annuel",
-              "displayName": "Sorties YTD"
+              "displayName": "Sorties cumul annuel"
             }
           ]
         }

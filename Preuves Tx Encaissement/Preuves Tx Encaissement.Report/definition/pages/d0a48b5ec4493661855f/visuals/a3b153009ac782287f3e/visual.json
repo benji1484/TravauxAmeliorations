@@ -75,7 +75,7 @@
                   "Property": "Dette positive hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Soldes positifs M",
+              "queryRef": "Mesure.Dette positive hors passages en perte",
               "nativeQueryRef": "€ Soldes débiteurs + PP",
               "displayName": "€ Soldes débiteurs + PP"
             },
@@ -90,7 +90,7 @@
                   "Property": "Dette positive du mois précédent"
                 }
               },
-              "queryRef": "Mesure.SoldePositifsM1",
+              "queryRef": "Mesure.Dette positive du mois précédent",
               "nativeQueryRef": "€ Soldes débiteurs m1 + PP m1",
               "displayName": "€ Soldes débiteurs m1 + PP m1"
             },

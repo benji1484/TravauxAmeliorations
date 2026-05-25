@@ -42,7 +42,7 @@
                       "Entity": "DDC - MEC"
                     }
                   },
-                  "Property": "# MEC Cumul Annuel"
+                  "Property": "Nombre de MEC Cumul Annuel"
                 }
               },
               "queryRef": "DDC - MEC.# MEC Cumul Annuel",
@@ -60,8 +60,8 @@
                   "Property": "Livraisons yc PSLA"
                 }
               },
-              "queryRef": "Mesure.Livraisons yc PSLA",
-              "nativeQueryRef": "Livraisons yc PSLA"
+              "queryRef": "Mesure.Nombre de MEC Cumul Annuel",
+              "nativeQueryRef": "Nombre de MEC Cumul Annuel"
             },
             {
               "field": {
@@ -90,7 +90,7 @@
                     "Entity": "DDC - MEC"
                   }
                 },
-                "Property": "# MEC Cumul Annuel"
+                "Property": "Nombre de MEC Cumul Annuel"
               }
             },
             "direction": "Descending"
@@ -391,7 +391,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Livraisons yc PSLA"
+            "metadata": "Mesure.Nombre de MEC Cumul Annuel"
           }
         }
       ],
@@ -812,7 +812,7 @@
                 "Entity": "DDC - MEC"
               }
             },
-            "Property": "# MEC Cumul Annuel"
+            "Property": "Nombre de MEC Cumul Annuel"
           }
         },
         "type": "Advanced"

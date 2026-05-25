@@ -45,8 +45,8 @@
                   "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement YTD",
-              "nativeQueryRef": "% Taux Encaissement YTD"
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel"
             },
             {
               "field": {
@@ -185,7 +185,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.% Taux Encaissement YTD"
+            "metadata": "Mesure.Taux d'encaissement cumulé annuel"
           }
         },
         {
@@ -233,7 +233,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.% Taux Encaissement YTD"
+            "metadata": "Mesure.Taux d'encaissement cumulé annuel"
           }
         },
         {
@@ -274,7 +274,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.% Taux Encaissement YTD"
+            "metadata": "Mesure.Taux d'encaissement cumulé annuel"
           }
         },
         {

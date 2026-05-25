@@ -69,7 +69,7 @@
                   "Property": "Nombre de logements vacants"
                 }
               },
-              "queryRef": "Mesure.# UG Vacants",
+              "queryRef": "Mesure.Nombre de logements vacants",
               "nativeQueryRef": "dont Vacants",
               "displayName": "dont Vacants"
             },

@@ -74,11 +74,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de mise en chantier"
+                  "Property": "Taux de mise en chantier"
                 }
               },
-              "queryRef": "Mesure.Tx de mise en chantier",
-              "nativeQueryRef": "Tx de mise en chantier"
+              "queryRef": "Mesure.Taux de mise en chantier",
+              "nativeQueryRef": "Taux de mise en chantier"
             }
           ]
         }

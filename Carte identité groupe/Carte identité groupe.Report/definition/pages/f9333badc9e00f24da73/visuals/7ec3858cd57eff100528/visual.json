@@ -72,7 +72,7 @@
               },
               "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
               "nativeQueryRef": "Entrées cumulées annuelles historiques",
-              "displayName": "Entrées YTD"
+              "displayName": "Entrées cumulées annuelles historiques"
             },
             {
               "field": {
@@ -175,7 +175,7 @@
               },
               "queryRef": "Mesure.Mutations cumulées annuelles",
               "nativeQueryRef": "Mutations cumul annuel",
-              "displayName": "Mutations YTD"
+              "displayName": "Mutations cumul annuel"
             },
             {
               "field": {
@@ -188,7 +188,7 @@
                   "Property": "Taux de mutation cumul annuel"
                 }
               },
-              "queryRef": "Mesure.tx de mutation YTD",
+              "queryRef": "Mesure.Taux de mutation cumul annuel",
               "nativeQueryRef": "Taux de mutation cumul annuel"
             },
             {
@@ -253,7 +253,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.tx de mutation YTD"
+            "metadata": "Mesure.Taux de mutation cumul annuel"
           }
         },
         {

@@ -26,7 +26,7 @@
                   "Property": "Rehab - Mises en chantier"
                 }
               },
-              "queryRef": "Mesure.Rehab - Mises en chantier :",
+              "queryRef": "Mesure.Rehab - Mises en chantier",
               "nativeQueryRef": "Mises en chantier",
               "displayName": "Mises en chantier"
             }
@@ -179,7 +179,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% croissance_soldem_ca_operation_+"
+            "Property": "Taux de variation de la dette positive"
           }
         },
         "type": "Advanced",
@@ -195,7 +195,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Croissance soldem_ca_operation"
+            "Property": "Variation mensuelle de la dette historique"
           }
         },
         "type": "Advanced",
@@ -280,7 +280,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -423,7 +423,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -439,7 +439,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -455,7 +455,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced",
@@ -471,7 +471,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Quitm_ca_operation"
+            "Property": "Quittancement mensuel"
           }
         },
         "type": "Advanced",
@@ -524,7 +524,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulPassagesEnPerteAnnuel"
+            "Property": "Passages en perte cumulés annuels historique"
           }
         },
         "type": "Advanced",

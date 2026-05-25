@@ -189,7 +189,7 @@
                   "Property": "Variation mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance Mensuelle Dette",
+              "queryRef": "Mesure.Variation mensuelle de la dette",
               "nativeQueryRef": "Variation mensuelle dette",
               "displayName": "Variation mensuelle dette"
             },
@@ -219,7 +219,7 @@
                   "Property": "Taux de croissance mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croisance dette M",
+              "queryRef": "Mesure.Taux de croissance mensuelle de la dette",
               "nativeQueryRef": "% Croissance mensuel dette",
               "displayName": "% Croissance mensuel dette"
             },
@@ -800,7 +800,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.% Croisance dette M"
+            "metadata": "Mesure.Taux de croissance mensuelle de la dette"
           }
         },
         {
@@ -842,7 +842,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.€ Croissance Mensuelle Dette"
+            "metadata": "Mesure.Variation mensuelle de la dette"
           }
         },
         {

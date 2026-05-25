@@ -72,11 +72,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Taux Encaissement Mensuel"
+                  "Property": "Taux d'encaissement mensuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement Mensuel",
-              "nativeQueryRef": "% Taux Encaissement Mensuel"
+              "queryRef": "Mesure.Taux d'encaissement mensuel",
+              "nativeQueryRef": "Taux d'encaissement mensuel"
             },
             {
               "field": {
@@ -86,11 +86,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Encaissement YTD"
+                  "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement YTD",
-              "nativeQueryRef": "% Taux Encaissement YTD"
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel"
             },
             {
               "field": {
@@ -100,10 +100,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance dette M"
+                  "Property": "Taux de croissance mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croissance dette M",
+              "queryRef": "Mesure.Taux de croissance mensuelle de la dette",
               "nativeQueryRef": "% Croissance mensuel dette",
               "displayName": "% Croissance mensuel dette"
             },
@@ -115,11 +115,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance annuelle Dette"
+                  "Property": "Taux de croissance annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croissance annuelle Dette",
-              "nativeQueryRef": "% Croissance annuelle Dette"
+              "queryRef": "Mesure.Taux de croissance annuelle de la dette",
+              "nativeQueryRef": "Taux de croissance annuelle de la dette"
             },
             {
               "field": {
@@ -129,11 +129,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette HPP"
+                  "Property": "Dette hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.€ Dette HPP",
-              "nativeQueryRef": "€ Dette HPP"
+              "queryRef": "Mesure.Dette hors passages en perte",
+              "nativeQueryRef": "Dette hors passages en perte"
             },
             {
               "field": {
@@ -143,11 +143,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette M1"
+                  "Property": "Montant Dette mois précédent"
                 }
               },
-              "queryRef": "Mesure.€ Dette M1",
-              "nativeQueryRef": "€ Dette M1"
+              "queryRef": "Mesure.Montant Dette mois précédent",
+              "nativeQueryRef": "Montant Dette mois précédent"
             },
             {
               "field": {
@@ -197,10 +197,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Encaissement + alloc"
+                  "Property": "Encaissement avec allocations"
                 }
               },
-              "queryRef": "Mesure.Encaissement + alloc",
+              "queryRef": "Mesure.Encaissement avec allocations",
               "nativeQueryRef": "Encaissement",
               "displayName": "Encaissement"
             },
@@ -212,10 +212,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Quitm_ca_operation"
+                  "Property": "Quittancement mensuel"
                 }
               },
-              "queryRef": "Mesure.€ Quitm_ca_operation",
+              "queryRef": "Mesure.Quittancement mensuel",
               "nativeQueryRef": "Quittancement ",
               "displayName": "Quittancement "
             },
@@ -227,11 +227,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ PP YTD"
+                  "Property": "Passages en perte cumulés annuels"
                 }
               },
-              "queryRef": "Mesure.€ PP YTD",
-              "nativeQueryRef": "€ PP YTD"
+              "queryRef": "Mesure.Passages en perte cumulés annuels",
+              "nativeQueryRef": "Passages en perte cumulés annuels"
             },
             {
               "field": {
@@ -241,11 +241,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance Dette"
+                  "Property": "Variation mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance Mensuelle Dette",
-              "nativeQueryRef": "€ Croissance Dette"
+              "queryRef": "Mesure.Variation mensuelle de la dette",
+              "nativeQueryRef": "Variation mensuelle de la dette"
             },
             {
               "field": {
@@ -255,11 +255,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance annuelle Dette"
+                  "Property": "Variation annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance annuelle Dette",
-              "nativeQueryRef": "€ Croissance annuelle Dette"
+              "queryRef": "Mesure.Variation annuelle de la dette",
+              "nativeQueryRef": "Variation annuelle de la dette"
             }
           ]
         }
@@ -663,7 +663,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.€ Croissance Mensuelle Dette"
+            "metadata": "Mesure.Variation mensuelle de la dette"
           }
         },
         {
@@ -733,7 +733,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.% Taux Encaissement YTD"
+            "metadata": "Mesure.Taux d'encaissement cumulé annuel"
           }
         }
       ]
@@ -858,7 +858,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% croissance_soldem_ca_operation_+"
+            "Property": "Taux de variation de la dette positive"
           }
         },
         "type": "Advanced",
@@ -874,7 +874,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Croissance annuelle"
+            "Property": "Taux de croissance annuel"
           }
         },
         "type": "Advanced",
@@ -890,7 +890,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Croissance soldem_ca_operation"
+            "Property": "Variation mensuelle de la dette historique"
           }
         },
         "type": "Advanced",
@@ -906,7 +906,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -942,7 +942,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -958,7 +958,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -974,7 +974,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced"
@@ -1005,7 +1005,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Quitm_ca_operation"
+            "Property": "Quittancement mensuel"
           }
         },
         "type": "Advanced"
@@ -1055,7 +1055,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -1071,7 +1071,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD recalculé"
+            "Property": "Taux encaissement cumul annuel recalculé"
           }
         },
         "type": "Advanced",
@@ -1102,7 +1102,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulPassagesEnPerteAnnuel"
+            "Property": "Passages en perte cumulés annuels historique"
           }
         },
         "type": "Advanced",

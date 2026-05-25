@@ -43,10 +43,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Acquis1"
+                  "Property": "Nombre de Acquis1"
                 }
               },
-              "queryRef": "Mesure.# Acquis1",
+              "queryRef": "Mesure.Nombre de Acquis1",
               "nativeQueryRef": "Acquisitions",
               "displayName": "Acquisitions"
             },
@@ -58,10 +58,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# EPFR"
+                  "Property": "Nombre de EPFR"
                 }
               },
-              "queryRef": "Mesure.# EPFR",
+              "queryRef": "Mesure.Nombre de EPFR",
               "nativeQueryRef": "EPFR",
               "displayName": "EPFR"
             },
@@ -73,10 +73,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Compromis"
+                  "Property": "Nombre de Compromis"
                 }
               },
-              "queryRef": "Mesure.# Compromis",
+              "queryRef": "Mesure.Nombre de Compromis",
               "nativeQueryRef": "Compromis",
               "displayName": "Compromis"
             }
@@ -93,7 +93,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# EPFR"
+                "Property": "Nombre de EPFR"
               }
             },
             "direction": "Descending"
@@ -495,7 +495,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Acquis1"
+            "Property": "Nombre de Acquis1"
           }
         },
         "type": "Advanced"
@@ -510,7 +510,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# EPFR"
+            "Property": "Nombre de EPFR"
           }
         },
         "type": "Advanced"
@@ -525,7 +525,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Compromis"
+            "Property": "Nombre de Compromis"
           }
         },
         "type": "Advanced"

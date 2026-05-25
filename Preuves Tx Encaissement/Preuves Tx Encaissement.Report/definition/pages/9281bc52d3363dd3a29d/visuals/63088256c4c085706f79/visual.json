@@ -160,7 +160,7 @@
                   "Property": "Quittancement mois précédent Total Cumule Annuel"
                 }
               },
-              "queryRef": "Mesure.Quittancement_m1_Total_Annuel",
+              "queryRef": "Mesure.Quittancement mois précédent Total Cumule Annuel",
               "nativeQueryRef": "Quittancement_m1 YTD",
               "displayName": "Quittancement_m1 YTD"
             },

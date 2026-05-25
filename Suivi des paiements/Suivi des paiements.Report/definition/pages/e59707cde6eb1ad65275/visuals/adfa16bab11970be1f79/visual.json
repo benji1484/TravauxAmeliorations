@@ -114,7 +114,7 @@
                   "Property": "Règlements hors passages en perte mois précédent"
                 }
               },
-              "queryRef": "Mesure.Règlements hors passages en perte mois précédent",
+              "queryRef": "Mesure.Règlements hors passages en perte",
               "nativeQueryRef": "€ [M-1]",
               "displayName": "€ [M-1]"
             },
@@ -164,7 +164,7 @@
                   "Property": "Taux de croissance du mois précédent"
                 }
               },
-              "queryRef": "Mesure.Taux de croissance du mois précédent",
+              "queryRef": "Mesure.Règlements hors passages en perte mois précédent",
               "nativeQueryRef": "Taux de croissance à 1 mois",
               "displayName": "Taux de croissance à 1 mois"
             },
@@ -229,7 +229,7 @@
                   "Property": "Taux de croissance douze mois avant"
                 }
               },
-              "queryRef": "Mesure.Taux de croissance douze mois avant",
+              "queryRef": "Mesure.Règlements hors passages en perte douze mois avant",
               "nativeQueryRef": "Taux de croissance à 12 mois",
               "displayName": "Taux de croissance à 12 mois"
             }

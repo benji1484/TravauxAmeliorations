@@ -71,7 +71,7 @@
                   "Property": "Objectif total de dette"
                 }
               },
-              "queryRef": "Mesure.objectif_total_dette",
+              "queryRef": "Mesure.Objectif total de dette",
               "nativeQueryRef": "Plafond annuel",
               "displayName": "Plafond annuel"
             },

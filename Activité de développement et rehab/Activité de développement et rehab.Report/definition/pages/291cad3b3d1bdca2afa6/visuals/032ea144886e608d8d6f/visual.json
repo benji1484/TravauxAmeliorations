@@ -58,11 +58,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
-              "nativeQueryRef": "# Logements",
+              "queryRef": "Mesure.Nombre de logements",
+              "nativeQueryRef": "Nombre de logements",
               "format": "0"
             }
           ]
@@ -78,7 +78,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements"
+                "Property": "Nombre de logements"
               }
             },
             "direction": "Descending"
@@ -450,7 +450,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Logements"
+            "Property": "Nombre de logements"
           }
         },
         "type": "Advanced"

@@ -26,7 +26,7 @@
                   "Property": "Nombre d'UG en vacance ordinaire"
                 }
               },
-              "queryRef": "Mesure.Vacance Ordinaire Logement",
+              "queryRef": "Mesure.Nombre d'UG en vacance ordinaire",
               "nativeQueryRef": "dont vacance ordinaire",
               "displayName": "dont vacance ordinaire"
             }

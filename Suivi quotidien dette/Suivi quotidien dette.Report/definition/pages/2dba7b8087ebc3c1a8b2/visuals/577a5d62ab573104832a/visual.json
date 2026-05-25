@@ -45,7 +45,7 @@
                   "Property": "Quittancement hors AL (mois précédent)"
                 }
               },
-              "queryRef": "Mesure.Quittancement hors AL (décalé)",
+              "queryRef": "Mesure.Quittancement hors AL (mois précédent)",
               "nativeQueryRef": "Quittancement hors AL (mois précédent)"
             },
             {
@@ -115,7 +115,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Quittancement hors AL (décalé)"
+            "metadata": "Mesure.Quittancement hors AL (mois précédent)"
           }
         }
       ],
@@ -280,7 +280,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Quittancement hors AL (décalé)"
+            "metadata": "Mesure.Quittancement hors AL (mois précédent)"
           }
         },
         {
@@ -319,7 +319,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Quittancement hors AL (décalé)"
+            "metadata": "Mesure.Quittancement hors AL (mois précédent)"
           }
         },
         {

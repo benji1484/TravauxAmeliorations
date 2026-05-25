@@ -26,8 +26,8 @@
                   "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement YTD",
-              "nativeQueryRef": "% Taux Encaissement YTD"
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel"
             }
           ]
         }

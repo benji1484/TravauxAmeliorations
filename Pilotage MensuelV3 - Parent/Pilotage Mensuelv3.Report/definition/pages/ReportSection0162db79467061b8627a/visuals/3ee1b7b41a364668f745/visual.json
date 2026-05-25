@@ -91,7 +91,7 @@
               },
               "queryRef": "Mesure.Mobilité cumulée annuelle",
               "nativeQueryRef": "Mobilité cumul annuel",
-              "displayName": "Mobilité YTD"
+              "displayName": "Mobilité cumul annuel"
             }
           ]
         }

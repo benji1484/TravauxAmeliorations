@@ -77,7 +77,7 @@
               },
               "queryRef": "Mesure.Mutations cumulées annuelles",
               "nativeQueryRef": "Mutations cumul annuel",
-              "displayName": "Mutations YTD"
+              "displayName": "Mutations cumul annuel"
             },
             {
               "field": {
@@ -90,7 +90,7 @@
                   "Property": "Taux de mutation cumul annuel"
                 }
               },
-              "queryRef": "Mesure.tx de mutation YTD",
+              "queryRef": "Mesure.Taux de mutation cumul annuel",
               "nativeQueryRef": "% mutation YTD",
               "displayName": "% mutation YTD"
             }
@@ -253,7 +253,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.tx de mutation YTD"
+            "metadata": "Mesure.Taux de mutation cumul annuel"
           }
         }
       ]

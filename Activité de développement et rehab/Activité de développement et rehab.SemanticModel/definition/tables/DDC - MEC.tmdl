@@ -1,7 +1,7 @@
 table 'DDC - MEC'
 	lineageTag: e0ec840c-81d1-4c27-afcc-8cd0a7afffe1
-
-	measure '# MEC Cumul Annuel' = ```
+	/// Compte des éléments du patrimoine comme les logements, commerces, bâtiments ou unités de gestion. Le résultat est cumulé depuis le début de l'année.
+	measure 'Nombre de MEC Cumul Annuel' = ```
 			
 			VAR MoisCourant = MAX('PeriodeCal'[période])
 			VAR AnneeCourante = LEFT(MoisCourant, 4)
@@ -19,6 +19,7 @@ table 'DDC - MEC'
 			),blank())
 			
 			```
+		displayFolder: Patrimoine
 		formatString: 0
 		lineageTag: ce70e39b-3ae0-4334-bdf1-441770e7a1c2
 

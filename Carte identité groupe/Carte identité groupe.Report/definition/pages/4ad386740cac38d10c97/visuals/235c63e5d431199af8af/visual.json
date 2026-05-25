@@ -26,8 +26,8 @@
                   "Property": "Nombre de bâtiments"
                 }
               },
-              "queryRef": "Mesure.# Bâtiments1",
-              "nativeQueryRef": "# Bâtiments1"
+              "queryRef": "Mesure.Nombre de bâtiments",
+              "nativeQueryRef": "Nombre de bâtiments"
             }
           ]
         }
@@ -156,7 +156,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.# Bâtiments1"
+            "metadata": "Mesure.Nombre de bâtiments"
           }
         }
       ],
@@ -466,7 +466,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-63c592e2-4203-283f-ad61-381733c1bca6",
             "order": 0
           }
@@ -494,7 +494,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-a5d5f4b8-22f4-0279-fcd8-f3bd1d653bd9",
             "order": 1
           }
@@ -522,7 +522,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-6ed2970d-b708-c507-12c8-f3c73e1abccc",
             "order": 2
           }
@@ -550,7 +550,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-5a5a216f-da38-b2df-59ef-dbded964cb52",
             "order": 3
           }
@@ -578,7 +578,7 @@
                 }
               }
             ],
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-7add2176-054b-6ee9-3cda-08a55a1576d8",
             "order": 4
           }
@@ -605,7 +605,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.# Bâtiments1"
+            "metadata": "Mesure.Nombre de bâtiments"
           }
         }
       ],
@@ -756,7 +756,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.# Bâtiments1"
+            "metadata": "Mesure.Nombre de bâtiments"
           }
         }
       ],
@@ -835,7 +835,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.# Bâtiments1"
+            "metadata": "Mesure.Nombre de bâtiments"
           }
         },
         {
@@ -849,7 +849,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-a5d5f4b8-22f4-0279-fcd8-f3bd1d653bd9"
           }
         },
@@ -864,7 +864,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.# Bâtiments1",
+            "metadata": "Mesure.Nombre de bâtiments",
             "id": "field-6ed2970d-b708-c507-12c8-f3c73e1abccc"
           }
         }

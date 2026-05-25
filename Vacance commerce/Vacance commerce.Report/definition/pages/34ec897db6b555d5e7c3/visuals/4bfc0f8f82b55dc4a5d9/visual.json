@@ -45,7 +45,7 @@
                   "Property": "Taux de vacance financière recalculé cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.Tx de vacance fi YTD recalcul",
+              "queryRef": "Mesure.Taux de vacance financière recalculé cumulé annuel",
               "nativeQueryRef": "Taux de vacance financière totale",
               "displayName": "Taux de vacance financière totale"
             },
@@ -122,7 +122,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Tx de vacance fi YTD recalcul"
+            "metadata": "Mesure.Taux de vacance financière recalculé cumulé annuel"
           }
         }
       ],
@@ -202,7 +202,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Tx de vacance fi YTD recalcul"
+            "metadata": "Mesure.Taux de vacance financière recalculé cumulé annuel"
           }
         },
         {
@@ -275,7 +275,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.Tx de vacance fi YTD recalcul"
+            "metadata": "Mesure.Taux de vacance financière recalculé cumulé annuel"
           }
         },
         {

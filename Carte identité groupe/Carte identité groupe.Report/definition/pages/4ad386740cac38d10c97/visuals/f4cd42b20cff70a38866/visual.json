@@ -26,7 +26,7 @@
                   "Property": "Encaissement avec allocations logement"
                 }
               },
-              "queryRef": "Mesure.Encaissement avec allocations",
+              "queryRef": "Mesure.Encaissement avec allocations logement",
               "nativeQueryRef": "Encaissement + AL1"
             }
           ]

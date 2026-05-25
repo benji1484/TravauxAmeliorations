@@ -57,10 +57,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière YTD - Commerces & Bureaux"
+                  "Property": "Vacance financière cumul annuel - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance financière YTD - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance financière cumul annuel - Commerces et Bureaux",
               "nativeQueryRef": "Vacance financière totale - cumul annuel",
               "displayName": "Vacance financière totale - cumul annuel"
             },
@@ -72,10 +72,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance commerciale YTD - Commerces & Bureaux"
+                  "Property": "Vacance commerciale cumul annuel - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance commerciale YTD - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance commerciale cumul annuel - Commerces et Bureaux",
               "nativeQueryRef": "Dont commerciale - cumul annuel",
               "displayName": "Dont commerciale - cumul annuel"
             },
@@ -87,10 +87,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance stratégique YTD - Commerces & Bureaux"
+                  "Property": "Vacance stratégique cumul annuel - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance stratégique YTD - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance stratégique cumul annuel - Commerces et Bureaux",
               "nativeQueryRef": "Dont stratégique - cumul annuel",
               "displayName": "Dont stratégique - cumul annuel"
             },
@@ -102,10 +102,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance technique YTD - Commerces & Bureaux"
+                  "Property": "Vacance technique cumul annuel - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance technique YTD - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance technique cumul annuel - Commerces et Bureaux",
               "nativeQueryRef": "Dont technique - cumul annuel",
               "displayName": "Dont technique - cumul annuel"
             },
@@ -117,10 +117,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance MEL YTD - Commerces & Bureaux"
+                  "Property": "Vacance mise en location cumul annuel - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance MEL YTD - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance mise en location cumul annuel - Commerces et Bureaux",
               "nativeQueryRef": "Dont MEL - cumul annuel",
               "displayName": "Dont MEL - cumul annuel"
             },
@@ -132,10 +132,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière - Commerces & Bureaux"
+                  "Property": "Vacance financière - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance financière - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance financière - Commerces et Bureaux",
               "nativeQueryRef": "Vacance financière - mensuel",
               "displayName": "Vacance financière - mensuel"
             },
@@ -147,10 +147,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance commerciale - Commerces & Bureaux"
+                  "Property": "Vacance commerciale - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance commerciale - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance commerciale - Commerces et Bureaux",
               "nativeQueryRef": "Dont commerciale - mensuel",
               "displayName": "Dont commerciale - mensuel"
             },
@@ -162,10 +162,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance stratégique - Commerces & Bureaux"
+                  "Property": "Vacance stratégique - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance stratégique - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance stratégique - Commerces et Bureaux",
               "nativeQueryRef": "Dont stratégique - mensuel",
               "displayName": "Dont stratégique - mensuel"
             },
@@ -177,10 +177,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance technique - Commerces & Bureaux"
+                  "Property": "Vacance technique - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance technique - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance technique - Commerces et Bureaux",
               "nativeQueryRef": "Dont technique - mensuel",
               "displayName": "Dont technique - mensuel"
             },
@@ -192,10 +192,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance MEL - Commerces & Bureaux"
+                  "Property": "Vacance mise en location - Commerces et Bureaux"
                 }
               },
-              "queryRef": "Mesure.Vacance MEL - Commerces & Bureaux",
+              "queryRef": "Mesure.Vacance mise en location - Commerces et Bureaux",
               "nativeQueryRef": "Dont MEL - mensuel",
               "displayName": "Dont MEL - mensuel"
             }
@@ -752,7 +752,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% croissance_soldem_ca_operation_+"
+            "Property": "Taux de variation de la dette positive"
           }
         },
         "type": "Advanced",
@@ -768,7 +768,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Croissance annuelle"
+            "Property": "Taux de croissance annuel"
           }
         },
         "type": "Advanced",
@@ -784,7 +784,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Croissance soldem_ca_operation"
+            "Property": "Variation mensuelle de la dette historique"
           }
         },
         "type": "Advanced",
@@ -800,7 +800,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -837,7 +837,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -853,7 +853,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -869,7 +869,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced",
@@ -901,7 +901,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Quitm_ca_operation"
+            "Property": "Quittancement mensuel"
           }
         },
         "type": "Advanced",
@@ -954,7 +954,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -970,7 +970,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD recalculé"
+            "Property": "Taux encaissement cumul annuel recalculé"
           }
         },
         "type": "Advanced",

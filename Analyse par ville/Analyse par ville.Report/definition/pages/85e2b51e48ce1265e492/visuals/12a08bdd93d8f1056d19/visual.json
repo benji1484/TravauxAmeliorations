@@ -233,7 +233,7 @@
               },
               "queryRef": "Mesure.Encaissement avec allocations",
               "nativeQueryRef": "Encaissement avec allocations logement",
-              "displayName": "Encaissement + AL"
+              "displayName": "Encaissement avec allocations logement"
             }
           ]
         }

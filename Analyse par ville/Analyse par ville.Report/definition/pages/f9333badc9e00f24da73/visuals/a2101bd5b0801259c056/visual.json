@@ -93,7 +93,7 @@
               },
               "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
               "nativeQueryRef": "Entrées cumulées annuelles historiques",
-              "displayName": "Entrées YTD"
+              "displayName": "Entrées cumulées annuelles historiques"
             },
             {
               "field": {
@@ -196,7 +196,7 @@
               },
               "queryRef": "Mesure.Mutations cumulées annuelles",
               "nativeQueryRef": "Mutations cumul annuel",
-              "displayName": "Mutations YTD"
+              "displayName": "Mutations cumul annuel"
             },
             {
               "field": {

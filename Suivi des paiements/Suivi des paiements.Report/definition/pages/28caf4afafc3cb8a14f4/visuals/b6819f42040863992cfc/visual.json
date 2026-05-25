@@ -79,7 +79,7 @@
                   "Property": "Règlements hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP1",
+              "queryRef": "Mesure.Règlements hors passages en perte",
               "nativeQueryRef": "Règlements",
               "displayName": "Règlements"
             }

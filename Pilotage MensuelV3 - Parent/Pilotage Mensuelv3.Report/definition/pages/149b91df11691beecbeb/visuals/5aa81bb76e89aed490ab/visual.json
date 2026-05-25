@@ -89,8 +89,8 @@
                   "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement YTD",
-              "nativeQueryRef": "% Taux Encaissement YTD"
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel"
             },
             {
               "field": {
@@ -244,7 +244,7 @@
                   "Property": "Variation mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance Mensuelle Dette",
+              "queryRef": "Mesure.Variation mensuelle de la dette",
               "nativeQueryRef": "Variation mensuelle de la dette"
             },
             {
@@ -663,7 +663,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.€ Croissance Mensuelle Dette"
+            "metadata": "Mesure.Variation mensuelle de la dette"
           }
         },
         {
@@ -733,7 +733,7 @@
             }
           },
           "selector": {
-            "metadata": "Mesure.% Taux Encaissement YTD"
+            "metadata": "Mesure.Taux d'encaissement cumulé annuel"
           }
         }
       ]
