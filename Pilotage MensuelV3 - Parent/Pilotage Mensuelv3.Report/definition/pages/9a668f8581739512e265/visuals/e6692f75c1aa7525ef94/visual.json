@@ -58,11 +58,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Encaissement YTD"
+                  "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
               "queryRef": "Mesure.% Taux Encaissement YTD",
-              "nativeQueryRef": "Taux Encaissement YTD",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel",
               "displayName": "Taux Encaissement YTD"
             },
             {
@@ -73,10 +73,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "objectif intéressement tx encaissement"
+                  "Property": "Objectif intéressement Taux encaissement"
                 }
               },
-              "queryRef": "Mesure.objectif intéressement tx encaissement",
+              "queryRef": "Mesure.Objectif intéressement Taux encaissement",
               "nativeQueryRef": "Plancher",
               "displayName": "Plancher"
             },
@@ -741,7 +741,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",

@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Détail vacance"
+                  "Property": "Sous-titre HTML détail vacance"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Détail vacance",
-              "nativeQueryRef": "SousTitre HTML Détail vacance"
+              "queryRef": "Mesure.Sous-titre HTML détail vacance",
+              "nativeQueryRef": "Sous-titre HTML détail vacance"
             }
           ]
         }

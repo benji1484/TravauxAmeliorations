@@ -38,10 +38,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements YTD"
+                  "Property": "Vacance financière logements cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Logements YTD",
+              "queryRef": "Mesure.Vacance financière logements cumulée annuelle",
               "nativeQueryRef": "VF Logement YTD",
               "displayName": "VF Logement YTD"
             },
@@ -53,10 +53,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "obj_2024-vacancefi"
+                  "Property": "Objectif 2024 de vacance financière"
                 }
               },
-              "queryRef": "Mesure.obj_2024-vacancefi",
+              "queryRef": "Mesure.Objectif 2024 de vacance financière",
               "nativeQueryRef": "Plafond à date",
               "displayName": "Plafond à date"
             },
@@ -68,10 +68,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Objectif_Total_Vacance"
+                  "Property": "Objectif total de vacance"
                 }
               },
-              "queryRef": "Mesure.Objectif_Total_Vacance",
+              "queryRef": "Mesure.Objectif total de vacance",
               "nativeQueryRef": "Plafond annuel",
               "displayName": "Plafond annuel"
             },
@@ -83,10 +83,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Dép obj vacance logement"
+                  "Property": "Taux d'atteinte de l'objectif vacance logements"
                 }
               },
-              "queryRef": "Mesure.% Dép obj vacance logement",
+              "queryRef": "Mesure.Taux d'atteinte de l'objectif vacance logements",
               "nativeQueryRef": "Ratio",
               "displayName": "Ratio"
             }
@@ -159,7 +159,7 @@
                                     "Entity": "Mesure"
                                   }
                                 },
-                                "Property": "% Dép obj vacance logement"
+                                "Property": "Taux d'atteinte de l'objectif vacance logements"
                               }
                             },
                             "Right": {
@@ -188,7 +188,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "% Dép obj vacance logement"
+                                    "Property": "Taux d'atteinte de l'objectif vacance logements"
                                   }
                                 },
                                 "Right": {
@@ -208,7 +208,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "% Dép obj vacance logement"
+                                    "Property": "Taux d'atteinte de l'objectif vacance logements"
                                   }
                                 },
                                 "Right": {
@@ -237,7 +237,7 @@
                                     "Entity": "Mesure"
                                   }
                                 },
-                                "Property": "% Dép obj vacance logement"
+                                "Property": "Taux d'atteinte de l'objectif vacance logements"
                               }
                             },
                             "Right": {
@@ -596,7 +596,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "vacance financière YTD"
+            "Property": "Vacance financière cumul annuel"
           }
         },
         "type": "Advanced",
@@ -612,7 +612,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "obj_2024-vacancefi"
+            "Property": "Objectif 2024 de vacance financière"
           }
         },
         "type": "Advanced"
@@ -627,7 +627,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Dép obj vacance logement"
+            "Property": "Taux d'atteinte de l'objectif vacance logements"
           }
         },
         "type": "Advanced"
@@ -642,7 +642,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Objectif_Total_Vacance"
+            "Property": "Objectif total de vacance"
           }
         },
         "type": "Advanced"
@@ -657,7 +657,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Vacance Financière Logements YTD"
+            "Property": "Vacance financière logements cumulée annuelle"
           }
         },
         "type": "Advanced"

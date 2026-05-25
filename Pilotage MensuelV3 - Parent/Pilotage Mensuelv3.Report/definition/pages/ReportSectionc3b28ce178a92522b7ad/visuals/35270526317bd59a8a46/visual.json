@@ -51,10 +51,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             },
@@ -66,7 +66,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
               "queryRef": "Mesure.# UG Vacants",
@@ -81,10 +81,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces"
+                  "Property": "Nombre de commerces"
                 }
               },
-              "queryRef": "Mesure.# Commerces",
+              "queryRef": "Mesure.Nombre de commerces",
               "nativeQueryRef": "Commerces",
               "displayName": "Commerces"
             },
@@ -96,10 +96,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons M"
+                  "Property": "Nombre de livraisons logements mensuelles"
                 }
               },
-              "queryRef": "Mesure.# Livraisons M",
+              "queryRef": "Mesure.Nombre de livraisons logements mensuelles",
               "nativeQueryRef": "Livraisons",
               "displayName": "Livraisons"
             },
@@ -126,11 +126,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Loges"
+                  "Property": "Nombre de loges"
                 }
               },
-              "queryRef": "Mesure.# Loges",
-              "nativeQueryRef": "# Loges",
+              "queryRef": "Mesure.Nombre de loges",
+              "nativeQueryRef": "Nombre de loges",
               "displayName": "Loges"
             }
           ]

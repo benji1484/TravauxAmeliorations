@@ -60,11 +60,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces"
+                  "Property": "Nombre de commerces"
                 }
               },
-              "queryRef": "Mesure.# Commerces",
-              "nativeQueryRef": "# Commerces"
+              "queryRef": "Mesure.Nombre de commerces",
+              "nativeQueryRef": "Nombre de commerces"
             }
           ]
         },
@@ -78,10 +78,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vac com commerces"
+                  "Property": "Taux de vacance commerciale des commerces"
                 }
               },
-              "queryRef": "Mesure.% Vac com commerces",
+              "queryRef": "Mesure.Taux de vacance commerciale des commerces",
               "nativeQueryRef": "% Vac commerciale",
               "displayName": "% Vac commerciale"
             }
@@ -843,7 +843,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Vac com commerces"
+            "Property": "Taux de vacance commerciale des commerces"
           }
         },
         "type": "Advanced"
@@ -930,7 +930,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Commerces"
+            "Property": "Nombre de commerces"
           }
         },
         "type": "Advanced"

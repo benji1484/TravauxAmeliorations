@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Dette HPP M-1"
+                  "Property": "Dette hors passages en perte du mois précédent"
                 }
               },
-              "queryRef": "Mesure.Dette HPP M-1",
-              "nativeQueryRef": "Dette HPP M-1"
+              "queryRef": "Mesure.Dette hors passages en perte du mois précédent",
+              "nativeQueryRef": "Dette hors passages en perte du mois précédent"
             }
           ]
         },
@@ -41,10 +41,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette HPP"
+                  "Property": "Dette hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.€ Dette HPP",
+              "queryRef": "Mesure.Dette hors passages en perte",
               "nativeQueryRef": "Dette HPP"
             }
           ]
@@ -78,7 +78,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "€ Dette HPP"
+                "Property": "Dette hors passages en perte"
               }
             },
             "direction": "Descending"

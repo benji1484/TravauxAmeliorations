@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "VacanceFinanciereYTDRecalcule"
+                  "Property": "Vacance financière recalculée cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.VacanceFinanciereYTDRecalcule",
+              "queryRef": "Mesure.Vacance financière recalculée cumulée annuelle",
               "nativeQueryRef": "Vacance financière annuelle TCC",
               "displayName": "Vacance financière annuelle TCC"
             }
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "VacanceFinanciereYTDRecalcule"
+                "Property": "Vacance financière recalculée cumulée annuelle"
               }
             },
             "direction": "Descending"

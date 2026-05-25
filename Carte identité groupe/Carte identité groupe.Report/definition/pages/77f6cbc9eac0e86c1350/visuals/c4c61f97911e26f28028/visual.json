@@ -52,10 +52,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             },
@@ -67,10 +67,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants",
+              "queryRef": "Mesure.Nombre de logements vacants",
               "nativeQueryRef": "Dont Vacants",
               "displayName": "Dont Vacants"
             },
@@ -82,10 +82,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants Stratégique"
+                  "Property": "Nombre de logements en vacance stratégique"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants Stratégique",
+              "queryRef": "Mesure.Nombre de logements en vacance stratégique",
               "nativeQueryRef": "Dont vac stratégique",
               "displayName": "Dont vac stratégique"
             },
@@ -97,10 +97,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants Commercial"
+                  "Property": "Nombre de logements vacants en commercial"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants Commercial",
+              "queryRef": "Mesure.Nombre de logements vacants en commercial",
               "nativeQueryRef": "Dont Vac commerciale",
               "displayName": "Dont Vac commerciale"
             },
@@ -112,10 +112,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# UG Vacants Technique"
+                  "Property": "Nombre d'UG en vacance technique"
                 }
               },
-              "queryRef": "Mesure.# UG Vacants Technique",
+              "queryRef": "Mesure.Nombre d'UG en vacance technique",
               "nativeQueryRef": "Dont vac technique",
               "displayName": "Dont vac technique"
             },
@@ -127,10 +127,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements M"
+                  "Property": "Vacance financière logements mensuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Logements M",
+              "queryRef": "Mesure.Vacance financière logements mensuelle",
               "nativeQueryRef": "Vacance Logement",
               "displayName": "Vacance Logement"
             },
@@ -142,10 +142,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements YTD"
+                  "Property": "Vacance financière logements cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Logements YTD",
+              "queryRef": "Mesure.Vacance financière logements cumulée annuelle",
               "nativeQueryRef": "Vacance Logement YTD",
               "displayName": "Vacance Logement YTD"
             },
@@ -171,10 +171,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "MontantTotal3*vacance_SUMX"
+                  "Property": "Montant total des vacances élevées"
                 }
               },
-              "queryRef": "Mesure.MontantTotal3*vacance_SUMX",
+              "queryRef": "Mesure.Montant total des vacances élevées",
               "nativeQueryRef": "Vacance >= 3M",
               "displayName": "Vacance >= 3M"
             },
@@ -186,10 +186,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces"
+                  "Property": "Nombre de commerces"
                 }
               },
-              "queryRef": "Mesure.# Commerces",
+              "queryRef": "Mesure.Nombre de commerces",
               "nativeQueryRef": "Commerces",
               "displayName": "Commerces"
             },
@@ -201,10 +201,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               },
-              "queryRef": "Mesure.# Commerces vacants",
+              "queryRef": "Mesure.Nombre de commerces vacants",
               "nativeQueryRef": "Dont vacants1",
               "displayName": "Dont vacants"
             },
@@ -216,10 +216,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Commerces M"
+                  "Property": "Vacance financière commerces mensuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Commerces M",
+              "queryRef": "Mesure.Vacance financière commerces mensuelle",
               "nativeQueryRef": "Vacance Commerces",
               "displayName": "Vacance Commerces"
             },
@@ -231,10 +231,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Commerces YTD"
+                  "Property": "Vacance Financière Commerces cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Commerces YTD",
+              "queryRef": "Mesure.Vacance Financière Commerces cumul annuel",
               "nativeQueryRef": "Vacance Commerces YTD",
               "displayName": "Vacance Commerces YTD"
             }
@@ -251,7 +251,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements"
+                "Property": "Nombre de logements"
               }
             },
             "direction": "Descending"

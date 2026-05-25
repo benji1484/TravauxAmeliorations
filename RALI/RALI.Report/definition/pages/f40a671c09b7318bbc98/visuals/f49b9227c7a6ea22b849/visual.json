@@ -73,10 +73,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Encaissement + alloc"
+                  "Property": "Encaissement avec allocations"
                 }
               },
-              "queryRef": "Mesure.Encaissement + alloc",
+              "queryRef": "Mesure.Encaissement avec allocations",
               "nativeQueryRef": "Encaissements",
               "displayName": "Encaissements"
             },
@@ -88,11 +88,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Quittancement M-1"
+                  "Property": "Montant Quittancement mois précédent"
                 }
               },
-              "queryRef": "Mesure.€ Quittancement M-1",
-              "nativeQueryRef": "€ Quittancement M-1"
+              "queryRef": "Mesure.Montant Quittancement mois précédent",
+              "nativeQueryRef": "Montant Quittancement mois précédent"
             }
           ]
         }
@@ -567,7 +567,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced"
@@ -581,7 +581,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Quittancement M-1"
+            "Property": "Montant Quittancement mois précédent"
           }
         },
         "type": "Advanced"

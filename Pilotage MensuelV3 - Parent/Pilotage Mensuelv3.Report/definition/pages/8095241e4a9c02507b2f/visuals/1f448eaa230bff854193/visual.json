@@ -38,10 +38,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             },
@@ -53,10 +53,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants",
+              "queryRef": "Mesure.Nombre de logements vacants",
               "nativeQueryRef": "Dont vacants",
               "displayName": "Dont vacants"
             },
@@ -68,10 +68,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces"
+                  "Property": "Nombre de commerces"
                 }
               },
-              "queryRef": "Mesure.# Commerces",
+              "queryRef": "Mesure.Nombre de commerces",
               "nativeQueryRef": "Commerces",
               "displayName": "Commerces"
             }

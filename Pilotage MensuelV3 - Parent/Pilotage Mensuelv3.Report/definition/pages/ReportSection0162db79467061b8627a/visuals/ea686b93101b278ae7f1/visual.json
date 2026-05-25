@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Flux d'occupation"
+                  "Property": "Sous-titre HTML flux d'occupation"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Flux d'occupation",
-              "nativeQueryRef": "SousTitre HTML Flux d'occupation"
+              "queryRef": "Mesure.Sous-titre HTML flux d'occupation",
+              "nativeQueryRef": "Sous-titre HTML flux d'occupation"
             }
           ]
         }

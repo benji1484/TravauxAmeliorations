@@ -76,7 +76,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP"
+                  "Property": "Règlements hors passages en perte"
                 }
               },
               "queryRef": "Mesure.Règlements HPP1",
@@ -196,7 +196,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Règlements HPP"
+                "Property": "Règlements hors passages en perte"
               }
             },
             "Right": {
@@ -208,7 +208,7 @@
                         "Entity": "Mesure"
                       }
                     },
-                    "Property": "Règlements HPP"
+                    "Property": "Règlements hors passages en perte"
                   }
                 },
                 "Scope": []
@@ -317,7 +317,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Règlements HPP"
+            "Property": "Règlements hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -380,7 +380,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Règlements HPP"
+                "Property": "Règlements hors passages en perte"
               }
             },
             "Right": {
@@ -392,7 +392,7 @@
                         "Entity": "Mesure"
                       }
                     },
-                    "Property": "Règlements HPP"
+                    "Property": "Règlements hors passages en perte"
                   }
                 },
                 "Scope": [

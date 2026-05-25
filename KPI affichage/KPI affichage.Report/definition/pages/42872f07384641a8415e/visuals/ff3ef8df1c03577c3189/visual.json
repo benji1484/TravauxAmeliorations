@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces"
+                  "Property": "Nombre de commerces"
                 }
               },
-              "queryRef": "Mesure.# Commerces",
-              "nativeQueryRef": "# Commerces"
+              "queryRef": "Mesure.Nombre de commerces",
+              "nativeQueryRef": "Nombre de commerces"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Commerces"
+                "Property": "Nombre de commerces"
               }
             },
             "direction": "Descending"
@@ -63,7 +63,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -91,7 +91,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }

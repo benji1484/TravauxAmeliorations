@@ -38,10 +38,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance annuelle Dette"
+                  "Property": "Variation annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance annuelle Dette",
+              "queryRef": "Mesure.Variation annuelle de la dette",
               "nativeQueryRef": "Variation Dette YTD",
               "displayName": "Variation Dette YTD"
             },
@@ -53,10 +53,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "obj_2024_dette"
+                  "Property": "Objectif 2024 de dette"
                 }
               },
-              "queryRef": "Mesure.obj_2024_dette",
+              "queryRef": "Mesure.Objectif 2024 de dette",
               "nativeQueryRef": "Plafond à date",
               "displayName": "Plafond à date"
             },
@@ -68,7 +68,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Objectif_Total_Dette"
+                  "Property": "Objectif total de dette"
                 }
               },
               "queryRef": "Mesure.objectif_total_dette",
@@ -83,10 +83,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Dép objectif dette loc YTD"
+                  "Property": "Taux d'atteinte de l'objectif dette locataires cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Dép objectif dette loc YTD",
+              "queryRef": "Mesure.Taux d'atteinte de l'objectif dette locataires cumulé annuel",
               "nativeQueryRef": "Ratio",
               "displayName": "Ratio"
             }
@@ -146,7 +146,7 @@
                                     "Entity": "Mesure"
                                   }
                                 },
-                                "Property": "% Dép objectif dette loc YTD"
+                                "Property": "Taux d'atteinte de l'objectif dette locataires cumulé annuel"
                               }
                             },
                             "Right": {
@@ -175,7 +175,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "% Dép objectif dette loc YTD"
+                                    "Property": "Taux d'atteinte de l'objectif dette locataires cumulé annuel"
                                   }
                                 },
                                 "Right": {
@@ -195,7 +195,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "% Dép objectif dette loc YTD"
+                                    "Property": "Taux d'atteinte de l'objectif dette locataires cumulé annuel"
                                   }
                                 },
                                 "Right": {
@@ -224,7 +224,7 @@
                                     "Entity": "Mesure"
                                   }
                                 },
-                                "Property": "% Dép objectif dette loc YTD"
+                                "Property": "Taux d'atteinte de l'objectif dette locataires cumulé annuel"
                               }
                             },
                             "Right": {

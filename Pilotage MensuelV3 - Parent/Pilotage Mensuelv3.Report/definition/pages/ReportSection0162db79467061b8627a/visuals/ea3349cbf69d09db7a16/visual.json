@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Sorties YTD"
+                  "Property": "Sorties cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Sorties YTD",
-              "nativeQueryRef": "Sorties YTD",
+              "queryRef": "Mesure.Sorties cumul annuel",
+              "nativeQueryRef": "Sorties cumul annuel",
               "displayName": "Sorties YTD"
             }
           ]
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Sorties YTD"
+                "Property": "Sorties cumul annuel"
               }
             },
             "direction": "Descending"

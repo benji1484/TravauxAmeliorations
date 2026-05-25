@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Détail impayé"
+                  "Property": "Sous-titre HTML détail impayé"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Détail impayé",
-              "nativeQueryRef": "SousTitre HTML Détail impayé"
+              "queryRef": "Mesure.Sous-titre HTML détail impayé",
+              "nativeQueryRef": "Sous-titre HTML détail impayé"
             }
           ]
         }

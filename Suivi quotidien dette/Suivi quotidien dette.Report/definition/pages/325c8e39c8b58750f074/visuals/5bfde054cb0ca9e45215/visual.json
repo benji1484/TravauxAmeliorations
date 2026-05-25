@@ -41,11 +41,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance dette M"
+                  "Property": "Taux de croissance mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croissance dette M",
-              "nativeQueryRef": "% Croissance dette M"
+              "queryRef": "Mesure.Taux de croissance mensuelle de la dette",
+              "nativeQueryRef": "Taux de croissance mensuelle de la dette"
             }
           ]
         },
@@ -74,10 +74,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% croissance_soldem_ca_operation_+_uniquement positif"
+                  "Property": "Taux de croissance de la dette positive"
                 }
               },
-              "queryRef": "Mesure.% croissance_soldem_ca_operation_+_uniquement positif",
+              "queryRef": "Mesure.Taux de croissance de la dette positive",
               "nativeQueryRef": "Croissance mensuelle",
               "displayName": "Croissance mensuelle"
             },
@@ -89,10 +89,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Soldem_ca_operation_+ hpp"
+                  "Property": "Dette positive hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Soldem_ca_operation_+ hpp",
+              "queryRef": "Mesure.Dette positive hors passages en perte",
               "nativeQueryRef": "Dette m HPP",
               "displayName": "Dette m HPP"
             },
@@ -104,10 +104,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Soldem1_ca_operation_+"
+                  "Property": "Dette positive du mois précédent"
                 }
               },
-              "queryRef": "Mesure.Soldem1_ca_operation_+",
+              "queryRef": "Mesure.Dette positive du mois précédent",
               "nativeQueryRef": "Dette m-1 HPP",
               "displayName": "Dette m-1 HPP"
             }
@@ -124,7 +124,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "% Croissance dette M"
+                "Property": "Taux de croissance mensuelle de la dette"
               }
             },
             "direction": "Descending"

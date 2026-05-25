@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements M"
+                  "Property": "Vacance financière logements mensuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Logements M",
-              "nativeQueryRef": "Vacance Financière Logements M"
+              "queryRef": "Mesure.Vacance financière logements mensuelle",
+              "nativeQueryRef": "Vacance financière logements mensuelle"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Vacance Financière Logements M"
+                "Property": "Vacance financière logements mensuelle"
               }
             },
             "direction": "Descending"

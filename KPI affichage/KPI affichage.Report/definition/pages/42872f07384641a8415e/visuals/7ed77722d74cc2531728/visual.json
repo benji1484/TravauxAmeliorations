@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Soldem_ca_operation_+_Partis"
+                  "Property": "Dette positive des locataires partis"
                 }
               },
-              "queryRef": "Mesure.Soldem_ca_operation_+_Partis",
+              "queryRef": "Mesure.Dette positive des locataires partis",
               "nativeQueryRef": "Dette Locataires Ordinaires partis",
               "displayName": "Dette Locataires Ordinaires partis"
             }
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Soldem_ca_operation_+_Partis"
+                "Property": "Dette positive des locataires partis"
               }
             },
             "direction": "Descending"
@@ -345,7 +345,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -373,7 +373,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -401,7 +401,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements m-1"
+                  "Property": "Nombre de logements du mois précédent"
                 }
               }
             }
@@ -429,7 +429,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons mensuelles"
+                  "Property": "Nombre de livraisons mensuelles"
                 }
               }
             }
@@ -614,7 +614,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Dette Partis M-1"
+                  "Property": "Dette des locataires partis du mois précédent"
                 }
               }
             }

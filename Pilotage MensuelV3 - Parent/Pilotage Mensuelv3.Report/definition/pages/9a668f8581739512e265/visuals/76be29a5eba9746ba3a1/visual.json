@@ -58,11 +58,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx d'assurés"
+                  "Property": "Taux d'assurés"
                 }
               },
-              "queryRef": "Mesure.Tx d'assurés",
-              "nativeQueryRef": "Tx d'assurés"
+              "queryRef": "Mesure.Taux d'assurés",
+              "nativeQueryRef": "Taux d'assurés"
             }
           ]
         }
@@ -430,7 +430,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",

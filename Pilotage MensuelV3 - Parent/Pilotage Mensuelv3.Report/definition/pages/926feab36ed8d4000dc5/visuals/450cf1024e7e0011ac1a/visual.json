@@ -23,7 +23,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Encaissement YTD"
+                  "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
               "queryRef": "Mesure.% Taux Encaissement YTD",
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Taux Encaissement YTD"
+                "Property": "Taux d'encaissement cumulé annuel"
               }
             },
             "direction": "Descending"

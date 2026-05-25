@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Taux Encaissement YTD M-1"
+                  "Property": "Taux d'encaissement cumulé annuel du mois précédent"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement YTD M-1",
-              "nativeQueryRef": "% Taux Encaissement YTD M-1"
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel du mois précédent",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel du mois précédent"
             }
           ]
         },
@@ -41,10 +41,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Encaissement YTD"
+                  "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.Taux Encaissement YTD",
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel",
               "nativeQueryRef": "% Taux Encaissement YTD"
             }
           ]
@@ -78,7 +78,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Taux Encaissement YTD"
+                "Property": "Taux d'encaissement cumulé annuel"
               }
             },
             "direction": "Descending"
@@ -427,7 +427,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",

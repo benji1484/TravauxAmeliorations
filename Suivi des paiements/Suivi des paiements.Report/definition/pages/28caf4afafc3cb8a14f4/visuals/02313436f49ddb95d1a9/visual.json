@@ -60,10 +60,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP"
+                  "Property": "Règlements hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP",
+              "queryRef": "Mesure.Règlements hors passages en perte",
               "nativeQueryRef": "Règlements"
             }
           ]
@@ -79,7 +79,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Règlements HPP"
+                "Property": "Règlements hors passages en perte"
               }
             },
             "direction": "Descending"
@@ -373,7 +373,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Règlements HPP"
+                "Property": "Règlements hors passages en perte"
               }
             },
             "Right": {
@@ -385,7 +385,7 @@
                         "Entity": "Mesure"
                       }
                     },
-                    "Property": "Règlements HPP"
+                    "Property": "Règlements hors passages en perte"
                   }
                 },
                 "Scope": []
@@ -456,7 +456,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Règlements HPP"
+                "Property": "Règlements hors passages en perte"
               }
             },
             "Right": {
@@ -468,7 +468,7 @@
                         "Entity": "Mesure"
                       }
                     },
-                    "Property": "Règlements HPP"
+                    "Property": "Règlements hors passages en perte"
                   }
                 },
                 "Scope": []
@@ -579,7 +579,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Règlements HPP"
+            "Property": "Règlements hors passages en perte"
           }
         },
         "type": "Advanced"

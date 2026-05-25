@@ -37,10 +37,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Entrées Salariés YTD"
+                  "Property": "Taux Entrées Salariés cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Entrées Salariés YTD",
+              "queryRef": "Mesure.Taux Entrées Salariés cumul annuel",
               "nativeQueryRef": "Dont salariés",
               "displayName": "Dont salariés"
             },
@@ -52,10 +52,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité 1a"
+                  "Property": "Mobilité sur un an"
                 }
               },
-              "queryRef": "Mesure.Mobilité 1a",
+              "queryRef": "Mesure.Mobilité sur un an",
               "nativeQueryRef": "Mobilité",
               "displayName": "Mobilité"
             }

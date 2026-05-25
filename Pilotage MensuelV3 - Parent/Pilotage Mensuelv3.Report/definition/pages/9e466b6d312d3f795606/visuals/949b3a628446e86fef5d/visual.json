@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Titre Gestion Locative HTML"
+                  "Property": "Titre HTML gestion locative"
                 }
               },
-              "queryRef": "Mesure.Titre Gestion Locative HTML",
-              "nativeQueryRef": "Titre Gestion Locative HTML"
+              "queryRef": "Mesure.Titre HTML gestion locative",
+              "nativeQueryRef": "Titre HTML gestion locative"
             }
           ]
         }

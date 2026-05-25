@@ -97,7 +97,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -125,7 +125,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -778,7 +778,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "VacanceFinanciereYTDRecalcule"
+            "Property": "Vacance financière recalculée cumulée annuelle"
           }
         },
         "type": "Advanced",

@@ -8,7 +8,7 @@
         {
           "name": "Taux rotation 12 mois glissants",
           "dataType": "Double",
-          "expression": "[Sorties_12M] / [# Logements]",
+          "expression": "[Sorties sur douze mois] / [Nombre de logements]",
           "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
           "references": {
             "measures": [

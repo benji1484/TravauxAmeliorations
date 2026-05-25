@@ -58,10 +58,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité N-1"
+                  "Property": "Mobilité année précédente"
                 }
               },
-              "queryRef": "Mesure.Mobilité N-1",
+              "queryRef": "Mesure.Mobilité année précédente",
               "nativeQueryRef": "Mobilité N-11"
             },
             {
@@ -72,11 +72,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité 1a"
+                  "Property": "Mobilité sur un an"
                 }
               },
-              "queryRef": "Mesure.Mobilité 1a",
-              "nativeQueryRef": "Mobilité 1a"
+              "queryRef": "Mesure.Mobilité sur un an",
+              "nativeQueryRef": "Mobilité sur un an"
             },
             {
               "field": {
@@ -86,11 +86,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité YTD new"
+                  "Property": "Mobilité cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Mobilité YTD new",
-              "nativeQueryRef": "Mobilité YTD",
+              "queryRef": "Mesure.Mobilité cumulée annuelle",
+              "nativeQueryRef": "Mobilité cumul annuel",
               "displayName": "Mobilité YTD"
             }
           ]

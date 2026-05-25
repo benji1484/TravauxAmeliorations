@@ -42,10 +42,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Taux Encaissement Mensuel"
+                  "Property": "Taux d'encaissement mensuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement Mensuel",
+              "queryRef": "Mesure.Taux d'encaissement mensuel",
               "nativeQueryRef": "Encaissement Mensuel",
               "displayName": "Encaissement Mensuel"
             },
@@ -57,10 +57,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Taux Encaissement Mensuel LY"
+                  "Property": "Taux d'encaissement mensuel année précédente"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement Mensuel LY",
+              "queryRef": "Mesure.Taux d'encaissement mensuel année précédente",
               "nativeQueryRef": "Encaissement Mensuel N-1",
               "displayName": "Encaissement Mensuel N-1"
             }
@@ -504,7 +504,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -520,7 +520,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulPassagesEnPerteAnnuel"
+            "Property": "Passages en perte cumulés annuels historique"
           }
         },
         "type": "Advanced",
@@ -552,7 +552,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulQuitm_CA_Operation_YTD"
+            "Property": "Quittancement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -568,7 +568,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -670,7 +670,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -686,7 +686,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Taux Encaissement Mensuel"
+            "Property": "Taux d'encaissement mensuel"
           }
         },
         "type": "Advanced"
@@ -701,7 +701,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Taux Encaissement Mensuel LY"
+            "Property": "Taux d'encaissement mensuel année précédente"
           }
         },
         "type": "Advanced"

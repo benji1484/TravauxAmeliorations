@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
-              "nativeQueryRef": "# Logements",
+              "queryRef": "Mesure.Nombre de logements",
+              "nativeQueryRef": "Nombre de logements",
               "format": "#,0"
             }
           ]
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements"
+                "Property": "Nombre de logements"
               }
             },
             "direction": "Descending"
@@ -90,7 +90,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -118,7 +118,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -146,7 +146,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements m-1"
+                  "Property": "Nombre de logements du mois précédent"
                 }
               }
             }
@@ -174,7 +174,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons mensuelles"
+                  "Property": "Nombre de livraisons mensuelles"
                 }
               }
             }

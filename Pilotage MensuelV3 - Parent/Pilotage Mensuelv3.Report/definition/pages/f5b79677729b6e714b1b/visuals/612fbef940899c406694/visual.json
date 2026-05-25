@@ -42,11 +42,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance commerciale"
+                  "Property": "Nombre de logements en vacance commerciale"
                 }
               },
-              "queryRef": "Mesure.Vacance commerciale",
-              "nativeQueryRef": "Vacance commerciale"
+              "queryRef": "Mesure.Nombre de logements en vacance commerciale",
+              "nativeQueryRef": "Nombre de logements en vacance commerciale"
             },
             {
               "field": {
@@ -56,11 +56,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance globale"
+                  "Property": "Nombre total de logements vacants"
                 }
               },
-              "queryRef": "Mesure.Vacance globale",
-              "nativeQueryRef": "Vacance globale"
+              "queryRef": "Mesure.Nombre total de logements vacants",
+              "nativeQueryRef": "Nombre total de logements vacants"
             }
           ]
         }
@@ -365,7 +365,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Logements"
+            "Property": "Taux Logements"
           }
         },
         "type": "Advanced",
@@ -513,7 +513,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Vacance commerciale"
+            "Property": "Nombre de logements en vacance commerciale"
           }
         },
         "type": "Advanced"
@@ -528,7 +528,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Vacance globale"
+            "Property": "Nombre total de logements vacants"
           }
         },
         "type": "Advanced"

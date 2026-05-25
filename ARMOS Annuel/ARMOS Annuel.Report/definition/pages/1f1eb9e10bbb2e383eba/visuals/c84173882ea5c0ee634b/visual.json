@@ -66,10 +66,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "VacanceFinanciereYTDRecalcule"
+                  "Property": "Vacance financière recalculée cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.VacanceFinanciereYTDRecalcule",
+              "queryRef": "Mesure.Vacance financière recalculée cumulée annuelle",
               "nativeQueryRef": "Pertes totales (loyer+charges)",
               "displayName": "Pertes totales (loyer+charges)"
             },
@@ -96,10 +96,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "MontantTotal3*vacance_SUMX"
+                  "Property": "Montant total des vacances élevées"
                 }
               },
-              "queryRef": "Mesure.MontantTotal3*vacance_SUMX",
+              "queryRef": "Mesure.Montant total des vacances élevées",
               "nativeQueryRef": "Dont à plus de 3 mois ",
               "displayName": "Dont à plus de 3 mois "
             },
@@ -111,10 +111,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "VacanceVolontaireYTD"
+                  "Property": "Vacance Volontaire cumul annuel"
                 }
               },
-              "queryRef": "Mesure.VacanceVolontaireYTD",
+              "queryRef": "Mesure.Vacance Volontaire cumul annuel",
               "nativeQueryRef": "Dont travaux lourds (rehab. Restructuration)",
               "displayName": "Dont travaux lourds (rehab. Restructuration)"
             },
@@ -126,10 +126,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Nombre total logements en gestion1",
               "displayName": "Nombre total logements en gestion"
             },
@@ -141,11 +141,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants",
-              "nativeQueryRef": "# Logements Vacants"
+              "queryRef": "Mesure.Nombre de logements vacants",
+              "nativeQueryRef": "Nombre de logements vacants"
             },
             {
               "field": {
@@ -170,7 +170,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb UG Vac Plus 3 Mois"
+                  "Property": "Nombre d'UG vacantes depuis plus de trois mois"
                 }
               },
               "queryRef": "Mesure.Nb Jour Vac Plus 3 Mois",
@@ -185,10 +185,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# UG Vacants VVO"
+                  "Property": "Nombre d'UG vacantes volontaires"
                 }
               },
-              "queryRef": "Mesure.# UG Vacants VVO",
+              "queryRef": "Mesure.Nombre d'UG vacantes volontaires",
               "nativeQueryRef": "Dont travaux lourds (rehab. Restructuration)1",
               "displayName": "Dont travaux lourds (rehab. Restructuration)"
             },
@@ -200,10 +200,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Sorties_YTD"
+                  "Property": "Sorties cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.Sorties_YTD",
+              "queryRef": "Mesure.Sorties cumulées annuelles",
               "nativeQueryRef": "Nombre de départs",
               "displayName": "Nombre de départs"
             }
@@ -220,7 +220,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "VacanceVolontaireYTD"
+                "Property": "Vacance Volontaire cumul annuel"
               }
             },
             "direction": "Descending"

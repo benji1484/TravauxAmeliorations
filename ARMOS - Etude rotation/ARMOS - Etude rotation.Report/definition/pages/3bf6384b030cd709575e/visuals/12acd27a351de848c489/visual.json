@@ -42,11 +42,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
-              "nativeQueryRef": "# Logements"
+              "queryRef": "Mesure.Nombre de logements",
+              "nativeQueryRef": "Nombre de logements"
             },
             {
               "field": {
@@ -56,11 +56,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Sorties_12M"
+                  "Property": "Sorties sur douze mois"
                 }
               },
-              "queryRef": "Mesure.Sorties_12M",
-              "nativeQueryRef": "Sorties_12M"
+              "queryRef": "Mesure.Sorties sur douze mois",
+              "nativeQueryRef": "Sorties sur douze mois"
             },
             {
               "field": {

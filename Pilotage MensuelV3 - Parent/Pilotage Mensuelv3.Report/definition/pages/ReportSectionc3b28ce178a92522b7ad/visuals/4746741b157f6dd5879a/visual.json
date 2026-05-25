@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Patrimoine"
+                  "Property": "Sous-titre HTML patrimoine"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Patrimoine",
+              "queryRef": "Mesure.Sous-titre HTML patrimoine",
               "nativeQueryRef": "SousTitre HTML"
             }
           ]

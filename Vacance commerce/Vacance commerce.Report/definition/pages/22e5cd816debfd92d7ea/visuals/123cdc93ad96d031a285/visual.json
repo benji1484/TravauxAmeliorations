@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# UG"
+                  "Property": "Nombre d'UG"
                 }
               },
-              "queryRef": "Mesure.# UG",
-              "nativeQueryRef": "# UG"
+              "queryRef": "Mesure.Nombre d'UG",
+              "nativeQueryRef": "Nombre d'UG"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# UG"
+                "Property": "Nombre d'UG"
               }
             },
             "direction": "Descending"
@@ -186,7 +186,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Dette HPP"
+            "Property": "Dette hors passages en perte"
           }
         },
         "type": "Advanced",

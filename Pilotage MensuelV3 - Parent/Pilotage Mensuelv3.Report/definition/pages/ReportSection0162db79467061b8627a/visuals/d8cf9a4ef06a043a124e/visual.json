@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité YTD new"
+                  "Property": "Mobilité cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Mobilité YTD new",
-              "nativeQueryRef": "Mobilité YTD new"
+              "queryRef": "Mesure.Mobilité cumulée annuelle",
+              "nativeQueryRef": "Mobilité cumulée annuelle"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Mobilité YTD new"
+                "Property": "Mobilité cumulée annuelle"
               }
             },
             "direction": "Descending"

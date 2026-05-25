@@ -37,10 +37,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             }
@@ -546,7 +546,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Logements"
+            "Property": "Nombre de logements"
           }
         },
         "type": "Advanced"

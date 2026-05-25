@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb d'étages"
+                  "Property": "Nombre d'étages"
                 }
               },
-              "queryRef": "Mesure.Nb d'étages",
+              "queryRef": "Mesure.Nombre d'étages",
               "nativeQueryRef": "Etage max",
               "displayName": "Etage max"
             }
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Nb d'étages"
+                "Property": "Nombre d'étages"
               }
             },
             "direction": "Descending"
@@ -317,7 +317,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -345,7 +345,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -373,7 +373,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements m-1"
+                  "Property": "Nombre de logements du mois précédent"
                 }
               }
             }
@@ -401,7 +401,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons mensuelles"
+                  "Property": "Nombre de livraisons mensuelles"
                 }
               }
             }
@@ -512,7 +512,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb T1"
+                  "Property": "Nombre de T1"
                 }
               }
             }
@@ -555,7 +555,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb T2"
+                  "Property": "Nombre de T2"
                 }
               }
             }
@@ -583,7 +583,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb T3"
+                  "Property": "Nombre de T3"
                 }
               }
             }
@@ -611,7 +611,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb T4"
+                  "Property": "Nombre de T4"
                 }
               }
             }
@@ -639,7 +639,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb T5+"
+                  "Property": "Nombre de T5 et plus"
                 }
               }
             }

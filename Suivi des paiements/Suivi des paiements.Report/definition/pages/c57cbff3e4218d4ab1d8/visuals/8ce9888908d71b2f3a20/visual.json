@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP"
+                  "Property": "Règlements hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP",
+              "queryRef": "Mesure.Règlements hors passages en perte",
               "nativeQueryRef": "Règlements",
               "displayName": "Règlements"
             }
@@ -139,7 +139,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Règlements HPP"
+                "Property": "Règlements hors passages en perte"
               }
             },
             "direction": "Descending"

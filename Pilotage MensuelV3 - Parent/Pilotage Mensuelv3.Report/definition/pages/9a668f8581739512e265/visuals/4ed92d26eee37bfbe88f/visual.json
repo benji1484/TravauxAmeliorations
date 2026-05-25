@@ -58,10 +58,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Entrées Salariés YTD"
+                  "Property": "Taux Entrées Salariés cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Entrées Salariés YTD",
+              "queryRef": "Mesure.Taux Entrées Salariés cumul annuel",
               "nativeQueryRef": "Entrées Salariés YTD",
               "displayName": "Entrées Salariés YTD"
             },
@@ -73,10 +73,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Obj_entrees_salaries"
+                  "Property": "Objectif d'entrées de salariés"
                 }
               },
-              "queryRef": "Mesure.Obj_entrees_salaries",
+              "queryRef": "Mesure.Objectif d'entrées de salariés",
               "nativeQueryRef": "Plancher",
               "displayName": "Plancher"
             },
@@ -88,10 +88,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Dep_object_salaries"
+                  "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                 }
               },
-              "queryRef": "Mesure.Dep_object_salaries",
+              "queryRef": "Mesure.Taux d'atteinte de l'objectif d'entrées de salariés",
               "nativeQueryRef": "Ratio",
               "displayName": "Ratio"
             }
@@ -213,7 +213,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Dep_object_salaries"
+                                    "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                                   }
                                 },
                                 "Right": {
@@ -233,7 +233,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Dep_object_salaries"
+                                    "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                                   }
                                 },
                                 "Right": {
@@ -264,7 +264,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Dep_object_salaries"
+                                    "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                                   }
                                 },
                                 "Right": {
@@ -284,7 +284,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Dep_object_salaries"
+                                    "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                                   }
                                 },
                                 "Right": {
@@ -315,7 +315,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Dep_object_salaries"
+                                    "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                                   }
                                 },
                                 "Right": {
@@ -335,7 +335,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Dep_object_salaries"
+                                    "Property": "Taux d'atteinte de l'objectif d'entrées de salariés"
                                   }
                                 },
                                 "Right": {

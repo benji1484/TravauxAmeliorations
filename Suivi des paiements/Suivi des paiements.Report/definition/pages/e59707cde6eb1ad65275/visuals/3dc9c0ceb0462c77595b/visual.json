@@ -77,10 +77,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP"
+                  "Property": "Règlements hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP",
+              "queryRef": "Mesure.Règlements hors passages en perte",
               "nativeQueryRef": "€ [M]",
               "displayName": "€ [M]"
             },
@@ -92,10 +92,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP M-1"
+                  "Property": "Règlements hors passages en perte mois précédent"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP M-1",
+              "queryRef": "Mesure.Règlements hors passages en perte mois précédent",
               "nativeQueryRef": "€ [M-1]",
               "displayName": "€ [M-1]"
             },
@@ -107,10 +107,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx Croissance M-1 (%)"
+                  "Property": "Taux de croissance du mois précédent"
                 }
               },
-              "queryRef": "Mesure.Tx Croissance M-1 (%)",
+              "queryRef": "Mesure.Taux de croissance du mois précédent",
               "nativeQueryRef": "Taux de croissance à 1 mois",
               "displayName": "Taux de croissance à 1 mois"
             },
@@ -122,10 +122,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP M-12"
+                  "Property": "Règlements hors passages en perte douze mois avant"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP M-12",
+              "queryRef": "Mesure.Règlements hors passages en perte douze mois avant",
               "nativeQueryRef": "€ [M-12]",
               "displayName": "€ [M-12]"
             },
@@ -137,10 +137,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx Croissance M-12 (%)"
+                  "Property": "Taux de croissance douze mois avant"
                 }
               },
-              "queryRef": "Mesure.Tx Croissance M-12 (%)",
+              "queryRef": "Mesure.Taux de croissance douze mois avant",
               "nativeQueryRef": "Taux de croissance à 12 mois",
               "displayName": "Taux de croissance à 12 mois"
             }

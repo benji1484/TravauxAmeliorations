@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "VacanceFinanciereYTDRecalculeHC"
+                  "Property": "Vacance financière hors charges recalculée cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.VacanceFinanciereYTDRecalculeHC",
+              "queryRef": "Mesure.Vacance financière hors charges recalculée cumulée annuelle",
               "nativeQueryRef": "Vacance financière annuelle HC",
               "displayName": "Vacance financière annuelle HC"
             }
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "VacanceFinanciereYTDRecalculeHC"
+                "Property": "Vacance financière hors charges recalculée cumulée annuelle"
               }
             },
             "direction": "Descending"

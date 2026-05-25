@@ -26,7 +26,7 @@
                   "Property": "Dette présents"
                 }
               },
-              "queryRef": "Mesure.Soldem_ca_operation_+_Present",
+              "queryRef": "Mesure.Dette positive des locataires présents",
               "nativeQueryRef": "Dette Locataires Ordinaires présents",
               "displayName": "Dette Locataires Ordinaires présents"
             }
@@ -324,7 +324,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -352,7 +352,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -380,7 +380,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements m-1"
+                  "Property": "Nombre de logements du mois précédent"
                 }
               }
             }
@@ -408,7 +408,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons mensuelles"
+                  "Property": "Nombre de livraisons mensuelles"
                 }
               }
             }
@@ -532,7 +532,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "MontantTotal3*Dette_SUMX"
+                  "Property": "Montant total des dettes élevées"
                 }
               }
             }
@@ -575,7 +575,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "tx encaissement YTD recalculé"
+                  "Property": "Taux encaissement cumul annuel recalculé"
                 }
               }
             }

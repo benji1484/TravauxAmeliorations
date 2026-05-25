@@ -88,11 +88,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette HPP"
+                  "Property": "Dette hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.€ Dette HPP",
-              "nativeQueryRef": "€ Dette HPP"
+              "queryRef": "Mesure.Dette hors passages en perte",
+              "nativeQueryRef": "Dette hors passages en perte"
             },
             {
               "field": {
@@ -102,11 +102,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette M1"
+                  "Property": "Montant Dette mois précédent"
                 }
               },
-              "queryRef": "Mesure.€ Dette M1",
-              "nativeQueryRef": "€ Dette M1"
+              "queryRef": "Mesure.Montant Dette mois précédent",
+              "nativeQueryRef": "Montant Dette mois précédent"
             },
             {
               "field": {
@@ -156,10 +156,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Encaissement + alloc"
+                  "Property": "Encaissement avec allocations"
                 }
               },
-              "queryRef": "Mesure.Encaissement + alloc",
+              "queryRef": "Mesure.Encaissement avec allocations",
               "nativeQueryRef": "Encaissement",
               "displayName": "Encaissement"
             },
@@ -171,10 +171,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Quitm_ca_operation"
+                  "Property": "Quittancement mensuel"
                 }
               },
-              "queryRef": "Mesure.€ Quitm_ca_operation",
+              "queryRef": "Mesure.Quittancement mensuel",
               "nativeQueryRef": "Quittancement ",
               "displayName": "Quittancement "
             },
@@ -186,7 +186,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance Dette"
+                  "Property": "Variation mensuelle de la dette"
                 }
               },
               "queryRef": "Mesure.€ Croissance Mensuelle Dette",
@@ -201,10 +201,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance annuelle Dette"
+                  "Property": "Variation annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance annuelle Dette",
+              "queryRef": "Mesure.Variation annuelle de la dette",
               "nativeQueryRef": "Variation YTD Dette",
               "displayName": "Variation YTD Dette"
             },
@@ -216,7 +216,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance dette M"
+                  "Property": "Taux de croissance mensuelle de la dette"
                 }
               },
               "queryRef": "Mesure.% Croisance dette M",
@@ -231,10 +231,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance annuelle Dette"
+                  "Property": "Taux de croissance annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croissance annuelle Dette",
+              "queryRef": "Mesure.Taux de croissance annuelle de la dette",
               "nativeQueryRef": "% Croissance YTD Dette",
               "displayName": "% Croissance YTD Dette"
             }
@@ -981,7 +981,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Croissance dette M"
+            "Property": "Taux de croissance mensuelle de la dette"
           }
         },
         "type": "Advanced"
@@ -996,7 +996,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Croissance annuelle Dette"
+            "Property": "Taux de croissance annuelle de la dette"
           }
         },
         "type": "Advanced"
@@ -1011,7 +1011,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Dette HPP"
+            "Property": "Dette hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -1041,7 +1041,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Dette M1"
+            "Property": "Montant Dette mois précédent"
           }
         },
         "type": "Advanced"
@@ -1149,7 +1149,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced"
@@ -1180,7 +1180,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Quitm_ca_operation"
+            "Property": "Quittancement mensuel"
           }
         },
         "type": "Advanced"
@@ -1246,7 +1246,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Croissance Dette"
+            "Property": "Variation mensuelle de la dette"
           }
         },
         "type": "Advanced"
@@ -1261,7 +1261,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Croissance annuelle Dette"
+            "Property": "Variation annuelle de la dette"
           }
         },
         "type": "Advanced"

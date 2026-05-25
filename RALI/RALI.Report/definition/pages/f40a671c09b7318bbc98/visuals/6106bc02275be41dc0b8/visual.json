@@ -457,7 +457,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Comm YTD"
+            "Property": "Taux de vacance commerciale cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -473,7 +473,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Strat Fi YTD"
+            "Property": "Taux de vacance financière stratégique cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -505,7 +505,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Tech Fi YTD"
+            "Property": "Taux de vacance financière technique cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -521,7 +521,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi mensuelle"
+            "Property": "Taux de vacance financière mensuel"
           }
         },
         "type": "Advanced",
@@ -537,7 +537,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi YTD"
+            "Property": "Taux de vacance financière cumulé annuel"
           }
         },
         "type": "Advanced",

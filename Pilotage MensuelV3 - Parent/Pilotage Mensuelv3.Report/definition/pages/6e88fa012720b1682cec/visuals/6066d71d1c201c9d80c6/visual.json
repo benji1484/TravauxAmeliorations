@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
-              "nativeQueryRef": "# Logements"
+              "queryRef": "Mesure.Nombre de logements",
+              "nativeQueryRef": "Nombre de logements"
             }
           ]
         },
@@ -248,11 +248,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Variation de Ratio intéressement vac fi com par xAgence"
+                  "Property": "Variation du ratio d'intéressement vacance financière par agence"
                 }
               },
-              "queryRef": "Mesure.Variation de Ratio intéressement vac fi com par xAgence",
-              "nativeQueryRef": "Variation de Ratio intéressement vac fi com par xAgence"
+              "queryRef": "Mesure.Variation du ratio d'intéressement vacance financière par agence",
+              "nativeQueryRef": "Variation du ratio d'intéressement vacance financière par agence"
             }
           ]
         }
@@ -267,7 +267,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements"
+                "Property": "Nombre de logements"
               }
             },
             "direction": "Descending"

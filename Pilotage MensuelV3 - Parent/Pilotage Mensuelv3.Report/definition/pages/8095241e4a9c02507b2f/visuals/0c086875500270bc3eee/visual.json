@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Impayé des présents"
+                  "Property": "Dette des locataires présents"
                 }
               },
-              "queryRef": "Mesure.Impayé des présents",
+              "queryRef": "Mesure.Dette des locataires présents",
               "nativeQueryRef": "Impayé présents",
               "displayName": "Impayé présents"
             },
@@ -38,10 +38,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Impayé des Partis"
+                  "Property": "Dette des locataires partis"
                 }
               },
-              "queryRef": "Mesure.Impayé des Partis",
+              "queryRef": "Mesure.Dette des locataires partis",
               "nativeQueryRef": "Impayé partis",
               "displayName": "Impayé partis"
             }
@@ -58,7 +58,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Impayé des présents"
+                "Property": "Dette des locataires présents"
               }
             },
             "direction": "Descending"

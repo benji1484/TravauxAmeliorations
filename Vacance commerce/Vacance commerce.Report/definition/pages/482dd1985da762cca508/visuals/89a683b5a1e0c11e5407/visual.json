@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vac com commerces"
+                  "Property": "Taux de vacance commerciale des commerces"
                 }
               },
-              "queryRef": "Mesure.% Vac com commerces",
-              "nativeQueryRef": "Vacance commerciale",
+              "queryRef": "Mesure.Taux de vacance commerciale des commerces",
+              "nativeQueryRef": "Nombre de logements en vacance commerciale",
               "displayName": "Vacance commerciale"
             }
           ]
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "% Vac com commerces"
+                "Property": "Taux de vacance commerciale des commerces"
               }
             },
             "direction": "Descending"

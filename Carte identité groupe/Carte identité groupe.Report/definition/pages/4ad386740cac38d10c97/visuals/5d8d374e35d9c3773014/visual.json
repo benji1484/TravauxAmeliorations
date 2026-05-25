@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
-              "nativeQueryRef": "# Logements",
+              "queryRef": "Mesure.Nombre de logements",
+              "nativeQueryRef": "Nombre de logements",
               "format": "#,0"
             }
           ]
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements"
+                "Property": "Nombre de logements"
               }
             },
             "direction": "Descending"
@@ -89,7 +89,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -117,7 +117,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -294,7 +294,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Prix m²"
+                  "Property": "Prix mensuel²"
                 }
               }
             }
@@ -347,7 +347,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Collectifs"
+                  "Property": "Nombre de logements collectifs"
                 }
               }
             }
@@ -375,7 +375,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Individuels"
+                  "Property": "Nombre de logements individuels"
                 }
               }
             }

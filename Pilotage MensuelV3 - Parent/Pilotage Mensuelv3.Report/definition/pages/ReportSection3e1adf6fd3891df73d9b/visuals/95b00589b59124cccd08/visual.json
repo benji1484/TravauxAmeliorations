@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Vacance financière logements"
+                  "Property": "Sous-titre HTML vacance financière logements"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Vacance financière logements",
-              "nativeQueryRef": "SousTitre HTML Vacance financière logements"
+              "queryRef": "Mesure.Sous-titre HTML vacance financière logements",
+              "nativeQueryRef": "Sous-titre HTML vacance financière logements"
             }
           ]
         }

@@ -37,10 +37,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb ménage en impayé"
+                  "Property": "Nombre de ménages en impayé"
                 }
               },
-              "queryRef": "Mesure.Nb ménage en impayé",
+              "queryRef": "Mesure.Nombre de ménages en impayé",
               "nativeQueryRef": "# ménages",
               "displayName": "# ménages"
             },
@@ -52,11 +52,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette HPP"
+                  "Property": "Dette hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.€ Dette HPP",
-              "nativeQueryRef": "€ Dette HPP"
+              "queryRef": "Mesure.Dette hors passages en perte",
+              "nativeQueryRef": "Dette hors passages en perte"
             },
             {
               "field": {
@@ -66,10 +66,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "NombreCodeCADistinctsAvec3*Dette"
+                  "Property": "Nombre de contrats avec dette élevée"
                 }
               },
-              "queryRef": "Mesure.NombreCodeCADistinctsAvec3*Dette",
+              "queryRef": "Mesure.Nombre de contrats avec dette élevée",
               "nativeQueryRef": "# ménages 3 mois",
               "displayName": "# ménages 3 mois"
             },
@@ -81,10 +81,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "MontantTotal3*Dette_SUMX"
+                  "Property": "Montant total des dettes élevées"
                 }
               },
-              "queryRef": "Mesure.MontantTotal3*Dette_SUMX",
+              "queryRef": "Mesure.Montant total des dettes élevées",
               "nativeQueryRef": "Dette 3 mois",
               "displayName": "Dette 3 mois"
             },
@@ -96,10 +96,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb Foyers en impayé"
+                  "Property": "Nombre de Foyers en impayé"
                 }
               },
-              "queryRef": "Mesure.Nb Foyers en impayé",
+              "queryRef": "Mesure.Nombre de Foyers en impayé",
               "nativeQueryRef": "# Foyers impayés",
               "displayName": "# Foyers impayés"
             }
@@ -634,7 +634,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Nb ménage en impayé"
+            "Property": "Nombre de ménages en impayé"
           }
         },
         "type": "Advanced"
@@ -648,7 +648,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Dette HPP"
+            "Property": "Dette hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -662,7 +662,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "NombreCodeCADistinctsAvec3*Dette"
+            "Property": "Nombre de contrats avec dette élevée"
           }
         },
         "type": "Advanced"
@@ -676,7 +676,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "MontantTotal3*Dette_SUMX"
+            "Property": "Montant total des dettes élevées"
           }
         },
         "type": "Advanced"
@@ -690,7 +690,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Nb Foyers en impayé"
+            "Property": "Nombre de Foyers en impayé"
           }
         },
         "type": "Advanced"

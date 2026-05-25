@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# CA principaux"
+                  "Property": "Nombre de contrats principaux"
                 }
               },
-              "queryRef": "Mesure.# CA principaux",
+              "queryRef": "Mesure.Nombre de contrats principaux",
               "nativeQueryRef": "Clients locataires",
               "displayName": "Clients locataires"
             }
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# CA principaux"
+                "Property": "Nombre de contrats principaux"
               }
             },
             "direction": "Descending"

@@ -41,11 +41,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Entrées Salariés YTD"
+                  "Property": "Taux Entrées Salariés cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Entrées Salariés YTD",
-              "nativeQueryRef": "% Entrées Salariés YTD"
+              "queryRef": "Mesure.Taux Entrées Salariés cumul annuel",
+              "nativeQueryRef": "Taux Entrées Salariés cumul annuel"
             }
           ]
         }
@@ -60,7 +60,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "% Entrées Salariés YTD"
+                "Property": "Taux Entrées Salariés cumul annuel"
               }
             },
             "direction": "Descending"
@@ -246,7 +246,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "Couleur salariés"
+                      "Property": "Couleur des entrées de salariés"
                     }
                   }
                 }

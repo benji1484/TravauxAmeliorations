@@ -8,7 +8,7 @@
         {
           "name": "Encaissement total",
           "dataType": "Double",
-          "expression": "[Règlements HPP] + sum(IndicateursFinanciersShrEnGestionDepuis2023[allocm_ca_operation])",
+          "expression": "[Règlements hors passages en perte] + sum(IndicateursFinanciersShrEnGestionDepuis2023[allocm_ca_operation])",
           "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
           "references": {
             "measures": [

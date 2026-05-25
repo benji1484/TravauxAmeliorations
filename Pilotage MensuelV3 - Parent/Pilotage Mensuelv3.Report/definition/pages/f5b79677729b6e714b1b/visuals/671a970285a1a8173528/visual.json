@@ -60,10 +60,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vac com"
+                  "Property": "Taux Vac commerces"
                 }
               },
-              "queryRef": "Mesure.% Vac com",
+              "queryRef": "Mesure.Taux Vac commerces",
               "nativeQueryRef": "% Vacance commerciale",
               "displayName": "% Vacance commerciale"
             }
@@ -79,11 +79,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants",
-              "nativeQueryRef": "# Logements Vacants"
+              "queryRef": "Mesure.Nombre de logements vacants",
+              "nativeQueryRef": "Nombre de logements vacants"
             }
           ]
         },
@@ -97,10 +97,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vac com"
+                  "Property": "Taux Vac commerces"
                 }
               },
-              "queryRef": "Mesure.% Vac com",
+              "queryRef": "Mesure.Taux Vac commerces",
               "nativeQueryRef": "% Vacance commerciale",
               "displayName": "% Vacance commerciale"
             }
@@ -858,7 +858,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Logements"
+            "Property": "Nombre de logements"
           }
         },
         "type": "Advanced",
@@ -946,7 +946,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Vac com"
+            "Property": "Taux Vac commerces"
           }
         },
         "type": "Advanced"
@@ -976,7 +976,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Logements Vacants"
+            "Property": "Nombre de logements vacants"
           }
         },
         "type": "Advanced"

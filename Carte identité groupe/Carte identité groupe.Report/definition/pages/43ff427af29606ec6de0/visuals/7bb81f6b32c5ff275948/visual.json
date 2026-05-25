@@ -52,10 +52,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Affaires"
+                  "Property": "Nombre d'affaires"
                 }
               },
-              "queryRef": "Mesure.# Affaires",
+              "queryRef": "Mesure.Nombre d'affaires",
               "nativeQueryRef": "Nombre d'affaires ayant été en cours sur l'année",
               "displayName": "Nombre d'affaires ayant été en cours sur l'année"
             },
@@ -67,10 +67,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# AffairesTraitées"
+                  "Property": "Nombre d'affaires traitées"
                 }
               },
-              "queryRef": "Mesure.# AffairesTraitées",
+              "queryRef": "Mesure.Nombre d'affaires traitées",
               "nativeQueryRef": "Parmi ces affaires, celles qui ont été close ou traitées ",
               "displayName": "Parmi ces affaires, celles qui ont été close ou traitées "
             },
@@ -82,10 +82,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "%AffairesTerminéesDansLesTemps"
+                  "Property": "Taux d'affaires terminées dans les temps"
                 }
               },
-              "queryRef": "Mesure.%AffairesTerminéesDansLesTemps",
+              "queryRef": "Mesure.Taux d'affaires terminées dans les temps",
               "nativeQueryRef": "Affaires terminées -20j",
               "displayName": "Affaires terminées -20j"
             }

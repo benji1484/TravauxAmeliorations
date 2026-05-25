@@ -52,10 +52,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# CA principaux"
+                  "Property": "Nombre de contrats principaux"
                 }
               },
-              "queryRef": "Mesure.# CA principaux",
+              "queryRef": "Mesure.Nombre de contrats principaux",
               "nativeQueryRef": "Nombre de CA",
               "displayName": "Nombre de CA"
             },
@@ -67,11 +67,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées YTD"
+                  "Property": "Nombre d'entrées cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Entrées YTD",
-              "nativeQueryRef": "Entrées YTD",
+              "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
+              "nativeQueryRef": "Entrées cumulées annuelles historiques",
               "displayName": "Entrées YTD"
             },
             {
@@ -82,10 +82,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées Salariés YTD"
+                  "Property": "Nombre d'entrées de salariés cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Entrées Salariés YTD",
+              "queryRef": "Mesure.Nombre d'entrées de salariés cumulées annuelles",
               "nativeQueryRef": "Entrées Salariés YTD",
               "displayName": "Entrées Salariés YTD"
             },
@@ -97,10 +97,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Sorties_12M"
+                  "Property": "Sorties sur douze mois"
                 }
               },
-              "queryRef": "Mesure.Sorties_12M",
+              "queryRef": "Mesure.Sorties sur douze mois",
               "nativeQueryRef": "Sorties_12m",
               "displayName": "Sorties_12m"
             },
@@ -112,10 +112,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées"
+                  "Property": "Nombre d'entrées"
                 }
               },
-              "queryRef": "Mesure.# Entrées",
+              "queryRef": "Mesure.Nombre d'entrées",
               "nativeQueryRef": "Entrées M",
               "displayName": "Entrées M"
             },
@@ -127,10 +127,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Sorties"
+                  "Property": "Nombre de sorties"
                 }
               },
-              "queryRef": "Mesure.# Sorties",
+              "queryRef": "Mesure.Nombre de sorties",
               "nativeQueryRef": "Sorties M",
               "displayName": "Sorties M"
             },
@@ -142,11 +142,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité 12m"
+                  "Property": "Mobilité sur douze mois"
                 }
               },
-              "queryRef": "Mesure.Mobilité 12m",
-              "nativeQueryRef": "Mobilité 12m"
+              "queryRef": "Mesure.Mobilité sur douze mois",
+              "nativeQueryRef": "Mobilité sur douze mois"
             },
             {
               "field": {
@@ -170,11 +170,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Mutations YTD"
+                  "Property": "Mutations cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Mutations YTD",
-              "nativeQueryRef": "Mutations YTD",
+              "queryRef": "Mesure.Mutations cumulées annuelles",
+              "nativeQueryRef": "Mutations cumul annuel",
               "displayName": "Mutations YTD"
             },
             {
@@ -185,11 +185,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de mutation YTD"
+                  "Property": "Taux de mutation cumul annuel"
                 }
               },
               "queryRef": "Mesure.tx de mutation YTD",
-              "nativeQueryRef": "Tx de mutation YTD"
+              "nativeQueryRef": "Taux de mutation cumul annuel"
             },
             {
               "field": {
@@ -213,11 +213,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx d'assurés"
+                  "Property": "Taux d'assurés"
                 }
               },
-              "queryRef": "Mesure.Tx d'assurés",
-              "nativeQueryRef": "Tx d'assurés"
+              "queryRef": "Mesure.Taux d'assurés",
+              "nativeQueryRef": "Taux d'assurés"
             }
           ]
         }

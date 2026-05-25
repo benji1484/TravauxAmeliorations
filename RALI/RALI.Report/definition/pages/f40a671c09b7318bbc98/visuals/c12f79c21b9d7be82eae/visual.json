@@ -37,10 +37,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées"
+                  "Property": "Nombre d'entrées"
                 }
               },
-              "queryRef": "Mesure.# Entrées",
+              "queryRef": "Mesure.Nombre d'entrées",
               "nativeQueryRef": "Entrées",
               "displayName": "Entrées"
             },
@@ -52,10 +52,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Sorties"
+                  "Property": "Nombre de sorties"
                 }
               },
-              "queryRef": "Mesure.# Sorties",
+              "queryRef": "Mesure.Nombre de sorties",
               "nativeQueryRef": "Sorties",
               "displayName": "Sorties"
             },
@@ -67,11 +67,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Entrées salariés"
+                  "Property": "Entrées de salariés"
                 }
               },
-              "queryRef": "Mesure.Entrées salariés",
-              "nativeQueryRef": "Entrées salariés"
+              "queryRef": "Mesure.Entrées de salariés",
+              "nativeQueryRef": "Entrées de salariés"
             }
           ]
         }

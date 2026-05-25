@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons M"
+                  "Property": "Nombre de livraisons logements mensuelles"
                 }
               },
-              "queryRef": "Mesure.# Livraisons M",
-              "nativeQueryRef": "# Livraisons M"
+              "queryRef": "Mesure.Nombre de livraisons logements mensuelles",
+              "nativeQueryRef": "Nombre de livraisons logements mensuelles"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Livraisons M"
+                "Property": "Nombre de livraisons logements mensuelles"
               }
             },
             "direction": "Descending"

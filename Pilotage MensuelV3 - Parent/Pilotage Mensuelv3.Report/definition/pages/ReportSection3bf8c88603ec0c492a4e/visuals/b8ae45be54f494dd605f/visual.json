@@ -46,11 +46,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements YTD"
+                  "Property": "Vacance financière logements cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Logements YTD",
-              "nativeQueryRef": "Vacance Financière Logements YTD"
+              "queryRef": "Mesure.Vacance financière logements cumulée annuelle",
+              "nativeQueryRef": "Vacance financière logements cumulée annuelle"
             }
           ]
         }
@@ -65,7 +65,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Vacance Financière Logements YTD"
+                "Property": "Vacance financière logements cumulée annuelle"
               }
             },
             "direction": "Descending"
@@ -175,7 +175,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "Couleur vacance"
+                      "Property": "Couleur de la vacance"
                     }
                   }
                 }
@@ -440,7 +440,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "vacance financière YTD"
+            "Property": "Vacance financière cumul annuel"
           }
         },
         "type": "Advanced",
@@ -527,7 +527,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "VacanceFinanciereYTDRecalcule"
+            "Property": "Vacance financière recalculée cumulée annuelle"
           }
         },
         "type": "Advanced",

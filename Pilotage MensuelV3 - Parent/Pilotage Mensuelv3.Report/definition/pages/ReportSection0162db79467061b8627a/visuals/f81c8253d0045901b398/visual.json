@@ -72,11 +72,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Mutations YTD"
+                  "Property": "Mutations cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Mutations YTD",
-              "nativeQueryRef": "Mutations YTD",
+              "queryRef": "Mesure.Mutations cumulées annuelles",
+              "nativeQueryRef": "Mutations cumul annuel",
               "displayName": "Mutations YTD"
             },
             {
@@ -87,7 +87,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de mutation YTD"
+                  "Property": "Taux de mutation cumul annuel"
                 }
               },
               "queryRef": "Mesure.tx de mutation YTD",
@@ -449,7 +449,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -497,7 +497,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Comm YTD"
+            "Property": "Taux de vacance commerciale cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -513,7 +513,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de mutation YTD"
+            "Property": "Taux de mutation cumul annuel"
           }
         },
         "type": "Advanced"
@@ -543,7 +543,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Mutations YTD"
+            "Property": "Mutations cumulées annuelles"
           }
         },
         "type": "Advanced"

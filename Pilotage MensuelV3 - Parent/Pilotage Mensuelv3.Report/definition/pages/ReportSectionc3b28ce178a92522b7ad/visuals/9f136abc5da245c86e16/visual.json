@@ -23,7 +23,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
               "queryRef": "Mesure.# UG Vacants",
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements Vacants"
+                "Property": "Nombre de logements vacants"
               }
             },
             "direction": "Descending"

@@ -23,7 +23,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# UG Vacance Ordinaire"
+                  "Property": "Nombre d'UG en vacance ordinaire"
                 }
               },
               "queryRef": "Mesure.Vacance Ordinaire Logement",
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# UG Vacance Ordinaire"
+                "Property": "Nombre d'UG en vacance ordinaire"
               }
             },
             "direction": "Descending"

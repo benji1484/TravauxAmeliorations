@@ -42,11 +42,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées YTD"
+                  "Property": "Nombre d'entrées cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Entrées YTD",
-              "nativeQueryRef": "Entrées YTD",
+              "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
+              "nativeQueryRef": "Entrées cumulées annuelles historiques",
               "displayName": "Entrées YTD"
             },
             {
@@ -57,11 +57,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Sorties YTD"
+                  "Property": "Sorties cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Sorties YTD",
-              "nativeQueryRef": "Sorties YTD"
+              "queryRef": "Mesure.Sorties cumul annuel",
+              "nativeQueryRef": "Sorties cumul annuel"
             },
             {
               "field": {
@@ -71,10 +71,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées Salariés YTD"
+                  "Property": "Nombre d'entrées de salariés cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Entrées Salariés YTD",
+              "queryRef": "Mesure.Nombre d'entrées de salariés cumulées annuelles",
               "nativeQueryRef": "Entrées Salariés YTD",
               "displayName": "Entrées Salariés YTD"
             }
@@ -764,7 +764,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Entrées Salariés YTD"
+            "Property": "Nombre d'entrées de salariés cumulées annuelles"
           }
         },
         "type": "Advanced"
@@ -779,7 +779,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Entrées YTD"
+            "Property": "Nombre d'entrées cumulées annuelles"
           }
         },
         "type": "Advanced"
@@ -794,7 +794,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Sorties YTD"
+            "Property": "Sorties cumul annuel"
           }
         },
         "type": "Advanced"

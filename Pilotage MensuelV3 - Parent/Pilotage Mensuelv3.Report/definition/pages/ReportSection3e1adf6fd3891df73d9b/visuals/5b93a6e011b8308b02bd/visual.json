@@ -42,10 +42,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Logements YTD"
+                  "Property": "Taux de vacance financière logements cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Logements YTD",
+              "queryRef": "Mesure.Taux de vacance financière logements cumulé annuel",
               "nativeQueryRef": "Taux VF global YTD",
               "displayName": "Taux VF global YTD"
             },
@@ -57,10 +57,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Commerciale Logements YTD"
+                  "Property": "Taux Vacance Financière Commerciale Logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Commerciale Logements YTD",
+              "queryRef": "Mesure.Taux Vacance Financière Commerciale Logements cumul annuel",
               "nativeQueryRef": "% VF Commerciale Logements YTD",
               "displayName": "% VF Commerciale Logements YTD"
             },
@@ -72,10 +72,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Stratégique Logements YTD"
+                  "Property": "Taux Vacance Financière Stratégique Logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Stratégique Logements YTD",
+              "queryRef": "Mesure.Taux Vacance Financière Stratégique Logements cumul annuel",
               "nativeQueryRef": "% VF Stratégique Logements YTD",
               "displayName": "% VF Stratégique Logements YTD"
             },
@@ -87,11 +87,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance globale commerces et logements YTD"
+                  "Property": "Taux Vacance globale commerces et logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance globale commerces et logements YTD",
-              "nativeQueryRef": "% Vacance globale commerces et logements YTD"
+              "queryRef": "Mesure.Taux Vacance globale commerces et logements cumul annuel",
+              "nativeQueryRef": "Taux Vacance globale commerces et logements cumul annuel"
             }
           ]
         }
@@ -302,7 +302,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Comm YTD"
+            "Property": "Taux de vacance commerciale cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -350,7 +350,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Strat Fi YTD"
+            "Property": "Taux de vacance financière stratégique cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -382,7 +382,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Tech Fi YTD"
+            "Property": "Taux de vacance financière technique cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -398,7 +398,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi mensuelle"
+            "Property": "Taux de vacance financière mensuel"
           }
         },
         "type": "Advanced",
@@ -414,7 +414,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi YTD"
+            "Property": "Taux de vacance financière cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -430,7 +430,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "vacance fi YTD recalcul"
+            "Property": "Taux de vacance financière recalculé cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -446,7 +446,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de vacance fi YTD comm recalcul"
+            "Property": "Taux de vacance financière cumul annuel commerciale recalcul"
           }
         },
         "type": "Advanced",
@@ -534,7 +534,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de vacance fi YTD Strat recalcul"
+            "Property": "Taux de vacance financière cumul annuel stratégique recalcul"
           }
         },
         "type": "Advanced",
@@ -550,7 +550,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de vacance fi YTD Tech recalcul"
+            "Property": "Taux de vacance financière cumul annuel technique recalcul"
           }
         },
         "type": "Advanced",
@@ -581,7 +581,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Vacance Financière Logements YTD"
+            "Property": "Taux de vacance financière logements cumulé annuel"
           }
         },
         "type": "Advanced"
@@ -596,7 +596,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Vacance Financière Commerciale Logements YTD"
+            "Property": "Taux Vacance Financière Commerciale Logements cumul annuel"
           }
         },
         "type": "Advanced"
@@ -611,7 +611,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Vacance Financière Stratégique Logements YTD"
+            "Property": "Taux Vacance Financière Stratégique Logements cumul annuel"
           }
         },
         "type": "Advanced"

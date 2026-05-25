@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Vacance physique logements"
+                  "Property": "Sous-titre HTML vacance physique logements"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Vacance physique logements",
-              "nativeQueryRef": "SousTitre HTML Vacance physique logements"
+              "queryRef": "Mesure.Sous-titre HTML vacance physique logements",
+              "nativeQueryRef": "Sous-titre HTML vacance physique logements"
             }
           ]
         }

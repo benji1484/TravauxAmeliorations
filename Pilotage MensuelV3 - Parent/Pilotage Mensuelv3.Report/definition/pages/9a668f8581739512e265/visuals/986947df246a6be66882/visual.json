@@ -58,10 +58,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Commerciale Logements YTD"
+                  "Property": "Taux Vacance Financière Commerciale Logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Commerciale Logements YTD",
+              "queryRef": "Mesure.Taux Vacance Financière Commerciale Logements cumul annuel",
               "nativeQueryRef": "VF Commerciale YTD",
               "displayName": "VF Commerciale YTD"
             },
@@ -73,10 +73,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "objectif intéressement tx vac fi com lgt"
+                  "Property": "Objectif intéressement Taux vacance financière commerces logements"
                 }
               },
-              "queryRef": "Mesure.objectif intéressement tx vac fi com lgt",
+              "queryRef": "Mesure.Objectif intéressement Taux vacance financière commerces logements",
               "nativeQueryRef": "Plafond",
               "displayName": "Plafond"
             },
@@ -88,10 +88,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Ratio intéressement vac fi com"
+                  "Property": "Ratio intéressement vacance financière commerces"
                 }
               },
-              "queryRef": "Mesure.Ratio intéressement vac fi com",
+              "queryRef": "Mesure.Ratio intéressement vacance financière commerces",
               "nativeQueryRef": "Ratio ",
               "displayName": "Ratio "
             }
@@ -266,7 +266,7 @@
                                     "Entity": "Mesure"
                                   }
                                 },
-                                "Property": "Ratio intéressement vac fi com"
+                                "Property": "Ratio intéressement vacance financière commerces"
                               }
                             },
                             "Right": {
@@ -295,7 +295,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Ratio intéressement vac fi com"
+                                    "Property": "Ratio intéressement vacance financière commerces"
                                   }
                                 },
                                 "Right": {
@@ -315,7 +315,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Ratio intéressement vac fi com"
+                                    "Property": "Ratio intéressement vacance financière commerces"
                                   }
                                 },
                                 "Right": {
@@ -346,7 +346,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Ratio intéressement vac fi com"
+                                    "Property": "Ratio intéressement vacance financière commerces"
                                   }
                                 },
                                 "Right": {
@@ -366,7 +366,7 @@
                                         "Entity": "Mesure"
                                       }
                                     },
-                                    "Property": "Ratio intéressement vac fi com"
+                                    "Property": "Ratio intéressement vacance financière commerces"
                                   }
                                 },
                                 "Right": {
@@ -689,7 +689,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -792,7 +792,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Comm YTD"
+            "Property": "Taux de vacance commerciale cumulé annuel"
           }
         },
         "type": "Advanced",

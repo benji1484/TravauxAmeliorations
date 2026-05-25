@@ -14,7 +14,7 @@
         {
           "name": "Dont à moins de 3 mois",
           "dataType": "Double",
-          "expression": "[# Logements Vacants] - [Nb UG Vac Plus 3 Moisv2]",
+          "expression": "[Nombre de logements vacants] - [Nb UG Vac Plus 3 Moisv2]",
           "formatString": "General Number",
           "references": {
             "measures": [

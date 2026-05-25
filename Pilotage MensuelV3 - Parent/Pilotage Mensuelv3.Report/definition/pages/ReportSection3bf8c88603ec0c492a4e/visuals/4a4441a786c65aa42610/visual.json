@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Logements YTD M-1"
+                  "Property": "Taux de vacance financière logements cumulé annuel du mois précédent"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Logements YTD M-1",
-              "nativeQueryRef": "% Vacance Financière Logements YTD M-1"
+              "queryRef": "Mesure.Taux de vacance financière logements cumulé annuel du mois précédent",
+              "nativeQueryRef": "Taux de vacance financière logements cumulé annuel du mois précédent"
             }
           ]
         },
@@ -41,11 +41,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Logements YTD"
+                  "Property": "Taux de vacance financière logements cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Logements YTD",
-              "nativeQueryRef": "% Vacance Financière Logements YTD"
+              "queryRef": "Mesure.Taux de vacance financière logements cumulé annuel",
+              "nativeQueryRef": "Taux de vacance financière logements cumulé annuel"
             }
           ]
         },
@@ -78,7 +78,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "% Vacance Financière Logements YTD"
+                "Property": "Taux de vacance financière logements cumulé annuel"
               }
             },
             "direction": "Descending"
@@ -427,7 +427,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi YTD"
+            "Property": "Taux de vacance financière cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -529,7 +529,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "vacance fi YTD recalcul"
+            "Property": "Taux de vacance financière recalculé cumulé annuel"
           }
         },
         "type": "Advanced",

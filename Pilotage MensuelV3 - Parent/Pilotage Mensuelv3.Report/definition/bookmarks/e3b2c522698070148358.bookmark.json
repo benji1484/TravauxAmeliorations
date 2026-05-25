@@ -527,7 +527,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "vacance financière YTD"
+                      "Property": "Vacance financière cumul annuel"
                     }
                   },
                   "howCreated": 0
@@ -547,7 +547,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "vacance financière YTD"
+                      "Property": "Vacance financière cumul annuel"
                     }
                   }
                 }
@@ -567,7 +567,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Fi YTD"
+                      "Property": "Taux de vacance financière cumulé annuel"
                     }
                   },
                   "howCreated": 0
@@ -587,7 +587,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Fi YTD"
+                      "Property": "Taux de vacance financière cumulé annuel"
                     }
                   }
                 }
@@ -747,7 +747,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "vacance financière YTD"
+                      "Property": "Vacance financière cumul annuel"
                     }
                   },
                   "howCreated": 0
@@ -762,7 +762,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "Vacance Financière YTD N-1"
+                      "Property": "Vacance Financière cumul annuel année précédente"
                     }
                   },
                   "howCreated": 0
@@ -816,7 +816,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Comm YTD"
+                      "Property": "Taux de vacance commerciale cumulé annuel"
                     }
                   },
                   "howCreated": 0
@@ -846,7 +846,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Strat Fi YTD"
+                      "Property": "Taux de vacance financière stratégique cumulé annuel"
                     }
                   },
                   "howCreated": 0
@@ -910,7 +910,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Tech Fi YTD"
+                      "Property": "Taux de vacance financière technique cumulé annuel"
                     }
                   },
                   "howCreated": 0
@@ -925,7 +925,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Fi mensuelle"
+                      "Property": "Taux de vacance financière mensuel"
                     }
                   },
                   "howCreated": 1
@@ -940,7 +940,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Tx Vac Fi YTD"
+                      "Property": "Taux de vacance financière cumulé annuel"
                     }
                   },
                   "howCreated": 0

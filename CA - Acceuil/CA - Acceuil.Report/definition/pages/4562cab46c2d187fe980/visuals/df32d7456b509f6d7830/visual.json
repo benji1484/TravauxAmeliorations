@@ -23,10 +23,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées YTD"
+                  "Property": "Nombre d'entrées cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Entrées YTD",
+              "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
               "nativeQueryRef": "Entrées",
               "displayName": "Entrées"
             }
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Entrées YTD"
+                "Property": "Nombre d'entrées cumulées annuelles"
               }
             },
             "direction": "Descending"
@@ -96,7 +96,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -124,7 +124,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -152,7 +152,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées Salariés YTD"
+                  "Property": "Nombre d'entrées de salariés cumulées annuelles"
                 }
               }
             }
@@ -180,7 +180,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité 1a"
+                  "Property": "Mobilité sur un an"
                 }
               }
             }
@@ -736,7 +736,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "VacanceFinanciereYTDRecalcule"
+            "Property": "Vacance financière recalculée cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -752,7 +752,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Entrées YTD"
+            "Property": "Entrées cumulées annuelles historiques"
           }
         },
         "type": "Advanced",

@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Entrées YTD"
+                  "Property": "Nombre d'entrées cumulées annuelles"
                 }
               },
-              "queryRef": "Mesure.# Entrées YTD",
-              "nativeQueryRef": "# Entrées YTD"
+              "queryRef": "Mesure.Nombre d'entrées cumulées annuelles",
+              "nativeQueryRef": "Nombre d'entrées cumulées annuelles"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Entrées YTD"
+                "Property": "Nombre d'entrées cumulées annuelles"
               }
             },
             "direction": "Descending"

@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Impayé des présents"
+                  "Property": "Dette des locataires présents"
                 }
               },
-              "queryRef": "Mesure.Impayé des présents",
-              "nativeQueryRef": "Impayé des présents"
+              "queryRef": "Mesure.Dette des locataires présents",
+              "nativeQueryRef": "Dette des locataires présents"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Impayé des présents"
+                "Property": "Dette des locataires présents"
               }
             },
             "direction": "Descending"

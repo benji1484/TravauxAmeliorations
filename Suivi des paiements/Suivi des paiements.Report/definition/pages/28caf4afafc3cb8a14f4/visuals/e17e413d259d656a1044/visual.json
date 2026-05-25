@@ -42,10 +42,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Règlements HPP CB M"
+                  "Property": "Taux de règlements CB mensuel hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Taux Règlements HPP CB M",
+              "queryRef": "Mesure.Taux de règlements CB mensuel hors passages en perte",
               "nativeQueryRef": "CB",
               "displayName": "CB"
             },
@@ -57,10 +57,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Règlements HPP Chèque M"
+                  "Property": "Taux de règlements par chèque mensuel hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Taux Règlements HPP Chèque M",
+              "queryRef": "Mesure.Taux de règlements par chèque mensuel hors passages en perte",
               "nativeQueryRef": "Chèque",
               "displayName": "Chèque"
             },
@@ -72,10 +72,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Règlements HPP Espèces M"
+                  "Property": "Taux de règlements en espèces mensuel hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Taux Règlements HPP Espèces M",
+              "queryRef": "Mesure.Taux de règlements en espèces mensuel hors passages en perte",
               "nativeQueryRef": "Espèces",
               "displayName": "Espèces"
             },
@@ -87,10 +87,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Règlements HPP Prélèvements M"
+                  "Property": "Taux de règlements par prélèvement mensuel hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Taux Règlements HPP Prélèvements M",
+              "queryRef": "Mesure.Taux de règlements par prélèvement mensuel hors passages en perte",
               "nativeQueryRef": "Prélèvements",
               "displayName": "Prélèvements"
             },
@@ -102,10 +102,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Règlements HPP Virements M"
+                  "Property": "Taux de règlements par virement mensuel hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Taux Règlements HPP Virements M",
+              "queryRef": "Mesure.Taux de règlements par virement mensuel hors passages en perte",
               "nativeQueryRef": "Virements",
               "displayName": "Virements"
             },
@@ -117,10 +117,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Règlements HPP IBAN M"
+                  "Property": "Taux de règlements IBAN mensuel hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Taux Règlements HPP IBAN M",
+              "queryRef": "Mesure.Taux de règlements IBAN mensuel hors passages en perte",
               "nativeQueryRef": "IBAN virtuel",
               "displayName": "IBAN virtuel"
             }
@@ -238,7 +238,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Règlements HPP CB M"
+            "Property": "Taux de règlements CB mensuel hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -253,7 +253,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Règlements HPP Chèque M"
+            "Property": "Taux de règlements par chèque mensuel hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -268,7 +268,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Règlements HPP Espèces M"
+            "Property": "Taux de règlements en espèces mensuel hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -283,7 +283,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Règlements HPP IBAN M"
+            "Property": "Taux de règlements IBAN mensuel hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -330,7 +330,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Règlements HPP Prélèvements M"
+            "Property": "Taux de règlements par prélèvement mensuel hors passages en perte"
           }
         },
         "type": "Advanced"
@@ -345,7 +345,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Règlements HPP Virements M"
+            "Property": "Taux de règlements par virement mensuel hors passages en perte"
           }
         },
         "type": "Advanced"

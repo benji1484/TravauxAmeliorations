@@ -8,7 +8,7 @@
         {
           "name": "Ecart DTP RALI YTD",
           "dataType": "Double",
-          "expression": "([Taux d'encaissement YTD DTP Corrigé] - [Taux RALI YTD])",
+          "expression": "([Taux d'encaissement cumul annuel DTP Corrigé] - [Taux RALI cumul annuel])",
           "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
           "references": {
             "measures": [

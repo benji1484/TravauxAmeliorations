@@ -366,7 +366,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -394,7 +394,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -422,7 +422,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements m-1"
+                  "Property": "Nombre de logements du mois précédent"
                 }
               }
             }
@@ -450,7 +450,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Livraisons mensuelles"
+                  "Property": "Nombre de livraisons mensuelles"
                 }
               }
             }
@@ -635,7 +635,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Dette Présents M-1"
+                  "Property": "Dette des locataires présents du mois précédent"
                 }
               }
             }

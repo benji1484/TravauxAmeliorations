@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité m-1"
+                  "Property": "Mobilité du mois précédent"
                 }
               },
-              "queryRef": "Mesure.Mobilité m-1",
-              "nativeQueryRef": "Mobilité m-1"
+              "queryRef": "Mesure.Mobilité du mois précédent",
+              "nativeQueryRef": "Mobilité du mois précédent"
             }
           ]
         },

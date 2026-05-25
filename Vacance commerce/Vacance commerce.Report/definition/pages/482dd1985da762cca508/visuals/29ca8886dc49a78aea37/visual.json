@@ -46,7 +46,7 @@
                 }
               },
               "queryRef": "Mesure.Vacance phy commerciale commerces",
-              "nativeQueryRef": "Vacance commerciale",
+              "nativeQueryRef": "Nombre de logements en vacance commerciale",
               "displayName": "Vacance commerciale"
             },
             {
@@ -61,7 +61,7 @@
                 }
               },
               "queryRef": "Mesure.Vacance phy globale commerce",
-              "nativeQueryRef": "Vacance globale",
+              "nativeQueryRef": "Nombre total de logements vacants",
               "displayName": "Vacance globale"
             }
           ]
@@ -348,7 +348,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Logements"
+            "Property": "Taux Logements"
           }
         },
         "type": "Advanced",
@@ -568,7 +568,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Vacance commerciale"
+            "Property": "Nombre de logements en vacance commerciale"
           }
         },
         "type": "Advanced",
@@ -584,7 +584,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Vacance globale"
+            "Property": "Nombre total de logements vacants"
           }
         },
         "type": "Advanced",

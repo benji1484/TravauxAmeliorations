@@ -42,11 +42,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Quittancement hors AL (M-1)"
+                  "Property": "Quittancement hors AL (mois précédent)"
                 }
               },
               "queryRef": "Mesure.Quittancement hors AL (décalé)",
-              "nativeQueryRef": "Quittancement hors AL (M-1)"
+              "nativeQueryRef": "Quittancement hors AL (mois précédent)"
             },
             {
               "field": {
@@ -56,11 +56,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Règlements HPP"
+                  "Property": "Règlements hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Règlements HPP",
-              "nativeQueryRef": "Règlements HPP"
+              "queryRef": "Mesure.Règlements hors passages en perte",
+              "nativeQueryRef": "Règlements hors passages en perte"
             }
           ]
         }
@@ -537,7 +537,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Quittancement hors AL (M-1)"
+            "Property": "Quittancement hors AL (mois précédent)"
           }
         },
         "type": "Advanced"
@@ -552,7 +552,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Règlements HPP"
+            "Property": "Règlements hors passages en perte"
           }
         },
         "type": "Advanced"

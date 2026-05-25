@@ -80,10 +80,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "VacanceFinanciereYTDRecalculeHC"
+                  "Property": "Vacance financière hors charges recalculée cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.VacanceFinanciereYTDRecalculeHC",
+              "queryRef": "Mesure.Vacance financière hors charges recalculée cumulée annuelle",
               "nativeQueryRef": "Vacance HT HC",
               "displayName": "Vacance HT HC"
             },
@@ -95,10 +95,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Commerces YTD"
+                  "Property": "Vacance Financière Commerces cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Commerces YTD",
+              "queryRef": "Mesure.Vacance Financière Commerces cumul annuel",
               "nativeQueryRef": "Vacance HT TCC",
               "displayName": "Vacance HT TCC"
             }
@@ -190,7 +190,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "VacanceFinanciereYTDRecalcule"
+            "Property": "Vacance financière recalculée cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -217,7 +217,7 @@
                               "Source": "m"
                             }
                           },
-                          "Property": "VacanceFinanciereYTDRecalcule"
+                          "Property": "Vacance financière recalculée cumulée annuelle"
                         }
                       },
                       "Right": {
@@ -329,7 +329,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Vacance Financière Commerces YTD"
+            "Property": "Vacance Financière Commerces cumul annuel"
           }
         },
         "type": "Advanced"
@@ -374,7 +374,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "VacanceFinanciereYTDRecalculeHC"
+            "Property": "Vacance financière hors charges recalculée cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -403,7 +403,7 @@
                                   "Source": "m"
                                 }
                               },
-                              "Property": "VacanceFinanciereYTDRecalculeHC"
+                              "Property": "Vacance financière hors charges recalculée cumulée annuelle"
                             }
                           },
                           "Right": {
@@ -427,7 +427,7 @@
                                   "Source": "m"
                                 }
                               },
-                              "Property": "VacanceFinanciereYTDRecalculeHC"
+                              "Property": "Vacance financière hors charges recalculée cumulée annuelle"
                             }
                           },
                           "Right": {

@@ -52,10 +52,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             },
@@ -67,10 +67,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Quittancement YTD"
+                  "Property": "Quittancement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.€ Quittancement YTD",
+              "queryRef": "Mesure.Quittancement cumulé annuel",
               "nativeQueryRef": "Quittancement YTD",
               "displayName": "Quittancement YTD"
             },
@@ -82,10 +82,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Quitm_ca_operation"
+                  "Property": "Quittancement mensuel"
                 }
               },
-              "queryRef": "Mesure.€ Quitm_ca_operation",
+              "queryRef": "Mesure.Quittancement mensuel",
               "nativeQueryRef": "Quittancement M",
               "displayName": "Quittancement M"
             },
@@ -192,11 +192,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Encaissement + alloc"
+                  "Property": "Encaissement avec allocations"
                 }
               },
-              "queryRef": "Mesure.Encaissement + alloc",
-              "nativeQueryRef": "Encaissement + AL",
+              "queryRef": "Mesure.Encaissement avec allocations",
+              "nativeQueryRef": "Encaissement avec allocations logement",
               "displayName": "Encaissement + AL"
             }
           ]

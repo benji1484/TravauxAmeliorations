@@ -120,11 +120,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette HPP"
+                  "Property": "Dette hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.€ Dette HPP",
-              "nativeQueryRef": "€ Dette HPP"
+              "queryRef": "Mesure.Dette hors passages en perte",
+              "nativeQueryRef": "Dette hors passages en perte"
             },
             {
               "field": {
@@ -134,11 +134,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Dette HPP M-1"
+                  "Property": "Dette hors passages en perte du mois précédent"
                 }
               },
-              "queryRef": "Mesure.Dette HPP M-1",
-              "nativeQueryRef": "Dette HPP M-1"
+              "queryRef": "Mesure.Dette hors passages en perte du mois précédent",
+              "nativeQueryRef": "Dette hors passages en perte du mois précédent"
             },
             {
               "field": {
@@ -148,10 +148,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance Dette"
+                  "Property": "Variation mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance Dette",
+              "queryRef": "Mesure.Variation mensuelle de la dette",
               "nativeQueryRef": "Dette Variation mensuelle",
               "displayName": "Dette Variation mensuelle"
             },
@@ -163,10 +163,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance annuelle Dette"
+                  "Property": "Taux de croissance annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croissance annuelle Dette",
+              "queryRef": "Mesure.Taux de croissance annuelle de la dette",
               "nativeQueryRef": "% Dette Variation mensuelle",
               "displayName": "% Dette Variation mensuelle"
             },
@@ -178,10 +178,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance annuelle Dette"
+                  "Property": "Variation annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance annuelle Dette",
+              "queryRef": "Mesure.Variation annuelle de la dette",
               "nativeQueryRef": "Dette Variation annuelle ",
               "displayName": "Dette Variation annuelle "
             },
@@ -193,10 +193,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Croissance dette M"
+                  "Property": "Taux de croissance mensuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.% Croissance dette M",
+              "queryRef": "Mesure.Taux de croissance mensuelle de la dette",
               "nativeQueryRef": "% Dette Variation annuelle",
               "displayName": "% Dette Variation annuelle"
             }

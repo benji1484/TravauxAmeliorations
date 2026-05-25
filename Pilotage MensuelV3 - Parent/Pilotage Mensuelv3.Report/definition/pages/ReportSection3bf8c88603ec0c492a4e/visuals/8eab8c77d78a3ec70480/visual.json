@@ -46,11 +46,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Croissance annuelle Dette"
+                  "Property": "Variation annuelle de la dette"
                 }
               },
-              "queryRef": "Mesure.€ Croissance annuelle Dette",
-              "nativeQueryRef": "€ Croissance annuelle Dette"
+              "queryRef": "Mesure.Variation annuelle de la dette",
+              "nativeQueryRef": "Variation annuelle de la dette"
             }
           ]
         }
@@ -65,7 +65,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "€ Croissance annuelle Dette"
+                "Property": "Variation annuelle de la dette"
               }
             },
             "direction": "Descending"
@@ -154,7 +154,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "Couleur dette"
+                      "Property": "Couleur de la dette"
                     }
                   }
                 }
@@ -393,7 +393,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -487,7 +487,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Objectif Plafond Annuel Dette Loc"
+            "Property": "Objectif annuel de dette locataires"
           }
         },
         "type": "Advanced",

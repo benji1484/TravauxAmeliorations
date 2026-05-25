@@ -72,10 +72,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux d'encaissement YTD DTP Corrigé"
+                  "Property": "Taux d'encaissement cumul annuel DTP Corrigé"
                 }
               },
-              "queryRef": "Mesure.Taux d'encaissement YTD DTP Corrigé",
+              "queryRef": "Mesure.Taux d'encaissement cumul annuel DTP Corrigé",
               "nativeQueryRef": "Taux DTP YTD",
               "displayName": "Taux DTP YTD"
             },
@@ -87,11 +87,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux RALI YTD"
+                  "Property": "Taux RALI cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Taux RALI YTD",
-              "nativeQueryRef": "Taux RALI YTD"
+              "queryRef": "Mesure.Taux RALI cumul annuel",
+              "nativeQueryRef": "Taux RALI cumul annuel"
             },
             {
               "field": {
@@ -325,7 +325,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -341,7 +341,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -430,7 +430,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulPassagesEnPerteAnnuel"
+            "Property": "Passages en perte cumulés annuels historique"
           }
         },
         "type": "Advanced",
@@ -446,7 +446,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "PPM1"
+            "Property": "Passages en perte du mois précédent"
           }
         },
         "type": "Advanced",
@@ -462,7 +462,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulQuitm_CA_Operation_YTD"
+            "Property": "Quittancement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -493,7 +493,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -509,7 +509,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -525,7 +525,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -541,7 +541,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced",
@@ -651,7 +651,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "NbCA_AL"
+            "Property": "Nombre de contrats avec allocation logement"
           }
         },
         "type": "Advanced",
@@ -667,7 +667,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ yc PP"
+            "Property": "Dette positive avec passages en perte"
           }
         },
         "type": "Advanced",
@@ -699,7 +699,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Quittancement_m1_Débiteurs"
+            "Property": "Quittancement mois précédent Débiteurs"
           }
         },
         "type": "Advanced",
@@ -715,7 +715,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulQuittancementsAnnuel"
+            "Property": "Cumul Quittancements Annuel"
           }
         },
         "type": "Advanced",
@@ -731,7 +731,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Quittancement_m1_Crediteurs"
+            "Property": "Quittancement mois précédent Crediteurs"
           }
         },
         "type": "Advanced",
@@ -747,7 +747,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Quittancement_m1_Soldés"
+            "Property": "Quittancement mois précédent Soldés"
           }
         },
         "type": "Advanced",
@@ -763,7 +763,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Quittancement_m1_Total"
+            "Property": "Quittancement mois précédent Total"
           }
         },
         "type": "Advanced",
@@ -779,7 +779,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Quittancé YTD m1"
+            "Property": "Quittancé cumul annuel mois précédent"
           }
         },
         "type": "Advanced",

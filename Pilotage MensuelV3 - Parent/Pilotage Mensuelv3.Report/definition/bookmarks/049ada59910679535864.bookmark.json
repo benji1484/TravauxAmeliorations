@@ -841,7 +841,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Logements"
+                      "Property": "Nombre de logements"
                     }
                   },
                   "howCreated": 0
@@ -1041,7 +1041,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "Variation de Ratio intéressement vac fi com par xAgence"
+                      "Property": "Variation du ratio d'intéressement vacance financière par agence"
                     }
                   },
                   "howCreated": 0
@@ -1076,7 +1076,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Logements"
+                      "Property": "Nombre de logements"
                     }
                   }
                 }

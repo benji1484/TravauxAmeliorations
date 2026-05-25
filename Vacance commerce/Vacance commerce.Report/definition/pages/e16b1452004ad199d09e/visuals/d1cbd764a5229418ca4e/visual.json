@@ -23,7 +23,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "vacance fi YTD recalcul"
+                  "Property": "Taux de vacance financière recalculé cumulé annuel"
                 }
               },
               "queryRef": "Mesure.Tx de vacance fi YTD recalcul",
@@ -43,7 +43,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "vacance fi YTD recalcul"
+                "Property": "Taux de vacance financière recalculé cumulé annuel"
               }
             },
             "direction": "Descending"

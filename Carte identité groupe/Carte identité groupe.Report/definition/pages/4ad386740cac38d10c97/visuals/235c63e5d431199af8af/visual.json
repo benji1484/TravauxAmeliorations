@@ -23,7 +23,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Bâtiments"
+                  "Property": "Nombre de bâtiments"
                 }
               },
               "queryRef": "Mesure.# Bâtiments1",
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Bâtiments"
+                "Property": "Nombre de bâtiments"
               }
             },
             "direction": "Descending"
@@ -301,7 +301,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -372,7 +372,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -400,7 +400,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Commerces YTD"
+                  "Property": "Vacance Financière Commerces cumul annuel"
                 }
               }
             }
@@ -453,7 +453,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb LIBRE"
+                  "Property": "Nombre de LIBRE"
                 }
               }
             }
@@ -481,7 +481,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb LLS"
+                  "Property": "Nombre de LLS"
                 }
               }
             }
@@ -509,7 +509,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb LLTS"
+                  "Property": "Nombre de LLTS"
                 }
               }
             }
@@ -537,7 +537,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb PLI"
+                  "Property": "Nombre de PLI"
                 }
               }
             }
@@ -565,7 +565,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Nb PSLA"
+                  "Property": "Nombre de PSLA"
                 }
               }
             }

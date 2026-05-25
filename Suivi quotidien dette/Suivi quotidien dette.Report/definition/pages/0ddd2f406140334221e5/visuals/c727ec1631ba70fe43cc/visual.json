@@ -77,11 +77,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Soldem_ca_operation_+ hpp"
+                  "Property": "Dette positive hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.Soldem_ca_operation_+ hpp",
-              "nativeQueryRef": "Soldem_ca_operation_+ hpp"
+              "queryRef": "Mesure.Dette positive hors passages en perte",
+              "nativeQueryRef": "Dette positive hors passages en perte"
             }
           ]
         }
@@ -346,7 +346,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -436,7 +436,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulPassagesEnPerteAnnuel"
+            "Property": "Passages en perte cumulés annuels historique"
           }
         },
         "type": "Advanced",
@@ -526,7 +526,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulQuitm_CA_Operation_YTD"
+            "Property": "Quittancement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -557,7 +557,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -573,7 +573,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -589,7 +589,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -605,7 +605,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced",
@@ -678,7 +678,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced"

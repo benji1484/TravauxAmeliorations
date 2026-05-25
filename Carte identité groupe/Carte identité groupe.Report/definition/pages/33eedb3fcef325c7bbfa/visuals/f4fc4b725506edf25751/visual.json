@@ -52,11 +52,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Encaissement YTD"
+                  "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
-              "queryRef": "Mesure.Taux Encaissement YTD",
-              "nativeQueryRef": "Taux Encaissement YTD"
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel",
+              "nativeQueryRef": "Taux d'encaissement cumulé annuel"
             },
             {
               "field": {
@@ -66,11 +66,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Taux Encaissement Mensuel"
+                  "Property": "Taux d'encaissement mensuel"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement Mensuel",
-              "nativeQueryRef": "% Taux Encaissement Mensuel",
+              "queryRef": "Mesure.Taux d'encaissement mensuel",
+              "nativeQueryRef": "Taux d'encaissement mensuel",
               "displayName": "Encaissement Mensuel"
             },
             {
@@ -81,11 +81,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette"
+                  "Property": "Dette"
                 }
               },
-              "queryRef": "Mesure.€ Dette",
-              "nativeQueryRef": "€ Dette"
+              "queryRef": "Mesure.Dette",
+              "nativeQueryRef": "Dette"
             },
             {
               "field": {
@@ -95,11 +95,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette HPP"
+                  "Property": "Dette hors passages en perte"
                 }
               },
-              "queryRef": "Mesure.€ Dette HPP",
-              "nativeQueryRef": "€ Dette HPP"
+              "queryRef": "Mesure.Dette hors passages en perte",
+              "nativeQueryRef": "Dette hors passages en perte"
             },
             {
               "field": {
@@ -109,11 +109,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "€ Dette YTD"
+                  "Property": "Montant Dette cumul annuel"
                 }
               },
-              "queryRef": "Mesure.€ Dette YTD",
-              "nativeQueryRef": "€ Dette YTD"
+              "queryRef": "Mesure.Montant Dette cumul annuel",
+              "nativeQueryRef": "Montant Dette cumul annuel"
             },
             {
               "field": {
@@ -123,10 +123,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Impayé des présents"
+                  "Property": "Dette des locataires présents"
                 }
               },
-              "queryRef": "Mesure.Impayé des présents",
+              "queryRef": "Mesure.Dette des locataires présents",
               "nativeQueryRef": "€ Dette HPP présents",
               "displayName": "€ Dette HPP présents"
             },
@@ -138,10 +138,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Impayé des Partis"
+                  "Property": "Dette des locataires partis"
                 }
               },
-              "queryRef": "Mesure.Impayé des Partis",
+              "queryRef": "Mesure.Dette des locataires partis",
               "nativeQueryRef": "€ Dette HPP partis",
               "displayName": "€ Dette HPP partis"
             },
@@ -153,10 +153,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "MontantTotal3*Dette_SUMX"
+                  "Property": "Montant total des dettes élevées"
                 }
               },
-              "queryRef": "Mesure.MontantTotal3*Dette_SUMX",
+              "queryRef": "Mesure.Montant total des dettes élevées",
               "nativeQueryRef": "Dont Présents > 3 mois",
               "displayName": "Dont Présents > 3 mois"
             },
@@ -168,10 +168,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "NombreCodeCADistinctsAvec3*Dette"
+                  "Property": "Nombre de contrats avec dette élevée"
                 }
               },
-              "queryRef": "Mesure.NombreCodeCADistinctsAvec3*Dette",
+              "queryRef": "Mesure.Nombre de contrats avec dette élevée",
               "nativeQueryRef": "Endettés Présents > 3 mois",
               "displayName": "Endettés Présents > 3 mois"
             },

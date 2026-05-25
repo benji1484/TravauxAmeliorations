@@ -42,10 +42,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Stratégique LGT YTD"
+                  "Property": "Vacance Financière Stratégique logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Stratégique LGT YTD",
+              "queryRef": "Mesure.Vacance Financière Stratégique logements cumul annuel",
               "nativeQueryRef": "Vacance Stratégique YTD",
               "displayName": "Vacance Stratégique YTD"
             },
@@ -57,10 +57,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière commerciale LGT YTD"
+                  "Property": "Vacance financière commerciale logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Vacance financière commerciale LGT YTD",
+              "queryRef": "Mesure.Vacance financière commerciale logements cumul annuel",
               "nativeQueryRef": "Vacance commerciale YTD",
               "displayName": "Vacance commerciale YTD"
             },
@@ -72,10 +72,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière technique LGT YTD"
+                  "Property": "Vacance financière technique logements cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Vacance financière technique LGT YTD",
+              "queryRef": "Mesure.Vacance financière technique logements cumul annuel",
               "nativeQueryRef": "Vacance technique YTD",
               "displayName": "Vacance technique YTD"
             },
@@ -87,10 +87,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière MEL LGT YTD"
+                  "Property": "Vacance financière logements en mise en location cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance financière MEL LGT YTD",
+              "queryRef": "Mesure.Vacance financière logements en mise en location cumulée annuelle",
               "nativeQueryRef": "Dont MEL YTD",
               "displayName": "Dont MEL YTD"
             },
@@ -102,10 +102,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements YTD"
+                  "Property": "Vacance financière logements cumulée annuelle"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Logements YTD",
+              "queryRef": "Mesure.Vacance financière logements cumulée annuelle",
               "nativeQueryRef": "Vacance totale YTD",
               "displayName": "Vacance totale YTD"
             },
@@ -117,10 +117,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Stratégique LGT"
+                  "Property": "Vacance Financière Stratégique logements"
                 }
               },
-              "queryRef": "Mesure.Vacance Financière Stratégique LGT",
+              "queryRef": "Mesure.Vacance Financière Stratégique logements",
               "nativeQueryRef": "Vacance Stratégique",
               "displayName": "Vacance Stratégique"
             },
@@ -132,11 +132,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière commerciale LGT"
+                  "Property": "Vacance financière commerciale logements"
                 }
               },
-              "queryRef": "Mesure.Vacance financière commerciale LGT",
-              "nativeQueryRef": "Vacance commerciale",
+              "queryRef": "Mesure.Vacance financière commerciale logements",
+              "nativeQueryRef": "Nombre de logements en vacance commerciale",
               "displayName": "Vacance commerciale"
             },
             {
@@ -147,10 +147,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière technique LGT"
+                  "Property": "Vacance financière technique logements"
                 }
               },
-              "queryRef": "Mesure.Vacance financière technique LGT",
+              "queryRef": "Mesure.Vacance financière technique logements",
               "nativeQueryRef": "Vacance technique ",
               "displayName": "Vacance technique "
             },
@@ -162,10 +162,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance financière MEL LGT"
+                  "Property": "Vacance financière logements en mise en location"
                 }
               },
-              "queryRef": "Mesure.Vacance financière MEL LGT",
+              "queryRef": "Mesure.Vacance financière logements en mise en location",
               "nativeQueryRef": "Dont MEL",
               "displayName": "Dont MEL"
             },
@@ -696,7 +696,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% croissance_soldem_ca_operation_+"
+            "Property": "Taux de variation de la dette positive"
           }
         },
         "type": "Advanced",
@@ -712,7 +712,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Croissance annuelle"
+            "Property": "Taux de croissance annuel"
           }
         },
         "type": "Advanced",
@@ -728,7 +728,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Croissance soldem_ca_operation"
+            "Property": "Variation mensuelle de la dette historique"
           }
         },
         "type": "Advanced",
@@ -744,7 +744,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -781,7 +781,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -797,7 +797,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -813,7 +813,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced",
@@ -845,7 +845,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "€ Quitm_ca_operation"
+            "Property": "Quittancement mensuel"
           }
         },
         "type": "Advanced",
@@ -898,7 +898,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -914,7 +914,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD recalculé"
+            "Property": "Taux encaissement cumul annuel recalculé"
           }
         },
         "type": "Advanced",

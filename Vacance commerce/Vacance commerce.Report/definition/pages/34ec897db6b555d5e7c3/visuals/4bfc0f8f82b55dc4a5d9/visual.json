@@ -42,7 +42,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "vacance fi YTD recalcul"
+                  "Property": "Taux de vacance financière recalculé cumulé annuel"
                 }
               },
               "queryRef": "Mesure.Tx de vacance fi YTD recalcul",
@@ -57,10 +57,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de vacance fi YTD comm recalcul"
+                  "Property": "Taux de vacance financière cumul annuel commerciale recalcul"
                 }
               },
-              "queryRef": "Mesure.Tx de vacance fi YTD comm recalcul",
+              "queryRef": "Mesure.Taux de vacance financière cumul annuel commerciale recalcul",
               "nativeQueryRef": "Taux de vacance financière commerciale",
               "displayName": "Taux de vacance financière commerciale"
             },
@@ -72,10 +72,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de vacance fi YTD Strat recalcul"
+                  "Property": "Taux de vacance financière cumul annuel stratégique recalcul"
                 }
               },
-              "queryRef": "Mesure.Tx de vacance fi YTD Strat recalcul",
+              "queryRef": "Mesure.Taux de vacance financière cumul annuel stratégique recalcul",
               "nativeQueryRef": "Taux de vacance financière Strat",
               "displayName": "Taux de vacance financière Strat"
             },
@@ -87,10 +87,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de vacance fi YTD Tech recalcul"
+                  "Property": "Taux de vacance financière cumul annuel technique recalcul"
                 }
               },
-              "queryRef": "Mesure.Tx de vacance fi YTD Tech recalcul",
+              "queryRef": "Mesure.Taux de vacance financière cumul annuel technique recalcul",
               "nativeQueryRef": "Taux de vacance financière Tech",
               "displayName": "Taux de vacance financière Tech"
             }
@@ -442,7 +442,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Comm YTD"
+            "Property": "Taux de vacance commerciale cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -474,7 +474,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Strat Fi YTD"
+            "Property": "Taux de vacance financière stratégique cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -545,7 +545,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Tech Fi YTD"
+            "Property": "Taux de vacance financière technique cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -561,7 +561,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi mensuelle"
+            "Property": "Taux de vacance financière mensuel"
           }
         },
         "type": "Advanced",
@@ -577,7 +577,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi YTD"
+            "Property": "Taux de vacance financière cumulé annuel"
           }
         },
         "type": "Advanced",
@@ -593,7 +593,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "vacance fi YTD recalcul"
+            "Property": "Taux de vacance financière recalculé cumulé annuel"
           }
         },
         "type": "Advanced"
@@ -608,7 +608,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de vacance fi YTD comm recalcul"
+            "Property": "Taux de vacance financière cumul annuel commerciale recalcul"
           }
         },
         "type": "Advanced"
@@ -623,7 +623,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de vacance fi YTD Strat recalcul"
+            "Property": "Taux de vacance financière cumul annuel stratégique recalcul"
           }
         },
         "type": "Advanced"
@@ -638,7 +638,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx de vacance fi YTD Tech recalcul"
+            "Property": "Taux de vacance financière cumul annuel technique recalcul"
           }
         },
         "type": "Advanced"

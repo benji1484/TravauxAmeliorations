@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Impayé des Partis"
+                  "Property": "Dette des locataires partis"
                 }
               },
-              "queryRef": "Mesure.Impayé des Partis",
-              "nativeQueryRef": "Impayé des Partis"
+              "queryRef": "Mesure.Dette des locataires partis",
+              "nativeQueryRef": "Dette des locataires partis"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Impayé des Partis"
+                "Property": "Dette des locataires partis"
               }
             },
             "direction": "Descending"

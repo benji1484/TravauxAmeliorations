@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité 1a N-1"
+                  "Property": "Mobilité sur douze mois année précédente"
                 }
               },
-              "queryRef": "Mesure.Mobilité 1a N-1",
-              "nativeQueryRef": "Mobilité 1a N-1"
+              "queryRef": "Mesure.Mobilité sur douze mois année précédente",
+              "nativeQueryRef": "Mobilité sur douze mois année précédente"
             }
           ]
         },
@@ -41,11 +41,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Mobilité 1a"
+                  "Property": "Mobilité sur un an"
                 }
               },
-              "queryRef": "Mesure.Mobilité 1a",
-              "nativeQueryRef": "Mobilité 1a"
+              "queryRef": "Mesure.Mobilité sur un an",
+              "nativeQueryRef": "Mobilité sur un an"
             }
           ]
         },

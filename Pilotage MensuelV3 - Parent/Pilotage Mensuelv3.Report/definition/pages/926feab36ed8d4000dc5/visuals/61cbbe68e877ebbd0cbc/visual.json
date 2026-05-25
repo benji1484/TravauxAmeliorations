@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "SousTitre HTML Quittancement et impayé"
+                  "Property": "Sous-titre HTML quittancement et impayé"
                 }
               },
-              "queryRef": "Mesure.SousTitre HTML Quittancement et impayé",
-              "nativeQueryRef": "SousTitre HTML Quittancement et impayé"
+              "queryRef": "Mesure.Sous-titre HTML quittancement et impayé",
+              "nativeQueryRef": "Sous-titre HTML quittancement et impayé"
             }
           ]
         }

@@ -42,7 +42,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Taux Encaissement YTD"
+                  "Property": "Taux d'encaissement cumulé annuel"
                 }
               },
               "queryRef": "Mesure.% Taux Encaissement YTD",
@@ -56,10 +56,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Taux Encaissement YTD LY"
+                  "Property": "Taux d'encaissement cumulé annuel année précédente"
                 }
               },
-              "queryRef": "Mesure.% Taux Encaissement YTD LY",
+              "queryRef": "Mesure.Taux d'encaissement cumulé annuel année précédente",
               "nativeQueryRef": "Taux Encaissement YTD N-1",
               "displayName": "Taux Encaissement YTD N-1"
             }
@@ -500,7 +500,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem_ca_operation_+ hpp"
+            "Property": "Dette positive hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -532,7 +532,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Soldem1_ca_operation_+"
+            "Property": "Dette positive du mois précédent"
           }
         },
         "type": "Advanced",
@@ -548,7 +548,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulPassagesEnPerteAnnuel"
+            "Property": "Passages en perte cumulés annuels historique"
           }
         },
         "type": "Advanced",
@@ -564,7 +564,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "PPM1"
+            "Property": "Passages en perte du mois précédent"
           }
         },
         "type": "Advanced",
@@ -580,7 +580,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CumulQuitm_CA_Operation_YTD"
+            "Property": "Quittancement cumulé annuel historique"
           }
         },
         "type": "Advanced",
@@ -612,7 +612,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement hpp soldes_ca_operation"
+            "Property": "Taux d'encaissement hors passages en perte"
           }
         },
         "type": "Advanced",
@@ -628,7 +628,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "CroissanceSoldem_CA_Operation_YTD"
+            "Property": "Variation de dette cumulée annuelle"
           }
         },
         "type": "Advanced",
@@ -644,7 +644,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Encaissement + alloc"
+            "Property": "Encaissement avec allocations"
           }
         },
         "type": "Advanced",
@@ -702,7 +702,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "MontantTotal3*Dette_SUMX"
+            "Property": "Montant total des dettes élevées"
           }
         },
         "type": "Advanced",
@@ -718,7 +718,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "NombreCodeCADistinctsAvec3*Dette"
+            "Property": "Nombre de contrats avec dette élevée"
           }
         },
         "type": "Advanced",
@@ -734,7 +734,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Nb ménage en impayé"
+            "Property": "Nombre de ménages en impayé"
           }
         },
         "type": "Advanced",
@@ -750,7 +750,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "NbCA_AL"
+            "Property": "Nombre de contrats avec allocation logement"
           }
         },
         "type": "Advanced",
@@ -766,7 +766,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Tx Encaissement YTD N-1"
+            "Property": "Taux Encaissement cumul annuel année précédente"
           }
         },
         "type": "Advanced",
@@ -782,7 +782,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "tx encaissement YTD recalculé"
+            "Property": "Taux encaissement cumul annuel recalculé"
           }
         },
         "type": "Advanced",
@@ -798,7 +798,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "Taux Encaissement YTD"
+            "Property": "Taux d'encaissement cumulé annuel"
           }
         },
         "type": "Advanced"
@@ -813,7 +813,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Taux Encaissement YTD LY"
+            "Property": "Taux d'encaissement cumulé annuel année précédente"
           }
         },
         "type": "Advanced"

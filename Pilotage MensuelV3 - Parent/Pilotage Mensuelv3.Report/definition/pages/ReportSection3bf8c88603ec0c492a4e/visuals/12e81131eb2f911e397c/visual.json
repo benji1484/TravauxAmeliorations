@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Logements M-1"
+                  "Property": "Taux de vacance financière logements du mois précédent"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Logements M-1",
-              "nativeQueryRef": "% Vacance Financière Logements M-1"
+              "queryRef": "Mesure.Taux de vacance financière logements du mois précédent",
+              "nativeQueryRef": "Taux de vacance financière logements du mois précédent"
             }
           ]
         },
@@ -41,11 +41,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vacance Financière Logements M"
+                  "Property": "Taux de vacance financière logements mensuel"
                 }
               },
-              "queryRef": "Mesure.% Vacance Financière Logements M",
-              "nativeQueryRef": "% Vacance Financière Logements M"
+              "queryRef": "Mesure.Taux de vacance financière logements mensuel",
+              "nativeQueryRef": "Taux de vacance financière logements mensuel"
             }
           ]
         },
@@ -78,7 +78,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "% Vacance Financière Logements M"
+                "Property": "Taux de vacance financière logements mensuel"
               }
             },
             "direction": "Descending"
@@ -427,7 +427,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "% Tx Vac Fi mensuelle"
+            "Property": "Taux de vacance financière mensuel"
           }
         },
         "type": "Advanced",

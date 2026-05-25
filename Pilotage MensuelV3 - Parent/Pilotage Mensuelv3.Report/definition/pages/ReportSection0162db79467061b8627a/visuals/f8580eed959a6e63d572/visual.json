@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Tx de mutation YTD"
+                  "Property": "Taux de mutation cumul annuel"
                 }
               },
-              "queryRef": "Mesure.Tx de mutation YTD",
-              "nativeQueryRef": "Tx de mutation YTD"
+              "queryRef": "Mesure.Taux de mutation cumul annuel",
+              "nativeQueryRef": "Taux de mutation cumul annuel"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "Tx de mutation YTD"
+                "Property": "Taux de mutation cumul annuel"
               }
             },
             "direction": "Descending"

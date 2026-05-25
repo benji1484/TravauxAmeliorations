@@ -76,11 +76,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "tx encaissement YTD recalculé"
+                  "Property": "Taux encaissement cumul annuel recalculé"
                 }
               },
-              "queryRef": "Mesure.tx encaissement YTD recalculé",
-              "nativeQueryRef": "tx encaissement YTD recalculé"
+              "queryRef": "Mesure.Taux encaissement cumul annuel recalculé",
+              "nativeQueryRef": "Taux encaissement cumul annuel recalculé"
             }
           ]
         }

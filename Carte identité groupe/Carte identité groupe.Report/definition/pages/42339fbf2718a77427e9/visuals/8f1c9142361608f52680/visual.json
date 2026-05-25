@@ -61,10 +61,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             }
@@ -160,10 +160,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements"
+                  "Property": "Nombre de logements"
                 }
               },
-              "queryRef": "Mesure.# Logements",
+              "queryRef": "Mesure.Nombre de logements",
               "nativeQueryRef": "Logements",
               "displayName": "Logements"
             },
@@ -175,10 +175,10 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces"
+                  "Property": "Nombre de commerces"
                 }
               },
-              "queryRef": "Mesure.# Commerces",
+              "queryRef": "Mesure.Nombre de commerces",
               "nativeQueryRef": "Commerces",
               "displayName": "Commerces"
             }
@@ -535,7 +535,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Logements"
+            "Property": "Nombre de logements"
           }
         },
         "type": "Advanced"
@@ -625,7 +625,7 @@
                 "Entity": "Mesure"
               }
             },
-            "Property": "# Commerces"
+            "Property": "Nombre de commerces"
           }
         },
         "type": "Advanced"

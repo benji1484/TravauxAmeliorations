@@ -23,11 +23,11 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Logements Vacants"
+                  "Property": "Nombre de logements vacants"
                 }
               },
-              "queryRef": "Mesure.# Logements Vacants",
-              "nativeQueryRef": "# Logements Vacants"
+              "queryRef": "Mesure.Nombre de logements vacants",
+              "nativeQueryRef": "Nombre de logements vacants"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Mesure"
                   }
                 },
-                "Property": "# Logements Vacants"
+                "Property": "Nombre de logements vacants"
               }
             },
             "direction": "Descending"
@@ -88,7 +88,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces vacants"
+                  "Property": "Nombre de commerces vacants"
                 }
               }
             }
@@ -116,7 +116,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "# Commerces m-1"
+                  "Property": "Nombre de commerces du mois précédent"
                 }
               }
             }
@@ -144,7 +144,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "% Vac"
+                  "Property": "Taux Vac"
                 }
               }
             }
@@ -172,7 +172,7 @@
                       "Entity": "Mesure"
                     }
                   },
-                  "Property": "Vacance Financière Logements YTD"
+                  "Property": "Vacance financière logements cumulée annuelle"
                 }
               }
             }

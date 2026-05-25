@@ -578,7 +578,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Logements"
+                      "Property": "Nombre de logements"
                     }
                   },
                   "howCreated": 0
@@ -598,7 +598,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Logements"
+                      "Property": "Nombre de logements"
                     }
                   }
                 }
@@ -632,7 +632,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Logements Vacants"
+                      "Property": "Nombre de logements vacants"
                     }
                   },
                   "howCreated": 0
@@ -652,7 +652,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Logements Vacants"
+                      "Property": "Nombre de logements vacants"
                     }
                   }
                 }
@@ -712,7 +712,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# UG Vacance Ordinaire"
+                      "Property": "Nombre d'UG en vacance ordinaire"
                     }
                   },
                   "howCreated": 0
@@ -732,7 +732,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# UG Vacance Ordinaire"
+                      "Property": "Nombre d'UG en vacance ordinaire"
                     }
                   }
                 }
@@ -752,7 +752,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Commerces"
+                      "Property": "Nombre de commerces"
                     }
                   },
                   "howCreated": 0
@@ -772,7 +772,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Commerces"
+                      "Property": "Nombre de commerces"
                     }
                   }
                 }
@@ -881,7 +881,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "vacance financière YTD"
+                      "Property": "Vacance financière cumul annuel"
                     }
                   },
                   "howCreated": 1
@@ -896,7 +896,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "obj_2024-vacancefi"
+                      "Property": "Objectif 2024 de vacance financière"
                     }
                   },
                   "howCreated": 1
@@ -925,7 +925,7 @@
                                     "Source": "m"
                                   }
                                 },
-                                "Property": "# Livraisons mensuelles"
+                                "Property": "Nombre de livraisons mensuelles"
                               }
                             },
                             "Right": {
@@ -945,7 +945,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Livraisons mensuelles"
+                      "Property": "Nombre de livraisons mensuelles"
                     }
                   },
                   "howCreated": 0
@@ -960,7 +960,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "% Dép obj vacance logement"
+                      "Property": "Taux d'atteinte de l'objectif vacance logements"
                     }
                   },
                   "howCreated": 1
@@ -975,7 +975,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "Objectif_Total_Vacance"
+                      "Property": "Objectif total de vacance"
                     }
                   },
                   "howCreated": 1
@@ -1005,7 +1005,7 @@
                           "Entity": "Mesure"
                         }
                       },
-                      "Property": "# Livraisons mensuelles"
+                      "Property": "Nombre de livraisons mensuelles"
                     }
                   },
                   "howCreated": 1
