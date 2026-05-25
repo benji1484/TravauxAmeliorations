@@ -1,0 +1,16 @@
+﻿# Power BI local cache/settings
+**/.pbi/
+
+# Power BI binary exports / backups
+*.pbix
+*.pbit
+*.abf
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Windows
+Thumbs.db
+desktop.ini
