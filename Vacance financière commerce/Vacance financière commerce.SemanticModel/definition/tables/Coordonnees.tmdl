@@ -1,0 +1,126 @@
+table Coordonnees
+	lineageTag: a56f6bf1-9777-4090-b733-31190e84e474
+
+	column periode
+		dataType: string
+		lineageTag: f1a10e08-a2e2-44c2-bd49-ff60eda068de
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_orga
+		dataType: string
+		lineageTag: c73f8a84-5f5e-49c0-9cb8-bab383b44206
+		summarizeBy: none
+		sourceColumn: code_orga
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ca
+		dataType: string
+		lineageTag: ecf990d9-9269-4937-bbb1-16aed0b3801d
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_tiers_contractant_principal
+		dataType: string
+		lineageTag: a9dabb3b-bd22-41aa-96d3-c9946831af8c
+		summarizeBy: none
+		sourceColumn: code_tiers_contractant_principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column tel_fixe
+		dataType: string
+		lineageTag: e87f8c46-f040-45a4-a0b8-ea4278376f7d
+		summarizeBy: none
+		sourceColumn: tel_fixe
+
+		annotation SummarizationSetBy = Automatic
+
+	column tel_portable
+		dataType: string
+		lineageTag: 9f1cf477-c467-4ecd-8c4d-d5dc3ac7354a
+		summarizeBy: none
+		sourceColumn: tel_portable
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_tiers
+		dataType: string
+		lineageTag: 224e1eec-3e04-47ce-80bd-f8489426b8f7
+		summarizeBy: none
+		sourceColumn: email_tiers
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_tel_fixe_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: 88606347-6609-4125-a325-30254f33ffda
+		summarizeBy: sum
+		sourceColumn: ind_tel_fixe_renseigne
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_tel_portable_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: 3632780f-195c-45ba-a356-ffe7d2c4fb19
+		summarizeBy: sum
+		sourceColumn: ind_tel_portable_renseigne
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_email_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b142954-43df-4457-99c2-fce9bc849897
+		summarizeBy: sum
+		sourceColumn: ind_email_renseigne
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_contact_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: 66962dbc-bf58-4b67-92f0-b8b8d226c4f0
+		summarizeBy: sum
+		sourceColumn: ind_contact_renseigne
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_caug
+		dataType: string
+		lineageTag: be977603-9acc-455c-b5e5-5a991dd3eb43
+		summarizeBy: none
+		sourceColumn: statut_caug
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_catiep
+		dataType: string
+		lineageTag: 4f83ff99-1c2e-4eb1-b7dc-a34f9bc66e39
+		summarizeBy: none
+		sourceColumn: statut_catiep
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Coordonnees = m
+		mode: import
+		source =
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin",Kind="Schema"]}[Data],
+				    Coordonnees_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema"{[Name="Coordonnees",Kind="View"]}[Data],
+				    #"Lignes filtrées" = Table.SelectRows(Coordonnees_View, each ([code_orga] = "SHR"))
+				in
+				    #"Lignes filtrées"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

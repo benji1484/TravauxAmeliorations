@@ -1,0 +1,31 @@
+table dimension_type_ca
+	lineageTag: b15df3f0-de3d-457c-87cd-78713a59b570
+	sourceLineageTag: 9bd0f1b3-7936-4ddb-accb-059a039a09dd
+
+	column code_ca
+		dataType: string
+		isNullable: false
+		lineageTag: 582d27e8-b316-415b-8025-468c4f933829
+		sourceLineageTag: 81ee06cd-e189-4e15-a793-dd5cd0d45fac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = User
+
+	column code_type_ca
+		dataType: string
+		lineageTag: 6640a7e8-d817-4762-928c-f8dc8e430b9e
+		sourceLineageTag: 790d915f-5abc-47d9-9915-a3a5e1340e30
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = User
+
+	partition dimension_type_ca = entity
+		mode: directQuery
+		source
+			entityName: dimension_type_ca
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

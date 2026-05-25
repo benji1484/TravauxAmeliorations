@@ -1,0 +1,21 @@
+table CA
+	lineageTag: 19436af9-3440-492e-bcec-b5c9e49d2deb
+	sourceLineageTag: 14d49e54-cc92-4b21-bbef-3771b90b147c
+
+	column code_ca
+		dataType: string
+		isNullable: false
+		lineageTag: 258154b4-9ed2-47a8-823e-ed8b255d0cee
+		sourceLineageTag: 131447cd-41b4-48de-9688-554584cdc945
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = User
+
+	partition CA = entity
+		mode: directQuery
+		source
+			entityName: CA
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

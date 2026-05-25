@@ -1,0 +1,899 @@
+table TII
+	lineageTag: 5361524b-149e-49d4-b108-c65e3c049352
+
+	column 'N° groupe'
+		dataType: int64
+		formatString: 0
+		lineageTag: ac0d9e5e-b353-46c3-be59-99843f326ce4
+		summarizeBy: sum
+		sourceColumn: N° groupe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° sous-groupe'
+		dataType: string
+		lineageTag: 36c54366-5190-4b34-aebb-fc55849adc5a
+		summarizeBy: none
+		sourceColumn: N° sous-groupe
+
+		annotation SummarizationSetBy = Automatic
+
+	column Information
+		dataType: string
+		lineageTag: ecdcb8d9-b5cd-44cf-a120-e8f865ec2803
+		summarizeBy: none
+		sourceColumn: Information
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom du groupe'
+		dataType: string
+		lineageTag: 445edcf4-4e22-4f13-974c-7cf936fb43ce
+		summarizeBy: none
+		sourceColumn: Nom du groupe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Loyer mensuel initial'
+		dataType: double
+		lineageTag: 9cbadbce-c96a-431c-ba1b-4627346a5abd
+		summarizeBy: sum
+		sourceColumn: Loyer mensuel initial
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Profil n°'
+		dataType: int64
+		formatString: 0
+		lineageTag: f80c2c97-1a85-4ef0-b8c5-83cd4581c65a
+		summarizeBy: sum
+		sourceColumn: Profil n°
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code INSEE'
+		dataType: string
+		lineageTag: 9afbc3b1-dfa7-488e-8932-228341b2f63f
+		summarizeBy: none
+		sourceColumn: Code INSEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commentaire
+		dataType: string
+		lineageTag: 44147b23-4a83-48b3-a1f9-d91eca3a3af5
+		summarizeBy: none
+		sourceColumn: Commentaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° tranche des travaux'
+		dataType: int64
+		formatString: 0
+		lineageTag: 10f1a748-205b-4e60-bc24-d90a81d9f598
+		summarizeBy: sum
+		sourceColumn: N° tranche des travaux
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom de la tranche'
+		dataType: string
+		lineageTag: efb2641d-4f92-4b52-888a-e30fdb7f6ba3
+		summarizeBy: none
+		sourceColumn: Nom de la tranche
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Convention ANRU'
+		dataType: string
+		lineageTag: 9c549051-5dc6-4688-b0c2-1f5a56db179c
+		summarizeBy: none
+		sourceColumn: Convention ANRU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Surface traitée'
+		dataType: double
+		lineageTag: 2f6c81dc-a715-44a6-89f1-1a22871b52a5
+		summarizeBy: sum
+		sourceColumn: Surface traitée
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Variation surface quittancée'
+		dataType: int64
+		formatString: 0
+		lineageTag: 24abc8ad-4eb2-4fc3-927c-789d67f59fbe
+		summarizeBy: sum
+		sourceColumn: Variation surface quittancée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre de logements'
+		dataType: int64
+		formatString: 0
+		lineageTag: c076fe02-b77c-4a68-9b25-29048e29b643
+		summarizeBy: sum
+		sourceColumn: Nombre de logements
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variation du nombre de logements'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e30ff31-a8ec-4eee-8d9c-c6e1aa5d6aa2
+		summarizeBy: sum
+		sourceColumn: Variation du nombre de logements
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année d''agrément'
+		dataType: int64
+		formatString: 0
+		lineageTag: b1f7700f-f106-43ae-ba1b-4e09db57679b
+		summarizeBy: sum
+		sourceColumn: Année d'agrément
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''ordre de service'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 34da98ac-c4d4-464d-b746-5177bfc35369
+		summarizeBy: none
+		sourceColumn: Date d'ordre de service
+
+		variation Variation
+			isDefault
+			relationship: fc0db6d7-96ce-4679-9441-cbff38aa1e10
+			defaultHierarchy: LocalDateTable_98fb984b-0785-4a93-8076-3e8efb1fdba5.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Date de fin de travaux'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1498b961-8255-4d5e-a5b1-d88b55004661
+		summarizeBy: none
+		sourceColumn: Date de fin de travaux
+
+		variation Variation
+			isDefault
+			relationship: 457c0374-5690-4659-80e8-0062fd7b2bd1
+			defaultHierarchy: LocalDateTable_73ed19db-cffd-449c-a4af-570c499c3eb2.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Taux de variation du loyer'
+		dataType: int64
+		formatString: 0
+		lineageTag: 06102125-017f-4be1-88e2-abad456e8f5a
+		summarizeBy: sum
+		sourceColumn: Taux de variation du loyer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date application'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5d528b72-90d3-4d01-9d03-a427816c5ce0
+		summarizeBy: none
+		sourceColumn: Date application
+
+		variation Variation
+			isDefault
+			relationship: 52967f76-95ed-40fb-bbed-018f68089d4c
+			defaultHierarchy: LocalDateTable_cae54402-f79e-4e07-9dd1-4c9bd93a450b.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Indexation ICC'
+		dataType: string
+		lineageTag: d9d6c501-ff51-4173-b4c5-2aca76dd41f4
+		summarizeBy: none
+		sourceColumn: Indexation ICC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modèle d''amortissement technique'
+		dataType: int64
+		formatString: 0
+		lineageTag: d55c51b4-9769-4887-95ad-85d327605b0e
+		summarizeBy: sum
+		sourceColumn: Modèle d'amortissement technique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prix de revient de l''opération'
+		dataType: double
+		lineageTag: b5e2adb3-61b1-417d-8822-759a798e85fc
+		summarizeBy: sum
+		sourceColumn: Prix de revient de l'opération
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Fonds propres'
+		dataType: double
+		lineageTag: 5b10c38a-1909-4697-b53e-8b5b72978f37
+		summarizeBy: sum
+		sourceColumn: Fonds propres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Subventions d''Etat'
+		dataType: double
+		lineageTag: b2dfe85b-8d8e-4023-9d5d-932339f6f069
+		summarizeBy: sum
+		sourceColumn: Subventions d'Etat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Subventions ANRU'
+		dataType: double
+		lineageTag: b9f826ec-3a7e-4931-b406-d4a1a19c1e45
+		summarizeBy: sum
+		sourceColumn: Subventions ANRU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Subventions EPCI / Commune'
+		dataType: string
+		lineageTag: 5ee676de-8466-48f9-8284-6ee664669b17
+		summarizeBy: none
+		sourceColumn: Subventions EPCI / Commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Subventions département'
+		dataType: int64
+		formatString: 0
+		lineageTag: 070e0bb7-cc02-42a7-ac91-0daa9a31313b
+		summarizeBy: sum
+		sourceColumn: Subventions département
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Subventions Région'
+		dataType: double
+		lineageTag: 4c8a8db8-69ea-4438-95c7-940140786f66
+		summarizeBy: sum
+		sourceColumn: Subventions Région
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Subventions collecteur'
+		dataType: string
+		lineageTag: b268697f-653b-47a0-bd2d-bd6717a06257
+		summarizeBy: none
+		sourceColumn: Subventions collecteur
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Autres subventions'
+		dataType: double
+		lineageTag: 08c344de-d455-45ad-9fe7-bbaf1906a72a
+		summarizeBy: sum
+		sourceColumn: Autres subventions
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total emprunts'
+		dataType: double
+		lineageTag: 24e039dc-27b2-4393-b406-7ba28ff6059d
+		summarizeBy: sum
+		sourceColumn: Total emprunts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Numéro d''emprunt'
+		dataType: int64
+		formatString: 0
+		lineageTag: 87637464-118b-4eea-86c0-4e563cf68f20
+		summarizeBy: sum
+		sourceColumn: Numéro d'emprunt
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ad3d652a-6650-4b33-93c8-709256e19836
+		summarizeBy: none
+		sourceColumn: Date d'emprunt
+
+		variation Variation
+			isDefault
+			relationship: 5eacbb63-431e-4ddc-95aa-f56479b498f6
+			defaultHierarchy: LocalDateTable_c6a1fb78-7351-4cb4-8c92-e37e2041a512.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Montant (AL 30%PR)'
+		dataType: double
+		lineageTag: a8b2f903-e12c-4c10-a7e1-abe80802f362
+		summarizeBy: sum
+		sourceColumn: Montant (AL 30%PR)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Numéro d''emprunt_1'
+		dataType: int64
+		formatString: 0
+		lineageTag: 18488ad4-7603-4386-add3-98cb537a1ba2
+		summarizeBy: sum
+		sourceColumn: Numéro d'emprunt_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_2'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 910e053f-bc87-48e8-b99b-47da4ab88397
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_2
+
+		variation Variation
+			isDefault
+			relationship: d8abe226-ab4f-4deb-81f9-7ed70a73b8e9
+			defaultHierarchy: LocalDateTable_4848e38a-692a-4359-abaa-cad783380691.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Montant (EcoPrêt 9k€/lgt)'
+		dataType: double
+		lineageTag: 7ad022c4-de9a-4875-9288-7bd73951a4d9
+		summarizeBy: sum
+		sourceColumn: Montant (EcoPrêt 9k€/lgt)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Numéro d''emprunt_3'
+		dataType: int64
+		formatString: 0
+		lineageTag: e6229cb3-37d8-4356-9f8f-7b9de1cf3983
+		summarizeBy: sum
+		sourceColumn: Numéro d'emprunt_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_4'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7a3d6379-a08f-4197-97e5-2f0f4808ed47
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_4
+
+		variation Variation
+			isDefault
+			relationship: 8d22a721-4fd1-42c9-9dee-7d6877ad0867
+			defaultHierarchy: LocalDateTable_069f42e7-5d0f-4ce6-824c-da06b8e6cbc6.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Montant (Emprunt résiduel AL et Ecoprêt)'
+		dataType: double
+		lineageTag: 308dde39-021c-4cad-80ae-52168e5b19ce
+		summarizeBy: sum
+		sourceColumn: Montant (Emprunt résiduel AL et Ecoprêt)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Numéro d''emprunt_5'
+		dataType: int64
+		formatString: 0
+		lineageTag: bfaba9d6-6f6c-4d7f-bcad-f974f89c78b1
+		summarizeBy: sum
+		sourceColumn: Numéro d'emprunt_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_6'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 40386e43-9878-4cde-926d-ed66998eb9a1
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_6
+
+		variation Variation
+			isDefault
+			relationship: bbd4e2a4-e9e4-422d-ac6f-33583894f8c8
+			defaultHierarchy: LocalDateTable_61b3af18-f7e7-4773-ba32-88502aea71ad.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Montant
+		dataType: int64
+		formatString: 0
+		lineageTag: 16a0fec1-2612-4b1b-a906-8ab7c2ca951a
+		summarizeBy: sum
+		sourceColumn: Montant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_7'
+		dataType: string
+		lineageTag: 22ffd5b0-1d65-44b4-8833-591e195e6cd8
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_8'
+		dataType: string
+		lineageTag: 7b3c19fc-2e60-43b3-a155-b308ecce6bda
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_9
+		dataType: string
+		lineageTag: 8f0c296e-197d-4368-b2c5-b6db21b253df
+		summarizeBy: none
+		sourceColumn: Montant_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_10'
+		dataType: string
+		lineageTag: f56d7122-6f00-4a1f-9909-3a72cf46bdab
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_11'
+		dataType: string
+		lineageTag: 775851d9-3daa-4404-97d5-671e39d093cb
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_12
+		dataType: string
+		lineageTag: 4a714749-32da-4b20-a60c-3c964677d572
+		summarizeBy: none
+		sourceColumn: Montant_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_13'
+		dataType: string
+		lineageTag: 4f183d0c-a20a-4b4c-ad93-adde532ee843
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_14'
+		dataType: string
+		lineageTag: 3babf6de-8478-48a3-95bf-f0c80f0255d9
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_15
+		dataType: string
+		lineageTag: b4f4ba6d-e7f9-482a-af16-4e09856f7263
+		summarizeBy: none
+		sourceColumn: Montant_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_16'
+		dataType: string
+		lineageTag: 5200d24b-1b4f-4d4e-adb3-3e3f08f5fb52
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_17'
+		dataType: string
+		lineageTag: 2b52dd4e-d7aa-4bd1-9075-f60a87925388
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_18
+		dataType: string
+		lineageTag: 0f9b953c-a9f0-46d4-acdc-13155b619866
+		summarizeBy: none
+		sourceColumn: Montant_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_19'
+		dataType: string
+		lineageTag: 67d10deb-2c13-4a5f-bb8d-14edb1dacdbd
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_20'
+		dataType: string
+		lineageTag: 7d3d564a-ef94-441f-bc7f-c80a4577c6f7
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_21
+		dataType: string
+		lineageTag: 7f1393e0-4978-4723-b918-5001e71b3d5f
+		summarizeBy: none
+		sourceColumn: Montant_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_22'
+		dataType: string
+		lineageTag: a8b2128f-fd49-4349-b8ad-2002dbf3fe6d
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_23'
+		dataType: string
+		lineageTag: d8e1e5c4-40d6-4326-ad78-49d5f4202c08
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_24
+		dataType: string
+		lineageTag: 72e53d4d-cb62-4a40-b351-2647a47924e5
+		summarizeBy: none
+		sourceColumn: Montant_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_25'
+		dataType: string
+		lineageTag: f415018a-c255-4de5-94b3-5dd0fafab31d
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_26'
+		dataType: string
+		lineageTag: 9e1af465-4640-4cbe-a708-a2fdc0648665
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_27
+		dataType: string
+		lineageTag: a6800978-7d49-4556-b55b-13af50c6be44
+		summarizeBy: none
+		sourceColumn: Montant_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_28'
+		dataType: string
+		lineageTag: 8853c623-e8bd-47de-a7db-bf7a26e08684
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_29'
+		dataType: string
+		lineageTag: fa45d5de-0a72-48ae-86ed-9b380c9dc99b
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_30
+		dataType: string
+		lineageTag: c0d2efaf-184a-4c05-b92f-9926c9a5260d
+		summarizeBy: none
+		sourceColumn: Montant_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_31'
+		dataType: string
+		lineageTag: 30fcf384-b23c-40f0-8de5-b94801324f0b
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_31
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_32'
+		dataType: string
+		lineageTag: 2bf73147-5dad-4fe3-9e01-32a37b3d656e
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_32
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_33
+		dataType: string
+		lineageTag: 72cba6de-d827-4c35-8f7d-5a407b1b6dcd
+		summarizeBy: none
+		sourceColumn: Montant_33
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_34'
+		dataType: string
+		lineageTag: eea9b0f0-6588-43a5-b428-38fdf0facdd0
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_34
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_35'
+		dataType: string
+		lineageTag: 159d68ab-5076-4b87-a97f-a7431f9e3ebf
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_35
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_36
+		dataType: string
+		lineageTag: 040540da-db13-40d4-b031-3268069cf2f6
+		summarizeBy: none
+		sourceColumn: Montant_36
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_37'
+		dataType: string
+		lineageTag: b99cb31e-7ba2-4b7c-8c3d-5a4cb72f5409
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_37
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_38'
+		dataType: string
+		lineageTag: 65c3c24c-03dc-464a-88f3-ff8c2d364490
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_38
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_39
+		dataType: string
+		lineageTag: 9ed2c0e0-4a99-445f-b3a4-87a25581f171
+		summarizeBy: none
+		sourceColumn: Montant_39
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_40'
+		dataType: string
+		lineageTag: de87e152-79b3-46cd-9527-c939d33de1f8
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_40
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_41'
+		dataType: string
+		lineageTag: 4de4bf3a-f447-43fe-b68e-c71bbbaedf83
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_41
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_42
+		dataType: string
+		lineageTag: 8bdfb9ac-c8d3-4915-90b5-2a0aa853f1c2
+		summarizeBy: none
+		sourceColumn: Montant_42
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_43'
+		dataType: string
+		lineageTag: 173d56ba-207b-4738-ae73-c613f78bfedd
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_43
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_44'
+		dataType: string
+		lineageTag: 8060a9a4-34fb-4b52-816c-5321cbe436b5
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_44
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_45
+		dataType: string
+		lineageTag: 7b0b9ed4-757a-4ec1-bdd7-17350900f401
+		summarizeBy: none
+		sourceColumn: Montant_45
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_46'
+		dataType: string
+		lineageTag: 9a5d0c99-f914-490c-a2b7-8297bb5d3f7b
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_46
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_47'
+		dataType: string
+		lineageTag: e922744b-0ef8-4dc3-bca7-21dad99176ee
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_47
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_48
+		dataType: string
+		lineageTag: 76f23de5-36ac-4aa9-a304-a6adf3f8772b
+		summarizeBy: none
+		sourceColumn: Montant_48
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_49'
+		dataType: string
+		lineageTag: 02cd3829-a9ed-4070-ac37-abf97f899a4b
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_49
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_50'
+		dataType: string
+		lineageTag: bf6ea152-7bfd-46d9-9665-2b1c6bbd0808
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_50
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_51
+		dataType: string
+		lineageTag: 2e67dd62-af8b-4640-a555-681d75432b29
+		summarizeBy: none
+		sourceColumn: Montant_51
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''emprunt_52'
+		dataType: string
+		lineageTag: 3e17e151-68c1-448f-ae5a-1cf4f386ac00
+		summarizeBy: none
+		sourceColumn: Numéro d'emprunt_52
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''emprunt_53'
+		dataType: string
+		lineageTag: 20f069b1-c157-49fd-a8f3-2275228cb6bd
+		summarizeBy: none
+		sourceColumn: Date d'emprunt_53
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_54
+		dataType: string
+		lineageTag: d2f14098-4961-421a-86e8-6cdd70edd5d2
+		summarizeBy: none
+		sourceColumn: Montant_54
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'durée chantier'
+		dataType: double
+		lineageTag: 19e35ac3-4cc1-4933-b048-3afba7b0c848
+		summarizeBy: sum
+		sourceColumn: durée chantier
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'écart année agrément / année OS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 153fc5ce-2d45-4463-922d-a9704fb205a0
+		summarizeBy: sum
+		sourceColumn: écart année agrément / année OS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année OS' = year(TII[Date d'ordre de service])
+		formatString: 0
+		lineageTag: c72566be-3138-4293-9a1f-6b7929f99eef
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année fin Travaux' = year(TII[Date de fin de travaux])
+		formatString: 0
+		lineageTag: 3287eaf6-1eed-4f57-aa0f-1186225458a6
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TII = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierPMT = Table.SelectRows(Source, each [Name] = "PMT 2025 Déf.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierPMT, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				    #"Fichiers masqués filtrés2" = Table.SelectRows(#"Fichiers masqués filtrés1", each [Attributes]?[Hidden]? <> true),
+				    #"Fichiers masqués filtrés3" = Table.SelectRows(#"Fichiers masqués filtrés2", each [Attributes]?[Hidden]? <> true),
+				    #"Appeler une fonction personnalisée1" = Table.AddColumn(#"Fichiers masqués filtrés3", "Transformer le fichier (3)", each #"Transformer le fichier (3)"([Content])),
+				    #"Autres colonnes supprimées1" = Table.SelectColumns(#"Appeler une fonction personnalisée1", {"Transformer le fichier (3)"}),
+				    #"Colonne de tables développée1" = Table.ExpandTableColumn(#"Autres colonnes supprimées1", "Transformer le fichier (3)", Table.ColumnNames(#"Transformer le fichier (3)"(#"Exemple de fichier (3)"))),
+				    #"Type modifié" = Table.TransformColumnTypes(#"Colonne de tables développée1",{{"N° groupe", Int64.Type}, {"N° sous-groupe", type text}, {"Information", type any}, {"Nom du groupe", type text}, {"Loyer mensuel initial", type number}, {"Profil n°", Int64.Type}, {"Code INSEE", type any}, {"Commentaire", type text}, {"N° tranche des travaux", Int64.Type}, {"Nom de la tranche", type any}, {"Convention ANRU", type text}, {"Surface traitée", type number}, {"Variation surface quittancée", Int64.Type}, {"Nombre de logements", Int64.Type}, {"Variation du nombre de logements", Int64.Type}, {"Année d'agrément", Int64.Type}, {"Date d'ordre de service", type date}, {"Date de fin de travaux", type date}, {"Taux de variation du loyer", Int64.Type}, {"Date application", type date}, {"Indexation ICC", type text}, {"Modèle d'amortissement technique", Int64.Type}, {"Prix de revient de l'opération", type number}, {"Fonds propres", type number}, {"Subventions d'Etat", type number}, {"Subventions ANRU", type number}, {"Subventions EPCI / Commune", type any}, {"Subventions département", Int64.Type}, {"Subventions Région", type number}, {"Subventions collecteur", type any}, {"Autres subventions", type number}, {"Total emprunts", type number}, {"Numéro d'emprunt", Int64.Type}, {"Date d'emprunt", type date}, {"Montant (AL 30%PR)", type number}, {"Numéro d'emprunt_1", Int64.Type}, {"Date d'emprunt_2", type date}, {"Montant (EcoPrêt 9k€/lgt)", type number}, {"Numéro d'emprunt_3", Int64.Type}, {"Date d'emprunt_4", type date}, {"Montant (Emprunt résiduel AL et Ecoprêt)", type number}, {"Numéro d'emprunt_5", Int64.Type}, {"Date d'emprunt_6", type date}, {"Montant", Int64.Type}, {"Numéro d'emprunt_7", type any}, {"Date d'emprunt_8", type any}, {"Montant_9", type any}, {"Numéro d'emprunt_10", type any}, {"Date d'emprunt_11", type any}, {"Montant_12", type any}, {"Numéro d'emprunt_13", type any}, {"Date d'emprunt_14", type any}, {"Montant_15", type any}, {"Numéro d'emprunt_16", type any}, {"Date d'emprunt_17", type any}, {"Montant_18", type any}, {"Numéro d'emprunt_19", type any}, {"Date d'emprunt_20", type any}, {"Montant_21", type any}, {"Numéro d'emprunt_22", type any}, {"Date d'emprunt_23", type any}, {"Montant_24", type any}, {"Numéro d'emprunt_25", type any}, {"Date d'emprunt_26", type any}, {"Montant_27", type any}, {"Numéro d'emprunt_28", type any}, {"Date d'emprunt_29", type any}, {"Montant_30", type any}, {"Numéro d'emprunt_31", type any}, {"Date d'emprunt_32", type any}, {"Montant_33", type any}, {"Numéro d'emprunt_34", type any}, {"Date d'emprunt_35", type any}, {"Montant_36", type any}, {"Numéro d'emprunt_37", type any}, {"Date d'emprunt_38", type any}, {"Montant_39", type any}, {"Numéro d'emprunt_40", type any}, {"Date d'emprunt_41", type any}, {"Montant_42", type any}, {"Numéro d'emprunt_43", type any}, {"Date d'emprunt_44", type any}, {"Montant_45", type any}, {"Numéro d'emprunt_46", type any}, {"Date d'emprunt_47", type any}, {"Montant_48", type any}, {"Numéro d'emprunt_49", type any}, {"Date d'emprunt_50", type any}, {"Montant_51", type any}, {"Numéro d'emprunt_52", type any}, {"Date d'emprunt_53", type any}, {"Montant_54", type any}, {"durée chantier", type number}, {"écart année agrément / année OS", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

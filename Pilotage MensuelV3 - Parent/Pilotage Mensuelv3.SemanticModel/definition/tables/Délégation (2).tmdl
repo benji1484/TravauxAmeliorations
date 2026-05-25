@@ -1,0 +1,46 @@
+table 'Délégation (2)'
+	lineageTag: 42722a7c-aa49-4d70-bdf3-dbc830ee798a
+
+	column Délégation
+		dataType: string
+		lineageTag: 87715068-537c-48e9-a100-e08254b98fed
+		summarizeBy: none
+		sourceColumn: Délégation
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Délégation (2)' = m
+		mode: import
+		source = ```
+				let
+				    Source = Table.FromRows(
+				        Json.Document(
+				            Binary.Decompress(
+				                Binary.FromText(
+				                    "i45WCg4IclWK1QEyfB2DwAxnRx8nMMMxyNkFzAjwDwoBM4JCPYPBjBBH3wAww8c/1BPMiDIwNIAxDJViYwE=", 
+				                    BinaryEncoding.Base64
+				                ), 
+				                Compression.Deflate
+				            )
+				        ), 
+				        let _t = ((type nullable text) meta [Serialized.Text = true]) 
+				        in type table [Délégation = _t]
+				    ),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"Délégation", type text}}),
+				
+				    // 👉 Ajout d’une ligne avec une nouvelle délégation
+				    #"Ajout délégation" = Table.Combine({
+				        #"Type modifié",
+				        #table(
+				            type table [Délégation = text],
+				            {{"ANDR"}}   // ⬅️ remplace par la valeur à ajouter, ex : {"STPI"}
+				        )
+				    })
+				in
+				    #"Ajout délégation"
+				```
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

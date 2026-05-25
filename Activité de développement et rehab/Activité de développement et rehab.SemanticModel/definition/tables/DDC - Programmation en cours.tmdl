@@ -1,0 +1,116 @@
+table 'DDC - Programmation en cours'
+	lineageTag: 39daed42-6a9e-4f07-a998-2095184d1701
+
+	column Periode
+		dataType: string
+		lineageTag: ee94e5ad-8250-4c60-a350-5f406660bd4e
+		summarizeBy: none
+		sourceColumn: Periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Opérations agrément en cours hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ee42550-d389-40af-ae64-79a18b4144eb
+		summarizeBy: sum
+		sourceColumn: # Opérations agrément en cours hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logement  agrément en cours hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 290a94a2-6126-4c47-a855-c3ac47f8a7e3
+		summarizeBy: sum
+		sourceColumn: # Logement  agrément en cours hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - Programmation en cours'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - Programmation en cours'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 412f9f3a-ee73-4795-a1b7-9cc25bdce471
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 21270ea9-be0a-4355-a83e-e99f56d3e7ad
+			defaultHierarchy: LocalDateTable_3a16d762-0674-4bf2-beac-6d4251bb56a7.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# LLI - stock de CPR signés non déclarés sur démarches simplifiées'
+		dataType: string
+		lineageTag: 57681cec-f559-44ed-8299-d33c989a4e58
+		summarizeBy: none
+		sourceColumn: # LLI - stock de CPR signés non déclarés sur démarches simplifiées
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: ca340078-7c82-4c87-96e4-c0d30f8d793a
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - Programmation en cours' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Mensuel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{1}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				   // #"Colonnes supprimées" = Table.RemoveColumns(#"Premières lignes supprimées",{"Column4", "Column5"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Premières lignes supprimées" ,{{"# Opérations agrément en cours hors PSLA", Int64.Type}, {"# Logement  agrément en cours hors PSLA", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

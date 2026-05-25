@@ -1,0 +1,21 @@
+table 'Délégation (2)'
+	lineageTag: 6e99228f-5af3-4b6e-9b76-638a98ec2925
+	sourceLineageTag: 42722a7c-aa49-4d70-bdf3-dbc830ee798a
+
+	column Délégation
+		dataType: string
+		isNullable: false
+		lineageTag: 4520aca1-efcf-4703-89d1-a685c3c9af77
+		sourceLineageTag: 87715068-537c-48e9-a100-e08254b98fed
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Délégation
+
+		annotation SummarizationSetBy = User
+
+	partition 'Délégation (2)' = entity
+		mode: directQuery
+		source
+			entityName: Délégation (2)
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

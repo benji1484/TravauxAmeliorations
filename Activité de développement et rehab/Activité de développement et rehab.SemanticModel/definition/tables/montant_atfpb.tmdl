@@ -1,0 +1,130 @@
+table montant_atfpb
+	lineageTag: 00e75b0d-b54d-4b45-afc7-9998de223064
+
+	column OrdreAxe
+		dataType: int64
+		formatString: 0
+		lineageTag: 1fc22917-36bc-4dc4-9fe5-aab3c295d79e
+		summarizeBy: sum
+		sourceColumn: OrdreAxe
+
+		annotation SummarizationSetBy = Automatic
+
+	column AxeTFPB
+		dataType: string
+		lineageTag: 287f57d2-4df3-4a93-9b66-0b3571981a7e
+		summarizeBy: none
+		sourceColumn: AxeTFPB
+		sortByColumn: OrdreAxe
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune
+		dataType: string
+		lineageTag: d25ef028-4235-4b53-bad4-f4350465524d
+		summarizeBy: none
+		sourceColumn: Commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_Programme
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: fa2e2fe8-cfd1-42b0-abac-adfb6700d2e2
+		summarizeBy: sum
+		sourceColumn: Montant_Programme
+
+		annotation SummarizationSetBy = Automatic
+
+	column Montant_Engage
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: f3ccf483-7581-4ee1-8940-71841ae396c0
+		summarizeBy: sum
+		sourceColumn: Montant_Engage
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nb_Actions
+		dataType: int64
+		formatString: 0
+		lineageTag: ceadc6a4-9307-4b9d-a7e3-541cda110399
+		summarizeBy: sum
+		sourceColumn: Nb_Actions
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Libellé court Axe TFPB' =
+			
+			SWITCH(
+			    TRUE(),
+			    montant_atfpb[OrdreAxe] = 1, "Présence personnel de proximité",
+			    montant_atfpb[OrdreAxe] = 2, "Formation personnel de proximité",
+			    montant_atfpb[OrdreAxe] = 3, "Sur-entretien",
+			    montant_atfpb[OrdreAxe] = 4, "Déchets, encombrants, épaves",
+			    montant_atfpb[OrdreAxe] = 5, "Tranquillité résidentielle",
+			    montant_atfpb[OrdreAxe] = 6, "Concertation et sensibilisation locataire",
+			    montant_atfpb[OrdreAxe] = 7, "Animation et lien social",
+			    montant_atfpb[OrdreAxe] = 8, "Amélioration de la qualité service",
+			    FORMAT(montant_atfpb[AxeTFPB], "")
+			)
+		lineageTag: df84f101-f56b-4803-bfc3-3d8086e50dc7
+		summarizeBy: none
+		sortByColumn: AxeTFPB
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition montant_atfpb = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement Montants_atfpb.xlsx
+				    FichierATFPB = Table.SelectRows(Source, each [Name] = "Montants_atfpb.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierATFPB, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				
+				    // 7. Charger l'onglet ATFPB_Clean
+				    OngletATFPB = ExcelFile{[Item="ATFPB_Clean", Kind="Sheet"]}[Data],
+				
+				    // 8. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(OngletATFPB, [PromoteAllScalars=true]),
+				
+				    // 9. Typage
+				    #"Type modifié" = Table.TransformColumnTypes(
+				        #"En-têtes promus",
+				        {
+				            {"OrdreAxe", Int64.Type},
+				            {"AxeTFPB", type text},
+				            {"Commune", type text},
+				            {"Montant_Programme", type number},
+				            {"Montant_Engage", type number},
+				            {"Nb_Actions", Int64.Type}
+				        },
+				        "fr-FR"
+				    ),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Type modifié",{{"OrdreAxe", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

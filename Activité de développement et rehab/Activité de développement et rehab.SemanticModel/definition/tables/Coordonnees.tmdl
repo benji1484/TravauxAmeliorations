@@ -1,0 +1,144 @@
+table Coordonnees
+	lineageTag: e1d3558b-e564-4312-a4f9-ed1f4c0d1021
+	sourceLineageTag: a56f6bf1-9777-4090-b733-31190e84e474
+
+	column periode
+		dataType: string
+		lineageTag: 127a4adc-04ef-43df-82a1-5f15308f91ca
+		sourceLineageTag: f1a10e08-a2e2-44c2-bd49-ff60eda068de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = User
+
+	column code_orga
+		dataType: string
+		lineageTag: 1b76e860-b95f-4b2b-bcb7-7db6f532e805
+		sourceLineageTag: c73f8a84-5f5e-49c0-9cb8-bab383b44206
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_orga
+
+		annotation SummarizationSetBy = User
+
+	column code_ca
+		dataType: string
+		lineageTag: a95bc5ec-6550-4a7f-964d-2b6035040d2f
+		sourceLineageTag: ecf990d9-9269-4937-bbb1-16aed0b3801d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = User
+
+	column code_tiers_contractant_principal
+		dataType: string
+		lineageTag: 2ee7169e-b1ca-49cf-b37f-0d036e10c2d8
+		sourceLineageTag: a9dabb3b-bd22-41aa-96d3-c9946831af8c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_tiers_contractant_principal
+
+		annotation SummarizationSetBy = User
+
+	column tel_fixe
+		dataType: string
+		lineageTag: 8910cd0a-b74c-4339-92fd-326ef1517386
+		sourceLineageTag: e87f8c46-f040-45a4-a0b8-ea4278376f7d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: tel_fixe
+
+		annotation SummarizationSetBy = User
+
+	column tel_portable
+		dataType: string
+		lineageTag: 279acd7d-ef96-4dd9-bcbf-6ce1015d7dcc
+		sourceLineageTag: 9f1cf477-c467-4ecd-8c4d-d5dc3ac7354a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: tel_portable
+
+		annotation SummarizationSetBy = User
+
+	column email_tiers
+		dataType: string
+		lineageTag: ed54fc3b-b763-4820-9330-75e28afa12e6
+		sourceLineageTag: 224e1eec-3e04-47ce-80bd-f8489426b8f7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: email_tiers
+
+		annotation SummarizationSetBy = User
+
+	column ind_tel_fixe_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: e7b55d20-ae11-4a78-8a88-35479a55486e
+		sourceLineageTag: 88606347-6609-4125-a325-30254f33ffda
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ind_tel_fixe_renseigne
+
+		annotation SummarizationSetBy = User
+
+	column ind_tel_portable_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e871ca9-0a6b-475d-a4a8-1f71baeefe1d
+		sourceLineageTag: 3632780f-195c-45ba-a356-ffe7d2c4fb19
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ind_tel_portable_renseigne
+
+		annotation SummarizationSetBy = User
+
+	column ind_email_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: bae42f3e-6e86-4e06-99ae-87f3f708fa38
+		sourceLineageTag: 0b142954-43df-4457-99c2-fce9bc849897
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ind_email_renseigne
+
+		annotation SummarizationSetBy = User
+
+	column ind_contact_renseigne
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e234681-1d95-40d4-941f-ca649e6ce284
+		sourceLineageTag: 66962dbc-bf58-4b67-92f0-b8b8d226c4f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ind_contact_renseigne
+
+		annotation SummarizationSetBy = User
+
+	column statut_caug
+		dataType: string
+		lineageTag: dcd47175-b748-43d8-bcaf-eb021fbe8669
+		sourceLineageTag: be977603-9acc-455c-b5e5-5a991dd3eb43
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: statut_caug
+
+		annotation SummarizationSetBy = User
+
+	column statut_catiep
+		dataType: string
+		lineageTag: 322159ad-c343-4a72-b438-7619c8c89661
+		sourceLineageTag: 4f83ff99-1c2e-4eb1-b7dc-a34f9bc66e39
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: statut_catiep
+
+		annotation SummarizationSetBy = User
+
+	partition Coordonnees = entity
+		mode: directQuery
+		source
+			entityName: Coordonnees
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

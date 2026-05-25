@@ -1,0 +1,53 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Erreurs dans les requêtes qui ont été chargées sur 20/11/2025 15:56:26.
+queryGroup 'Erreurs des requêtes – 20/11/2025 15:56:26'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Erreurs dans les requêtes qui ont été chargées sur 21/11/2025 10:39:35.
+queryGroup 'Erreurs des requêtes – 21/11/2025 10:39:35'
+
+	annotation PBI_QueryGroupOrder = 1
+
+annotation PBI_QueryOrder = ["LocatairesShrEnGestionDepuis2023","PatrimoineSrhEnGestionDepuis2023","PeuplementShrDepuis2023","IndicateursFinanciersShrEnGestionDepuis2023","IndicateursVacanceShrEnGestionDepuis2023","Mesure","Obj_2024","MapTerritoire","CA","UG - Lib Patrimoine","Nature UG","code_type_ca","dimension_type_ca","UG_INSEE","catégorie","reglements","indicateurs_affaires_v2","Type_vacance","TranchAge","Scoring Patrimoine","Scoring Patrimoine dépiv","Délégation (2)","Erreurs dans Scoring Patrimoine","Erreurs dans Scoring Patrimoine dépiv","Coordonnees"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table LocatairesShrEnGestionDepuis2023
+ref table PatrimoineSrhEnGestionDepuis2023
+ref table PeuplementShrDepuis2023
+ref table IndicateursFinanciersShrEnGestionDepuis2023
+ref table IndicateursVacanceShrEnGestionDepuis2023
+ref table PeriodeCal
+ref table Mesure
+ref table Obj_2024
+ref table Paramètre
+ref table MapTerritoire
+ref table CA
+ref table 'UG - Lib Patrimoine'
+ref table 'Nature UG'
+ref table code_type_ca
+ref table dimension_type_ca
+ref table UG_INSEE
+ref table catégorie
+ref table reglements
+ref table indicateurs_affaires_v2
+ref table Type_vacance
+ref table TranchAge
+ref table DateTable
+ref table 'Scoring Patrimoine'
+ref table 'Scoring Patrimoine dépiv'
+ref table 'Délégation (2)'
+ref table Coordonnees
+
+ref cultureInfo fr-FR
+

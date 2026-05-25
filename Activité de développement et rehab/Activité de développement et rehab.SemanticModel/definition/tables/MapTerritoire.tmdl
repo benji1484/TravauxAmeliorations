@@ -1,0 +1,51 @@
+table MapTerritoire
+	lineageTag: a95f00bc-28f9-48e5-8b3a-1f2039115282
+	sourceLineageTag: d4dabf75-fc34-4199-a560-2fe0e7309656
+
+	column Code_ho2
+		dataType: string
+		isNullable: false
+		lineageTag: 4f7910b1-48f8-442f-ae46-7700c05c092f
+		sourceLineageTag: 398076c8-8680-4de1-ac57-99bdbfd3162d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code_ho2
+
+		annotation SummarizationSetBy = User
+
+	column Territoire
+		dataType: string
+		lineageTag: 655fa42b-7d8e-4cf9-b957-3427f3307860
+		sourceLineageTag: 0e0696a9-d877-4cd5-8e1d-51cdb8682636
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Territoire
+
+		annotation SummarizationSetBy = User
+
+	column xAgence
+		dataType: string
+		lineageTag: e3408838-f103-4b9d-ac30-15d9468cbf29
+		sourceLineageTag: 2776ae95-a31f-499e-a600-a94450ffc008
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: xAgence
+
+		annotation SummarizationSetBy = User
+
+	column Interco
+		dataType: string
+		lineageTag: 76e8fd41-30ef-4b5a-80c9-824a533a065d
+		sourceLineageTag: 101e12f4-a663-40c7-9ce1-288cf99fd5b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Interco
+
+		annotation SummarizationSetBy = User
+
+	partition MapTerritoire = entity
+		mode: directQuery
+		source
+			entityName: MapTerritoire
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

@@ -1,0 +1,52 @@
+table Type_vacance
+	lineageTag: 5813ea09-1348-4116-b908-45d3f67613b8
+
+	column code_etat_ug
+		dataType: string
+		lineageTag: 671055ee-30a1-4f40-a139-b07735baf4cd
+		summarizeBy: none
+		sourceColumn: code_etat_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_vacance
+		dataType: string
+		lineageTag: a900f7de-c8e6-4bce-b96f-1864acf14a47
+		summarizeBy: none
+		sourceColumn: type_vacance
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_vacance_light =
+			
+			SWITCH(
+			    TRUE(),
+			    'Type_vacance'[code_etat_ug] = "INE", "Autre",
+			    'Type_vacance'[code_etat_ug] IN {"VAM","VTX"}, "Tech.",
+			    'Type_vacance'[code_etat_ug] IN {"VVO","VDE","VEN"}, "Strat.",
+			    'Type_vacance'[code_etat_ug] IN {"VRD","VO","VR","MEL"}, "Comm.",
+			    'Type_vacance'[code_etat_ug] = "CTT", "CTT",
+			    "AUT"
+			)
+		lineageTag: 27e70a75-d318-4dd7-a19a-1d9cec60234d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Type_vacance = m
+		mode: import
+		source =
+				let
+				    Source = PatrimoineSrhEnGestionDepuis2023,
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source,{"code_etat_ug", "etat_ug_CSP"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées"),
+				    #"Lignes vides supprimées" = Table.SelectRows(#"Doublons supprimés", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Lignes vides supprimées",{{"etat_ug_CSP", "type_vacance"}}),
+				    #"Lignes filtrées" = Table.SelectRows(#"Colonnes renommées", each true)
+				in
+				    #"Lignes filtrées"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

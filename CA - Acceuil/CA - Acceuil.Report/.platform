@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "CA - Acceuil"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f8923819-707d-4b9b-8c7a-aa984fca1a6d"
+  }
+}

@@ -1,0 +1,119 @@
+table PeriodeCal
+	lineageTag: 84f3409d-b575-452c-bbd8-fdb3d8240a56
+	sourceLineageTag: 5ace413e-14f5-4b84-93b5-233d1de6422b
+
+	column Période
+		dataType: string
+		lineageTag: cb0bf6a7-15b1-41c6-9594-b9598b573dfe
+		sourceLineageTag: 57df8ea7-0250-47a1-8370-4f9d218b50d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Période
+
+		annotation SummarizationSetBy = User
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d2c56c9-ea3d-4c29-922d-b16c8d0604e4
+		sourceLineageTag: 70983bd8-4b1f-4c69-916d-452730d849de
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = User
+
+	column finAnneeDerniereEtMoisMoin1
+		dataType: int64
+		formatString: 0
+		lineageTag: 81988341-a34b-485b-a80a-3ca6b2d444bf
+		sourceLineageTag: 13593e76-7f63-47ac-9c94-4b7514ee5522
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: finAnneeDerniereEtMoisMoin1
+
+		annotation SummarizationSetBy = User
+
+	column moisActuelle
+		dataType: int64
+		formatString: 0
+		lineageTag: 6913e62a-fb24-4c4a-9ec0-c6821eed13df
+		sourceLineageTag: 6f9927e4-8344-420e-8723-4e8890173092
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: moisActuelle
+
+		annotation SummarizationSetBy = User
+
+	column AnneeActuelle
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e797e06-1e14-40ba-ac2d-e31df23a3bb8
+		sourceLineageTag: 6ddf8246-1687-4225-a2a1-eb218e23d147
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: AnneeActuelle
+
+		annotation SummarizationSetBy = User
+
+	column DerniersTroisMois
+		dataType: int64
+		formatString: 0
+		lineageTag: ff11b59c-215a-4fb4-ac04-b7432a41f55f
+		sourceLineageTag: 3969c924-6079-4249-a1b6-3bdb86582057
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: DerniersTroisMois
+
+		annotation SummarizationSetBy = User
+
+	column DerniersTreizeMois
+		dataType: int64
+		formatString: 0
+		lineageTag: bbbb72e0-f93f-472f-8857-4b427e9ed6a2
+		sourceLineageTag: 235b32bd-6eaa-4489-9c7d-63ea4fa22c07
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: DerniersTreizeMois
+
+		annotation SummarizationSetBy = User
+
+	column DateCible
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: eef3d690-3fbd-4a65-b639-32e3b08ddc77
+		sourceLineageTag: 8ff23b59-23b5-4d0f-bf88-94ccad97f13c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DateCible
+
+		annotation SummarizationSetBy = User
+
+	column EstMoisActuel
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a1fe53b2-5550-4142-b786-7ece42d19a8b
+		sourceLineageTag: 95bdda03-3891-4fe0-9aba-65cb174e24df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EstMoisActuel
+
+		annotation SummarizationSetBy = User
+
+	column DerniersDeuxMois
+		dataType: int64
+		formatString: 0
+		lineageTag: 035e8d99-6541-429b-9e3c-7ccfefed0411
+		sourceLineageTag: df28fa08-feb8-44a8-ab4f-f53d0e7580dc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: DerniersDeuxMois
+
+		annotation SummarizationSetBy = User
+
+	partition PeriodeCal = entity
+		mode: directQuery
+		source
+			entityName: PeriodeCal
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

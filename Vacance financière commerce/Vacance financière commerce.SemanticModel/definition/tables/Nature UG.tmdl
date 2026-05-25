@@ -1,0 +1,48 @@
+table 'Nature UG'
+	lineageTag: ce49b873-0d13-40bd-acd6-ef199398424b
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: 4acebaea-ba63-4dd7-8c84-bec27bd72cfd
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_nature_ug
+		dataType: string
+		lineageTag: 741e24b6-ba00-4967-bc57-fd081f357b62
+		summarizeBy: none
+		sourceColumn: lbl_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupeNature =
+			
+			SWITCH(
+			    TRUE(),
+			    'Nature UG'[code_nature_ug] IN {"LGE", "LGH", "LGT"}, "Logements",
+			    'Nature UG'[code_nature_ug] = "COM", "Commerces",
+			    'Nature UG'[code_nature_ug] = "BUR", "Bureaux",
+			    "Autres"
+			)
+		lineageTag: 75d5c727-433b-47f2-979f-a39e7bdd56b9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Nature UG' = m
+		mode: import
+		source =
+				let
+				    Source = PatrimoineSrhEnGestionDepuis2023,
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source,{"code_nature_ug", "lbl_nature_ug", "Nature_CSP"}),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Autres colonnes supprimées",{"Nature_CSP"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Colonnes supprimées")
+				in
+				    #"Doublons supprimés"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

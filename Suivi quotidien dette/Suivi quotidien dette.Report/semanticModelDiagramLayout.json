@@ -1,0 +1,282 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2277.5433944679089,
+            "y": 777.65040590515832
+          },
+          "nodeIndex": "Mesure",
+          "nodeLineageTag": "2cdb7b13-403b-4e73-a016-e6e29cfece36",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1845.4117630211167,
+            "y": 1701.3008118103166
+          },
+          "nodeIndex": "CA",
+          "nodeLineageTag": "14d49e54-cc92-4b21-bbef-3771b90b147c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1381.0151246680362,
+            "y": 344.37943259045005
+          },
+          "nodeIndex": "Calendrier_Operations_Comptables",
+          "nodeLineageTag": "4e9f0e7b-f3de-4502-ac68-4f3f256a7195",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 1128.62394645522
+          },
+          "nodeIndex": "catégorie",
+          "nodeLineageTag": "d14898ab-d6f4-4fc3-a965-dfe87759037a",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1810.4916930994557,
+            "y": 701.95091789690719
+          },
+          "nodeIndex": "code_type_ca",
+          "nodeLineageTag": "4cb4bdd8-2e51-4c03-b16b-6ce237ffdd59",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2043.5433944679087,
+            "y": 1218.4883918116868
+          },
+          "nodeIndex": "dimension_type_ca",
+          "nodeLineageTag": "9bd0f1b3-7936-4ddb-accb-059a039a09dd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 785.53450423980644,
+            "y": 936.47847238397628
+          },
+          "nodeIndex": "IndicateursFinanciersShrEnGestionDepuis2023",
+          "nodeLineageTag": "59b9bfaf-09ed-4fb7-b58d-3ba3e430c303",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 555.86363917377321,
+            "y": 585.13039399339937
+          },
+          "nodeIndex": "IndicateursVacanceShrEnGestionDepuis2023",
+          "nodeLineageTag": "5eef4bd0-88a5-4c35-876c-83bbab1f0122",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1472.7015041226593,
+            "y": 998.667937451397
+          },
+          "nodeIndex": "LocatairesShrEnGestionDepuis2023",
+          "nodeLineageTag": "2b05354b-89ab-4164-a9d7-cee6dc3d3fbf",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 972.13020355896788,
+            "y": 297.08593042256643
+          },
+          "nodeIndex": "MapTerritoire",
+          "nodeLineageTag": "d4dabf75-fc34-4199-a560-2fe0e7309656",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 335.15225348459626,
+            "y": 1299.8944376794771
+          },
+          "nodeIndex": "Nature UG",
+          "nodeLineageTag": "ce49b873-0d13-40bd-acd6-ef199398424b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 686.07247094160243,
+            "y": 82.385469254870259
+          },
+          "nodeIndex": "Obj_2024",
+          "nodeLineageTag": "fae2b7ac-dcc9-469b-a7d8-911e68f973ca",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2561.5433944679089,
+            "y": 851.65040590515832
+          },
+          "nodeIndex": "Paramètre",
+          "nodeLineageTag": "29e87c64-b1f6-4fbc-986d-a1d48ffed945",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 270.93831042597958,
+            "y": 775.82872822053423
+          },
+          "nodeIndex": "PatrimoineSrhEnGestionDepuis2023",
+          "nodeLineageTag": "20771308-ffee-42e7-89ab-c08dcf85ea27",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 972.16620639188523,
+            "y": -50
+          },
+          "nodeIndex": "PeriodeCal",
+          "nodeLineageTag": "5ace413e-14f5-4b84-93b5-233d1de6422b",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1274.5550740565561,
+            "y": 1348.2724205208044
+          },
+          "nodeIndex": "PeuplementShrDepuis2023",
+          "nodeLineageTag": "163f1297-e3e7-46a6-af8e-16ddfd69194e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1525.1188633837403,
+            "y": 644.9667828406823
+          },
+          "nodeIndex": "reglements",
+          "nodeLineageTag": "ef0a0aa7-f9db-4fc4-979f-3248540daad5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1758.5331832673432,
+            "y": 1196.4343087497143
+          },
+          "nodeIndex": "Type_vacance",
+          "nodeLineageTag": "c504b1ee-9a67-495e-9f04-c74bc59e79bd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 520.15005049370211,
+            "y": 405.837460915734
+          },
+          "nodeIndex": "UG - Lib Patrimoine",
+          "nodeLineageTag": "1f6907b3-bf1d-408a-8421-40e64c897fa0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 988.74954200825277,
+            "y": 1287.8916192344436
+          },
+          "nodeIndex": "UG_INSEE",
+          "nodeLineageTag": "b66f6bb0-c6e0-4f92-b7af-7ead229b2129",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}

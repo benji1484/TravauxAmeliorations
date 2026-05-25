@@ -1,0 +1,170 @@
+table 'DDC - MEC'
+	lineageTag: e0ec840c-81d1-4c27-afcc-8cd0a7afffe1
+
+	measure '# MEC Cumul Annuel' = ```
+			
+			VAR MoisCourant = MAX('PeriodeCal'[période])
+			VAR AnneeCourante = LEFT(MoisCourant, 4)
+			RETURN
+			COALESCE(CALCULATE(
+			    SUMX(
+			        'DDC - MEC',
+			        'DDC - MEC'[# MEC hors PSLA] + 'DDC - MEC'[# MEC PSLA]
+			    ),
+			    FILTER(
+			        ALL('PeriodeCal'),
+			        LEFT('PeriodeCal'[période], 4) = AnneeCourante
+			            && 'PeriodeCal'[période] <= MoisCourant
+			    )
+			),blank())
+			
+			```
+		formatString: 0
+		lineageTag: ce70e39b-3ae0-4334-bdf1-441770e7a1c2
+
+	column periode
+		dataType: string
+		lineageTag: 53244348-638b-4746-9240-bb10ca660104
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 644f5776-ef18-4592-af9e-da9279956927
+		summarizeBy: sum
+		sourceColumn: # MEC hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC Logements Hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d4b9be5-330b-40bd-a439-d7f352ce5d0d
+		summarizeBy: sum
+		sourceColumn: # MEC Logements Hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC Structures collectives'
+		dataType: int64
+		formatString: 0
+		lineageTag: cb81f83d-fb78-45f6-ac89-2565d5e11e40
+		summarizeBy: sum
+		sourceColumn: # MEC Structures collectives
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC OS neufs hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: a1e71624-6b3a-440b-aa3c-364c1f4d44db
+		summarizeBy: sum
+		sourceColumn: # MEC OS neufs hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC OS Acquisitions hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1d30dc4e-c85f-4a64-b0a7-5f35923dc5ff
+		summarizeBy: sum
+		sourceColumn: # MEC OS Acquisitions hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '€ Investissements neufs (k€) - engagement hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 63919d11-a198-4e2b-a5f2-67e3d95dec71
+		summarizeBy: sum
+		sourceColumn: € Investissements neufs (k€) - engagement hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b3c3a1c-2584-4895-a060-aaca054dfa25
+		summarizeBy: sum
+		sourceColumn: # MEC PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# MEC PSLA - prix de revient'
+		dataType: int64
+		formatString: 0
+		lineageTag: 350f0108-bccd-4343-995d-4f9b415d5f58
+		summarizeBy: sum
+		sourceColumn: # MEC PSLA - prix de revient
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - MEC'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - MEC'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 744d2362-547f-4625-9df1-7fe13f4a96fc
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - MEC' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Trimestriel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{1}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Premières lignes supprimées",{"Column10"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"# MEC hors PSLA", Int64.Type}, {"# MEC Logements Hors PSLA", Int64.Type}, {"# MEC Structures collectives", Int64.Type}, {"# MEC OS neufs hors PSLA", Int64.Type}, {"# MEC OS Acquisitions hors PSLA", Int64.Type}, {"€ Investissements neufs (k€) - engagement hors PSLA", Int64.Type}, {"# MEC PSLA", Int64.Type}, {"# MEC PSLA - prix de revient", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

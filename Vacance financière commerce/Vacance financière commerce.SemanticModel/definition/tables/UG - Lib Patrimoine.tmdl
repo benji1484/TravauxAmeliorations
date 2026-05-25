@@ -1,0 +1,77 @@
+table 'UG - Lib Patrimoine'
+	lineageTag: 1f6907b3-bf1d-408a-8421-40e64c897fa0
+
+	column lbl_patrimoine_ptm
+		dataType: string
+		lineageTag: b82fd883-48a1-4b00-9f36-1b67b00fe278
+		summarizeBy: none
+		sourceColumn: lbl_patrimoine_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HP1
+		dataType: string
+		lineageTag: 2986b405-aa80-436a-bd59-673997af257f
+		summarizeBy: none
+		sourceColumn: code_HP1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Adresse_complete = 'UG - Lib Patrimoine'[lbl_patrimoine_ptm] &", "& 'UG - Lib Patrimoine'[adresse_rue_ptm] &", "& 'UG - Lib Patrimoine'[lbl_commune] &", "& 'UG - Lib Patrimoine'[code_postal_ptm] &", "&  "La Réunion" &", "& "France"
+		lineageTag: 3ffa94c4-5a65-47ab-92d0-8c9da0fb3f54
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_postal_ptm
+		dataType: string
+		lineageTag: 3336a0c8-adae-4e1e-8362-9c2a0bbbcb68
+		summarizeBy: none
+		sourceColumn: code_postal_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column adresse_rue_ptm
+		dataType: string
+		lineageTag: 7d6d16c1-d9b4-4da1-ad5f-cfb5bf331377
+		summarizeBy: none
+		sourceColumn: adresse_rue_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_commune
+		dataType: string
+		lineageTag: bc999d7c-be27-49b6-bf1c-26701f2e08fe
+		summarizeBy: none
+		sourceColumn: lbl_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column Patrimoine = 'UG - Lib Patrimoine'[code_HP1] &"-"& 'UG - Lib Patrimoine'[lbl_patrimoine_ptm]
+		lineageTag: 679f52ea-4b59-4981-a35d-ea24225896aa
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Adresse_complete_geoloc = ```
+			'UG - Lib Patrimoine'[adresse_rue_ptm] &", "& 'UG - Lib Patrimoine'[code_postal_ptm]  &", "& 'UG - Lib Patrimoine'[lbl_commune]  
+			```
+		lineageTag: e1fcd2ad-3f34-410a-800b-0ccf052be4f4
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'UG - Lib Patrimoine' = m
+		mode: import
+		source =
+				let
+				    Source = PatrimoineSrhEnGestionDepuis2023,
+				    #"Colonnes sélectionnées" = Table.SelectColumns(Source, {"code_HP1", "lbl_patrimoine_ptm", "code_postal_ptm", "adresse_rue_ptm", "lbl_commune"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Colonnes sélectionnées", {"code_HP1"})
+				in
+				    #"Doublons supprimés"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

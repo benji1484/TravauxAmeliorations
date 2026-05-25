@@ -1,0 +1,41 @@
+table code_type_ca
+	lineageTag: c769678f-9484-44f6-adfd-90d7729eb0e3
+	sourceLineageTag: 4cb4bdd8-2e51-4c03-b16b-6ce237ffdd59
+
+	column code_type_ca
+		dataType: string
+		isNullable: false
+		lineageTag: 91658250-554d-4da3-8c10-07bc1021ed0b
+		sourceLineageTag: 97d022de-4477-4f19-9011-ca9b8da4e891
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = User
+
+	column Type_Locataire
+		dataType: string
+		lineageTag: ffb8664a-59e6-4d16-91f9-3efeabe96181
+		sourceLineageTag: da5367be-ccb4-4bd3-89cf-a667ff8b6f09
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type_Locataire
+
+		annotation SummarizationSetBy = User
+
+	column 'Type_Locataire (groupes)'
+		dataType: string
+		lineageTag: 47901359-dc27-49a0-b17f-9fcbc89ff72b
+		sourceLineageTag: 26b9440f-f39b-44e4-9699-71b01bb50b9a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type_Locataire (groupes)
+
+		annotation SummarizationSetBy = User
+
+	partition code_type_ca = entity
+		mode: directQuery
+		source
+			entityName: code_type_ca
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

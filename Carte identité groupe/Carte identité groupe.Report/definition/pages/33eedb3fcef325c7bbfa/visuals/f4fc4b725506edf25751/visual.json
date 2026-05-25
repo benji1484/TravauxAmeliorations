@@ -1,0 +1,380 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "f4fc4b725506edf25751",
+  "position": {
+    "x": 0,
+    "y": 113.00888819040635,
+    "z": 0,
+    "height": 606.52871636369991,
+    "width": 1214.4879249829746,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "xAgence"
+                }
+              },
+              "queryRef": "MapTerritoire.xAgence",
+              "nativeQueryRef": "Agence",
+              "displayName": "Agence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "code_HP1"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.code_HP1",
+              "nativeQueryRef": "code_HP1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Encaissement YTD"
+                }
+              },
+              "queryRef": "Mesure.Taux Encaissement YTD",
+              "nativeQueryRef": "Taux Encaissement YTD"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "% Taux Encaissement Mensuel"
+                }
+              },
+              "queryRef": "Mesure.% Taux Encaissement Mensuel",
+              "nativeQueryRef": "% Taux Encaissement Mensuel",
+              "displayName": "Encaissement Mensuel"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "€ Dette"
+                }
+              },
+              "queryRef": "Mesure.€ Dette",
+              "nativeQueryRef": "€ Dette"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "€ Dette HPP"
+                }
+              },
+              "queryRef": "Mesure.€ Dette HPP",
+              "nativeQueryRef": "€ Dette HPP"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "€ Dette YTD"
+                }
+              },
+              "queryRef": "Mesure.€ Dette YTD",
+              "nativeQueryRef": "€ Dette YTD"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Impayé des présents"
+                }
+              },
+              "queryRef": "Mesure.Impayé des présents",
+              "nativeQueryRef": "€ Dette HPP présents",
+              "displayName": "€ Dette HPP présents"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Impayé des Partis"
+                }
+              },
+              "queryRef": "Mesure.Impayé des Partis",
+              "nativeQueryRef": "€ Dette HPP partis",
+              "displayName": "€ Dette HPP partis"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "MontantTotal3*Dette_SUMX"
+                }
+              },
+              "queryRef": "Mesure.MontantTotal3*Dette_SUMX",
+              "nativeQueryRef": "Dont Présents > 3 mois",
+              "displayName": "Dont Présents > 3 mois"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "NombreCodeCADistinctsAvec3*Dette"
+                }
+              },
+              "queryRef": "Mesure.NombreCodeCADistinctsAvec3*Dette",
+              "nativeQueryRef": "Endettés Présents > 3 mois",
+              "displayName": "Endettés Présents > 3 mois"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Nombre endetté"
+                }
+              },
+              "queryRef": "Mesure.Nombre endetté",
+              "nativeQueryRef": "Endettés Présents",
+              "displayName": "Endettés Présents"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "117D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.NombreCodeCADistinctsAvec3*Dette"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.Nombre endetté"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d92b1fca9861c6bfa3c3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MapTerritoire"
+              }
+            },
+            "Property": "xAgence"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "MapTerritoire",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "xAgence"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "dbe88ea92e014f65f00b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UG - Lib Patrimoine"
+              }
+            },
+            "Property": "code_HP1"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "u",
+              "Entity": "UG - Lib Patrimoine",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "u"
+                              }
+                            },
+                            "Property": "code_HP1"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

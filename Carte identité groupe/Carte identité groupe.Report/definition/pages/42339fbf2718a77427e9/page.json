@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "42339fbf2718a77427e9",
+  "displayName": "Rencontre maires",
+  "displayOption": "FitToPage",
+  "height": 620,
+  "width": 620,
+  "visibility": "HiddenInViewMode"
+}

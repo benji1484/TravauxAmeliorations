@@ -1,0 +1,135 @@
+table 'DDC - Programmation Reçu - suite'
+	lineageTag: 15351d2e-f627-4094-8705-0a3300063d0a
+
+	column periode
+		dataType: string
+		lineageTag: f56e74aa-75d1-4189-aecf-3056d15c58b1
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements MOD agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: ab9f5a65-714a-41fe-8402-a9db5ecec8d8
+		summarizeBy: sum
+		sourceColumn: "# Logements MOD agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements VEFA agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: e9cfd072-6d44-44db-a74d-726a3abe9451
+		summarizeBy: sum
+		sourceColumn: "# Logements VEFA agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements JA agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 579d22ca-caa9-442b-8a66-0edb1b9af61a
+		summarizeBy: sum
+		sourceColumn: "# Logements JA agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements etudiants agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 42b1d98a-fb28-4b5f-af5c-7a787d57b246
+		summarizeBy: sum
+		sourceColumn: "# Logements etudiants agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements PA agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f1c0494-3f0b-4afc-9710-7d50792df13e
+		summarizeBy: sum
+		sourceColumn: "# Logements PA agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements autres structures agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: fa360a03-971a-4672-8fe0-b33f03931f04
+		summarizeBy: sum
+		sourceColumn: "# Logements autres structures agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - Programmation Reçu - suite'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - Programmation Reçu - suite'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 0ea7a5bc-285f-4b02-93c3-1e28ed5462ac
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 494646f1-d9d7-4aa5-bdc7-f8014457a9df
+			defaultHierarchy: LocalDateTable_adcc7b3c-6018-456d-ae4c-7fb0ddcd7988.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - Programmation Reçu - suite' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Trimestriel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{3}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Premières lignes supprimées",{{"# Logements MOD agrément reçu ", Int64.Type}, {"# Logements VEFA agrément reçu ", Int64.Type}, {"# Logements JA agrément reçu ", Int64.Type}, {"# Logements etudiants agrément reçu ", Int64.Type}, {"# Logements PA agrément reçu ", Int64.Type}, {"# Logements autres structures agrément reçu ", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,382 @@
+table IndicateursFinanciersShrEnGestionDepuis2023
+	lineageTag: bee715ac-07f4-46cc-b7fe-59e64caa934e
+	sourceLineageTag: 59b9bfaf-09ed-4fb7-b58d-3ba3e430c303
+
+	column periode
+		dataType: string
+		lineageTag: f98d00f7-fffa-48d8-bd94-92b375c3a2f1
+		sourceLineageTag: 202f25f6-98ca-4fa7-b2bf-c8c48636b6f9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = User
+
+	column code_ca
+		dataType: string
+		lineageTag: a4165c5d-9d32-4f12-be56-58cb12a76ade
+		sourceLineageTag: e773245b-ca68-4f19-9ac0-8d9ccad962ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = User
+
+	column code_type_ca
+		dataType: string
+		lineageTag: 396907e7-edaa-4e9b-a714-b29d90080dc4
+		sourceLineageTag: 7b2392c9-f964-4586-aebe-5c7ca48bebb2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = User
+
+	column code_ug_principale
+		dataType: string
+		lineageTag: 00d48344-59a7-45fc-840f-905766b01398
+		sourceLineageTag: ff98e496-4c37-4c42-92b7-f225dc1c9753
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ug_principale
+
+		annotation SummarizationSetBy = User
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: 4540afd0-9997-463c-98e9-407fef82c70d
+		sourceLineageTag: eb5275c4-1547-4337-b935-d1f3a8efee1f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = User
+
+	column code_ho2
+		dataType: string
+		lineageTag: b9367ca9-07f9-41aa-bd56-07ffb736ed5a
+		sourceLineageTag: e1faee71-479e-4570-9b30-34f306970b57
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = User
+
+	column code_hp1
+		dataType: string
+		lineageTag: 9022f214-5232-4049-9bf0-0f898ff6b44f
+		sourceLineageTag: d528a4d0-2bfc-472b-8c19-b76abb13baa4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = User
+
+	column statut_caug
+		dataType: string
+		lineageTag: a299e676-1a4d-4c98-a4ef-ffba2259deaf
+		sourceLineageTag: 6d0bdd8f-dcb4-4d7b-adbb-96e76e7cb4d8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: statut_caug
+
+		annotation SummarizationSetBy = User
+
+	column quitm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: c725ebf4-7363-4847-8563-560203438c92
+		sourceLineageTag: 6fb85e52-559b-462b-9d40-6c26e3de6b0b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: quitm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column encaissm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: d55b47f3-3b01-4086-8334-173fa359dca7
+		sourceLineageTag: f8f4a8c8-5ad4-4af9-bdfb-851ecdbfc718
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: encaissm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column allocm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: d69e3d36-75dc-43f4-9e8d-141683abc2f1
+		sourceLineageTag: 29b922d7-de29-4b4b-a4af-c345a57364c6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: allocm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column soldem_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: ae8b1151-7031-471d-8fde-d8572120334b
+		sourceLineageTag: c55dee55-19c7-4786-aaac-ed9417d56ee4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: soldem_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column quitALm_ca_operation
+		dataType: double
+		lineageTag: 807b959a-acbb-47d0-b70b-74eff16325d5
+		sourceLineageTag: e78dd368-b6ee-45bb-a5a5-1e3d65346ae7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: quitALm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column quitYTDm_ca_operation
+		dataType: double
+		lineageTag: eb404463-dee2-4c3a-9ab7-f8fba6e4875a
+		sourceLineageTag: 7527e198-5314-4dc1-969e-4b6a1d6907f8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: quitYTDm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column soldem1_ca_operation
+		dataType: double
+		lineageTag: d2c83269-a3f4-462b-97f9-3db31d028440
+		sourceLineageTag: 3d98e05b-48cc-48eb-bdfc-d0af51e7e4e2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: soldem1_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column txrecouvm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 5e536498-3c09-49cb-a919-dd95c3271b30
+		sourceLineageTag: 14880951-6ed2-4c55-8aac-bf546b99d954
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: txrecouvm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column txrecouvYTDm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 831db6dd-ce2f-49ff-9aac-673845383b6e
+		sourceLineageTag: d77593f2-5bb9-48c5-925b-54724cd63800
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: txrecouvYTDm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column txrecouvhppm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: d097d976-40a4-48e2-bbe1-c1f3d4ece4ba
+		sourceLineageTag: 8f1cc86f-3c3d-405c-b2a6-1b8814d9c256
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: txrecouvhppm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column txrecouvhppYTDm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 1f2650dd-0ae2-4066-a9df-b3e134111aac
+		sourceLineageTag: 82aff770-79af-4849-81ce-e4f08e7d9158
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: txrecouvhppYTDm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column impayem_ca_operation
+		dataType: double
+		lineageTag: 0215cb08-7a41-48f7-bb47-2aa44651ecd7
+		sourceLineageTag: fe0d0a2c-4480-4ea2-bf00-5cab22ad9478
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: impayem_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column tximpayem_ca_operation
+		dataType: double
+		lineageTag: 1ec861b0-9212-44cb-b543-8ee963cb3e67
+		sourceLineageTag: d1b8fba9-5248-4459-a57c-914a8ce3506f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: tximpayem_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column passage_en_perte_CAYTDm
+		dataType: double
+		lineageTag: 803ec88e-f929-4a76-846c-2031883a7492
+		sourceLineageTag: 5ae3d080-582f-4cb0-be87-a624059286c9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: passage_en_perte_CAYTDm
+
+		annotation SummarizationSetBy = User
+
+	column dimension_ca
+		dataType: string
+		lineageTag: 1970c4a8-5d88-48b9-aa92-fb8bbb939c8e
+		sourceLineageTag: 4c232b5b-c81b-43c2-9216-ef6e9c7fbde9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: dimension_ca
+
+		annotation SummarizationSetBy = User
+
+	column passage_en_perte_CAm
+		dataType: double
+		lineageTag: a72edcae-67b0-4009-a65b-31524132c639
+		sourceLineageTag: 78906bbf-bf3b-41a1-94e3-355677bf75a3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: passage_en_perte_CAm
+
+		annotation SummarizationSetBy = User
+
+	column Année
+		dataType: double
+		lineageTag: f289eff4-97b9-4585-9d82-37ffdeb489c7
+		sourceLineageTag: 5affae95-827a-4b4c-9895-8bb8d95a1b68
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = User
+
+	column autresfactum_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 11b6852a-f925-4370-864f-54b7f788d3ec
+		sourceLineageTag: c843fc3c-5daf-4862-ae7f-9606df779066
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: autresfactum_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column loyerHCm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 9a94e4bf-69b2-47f1-8799-13eb30cf6513
+		sourceLineageTag: 9b6ee92a-a8a6-4448-83a3-3b20aa241cc5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: loyerHCm_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column chargesfactum_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 336b669e-dd3c-42ad-b95a-533d2cbf35a1
+		sourceLineageTag: 09d05087-bd69-456e-824d-a34f59711b81
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: chargesfactum_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column quit12m_ca_operation
+		dataType: double
+		lineageTag: deb3f2eb-bda7-4d72-9f80-01e9a9730f03
+		sourceLineageTag: a640973f-1f0b-4a17-bc9e-dd77277c6345
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: quit12m_ca_operation
+
+		annotation SummarizationSetBy = User
+
+	column batiment
+		dataType: string
+		lineageTag: aecc91c9-8f3b-4a7f-87f5-4d1dce9c0c94
+		sourceLineageTag: 1b30fbc0-c32b-4d90-b4e1-f2b69301a81c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = User
+
+	column Territoire
+		dataType: string
+		lineageTag: 72d56495-b88d-4d6a-b986-8ed9c77669bf
+		sourceLineageTag: 33e59898-f13d-40a6-9c37-4356b0a28c7c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Territoire
+
+		annotation SummarizationSetBy = User
+
+	column Agence
+		dataType: string
+		lineageTag: bf90f660-2a30-4800-81f9-d7395a4d6fb1
+		sourceLineageTag: bc501ac9-f3fd-40b6-bd44-2f404ab163d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Agence
+
+		annotation SummarizationSetBy = User
+
+	column Interco
+		dataType: string
+		lineageTag: 9cafc7f4-ca72-41d3-afcd-a202ac8ceb6d
+		sourceLineageTag: e7eff9a2-6fd2-43ad-847f-0d78e68029a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Interco
+
+		annotation SummarizationSetBy = User
+
+	column dte_fin_mois
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 2ef0b7cc-a0c8-47c7-a5fd-ad989a4e389a
+		sourceLineageTag: 8f77abc3-9dd7-495f-9be2-a0a85c9ec517
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: dte_fin_mois
+
+		annotation SummarizationSetBy = User
+
+	column Délégation
+		dataType: string
+		lineageTag: 8d4147fc-cf36-40d1-ba4d-7c6ada8f074c
+		sourceLineageTag: e7edae53-ef53-469b-a610-10c66f5223dc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Délégation
+
+		annotation SummarizationSetBy = User
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 04f33bdb-eafe-44af-a046-5d566d183c4b
+		sourceLineageTag: 3c011fb3-bcb7-4ccf-9f81-f69954198626
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = User
+
+	partition IndicateursFinanciersShrEnGestionDepuis2023 = entity
+		mode: directQuery
+		source
+			entityName: IndicateursFinanciersShrEnGestionDepuis2023
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

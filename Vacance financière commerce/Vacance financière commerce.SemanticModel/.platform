@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Vacance financière commerce"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "28e6258a-37fe-4f27-97a7-a669a10da175"
+  }
+}

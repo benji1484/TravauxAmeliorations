@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "d872ce8113412f40c6c6",
+  "position": {
+    "x": 1066.5690593047893,
+    "y": 61.9113865182306,
+    "z": 7000,
+    "height": 57.38601823708207,
+    "width": 213.00911854103344,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "lbl_patrimoine_ptm"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.lbl_patrimoine_ptm",
+              "nativeQueryRef": "Patrimoine",
+              "active": true,
+              "displayName": "Patrimoine"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4d0de51117b6867b21b2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UG - Lib Patrimoine"
+              }
+            },
+            "Property": "lbl_patrimoine_ptm"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

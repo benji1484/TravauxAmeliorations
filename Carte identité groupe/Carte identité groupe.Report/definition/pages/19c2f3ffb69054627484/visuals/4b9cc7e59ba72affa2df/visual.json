@@ -1,0 +1,295 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "4b9cc7e59ba72affa2df",
+  "position": {
+    "x": 0,
+    "y": 175.22973584147132,
+    "z": 4000,
+    "height": 544.77026415852868,
+    "width": 768.441682440242,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "azureMap",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PatrimoineSrhEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "Adresse_complete_geoloc_patr"
+                }
+              },
+              "queryRef": "PatrimoineSrhEnGestionDepuis2023.Adresse_complete_geoloc_patr",
+              "nativeQueryRef": "Adresse",
+              "active": true,
+              "displayName": "Adresse"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "PatrimoineSrhEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "lbl_commune"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(PatrimoineSrhEnGestionDepuis2023.lbl_commune)",
+              "nativeQueryRef": "Commune",
+              "displayName": "Commune"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "PatrimoineSrhEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "lbl_epci"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(PatrimoineSrhEnGestionDepuis2023.lbl_epci)",
+              "nativeQueryRef": "EPCI",
+              "displayName": "EPCI"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "PatrimoineSrhEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "lbl_patrimoine"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(PatrimoineSrhEnGestionDepuis2023.lbl_patrimoine)",
+              "nativeQueryRef": "Patrimoine",
+              "displayName": "Patrimoine"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "PatrimoineSrhEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "lbl_categorie_ug"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(PatrimoineSrhEnGestionDepuis2023.lbl_categorie_ug)",
+              "nativeQueryRef": "Catégorie",
+              "displayName": "Catégorie"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements"
+                }
+              },
+              "queryRef": "Mesure.# Logements",
+              "nativeQueryRef": "Logements",
+              "displayName": "Logements"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Commerces"
+                }
+              },
+              "queryRef": "Mesure.# Commerces",
+              "nativeQueryRef": "Commerces",
+              "displayName": "Commerces"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "mapControls": [
+        {
+          "properties": {
+            "defaultStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'grayscale_light'"
+                }
+              }
+            },
+            "showStylePicker": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showNavigationControls": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showSelectionControl": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "autoZoom": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "centerLatitude": {
+              "expr": {
+                "Literal": {
+                  "Value": "-21.117077757114245D"
+                }
+              }
+            },
+            "centerLongitude": {
+              "expr": {
+                "Literal": {
+                  "Value": "55.5666391938568D"
+                }
+              }
+            },
+            "zoom": {
+              "expr": {
+                "Literal": {
+                  "Value": "9.78D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "bubbleLayer": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "bubbleRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
+                }
+              }
+            },
+            "minBubbleRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
+                }
+              }
+            },
+            "maxRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "21L"
+                }
+              }
+            },
+            "bubbleStrokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "autoStrokeColor": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "layerPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

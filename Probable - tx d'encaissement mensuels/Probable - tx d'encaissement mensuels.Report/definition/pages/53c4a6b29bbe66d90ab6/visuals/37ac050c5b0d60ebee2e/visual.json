@@ -1,0 +1,141 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "37ac050c5b0d60ebee2e",
+  "position": {
+    "x": 0,
+    "y": 171.52716125898257,
+    "z": 6000,
+    "height": 548.88691602874428,
+    "width": 1278.9065143469741,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PeriodeCal"
+                    }
+                  },
+                  "Property": "Période"
+                }
+              },
+              "queryRef": "PeriodeCal.Période",
+              "nativeQueryRef": "Période",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "Code_ho2"
+                }
+              },
+              "queryRef": "MapTerritoire.Code_ho2",
+              "nativeQueryRef": "Code_ho2",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "code_HP1"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.code_HP1",
+              "nativeQueryRef": "code_HP1",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "tx encaissement YTD recalculé"
+                }
+              },
+              "queryRef": "Mesure.tx encaissement YTD recalculé",
+              "nativeQueryRef": "tx encaissement YTD recalculé"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "MapTerritoire.Code_ho2"
+            ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "Code_ho2"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "UG - Lib Patrimoine.code_HP1"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

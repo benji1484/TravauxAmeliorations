@@ -1,0 +1,31 @@
+table catégorie
+	lineageTag: 3c7216a2-ea0f-4c74-972c-84b8784ce828
+	sourceLineageTag: d14898ab-d6f4-4fc3-a965-dfe87759037a
+
+	column code_ug
+		dataType: string
+		isNullable: false
+		lineageTag: c7737fe0-ffcb-4795-92ca-8d9faab5bff8
+		sourceLineageTag: e0b7a68f-0273-473c-ae21-ddadcf68a7aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = User
+
+	column code_categorie_ug
+		dataType: string
+		lineageTag: b4d3e5ae-b66d-4c9c-b019-9328bbbe4140
+		sourceLineageTag: d908a7ab-a6ae-4e52-a038-16da59b418e8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_categorie_ug
+
+		annotation SummarizationSetBy = User
+
+	partition catégorie = entity
+		mode: directQuery
+		source
+			entityName: catégorie
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

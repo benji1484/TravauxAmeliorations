@@ -1,0 +1,371 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "e17e413d259d656a1044",
+  "position": {
+    "x": 0,
+    "y": 402.77237708362514,
+    "z": 7000,
+    "height": 310.97240509875331,
+    "width": 510.63734416584958,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DateTable"
+                    }
+                  },
+                  "Property": "Periode"
+                }
+              },
+              "queryRef": "DateTable.Periode",
+              "nativeQueryRef": "Periode",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Règlements HPP CB M"
+                }
+              },
+              "queryRef": "Mesure.Taux Règlements HPP CB M",
+              "nativeQueryRef": "CB",
+              "displayName": "CB"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Règlements HPP Chèque M"
+                }
+              },
+              "queryRef": "Mesure.Taux Règlements HPP Chèque M",
+              "nativeQueryRef": "Chèque",
+              "displayName": "Chèque"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Règlements HPP Espèces M"
+                }
+              },
+              "queryRef": "Mesure.Taux Règlements HPP Espèces M",
+              "nativeQueryRef": "Espèces",
+              "displayName": "Espèces"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Règlements HPP Prélèvements M"
+                }
+              },
+              "queryRef": "Mesure.Taux Règlements HPP Prélèvements M",
+              "nativeQueryRef": "Prélèvements",
+              "displayName": "Prélèvements"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Règlements HPP Virements M"
+                }
+              },
+              "queryRef": "Mesure.Taux Règlements HPP Virements M",
+              "nativeQueryRef": "Virements",
+              "displayName": "Virements"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Taux Règlements HPP IBAN M"
+                }
+              },
+              "queryRef": "Mesure.Taux Règlements HPP IBAN M",
+              "nativeQueryRef": "IBAN virtuel",
+              "displayName": "IBAN virtuel"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'smooth'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Evolution relative des modes de paiements en % du total'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a7eb0a9281d48dcc1eaa",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Mesure"
+              }
+            },
+            "Property": "Taux Règlements HPP CB M"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a784d603f68d72f236a7",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Mesure"
+              }
+            },
+            "Property": "Taux Règlements HPP Chèque M"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bcaeeb43fc190a6a272b",
+        "ordinal": 2,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Mesure"
+              }
+            },
+            "Property": "Taux Règlements HPP Espèces M"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "30007632ae84e047b25c",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Mesure"
+              }
+            },
+            "Property": "Taux Règlements HPP IBAN M"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5354987031018cbfeb49",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "PeriodeCal"
+              }
+            },
+            "Property": "DerniersTreizeMois"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "0bac5c953b103e0e9df8",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "PeriodeCal"
+              }
+            },
+            "Property": "Période"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "aeee8eab8846da09a186",
+        "ordinal": 6,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Mesure"
+              }
+            },
+            "Property": "Taux Règlements HPP Prélèvements M"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "68ede16cc30579ddccf8",
+        "ordinal": 7,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Mesure"
+              }
+            },
+            "Property": "Taux Règlements HPP Virements M"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e02eb5fcc93d1f52f523",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DateTable"
+              }
+            },
+            "Property": "Periode"
+          }
+        },
+        "type": "Categorical"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Pilotage Mensuelv3"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "42f89e08-6011-40e8-9393-7c905f954d96"
+  }
+}

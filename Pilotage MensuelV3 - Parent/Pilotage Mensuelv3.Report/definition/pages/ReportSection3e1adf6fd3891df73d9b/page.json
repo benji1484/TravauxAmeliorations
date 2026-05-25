@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "ReportSection3e1adf6fd3891df73d9b",
+  "displayName": "Vacance financière logements",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "196L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "0c17481899e99e13a5bb",
+      "target": "ac62810d887a21c5b280",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0c17481899e99e13a5bb",
+      "target": "5b93a6e011b8308b02bd",
+      "type": "NoFilter"
+    }
+  ]
+}

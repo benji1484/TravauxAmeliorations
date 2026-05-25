@@ -1,0 +1,518 @@
+relationship 4e8135dc-713c-4a2f-bf94-85a536c98ae2
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 5010957b-08d7-49f0-be77-bff5a8c5a237
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ca
+	toColumn: CA.code_ca
+
+relationship 2584c29e-5813-46ef-b9a3-33da479fc59e
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship 935f0505-1157-4af5-8529-9c2ca307ba9a
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 3e880b33-35ac-4c78-a729-f47c1183e001
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship 38764c5b-2ef0-44b3-8e47-309ee182bc5f
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_HO2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 0d71435f-d0c5-45dd-80cf-37877a9091a2
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship 555a432c-5d69-4b80-96ca-ce2c856deb76
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship 2c102229-005a-4f4f-97a6-b4ae7a0251db
+	isActive: false
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_ug
+	toColumn: catégorie.code_ug
+
+relationship 8f860df0-6aa2-46e4-9bf0-1f580ae84d9d
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_HP1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 5d2ef8a0-ebf0-4b55-a6aa-886081ad5896
+	fromColumn: PeuplementShrDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 151133b5-b012-425a-a66b-5a9804e54487
+	fromColumn: PeuplementShrDepuis2023.code_ca
+	toColumn: CA.code_ca
+
+relationship 0214fe39-1f06-4002-a2a2-fb511f69aab4
+	fromColumn: PeuplementShrDepuis2023.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship 3f34a0b4-5ab7-4a4c-99e0-cbd74d3a65ec
+	fromColumn: PeuplementShrDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship e569e7ef-533b-483d-a769-fafb63457c2b
+	fromColumn: PeuplementShrDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship 2e6efa79-96a2-42ac-af94-6c20a0049c3b
+	fromColumn: PeuplementShrDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship 3df79d80-3fce-48c0-8393-1990c0cd9934
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 6f48ebd3-ec97-43ea-94af-367a5ed73483
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship 7fb1ee22-5789-4b89-b845-d16df3a3b88f
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 5c1fbee1-28f2-4b3d-8b5c-89b8bd3b97c4
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship c304e9b9-d173-4cd4-92c5-5fc584764c76
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ug_principale
+	toColumn: UG_INSEE.code_ug
+
+relationship 1fd59b18-2a8a-4057-834c-2dbb76acb7fb
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 7cf17dc5-af69-49b7-9410-5a1fd86933e3
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship 7b5a5e0b-d55b-491a-84cb-574b5a5d2d8b
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 98765cbd-8197-4fe5-9755-e99c3e313686
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship 42e9482d-25d1-413b-a20f-26ee14d2464e
+	isActive: false
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_ug
+	toColumn: catégorie.code_ug
+
+relationship c882fbe1-86c6-448f-86b0-8851cd4763a4
+	isActive: false
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.unique_key
+	toColumn: PatrimoineSrhEnGestionDepuis2023.unique_key
+
+relationship af29c94d-849a-45bf-95a2-8b9e36ae6af4
+	fromColumn: Obj_2024.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship ae6b151d-bf6b-40eb-abbc-a536957874d5
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: CA.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship d620b6cd-06cb-4cd2-8c0f-6e7d846ee10e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: UG_INSEE.code_ug
+	toColumn: catégorie.code_ug
+
+relationship fab4afa9-8880-44b9-85da-0c33f99837b2
+	fromColumn: reglements.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship bf8230e2-cf55-4369-abbd-f0c86ff2d0f9
+	fromColumn: reglements.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 49d72137-aeb8-4b77-973d-6abcc0661d9a
+	fromColumn: reglements.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 3b3f4efa-25d3-4f2d-bc8d-ac97484b447d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Data.'Date signature compromis'
+	toColumn: LocalDateTable_c7963513-07e3-4391-93a0-34661d4d155a.Date
+
+relationship AutoDetected_46d0a605-a403-4072-aa47-49afe1575939
+	fromColumn: Data.Commune
+	toColumn: Villes.Commune
+
+relationship 0c3addc0-88eb-b49b-5ab8-0c64591d0f0d
+	fromColumn: PROGR.Nom_abrégé
+	toColumn: Villes.Commune
+
+relationship fc0db6d7-96ce-4679-9441-cbff38aa1e10
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date d''ordre de service'
+	toColumn: LocalDateTable_98fb984b-0785-4a93-8076-3e8efb1fdba5.Date
+
+relationship 457c0374-5690-4659-80e8-0062fd7b2bd1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date de fin de travaux'
+	toColumn: LocalDateTable_73ed19db-cffd-449c-a4af-570c499c3eb2.Date
+
+relationship 52967f76-95ed-40fb-bbed-018f68089d4c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date application'
+	toColumn: LocalDateTable_cae54402-f79e-4e07-9dd1-4c9bd93a450b.Date
+
+relationship 5eacbb63-431e-4ddc-95aa-f56479b498f6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date d''emprunt'
+	toColumn: LocalDateTable_c6a1fb78-7351-4cb4-8c92-e37e2041a512.Date
+
+relationship d8abe226-ab4f-4deb-81f9-7ed70a73b8e9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date d''emprunt_2'
+	toColumn: LocalDateTable_4848e38a-692a-4359-abaa-cad783380691.Date
+
+relationship e4939cde-36bc-8215-2ebd-1b54e555c824
+	securityFilteringBehavior: none
+	toCardinality: many
+	fromColumn: TII.'Année OS'
+	toColumn: PeriodeCal.Année
+
+relationship 62adf2b1-dc0c-c59e-0c7b-b01f3d9b4650
+	isActive: false
+	securityFilteringBehavior: none
+	toCardinality: many
+	fromColumn: TII.'Année d''agrément'
+	toColumn: PeriodeCal.Année
+
+relationship 0f2083b2-b3d0-6e84-15d2-cb03f874579c
+	isActive: false
+	securityFilteringBehavior: none
+	toCardinality: many
+	fromColumn: TII.'Année fin Travaux'
+	toColumn: PeriodeCal.Année
+
+relationship cbcf2aa5-9ab5-43e0-9b51-0461a5669c6c
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_etat_ug
+	toColumn: Type_vacance.code_etat_ug
+
+relationship fe76f3ad-bf1d-45f4-8fa4-a8001e8f3be0
+	securityFilteringBehavior: none
+	fromColumn: TII.'N° sous-groupe'
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 8d22a721-4fd1-42c9-9dee-7d6877ad0867
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date d''emprunt_4'
+	toColumn: LocalDateTable_069f42e7-5d0f-4ce6-824c-da06b8e6cbc6.Date
+
+relationship bbd4e2a4-e9e4-422d-ac6f-33583894f8c8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TII.'Date d''emprunt_6'
+	toColumn: LocalDateTable_61b3af18-f7e7-4773-ba32-88502aea71ad.Date
+
+relationship e88d13e6-39e3-4be7-a34f-36a1a9971a3f
+	fromColumn: indicateurs_affaires_v2.code_HP1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 8e32ae35-7279-4604-9e00-0ffc9efd835d
+	fromColumn: indicateurs_affaires_v2.code_HO2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 5adfc14a-9f17-4589-a4c2-5822c46ec8ff
+	fromColumn: indicateurs_affaires_v2.code_ug
+	toColumn: catégorie.code_ug
+
+relationship 1a1cd526-335b-e1a2-d2ee-c15bc3961ba2
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromColumn: MapTerritoire.Interco
+	toColumn: Table.Interco
+
+relationship fb669f4a-e6ee-42c4-a43e-33711d2a9f70
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_type_ca
+	toColumn: code_type_ca.code_type_ca
+
+relationship d3d723eb-b16e-461b-a2e8-d792fc655aa0
+	fromColumn: LocatairesShrEnGestionDepuis2023.lbl_nature_ug
+	toColumn: 'Nature UG'.lbl_nature_ug
+
+relationship eb9bd4a0-9718-4c30-b885-89e90252fb2b
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_type_ca
+	toColumn: code_type_ca.code_type_ca
+
+relationship e38c427c-38f4-44d4-b2b3-ccf5092b89d1
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship 01668144-9c80-410f-ad39-9c6694ee07c7
+	fromColumn: LocatairesShrEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship ea5d2db0-fd5b-449d-b11b-c41446b03ee3
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship abc31451-2e06-4f6a-a3a0-37bc9a638603
+	isActive: false
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.dte_ref
+	toColumn: DateTable.Date
+
+relationship 6f803f50-b498-449c-99df-d0fcc64aac65
+	fromColumn: PeuplementShrDepuis2023.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship ea1dded6-0d4e-4b9e-817d-10cc44d0567c
+	fromColumn: PeuplementShrDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 51a49b50-29ac-46d7-b998-2ccb517bc980
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship 9500350e-8d5a-4c98-97dc-610dc5ac795e
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 72472623-1e03-45cf-8c7d-d177fc6ca850
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 6dbcf11d-6568-475d-ba31-5a4edf93c0d8
+	fromColumn: Obj_2024.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 5d6defa1-cf7b-4b8f-a76a-b5a44eff66e8
+	fromColumn: reglements.dte_operation
+	toColumn: DateTable.Date
+
+relationship 7d2915d0-8b54-4416-a6c6-c6e3ffa611f2
+	fromColumn: indicateurs_affaires_v2.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship f7bd852e-c245-4e45-a85e-45385e1d92cd
+	fromColumn: indicateurs_affaires_v2.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 494646f1-d9d7-4aa5-bdc7-f8014457a9df
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DDC - Programmation Reçu - suite'.dte_fin_mois
+	toColumn: LocalDateTable_adcc7b3c-6018-456d-ae4c-7fb0ddcd7988.Date
+
+relationship aab503d6-8db2-4b61-8a69-322bdd4c6411
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DDC - Programmation Reçu'.dte_fin_mois
+	toColumn: LocalDateTable_a8f447c0-0b4c-46f3-8f38-96480e2f292b.Date
+
+relationship d0e7918b-5680-9541-f6f4-5e0aed0e77b2
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromCardinality: one
+	fromColumn: DateTable.Date
+	toColumn: 'DDC - Programmation Reçu - suite'.dte_fin_mois
+
+relationship d9c4e823-7a25-c329-26fd-78b939b7e58a
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromCardinality: one
+	fromColumn: DateTable.Date
+	toColumn: 'DDC - Programmation Reçu'.dte_fin_mois
+
+relationship a602ae73-0224-4891-8955-8a5cd4778ae4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DDC - Engagements promoteurs'.dte_fin_mois
+	toColumn: LocalDateTable_35bee9f1-92e1-4146-96ee-bc58f7357a17.Date
+
+relationship a47c9a5f-b01e-c41e-d162-82b19ccafd68
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromCardinality: one
+	fromColumn: DateTable.Date
+	toColumn: 'DDC - Engagements promoteurs'.dte_fin_mois
+
+relationship eae85b5d-b1b1-125b-ff38-47aec9a79611
+	securityFilteringBehavior: none
+	fromColumn: 'DDC - MEC'.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 5aba4197-d2af-d5d4-2b90-d6fb47cb0a7a
+	securityFilteringBehavior: none
+	fromColumn: 'DDC - Objectifs et atterissage'.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 48a1fec4-490c-428f-8efc-a8ad851587dd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DDC - Livraisons'.dte_fin_mois
+	toColumn: LocalDateTable_83b2a3bd-1731-4cd5-9d2a-62b2958e038d.Date
+
+relationship fcc050b4-0dbe-2262-51eb-ae1f09b40b67
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromCardinality: one
+	fromColumn: DateTable.Date
+	toColumn: 'DDC - Livraisons'.dte_fin_mois
+
+relationship 528c9aeb-4146-b329-c258-8280b3ac706e
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	toCardinality: many
+	fromColumn: DateTable.Year
+	toColumn: Data.Année
+
+relationship 3c2d1e69-9b34-4ec4-80f6-ba92596f5766
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DDC - Programmation en cours - suite'.dte_fin_mois
+	toColumn: LocalDateTable_6fe7bb58-6e4c-4172-96d6-70477dd298fd.Date
+
+relationship a5e5b0a7-a25e-191f-3e6b-2a3d1dfc743d
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromCardinality: one
+	fromColumn: DateTable.Date
+	toColumn: 'DDC - Programmation en cours - suite'.dte_fin_mois
+
+relationship 21270ea9-be0a-4355-a83e-e99f56d3e7ad
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DDC - Programmation en cours'.dte_fin_mois
+	toColumn: LocalDateTable_3a16d762-0674-4bf2-beac-6d4251bb56a7.Date
+
+relationship 6996476b-07ef-861a-f889-830b1c311aa1
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromCardinality: one
+	fromColumn: DateTable.Date
+	toColumn: 'DDC - Programmation en cours'.dte_fin_mois
+
+relationship 861e9590-749f-41d9-8cd7-9b373000ab7f
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.Délégation
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 721fb01a-71bf-4d57-92fc-4e205a249197
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'UG - Lib Patrimoine'.code_HP1
+	toColumn: 'Scoring Patrimoine'.code_hp1
+
+relationship 91d55396-3ceb-4ce1-8105-7bb39e64e3f7
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Scoring Patrimoine dépiv'.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship ef3c257e-fa20-9793-5405-6f4facb1041e
+	securityFilteringBehavior: none
+	fromColumn: PROGR.FinAnnee
+	toColumn: DateTable.Date
+
+relationship 2652198c-2c55-6232-88ff-c89c3223dcfe
+	fromColumn: LIVRAISONS.Commune_Villes
+	toColumn: Villes.Commune
+
+relationship f3a90390-d5dc-6982-474e-002a12e354b1
+	fromColumn: 'LOYER QUIT'.Commune_Villes
+	toColumn: Villes.Commune
+
+relationship 52800972-8c26-9ec4-f380-eeb1d1ccd38f
+	isActive: false
+	fromColumn: MEC.Commune_Villes
+	toColumn: Villes.Commune
+
+relationship a26b90b6-a9bb-43ef-a0bf-8c83a76745cc
+	fromColumn: LocatairesShrEnGestionDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship d70167c6-c3ae-44c5-9745-6e83e5962b32
+	fromColumn: PeuplementShrDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 20e59541-c038-49e9-9049-0fae8a733e0c
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 5aafd14d-4b92-4e91-af40-af4d8c6ca3d1
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 440e54f5-ce18-4a3c-aed0-21dc1376a0c6
+	fromColumn: reglements.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship edc4258e-76d2-4875-8302-65eef4d26173
+	fromColumn: indicateurs_affaires_v2.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 2cb9bb77-dd43-4f0c-950d-7c151c367d58
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MEC.'DATE OS/ACTE REELLE'
+	toColumn: LocalDateTable_6f192a98-987e-4b2b-8556-d4a52e611095.Date
+
+relationship 077463b9-cdec-72cb-ec5f-2bfc8800efb9
+	fromColumn: MEC.PRODUIT
+	toColumn: Produit.PRODUIT
+
+relationship edc56a59-c8b3-03ba-b8e8-28db2f006683
+	fromColumn: 'LOYER QUIT'.PRODUIT
+	toColumn: Produit.PRODUIT
+
+relationship 7a00d2e2-1a7e-bd2e-d17c-4b3dde6358bb
+	fromColumn: PROGR.PDT
+	toColumn: Produit.PRODUIT
+
+relationship 0c908fad-cc28-463b-9e19-4f98aabec40d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Calendrier graphique'.Date
+	toColumn: LocalDateTable_0b923ac2-1492-4cc5-9969-cc234d6dba00.Date
+
+relationship 77df82e9-e2a2-7910-93e1-6aeca2f7d60e
+	isActive: false
+	fromColumn: LIVRAISONS.'Livraison prévisionnelle'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship 287cfe1a-ee91-ed71-d661-f78548660c0d
+	isActive: false
+	fromColumn: LIVRAISONS.'Livraison réelle'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship 21e80a9b-f5c1-ce93-eaf6-db800cf8fecb
+	isActive: false
+	fromColumn: MEC.'Réel graph'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship b89669fc-b3fd-2bcd-4470-ba709bd341f0
+	isActive: false
+	fromColumn: MEC.'Prévisonnel graph'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship 7ccdda5c-80d6-01f5-ebd3-053901cf5553
+	fromColumn: LIVRAISONS.'DATE DE LIV PREV'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship 7a2aae6c-52c3-ca6b-4001-ae5e33d7d366
+	fromColumn: MEC.'DATE OS/ACTE PREV'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship c9e7ac79-5fba-2afa-8506-4cb83aa1175c
+	fromColumn: PROGR.FinAnnee
+	toColumn: 'Calendrier graphique'.Date
+
+relationship c53ae586-34d2-bfcc-e92a-02a1e542873b
+	fromColumn: LIVRAISONS.PRODUIT
+	toColumn: Produit.PRODUIT
+
+relationship d43d3b25-0ba7-17af-a496-33620c87226d
+	isActive: false
+	fromColumn: PROGR.'Dépot agrément graph'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship ceac1f07-6ee4-c291-462b-1c1a3d788e1f
+	isActive: false
+	fromColumn: PROGR.'Réception agrément date'
+	toColumn: 'Calendrier graphique'.Date
+
+relationship d8cd0288-f5ff-48af-a139-eabd838b163d
+	fromColumn: Coordonnees.code_ca
+	toColumn: dimension_type_ca.code_ca
+

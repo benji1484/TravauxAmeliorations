@@ -1,0 +1,34 @@
+table TranchAge
+	lineageTag: 6fda6af7-c958-4276-bde2-003fab0c0490
+
+	column 'Tranche d''âge'
+		dataType: string
+		lineageTag: cfaf48ec-8061-4410-8de2-411a8aeea013
+		summarizeBy: none
+		sourceColumn: Tranche d'âge
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ca
+		dataType: string
+		lineageTag: 50c0bf79-e877-4df0-a1bd-f18e44bdaf1e
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TranchAge = m
+		mode: import
+		source =
+				let
+				    Source = LocatairesShrEnGestionDepuis2023,
+				    #"Lignes filtrées" = Table.SelectRows(Source, each ([#"Tranche d'âge"] <> "Autres")),
+				    #"Autres colonnes supprimées" = Table.SelectColumns(#"Lignes filtrées",{"Tranche d'âge", "code_ca"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées", {"code_ca"})
+				in
+				    #"Doublons supprimés"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

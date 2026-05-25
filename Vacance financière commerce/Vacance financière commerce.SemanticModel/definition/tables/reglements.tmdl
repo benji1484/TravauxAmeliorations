@@ -1,0 +1,444 @@
+table reglements
+	lineageTag: ef0a0aa7-f9db-4fc4-979f-3248540daad5
+
+	column unique_key
+		dataType: string
+		lineageTag: c7533cfd-489e-449f-8fa4-b33ab5d31351
+		summarizeBy: none
+		sourceColumn: unique_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column locataire_key
+		dataType: string
+		lineageTag: 0d277144-bef8-4eee-837a-e35ce9afe707
+		summarizeBy: none
+		sourceColumn: locataire_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column periode
+		dataType: string
+		lineageTag: 1b2ef2cc-af98-40f6-9635-c33193c09ba4
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_orga
+		dataType: string
+		lineageTag: 4ed9f3c2-bd87-44cf-9fe3-97c6e606a57c
+		summarizeBy: none
+		sourceColumn: code_orga
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_hp1
+		dataType: string
+		lineageTag: 491948b5-d49a-49f0-b5c1-c821bee39851
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ca
+		dataType: string
+		lineageTag: e463b01a-e1be-4514-9e0b-abe3d8795d83
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_ecriture_ca
+		dataType: string
+		lineageTag: 4c885f96-33be-4f11-aa0e-0d3c5a5c7821
+		summarizeBy: none
+		sourceColumn: lbl_ecriture_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_ecriture_ca
+		dataType: double
+		lineageTag: 93a6e317-ecb8-4855-8aaa-4c23e870419d
+		summarizeBy: sum
+		sourceColumn: montant_ecriture_ca
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dte_operation
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6a79cb09-4b3e-401c-b98b-e04d76ae15b2
+		summarizeBy: none
+		sourceColumn: dte_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column code_operation
+		dataType: string
+		lineageTag: 87c3bd04-974f-4d25-920e-4b362e785842
+		summarizeBy: none
+		sourceColumn: code_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_operation
+		dataType: string
+		lineageTag: d42b17ce-1773-44ce-a404-f68597ab90a0
+		summarizeBy: none
+		sourceColumn: lbl_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_famille_operation
+		dataType: string
+		lineageTag: 3840b5f0-cc53-477b-99b2-2b1640d4f809
+		summarizeBy: none
+		sourceColumn: code_famille_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_famille_operation
+		dataType: string
+		lineageTag: 9f9d00fc-aea5-4c1d-a953-52b7d888dcb8
+		summarizeBy: none
+		sourceColumn: lbl_famille_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_type_operation
+		dataType: string
+		lineageTag: d7d61677-dd28-4a4f-bba4-696f0cb49f2e
+		summarizeBy: none
+		sourceColumn: ind_type_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_type_operation
+		dataType: string
+		lineageTag: 93c9ef30-d167-4b50-a7f5-736c4b437f00
+		summarizeBy: none
+		sourceColumn: lbl_type_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_mode_paiement
+		dataType: string
+		lineageTag: 40aac4e2-5b74-4386-bdd5-418d80634a70
+		summarizeBy: none
+		sourceColumn: code_mode_paiement
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_mode_paiement
+		dataType: string
+		lineageTag: d7bcfce7-08f8-4a3d-b975-35b8182c0a83
+		summarizeBy: none
+		sourceColumn: lbl_mode_paiement
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho1
+		dataType: string
+		lineageTag: dfeb56ca-2dc7-4f69-a493-33520d3768b7
+		summarizeBy: none
+		sourceColumn: code_ho1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho2
+		dataType: string
+		lineageTag: 8a2077f7-c8fe-4393-bf0f-8dbbc9abb43f
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categorie_Aide = ```
+			
+			SWITCH(
+			    TRUE(),
+			    SEARCH("CCAS", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "CCAS",
+			    SEARCH("RAPPEL", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "RAPPEL AL",
+			    SEARCH("FSL", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "FSL",
+			    SEARCH("ACTION LGT", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "ACTION LOGE",
+			    SEARCH("ACTION LOGE", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "ACTION LOGE",
+			    SEARCH("PAIERIE", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "PAIERIE",
+			    SEARCH("PAIERIE DEP", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "PAIERIE DEP",
+			    SEARCH("CAF", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "CAF",
+			    SEARCH("CGSS", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "CGSS",
+			    SEARCH("CRR", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "CRR",
+			    SEARCH("SGC", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "SGC",
+			    SEARCH("CAISSE REUN", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "CAISSE REUN",
+			    SEARCH("FONDAT ABBE", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "FONDATION ABBE PIERRE",
+			    SEARCH("FONDATION AB", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "FONDATION ABBE PIERRE",
+			    SEARCH("ALS", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "ACTION LOGE",
+			    SEARCH("SOLI AL", UPPER('reglements'[lbl_ecriture_ca]), 1, 0) > 0, "SOLIDARITÉ ALLOCATION",
+			    "Pas une aide"
+			)
+			
+			```
+		lineageTag: 3a5c2e9d-6c17-4d57-9fa4-82b4ebe7d1f6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie règlement' = ```
+			
+			SWITCH(
+			    TRUE(),
+			
+			    // 🔄 SOLI AL reclassé en "Virements"
+			    reglements[lbl_operation] = "Co financement SOLI AL", "Virements",
+			
+			    reglements[lbl_operation] = "Chag accompa person CALB", "Chq accompagmt personnal",
+			    reglements[lbl_operation] = "Règlement par virement", "Virements",
+			    reglements[lbl_operation] = "Ann reglement virement", "Ann. règlement virement",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "CHEQUES"
+			        && reglements[lbl_mode_paiement] = "remise cheque"
+			        && reglements[lbl_operation] = "Ann. règlement chèque", "Ann. règlement chèque",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "VIREMENTS"
+			        && reglements[lbl_operation] = "Ann. règlement virement", "Ann. règlement virement",
+			
+			    reglements[lbl_type_operation] = "règlement"
+			        && reglements[lbl_famille_operation] = "Autre"
+			        && reglements[lbl_mode_paiement] = "Carte bancaire", "Carte bancaire",
+			
+			    reglements[lbl_type_operation] = "règlement"
+			        && reglements[lbl_famille_operation] = "Carte Bleue Telephone"
+			        && reglements[lbl_mode_paiement] = "CB par téléphone", "Carte bancaire",
+			
+			    reglements[lbl_type_operation] = "règlement"
+			        && reglements[lbl_famille_operation] = "CHEQUES", "Chèque",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "CHEQUES"
+			        && reglements[lbl_operation] = "chèque impayé", "Chèque impayé",
+			
+			    reglements[lbl_type_operation] = "règlement"
+			        && reglements[lbl_famille_operation] = "Autre"
+			        && reglements[lbl_operation] = "Chq accompagmt personnal", "Chq accompagmt personnal",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "DIVERS", "Divers",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "Autre"
+			        && reglements[lbl_operation] = "Encaissement recouvremt", "Encaissement recouvremt",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "Autre"
+			        && reglements[lbl_operation] = "Encaissement SRR", "Encaissement SRR",
+			
+			    reglements[lbl_type_operation] = "règlement en espèce"
+			        && reglements[lbl_famille_operation] = "ESPECES"
+			        && reglements[lbl_mode_paiement] = "ENCAISSEMENT PAR VIRT", "Espèces",
+			
+			    reglements[lbl_type_operation] = "admission non valeur"
+			        && reglements[lbl_famille_operation] = "Passage en perte"
+			        && reglements[lbl_operation] = "Passage en PP", "Passage en PP",
+			
+			    reglements[lbl_type_operation] = "admission non valeur"
+			        && reglements[lbl_famille_operation] = "Passage en perte"
+			        && reglements[lbl_operation] = "Passage en PP Judiciaire", "Passage en PP Judiciaire",
+			
+			    reglements[lbl_type_operation] = "prélèvement"
+			        && reglements[lbl_famille_operation] = "PRELEVEMENTS", "Prélèvements",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "PRELEVEMENTS"
+			        && reglements[lbl_mode_paiement] = "prélvt impayé"
+			        && reglements[lbl_operation] = "Prélèvement impayé", "Prélèvements impayé",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "DIVERS"
+			        && reglements[lbl_operation] = "Profit exp", "Profit exp",
+			
+			    reglements[lbl_operation] = "Réglement IBAN virtuel", "Réglement IBAN virtuel",
+			
+			    reglements[lbl_type_operation] = "opération diverse hors facturation"
+			        && reglements[lbl_famille_operation] = "Remboursement", "Rembourssement Locataire",
+			
+			    reglements[lbl_type_operation] = "règlement"
+			        && reglements[lbl_famille_operation] = "VIREMENTS", "Virements",
+			
+			    BLANK()
+			)
+			
+			```
+		lineageTag: 8b85ea01-0f06-443d-8093-9b5a890a6861
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"reglements","TableItemName":"Catégorie règlement (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Catégorie règlement (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('reglements'[Catégorie règlement]),
+				"(Vide)",
+				'reglements'[Catégorie règlement] IN {"Ann. règlement chèque",
+					"Ann. règlement virement",
+					"Chèque impayé",
+					"Chq accompagmt personnal",
+					"Divers",
+					"Encaissement recouvremt",
+					"Encaissement SRR",
+					"Passage en PP",
+					"Passage en PP Judiciaire",
+					"Prélèvements impayé",
+					"Rembourssement Locataire"},
+				"Autres",
+				'reglements'[Catégorie règlement]
+			)
+		lineageTag: f57570a0-0134-4313-8c3a-57991a8d400d
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "reglements"
+				          }
+				        },
+				        "Property": "Catégorie règlement"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"r","Entity":"reglements"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Catégorie règlement"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Autres","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Catégorie règlement"}}],"Values":[[{"Literal":{"Value":"'Ann. règlement chèque'"}}],[{"Literal":{"Value":"'Ann. règlement virement'"}}],[{"Literal":{"Value":"'Chèque impayé'"}}],[{"Literal":{"Value":"'Chq accompagmt personnal'"}}],[{"Literal":{"Value":"'Divers'"}}],[{"Literal":{"Value":"'Encaissement recouvremt'"}}],[{"Literal":{"Value":"'Encaissement SRR'"}}],[{"Literal":{"Value":"'Passage en PP'"}}],[{"Literal":{"Value":"'Passage en PP Judiciaire'"}}],[{"Literal":{"Value":"'Prélèvements impayé'"}}],[{"Literal":{"Value":"'Rembourssement Locataire'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = reglements[code_hp1]   -- ou [code_HP1] selon ton modèle
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        
+			        // Mises à jour basées sur l'image (Message vs Tableau)
+			        hp = "CLVE", "ANDR",  // Clos du Verger
+			        hp = "CTI5", "ARCD",  // Centaure Ilot 5
+			        hp = "FCHE", "PORT",  // Francis Hallé
+			        hp = "FLQE", "ARCD",  // Foulque
+			        hp = "JCTL", "RUIS",  // Res Jean Chatel
+			        hp = "JDGS", "CALB",  // Jardin des Gardenias
+			        hp = "LOBL", "CALB",  // Lobelie
+			        hp = "MPTO", "PORT",  // Maputo
+			        hp = "SRTL", "PORT",  // Serins et Tourterelles
+			        hp = "TRG2", "CALB",  // Tregor 2
+			        
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        -- si on a trouvé un matching sur code_hp1
+			    reglements[code_HO2]    -- sinon on reprend code_HO2
+			)
+			
+			```
+		lineageTag: c42497ee-c13c-44e4-b67d-bb71f89afc0c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: bfcf194d-bd01-4a4d-941f-dc6da35d29d8
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie opération'
+		lineageTag: cd56aa5c-76e1-4ef0-b67c-73ee733211d7
+
+		level 'Type d''opération'
+			lineageTag: c9483ba5-0835-49db-9ef3-bb76d2384c8c
+			column: lbl_type_operation
+
+		level 'Famille d''opération'
+			lineageTag: 440b2395-ad67-457a-8b87-9db6275cb517
+			column: lbl_famille_operation
+
+		level 'Mode paiement'
+			lineageTag: 480ec351-90ee-493f-a60f-fff9372a9971
+			column: lbl_mode_paiement
+
+		level 'Libellé opération'
+			lineageTag: 541c16aa-e738-4145-a777-2a83b4c7cf5b
+			column: lbl_operation
+
+		level Ecriture
+			lineageTag: 193d5434-0409-4375-84c2-64e10c9bf03d
+			column: lbl_ecriture_ca
+
+	partition reglements = m
+		mode: import
+		source =
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    reglementsSHR_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="reglementsSHR",Kind="View"]}[Data],
+				    // Ajouter une colonne pour convertir le champ "période" en date
+				    AddDateColumn = Table.AddColumn(reglementsSHR_View, "DatePeriode", each Date.FromText([periode] & "-01"), type date),
+				    // Obtenir la date du début des trois derniers mois
+				    StartDate = Date.AddMonths(Date.From(DateTime.LocalNow()), -25),
+				    // Filtrer les données pour ne garder que les trois derniers mois
+				    FilteredRows = Table.SelectRows(AddDateColumn, each [DatePeriode] >= StartDate),
+				    #"Colonnes renommées" = Table.RenameColumns(FilteredRows,{{"lbl_operation", "lbl_operation"}}),
+				    #"Lignes filtrées" = Table.SelectRows(#"Colonnes renommées", each ([code_orga] <> "ONV")),
+				    #"Autres colonnes supprimées" = Table.SelectColumns(#"Lignes filtrées",{"delegation_dixit","unique_key", "locataire_key", "periode", "code_orga", "code_hp1", "code_ca", "lbl_ecriture_ca", "montant_ecriture_ca", "dte_operation", "code_operation", "lbl_operation", "code_famille_operation", "lbl_famille_operation", "ind_type_operation", "lbl_type_operation", "code_mode_paiement", "lbl_mode_paiement", "code_ho1", "code_ho2", "code_type_ca", "lbl_type_ca"}),
+				    #"Lignes filtrées1" = Table.SelectRows(#"Autres colonnes supprimées", each ([periode] <> "2023-06" and [periode] <> "2023-07" and [periode] <> "2023-08" and [periode] <> "2023-09" and [periode] <> "2023-10" and [periode] <> "2023-11" and [periode] <> "2023-12" and [periode] <> "2024-01" and [periode] <> "2024-02" and [periode] <> "2024-03" and [periode] <> "2024-04")),
+				    #"Autres colonnes supprimées1" = Table.SelectColumns(#"Lignes filtrées1",{"delegation_dixit","unique_key", "locataire_key", "periode", "code_orga", "code_hp1", "code_ca", "lbl_ecriture_ca", "montant_ecriture_ca", "dte_operation", "code_operation", "lbl_operation", "code_famille_operation", "lbl_famille_operation", "ind_type_operation", "lbl_type_operation", "code_mode_paiement", "lbl_mode_paiement", "code_ho1", "code_ho2"})
+				in
+				    #"Autres colonnes supprimées1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

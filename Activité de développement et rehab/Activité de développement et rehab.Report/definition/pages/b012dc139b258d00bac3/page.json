@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "b012dc139b258d00bac3",
+  "displayName": "DDC - Livraisons",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "1a93dd45252473df0640",
+      "target": "22299b9680ae2ee21a56",
+      "type": "NoFilter"
+    }
+  ]
+}

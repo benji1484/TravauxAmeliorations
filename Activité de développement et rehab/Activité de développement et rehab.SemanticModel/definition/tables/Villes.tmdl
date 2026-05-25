@@ -1,0 +1,212 @@
+table Villes
+	lineageTag: 06894c07-0373-4d68-be18-8524420ff4e8
+
+	column Commune
+		dataType: string
+		lineageTag: c3367a36-4e38-4793-a4e3-af1defb9839a
+		summarizeBy: none
+		sourceColumn: Commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitude
+		dataType: string
+		lineageTag: e992a806-3f09-4ebe-b9ad-fe10975e0391
+		dataCategory: Latitude
+		summarizeBy: none
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column Longitude
+		dataType: string
+		lineageTag: 48036d33-5a97-4a6f-b4d8-a0c08a13c6eb
+		dataCategory: Longitude
+		summarizeBy: none
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column Numéro_insee
+		dataType: string
+		lineageTag: 06f1d96e-189b-4034-8ee9-79d3e5d80d53
+		summarizeBy: none
+		sourceColumn: Numéro_insee
+
+		annotation SummarizationSetBy = Automatic
+
+	column Adresse = ```
+			
+			SWITCH(
+			    TRUE(),
+			    Villes[Commune] = "St-Denis", "1 Rue de Paris, 97400 Saint-Denis, La Réunion",
+			    Villes[Commune] = "St-Paul", "Place du Général de Gaulle, 97460 Saint-Paul, La Réunion",
+			    Villes[Commune] = "St-Leu", "100 Rue du Général Lambert, 97436 Saint-Leu, La Réunion",
+			    Villes[Commune] = "St-Pierre", "Rue Méziaire Guignard, 97410 Saint-Pierre, La Réunion",
+			    Villes[Commune] = "Le Port", "Rue Renaudière de Vaux, 97420 Le Port, La Réunion",
+			    Villes[Commune] = "Sainte-Marie", "Rue de la République, 97438 Sainte-Marie, La Réunion",
+			    Villes[Commune] = "St-Louis", "4 Rue Lambert, 97450 Saint-Louis, La Réunion",
+			    Villes[Commune] = "Le Tampon", "256 Rue Hubert Delisle, 97430 Le Tampon, La Réunion",
+			    Villes[Commune] = "St-André", "Boulevard Léopold Rambaud, 97440 Saint-André, La Réunion",
+			    Villes[Commune] = "Ste-Suzanne", "2 Rue du Général de Gaulle, 97441 Sainte-Suzanne, La Réunion",
+			    Villes[Commune] = "Les Avirons", "Rue de la Mairie, 97425 Les Avirons, La Réunion",
+			    Villes[Commune] = "Trois-Basins", "Chemin Commerson, 97426 Les Trois-Bassins, La Réunion",
+			    Villes[Commune] = "Petite-île", "4 Rue Mahé Labourdonnais, 97429 Petite-Île, La Réunion",
+			    Villes[Commune] = "Bras-Panon", "Rue des Goyaviers, 97412 Bras-Panon, La Réunion",
+			    Villes[Commune] = "Entre-Deux", "Rue Fortuné Hoarau, 97414 Entre-Deux, La Réunion",
+			    Villes[Commune] = "St-Joseph", "125 Rue Raphaël Babet, 97480 Saint-Joseph, La Réunion",
+			    Villes[Commune] = "St-Benoît", "Avenue Jean Jaurès, 97470 Saint-Benoît, La Réunion",
+			    Villes[Commune] = "La Possession", "Place de la République, 97419 La Possession, La Réunion",
+			    Villes[Commune] = "Saint-Denis", "1 Rue de Paris, 97400 Saint-Denis, La Réunion",
+			    Villes[Commune] = "Saint-André", "Boulevard Léopold Rambaud, 97440 Saint-André, La Réunion",
+			    Villes[Commune] = "Saint-Joseph", "125 Rue Raphaël Babet, 97480 Saint-Joseph, La Réunion",
+			    Villes[Commune] = "Sainte-Suzanne", "2 Rue du Général de Gaulle, 97441 Sainte-Suzanne, La Réunion",
+			    Villes[Commune] = "Saint-Leu", "100 Rue du Général Lambert, 97436 Saint-Leu, La Réunion",
+			    Villes[Commune] = "Saint-Louis", "4 Rue Lambert, 97450 Saint-Louis, La Réunion",
+			    Villes[Commune] = "Plaine des palmistes", "Rue de la République, 97431 La Plaine-des-Palmistes, La Réunion",
+			    Villes[Commune] = "L'Étang-Salé", "Rue du Général de Gaulle, 97427 L'Étang-Salé, La Réunion",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: 068145cd-e21d-41cb-8789-c7697945ab09
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column LatitudeTxt = ```
+			SUBSTITUTE( FORMAT(Villes[Latitude], "0.000000"), ".", ",")
+			
+			```
+		dataType: string
+		lineageTag: 14f6cc01-3a4d-472c-aaba-191958591b06
+		dataCategory: Latitude
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column LongitudeTxt = SUBSTITUTE(Villes[Longitude],".", ",")
+		dataType: double
+		lineageTag: ea5e4bed-47ab-4dfd-aeb3-ea6ecc4487f0
+		dataCategory: Longitude
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EPCI = ```
+			
+			SWITCH(TRUE(),
+			    'Villes'[Commune] IN {"St-Denis", "Sainte-Marie", "Ste-Marie", "Ste-Suzanne", "Sainte-Suzanne", "Saint-Denis"}, "CINOR",
+			    'Villes'[Commune] IN {"St-André", "Saint-André", "Bras-Panon", "St-Benoît", "Saint-Benoît", "Plaine des palmistes", "Salazie", "La Plaine-des-Palmistes"}, "CIREST",
+			    'Villes'[Commune] IN {"Le Port", "La Possession", "St-Paul", "Saint-Paul", "St-Leu", "Saint-Leu", "Trois-Bassins"}, "TO",
+			    'Villes'[Commune] IN {"Le Tampon", "St-Joseph", "Saint-Joseph", "Entre-Deux", "L'Étang-Salé", "L'étang-Salé", "Cilaos"}, "CASUD",
+			    'Villes'[Commune] IN {"St-Pierre", "Saint-Louis", "Les Avirons", "Petite-Île", "St-Louis", "Saint-Pierre"}, "CIVIS",
+			    "Non défini"
+			)
+			
+			```
+		lineageTag: 4c90ac74-57ef-49a7-8cff-afbe01487f8f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune_Correspondance =
+			
+			SWITCH(
+			    TRUE(),
+			    'Villes'[Commune] = "Bras-Panon", "BRAS PANON",
+			    'Villes'[Commune] = "Entre-Deux", "ENTRE DEUX",
+			    'Villes'[Commune] = "Le Port", "LE PORT",
+			    'Villes'[Commune] = "Le Tampon", "LE TAMPON",
+			    'Villes'[Commune] = "Les Avirons", "LES AVIRONS",
+			    'Villes'[Commune] = "Petite-Île", "PETITE ILE",
+			    'Villes'[Commune] = "Plaine des palmistes", "PLAINE DES PALMISTES",
+			    'Villes'[Commune] = "St-André", "SAINT ANDRE",
+			    'Villes'[Commune] = "Saint-André", "SAINT ANDRE",
+			    'Villes'[Commune] = "St-Benoît", "SAINT BENOIT",
+			    'Villes'[Commune] = "Saint-Benoît", "SAINT BENOIT",
+			    'Villes'[Commune] = "Saint-Benoit", "SAINT BENOIT",
+			    'Villes'[Commune] = "St-Denis", "SAINT DENIS",
+			    'Villes'[Commune] = "Saint-Denis", "SAINT DENIS",
+			    'Villes'[Commune] = "St-Joseph", "SAINT JOSEPH",
+			    'Villes'[Commune] = "Saint-Joseph", "SAINT JOSEPH",
+			    'Villes'[Commune] = "St-Leu", "SAINT LEU",
+			    'Villes'[Commune] = "Saint-Leu", "SAINT LEU",
+			    'Villes'[Commune] = "St-Louis", "SAINT LOUIS",
+			    'Villes'[Commune] = "Saint-Louis", "SAINT LOUIS",
+			    'Villes'[Commune] = "St-Paul", "SAINT PAUL",
+			    'Villes'[Commune] = "Saint-Paul", "SAINT PAUL",
+			    'Villes'[Commune] = "St-Philippe", "SAINT PHILIPPE",
+			    'Villes'[Commune] = "Saint-Philippe", "SAINT PHILIPPE",
+			    'Villes'[Commune] = "St-Pierre", "SAINT PIERRE",
+			    'Villes'[Commune] = "Saint-Pierre", "SAINT PIERRE",
+			    'Villes'[Commune] = "Ste-Marie", "SAINTE MARIE",
+			    'Villes'[Commune] = "Sainte-Marie", "SAINTE MARIE",
+			    'Villes'[Commune] = "Ste-Suzanne", "SAINTE SUZANNE",
+			    'Villes'[Commune] = "Sainte-Suzanne", "SAINTE SUZANNE",
+			    'Villes'[Commune] = "La Possession", "LA POSSESSION",
+			    'Villes'[Commune] = "L'Étang-Salé", "ETANG SALE",
+			    'Villes'[Commune] = "Etang-Salé", "ETANG SALE",
+			    'Villes'[Commune] = "Cilaos", "CILAOS",
+			    'Villes'[Commune] = "Salazie", "SALAZIE",
+			    'Villes'[Commune] = "Sainte-Rose", "SAINTE ROSE",
+			    'Villes'[Commune] = "Trois-Bassins", "TROIS BASSINS",
+			    'Villes'[Commune] = "Trois-Basins", "TROIS BASSINS",
+			    BLANK()
+			)
+		lineageTag: c480aaa2-826a-4c4d-b2e8-dd3b63533dd6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Villes = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au dossier SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer le fichier Correspondance Géo.xlsx
+				    FichierGeo = Table.SelectRows(Source, each [Name] = "Correspondance Géo.xlsx"),
+				
+				    // 3. Trier pour garder la version la plus récente
+				    TrierParDate = Table.Sort(FichierGeo, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Étendre les attributs
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Supprimer les fichiers masqués si besoin
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				
+				    // 7. Cibler la feuille "Feuil1"
+				    Feuil1_Sheet = ExcelFile{[Item="Feuil1", Kind="Sheet"]}[Data],
+				
+				    // 8. Typage initial pour stabiliser la promotion
+				    #"Type modifié" = Table.TransformColumnTypes(Feuil1_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}}),
+				
+				    // 9. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Type modifié", [PromoteAllScalars=true]),
+				
+				    // 10. Typage final
+				    #"Type modifié1" = Table.TransformColumnTypes(#"En-têtes promus",{
+				        {"Commune", type text},
+				        {"Latitude", type text},
+				        {"Longitude", type text}
+				    })
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

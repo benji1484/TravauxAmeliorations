@@ -1,0 +1,387 @@
+table IndicateursVacanceShrEnGestionDepuis2023
+	lineageTag: 295b4605-4442-49c2-993c-f44bfc94f8df
+	sourceLineageTag: 5eef4bd0-88a5-4c35-876c-83bbab1f0122
+
+	column periode
+		dataType: string
+		lineageTag: 1b594c9f-f7c8-4a9b-a6c8-9aa1fdd8ba2d
+		sourceLineageTag: 2ceb91ae-73c6-420d-9c66-f1953d3572bd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = User
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: 4374d6f0-77f5-4dda-9d2d-c93f9f996f97
+		sourceLineageTag: 1c0e09a5-9539-40f1-b958-61fa84609089
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = User
+
+	column code_ho2
+		dataType: string
+		lineageTag: 996d6e50-cc87-44a6-954c-b1a3eff642f5
+		sourceLineageTag: fa3f9bb7-7d1b-4cd4-b291-a37ee790d8b3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = User
+
+	column code_ug
+		dataType: string
+		lineageTag: 19f0c680-ae1a-4838-add8-8444ff46ce19
+		sourceLineageTag: b6fcb225-8c09-4d06-8f3c-46fd910591dc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = User
+
+	column NBJoursVACm_ug
+		dataType: int64
+		formatString: 0
+		lineageTag: 2961ffad-5d10-41be-a245-da176add6790
+		sourceLineageTag: 5d550b70-923d-4ddc-90a6-82e1031e869a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: NBJoursVACm_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceMELm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 62b2c057-936f-4ae5-887d-9e5a2850beb9
+		sourceLineageTag: b4c36c81-5489-4d83-85f6-32ce5a2fe7f4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceMELm_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceCommm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: f0cc42db-5f8d-416c-8823-09f134385540
+		sourceLineageTag: ef6eb97f-2380-484a-9594-d84faee0edc1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceCommm_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceTechm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: f31036cb-a41a-4598-85c2-58c302ce0f46
+		sourceLineageTag: 9b123ae3-9f08-474f-8c2f-dbbb7180c864
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceTechm_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceStratm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: c0231bca-7f10-44ac-952c-02561ef451cf
+		sourceLineageTag: 1fd8ae2e-2639-4fda-a03e-f94307f48e7c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceStratm_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacancem_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 9bc5587c-5a7d-4e2a-a479-d447dbd5efc9
+		sourceLineageTag: e6a28db7-5f85-4d8e-9681-f3d9a5b95cc9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacancem_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacance12m_ug
+		dataType: double
+		lineageTag: e74a3738-e6c0-441f-a8a5-d3f4b4e91312
+		sourceLineageTag: 58d2ca6a-1cb0-4672-a657-877219661c7b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacance12m_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceYTD_ug
+		dataType: double
+		lineageTag: 39a5ec3d-decf-4db4-b7db-ce6ec2fabba3
+		sourceLineageTag: a276dbb3-6979-49c4-b5ec-42564a0a3d1e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column LoyerTheo_TTCm_ug
+		dataType: double
+		lineageTag: f80bca00-3931-40b5-96c9-9901463305ce
+		sourceLineageTag: 6444f25c-ed32-4201-a5a2-8c0b720af0ee
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: LoyerTheo_TTCm_ug
+
+		annotation SummarizationSetBy = User
+
+	column LoyerTheo_TTCYTD_ug
+		dataType: double
+		lineageTag: 673eef1e-fb44-4483-a7e4-9ca4a52f912f
+		sourceLineageTag: 081c5b1f-912a-4f1e-8d0f-b0d5ca87a8ac
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: LoyerTheo_TTCYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacancem
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: adb2e8df-0760-4985-92fe-61e17b44730c
+		sourceLineageTag: 17ceaae9-c4c0-419c-a59b-44d1c5fdd94c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacancem
+
+		annotation SummarizationSetBy = User
+
+	column TxVacMELm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 30ef9dd7-31fb-43f3-8590-b4d19e1bd59c
+		sourceLineageTag: 208e085b-f651-4da1-b9ec-1c242ba5a64e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacMELm
+
+		annotation SummarizationSetBy = User
+
+	column TxVacCommm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: e49ecb3c-94ff-4fb9-9c62-a0cb44776fea
+		sourceLineageTag: fde2e34a-3cba-40a9-b57c-7682a27b2b57
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacCommm
+
+		annotation SummarizationSetBy = User
+
+	column TxVacTechm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 0e57a7d2-3d52-4daa-83ed-69bfd4297e22
+		sourceLineageTag: 550c9ca7-c0f6-4ca9-b458-001379ff78ac
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacTechm
+
+		annotation SummarizationSetBy = User
+
+	column TxVacStratm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 38065969-b8b5-438d-8d5d-b3e733f06bce
+		sourceLineageTag: 9bd722e3-843f-4e3c-a693-d2c0e073d59c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacStratm
+
+		annotation SummarizationSetBy = User
+
+	column TxVacFiYTD_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 842855ae-0cb7-44f2-bb7b-8af44447bf68
+		sourceLineageTag: b13a8c3d-4a6b-4b6f-bc34-0e5e6c73aea0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacFiYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacCommFim_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8397323c-81a8-4871-8c4c-28e952e26e7f
+		sourceLineageTag: 1995e11f-0949-4dba-b599-c872c0b319f9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacCommFim_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacCommFiYTD_ug
+		dataType: double
+		lineageTag: 9c6839ce-ac94-4069-9ff9-cb156fc66a6f
+		sourceLineageTag: 46993a65-dc17-47ad-b992-4a74da0f9ff6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacCommFiYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacStratFim_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 82441375-4cf4-4c88-99ec-dbced2ab0f09
+		sourceLineageTag: 8a3b68d3-584c-4aef-9d38-4628d24479e5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacStratFim_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacStratFiYTD_ug
+		dataType: double
+		lineageTag: 23c3ed45-7b63-48b5-be54-ec8556b5db04
+		sourceLineageTag: 187a40b4-daf3-454c-9058-696f72ebbbf7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacStratFiYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacTechFim_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 0c819b8c-292e-4a6b-be10-5282f2c040ce
+		sourceLineageTag: a965f637-ad02-46cb-b73b-15cfe8bf0d03
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacTechFim_ug
+
+		annotation SummarizationSetBy = User
+
+	column TxVacTechFiYTD_ug
+		dataType: double
+		lineageTag: ab577c56-aa9c-47f8-bc53-67d4409db0bc
+		sourceLineageTag: 9afa0661-46c3-4eb7-8680-d7e62bfb877d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TxVacTechFiYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column code_hp1
+		dataType: string
+		lineageTag: 644736d6-af01-41bb-8b12-084ded42c958
+		sourceLineageTag: f3450a95-55c0-47f3-9d54-ee1615892cf6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceCommYTD_ug
+		dataType: double
+		lineageTag: 1f2bddde-bc54-41b6-be60-2c606526241f
+		sourceLineageTag: 7c57b063-7319-4309-8735-ba827e7c56d7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceCommYTD_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceVendum_ug
+		dataType: double
+		lineageTag: c965b655-f8fe-498d-b7a2-05db6e442e5e
+		sourceLineageTag: a13f5ce6-6edf-4d75-8cd5-800da1941c8b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceVendum_ug
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceDemoliem_ug
+		dataType: double
+		lineageTag: 7df1dba5-a179-45ce-bb83-cd9fa5652795
+		sourceLineageTag: 5dccdd5a-5fd0-4012-a502-6cb15b274aa3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceDemoliem_ug
+
+		annotation SummarizationSetBy = User
+
+	column unique_key
+		dataType: string
+		lineageTag: 677a57e1-a832-401b-8891-bb136e1da0e5
+		sourceLineageTag: 7583f463-4c9c-472a-be4c-101bcbdf960b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: unique_key
+
+		annotation SummarizationSetBy = User
+
+	column TotalVacanceHCm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 1e7a26c5-dcbe-4e76-84e0-eb97cf2caf3e
+		sourceLineageTag: e24437c4-ea58-4f77-a422-eef43fbe26b4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalVacanceHCm_ug
+
+		annotation SummarizationSetBy = User
+
+	column batiment
+		dataType: string
+		lineageTag: fc2469c1-7db9-48b5-be36-037a6ee6ebd0
+		sourceLineageTag: 88e0f911-ab47-48e4-8c3d-a4018e14efaf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = User
+
+	column dte_fin_mois
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: c50b46b8-b7e9-4697-b116-ada26d39bfd5
+		sourceLineageTag: 5e0add78-4b77-4298-aad2-4cfd4321670e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: dte_fin_mois
+
+		annotation SummarizationSetBy = User
+
+	column Délégation
+		dataType: string
+		lineageTag: 3d020a18-90c0-467f-8f83-b466c60c67fc
+		sourceLineageTag: 20b31308-7921-49b7-b5db-a145a03b9d67
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Délégation
+
+		annotation SummarizationSetBy = User
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 4b258e37-383f-4418-adfd-b6b481cb23ad
+		sourceLineageTag: 93c4139b-8394-4907-85ca-f6f108fcd0bb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = User
+
+	partition IndicateursVacanceShrEnGestionDepuis2023 = entity
+		mode: directQuery
+		source
+			entityName: IndicateursVacanceShrEnGestionDepuis2023
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

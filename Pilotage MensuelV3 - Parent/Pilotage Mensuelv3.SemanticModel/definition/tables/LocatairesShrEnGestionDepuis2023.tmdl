@@ -1,0 +1,348 @@
+table LocatairesShrEnGestionDepuis2023
+	lineageTag: 2b05354b-89ab-4164-a9d7-cee6dc3d3fbf
+
+	column periode
+		dataType: string
+		lineageTag: 91fcae22-4af9-4eee-8175-622f39f5d254
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ca
+		dataType: string
+		lineageTag: f3464e58-1f97-468a-8618-62fb5a1e4099
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ug
+		dataType: string
+		lineageTag: 7a5132a2-9c79-43fd-bb84-48dfa9608cef
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho2
+		dataType: string
+		lineageTag: 8389f8dc-3892-40ba-9d8f-c4b4f1826b55
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: 77c2746c-1d14-4ea4-852d-1a09c4aba19b
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_hp1
+		dataType: string
+		lineageTag: eaf8deca-456d-4ee6-9c1e-ddbb08d874d8
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tranche_Age = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'LocatairesShrEnGestionDepuis2023'[age_tiers] < 0 || 'LocatairesShrEnGestionDepuis2023'[age_tiers] > 110, BLANK(), -- Exclusion des valeurs hors limites
+			    'LocatairesShrEnGestionDepuis2023'[age_tiers] < 25, "-_25_A",
+			    'LocatairesShrEnGestionDepuis2023'[age_tiers] >= 25 && 'LocatairesShrEnGestionDepuis2023'[age_tiers] <= 34, "25_34_A",
+			    'LocatairesShrEnGestionDepuis2023'[age_tiers] >= 35 && 'LocatairesShrEnGestionDepuis2023'[age_tiers] <= 44, "35_44_A",
+			    'LocatairesShrEnGestionDepuis2023'[age_tiers] >= 45 && 'LocatairesShrEnGestionDepuis2023'[age_tiers] <= 59, "45_59_A",
+			    'LocatairesShrEnGestionDepuis2023'[age_tiers] >= 60, "60_A_plus",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: 9ce15d03-a028-4ab1-86ce-7610cadf6edb
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_tiers
+		dataType: int64
+		formatString: 0
+		lineageTag: 18a80062-4acf-4411-b7cb-922c508f526d
+		summarizeBy: sum
+		sourceColumn: age_tiers
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année = left(LocatairesShrEnGestionDepuis2023[periode], 4)
+		lineageTag: f98bf2d6-b362-40d9-8d8c-174eb12504fe
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_caug
+		dataType: string
+		lineageTag: 0ffbd9e7-11e6-4c2f-93df-eca02d052d85
+		summarizeBy: none
+		sourceColumn: statut_caug
+
+		annotation SummarizationSetBy = Automatic
+
+	column contractant_principal
+		dataType: string
+		lineageTag: 5f3cbe99-f160-4daf-ac84-e825095ee10d
+		summarizeBy: none
+		sourceColumn: contractant_principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_ca
+		dataType: string
+		lineageTag: 85dff676-1550-44a3-b7b3-a7ca00354f1f
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_nature_ug
+		dataType: string
+		lineageTag: 574ed81e-a2c6-4fdc-a308-09ec521a7f5b
+		summarizeBy: none
+		sourceColumn: lbl_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_assurance
+		dataType: string
+		lineageTag: 8f48a88a-9880-4f16-890f-31f4b4558cac
+		summarizeBy: none
+		sourceColumn: ind_assurance
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_mutation
+		dataType: string
+		lineageTag: b7531b57-c509-4129-ae9b-6f70528b2b41
+		summarizeBy: none
+		sourceColumn: ind_mutation
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_validite_assurance
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7b5984d2-1043-4999-8adf-1c5792080e61
+		summarizeBy: none
+		sourceColumn: dte_fin_validite_assurance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_debut_validite_assurance
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9278ff42-c7d5-42a3-9212-f9685a08d659
+		summarizeBy: none
+		sourceColumn: dte_debut_validite_assurance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column statut_catiep
+		dataType: string
+		lineageTag: 9634acdf-351e-4abe-aace-e18dbcd0f809
+		summarizeBy: none
+		sourceColumn: statut_catiep
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_pers_morale_physique
+		dataType: string
+		lineageTag: 0301199a-6aec-4764-aadd-1df3d3f64db8
+		summarizeBy: none
+		sourceColumn: ind_pers_morale_physique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tranche d''âge'
+		dataType: string
+		lineageTag: 068d7240-eaa4-4bf7-9576-8b9b36d2a0f3
+		summarizeBy: none
+		sourceColumn: Tranche d'âge
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_contractant
+		dataType: string
+		lineageTag: d51e529d-60ba-4b7f-b816-278d2567c6c9
+		summarizeBy: none
+		sourceColumn: type_contractant
+
+		annotation SummarizationSetBy = Automatic
+
+	column batiment
+		dataType: string
+		lineageTag: 97fd0f56-744f-47c5-b949-49cd0b30e7e9
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( LocatairesShrEnGestionDepuis2023[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( LocatairesShrEnGestionDepuis2023[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 76e562c5-51e5-4b17-81d0-85478ee07f34
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = LocatairesShrEnGestionDepuis2023[code_hp1]   -- ou [code_HP1] selon ton modèle
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        
+			        // Mises à jour basées sur l'image (Message vs Tableau)
+			        hp = "CLVE", "ANDR",  // Clos du Verger
+			        hp = "CTI5", "ARCD",  // Centaure Ilot 5
+			        hp = "FCHE", "PORT",  // Francis Hallé
+			        hp = "FLQE", "ARCD",  // Foulque
+			        hp = "JCTL", "RUIS",  // Res Jean Chatel
+			        hp = "JDGS", "CALB",  // Jardin des Gardenias
+			        hp = "LOBL", "CALB",  // Lobelie
+			        hp = "MPTO", "PORT",  // Maputo
+			        hp = "SRTL", "PORT",  // Serins et Tourterelles
+			        hp = "TRG2", "CALB",  // Tregor 2
+			        
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        -- si on a trouvé un matching sur code_hp1
+			    LocatairesShrEnGestionDepuis2023[code_HO2]    -- sinon on reprend code_HO2
+			)
+			
+			```
+		lineageTag: 2fe03ce1-250a-4a0a-8a62-ba282f890f03
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 1b45594b-a954-41a6-9822-26f085488872
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coordonnees.tel_fixe'
+		dataType: string
+		lineageTag: cad02019-1bbe-4580-9dc7-bd911bb4ef15
+		summarizeBy: none
+		sourceColumn: Coordonnees.tel_fixe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coordonnees.tel_portable'
+		dataType: string
+		lineageTag: 478b274e-61eb-46a8-b9fd-ea1f30203c20
+		summarizeBy: none
+		sourceColumn: Coordonnees.tel_portable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coordonnees.email_tiers'
+		dataType: string
+		lineageTag: 5ccc4cbc-9313-4534-b868-177d4de16cbb
+		summarizeBy: none
+		sourceColumn: Coordonnees.email_tiers
+
+		annotation SummarizationSetBy = Automatic
+
+	partition LocatairesShrEnGestionDepuis2023-7d8cd81c-17df-4f08-b055-321b0c89af18 = m
+		mode: import
+		source = ```
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    LocatairesShrEnGestionDepuis2023_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="LocatairesShrEnGestionDepuis2023",Kind="View"]}[Data],
+				    #"Columns removed by Measure Killer"= Table.SelectColumns(LocatairesShrEnGestionDepuis2023_View,{"delegation_dixit","batiment","type_contractant","ind_pers_morale_physique","statut_catiep","dte_fin_validite_assurance","dte_debut_validite_assurance","age_tiers","statut_caug","ind_mutation","contractant_principal","code_ug","code_hp1","code_type_ca","periode","lbl_nature_ug","code_nature_ug","ind_assurance","code_ho2","code_ca"}),
+				    
+				    // Étape ajoutée pour créer la colonne des classes d'âge
+				    #"Tranche d'âge ajoutée" = Table.AddColumn(#"Columns removed by Measure Killer", "Tranche d'âge", each 
+				        if [statut_catiep] = "Present" and [contractant_principal] = "O" and [ind_pers_morale_physique] = "Personne physique" then
+				            if [age_tiers] >= 18 and [age_tiers] <= 25 then "18-25"
+				            else if [age_tiers] > 25 and [age_tiers] <= 35 then "26-35"
+				            else if [age_tiers] > 35 and [age_tiers] <= 45 then "36-45"
+				            else if [age_tiers] > 45 and [age_tiers] <= 55 then "46-55"
+				            else if [age_tiers] > 55 and [age_tiers] <= 65 then "56-65"
+				            else if [age_tiers] > 65 and [age_tiers] <= 74 then "66-74"
+				            else if [age_tiers] >= 75 then "75 +"
+				            else "Autres"
+				        else
+				            "Autres"
+				    ),
+				    #"Lignes filtrées" = Table.SelectRows(#"Tranche d'âge ajoutée", each true),
+				    #"Requêtes fusionnées" = Table.NestedJoin(#"Lignes filtrées", {"code_ca"}, Coordonnees, {"code_ca"}, "Coordonnees", JoinKind.LeftOuter),
+				    #"Coordonnees développé" = Table.ExpandTableColumn(#"Requêtes fusionnées", "Coordonnees", {"tel_fixe", "tel_portable", "email_tiers"}, {"Coordonnees.tel_fixe", "Coordonnees.tel_portable", "Coordonnees.email_tiers"})
+				in
+				    #"Coordonnees développé"
+				```
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

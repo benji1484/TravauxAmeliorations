@@ -1,0 +1,452 @@
+table IndicateursFinanciersShrEnGestionDepuis2023
+	lineageTag: 59b9bfaf-09ed-4fb7-b58d-3ba3e430c303
+
+	column periode
+		dataType: string
+		lineageTag: 202f25f6-98ca-4fa7-b2bf-c8c48636b6f9
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ca
+		dataType: string
+		lineageTag: e773245b-ca68-4f19-9ac0-8d9ccad962ca
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_ca
+		dataType: string
+		lineageTag: 7b2392c9-f964-4586-aebe-5c7ca48bebb2
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ug_principale
+		dataType: string
+		lineageTag: ff98e496-4c37-4c42-92b7-f225dc1c9753
+		summarizeBy: none
+		sourceColumn: code_ug_principale
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: eb5275c4-1547-4337-b935-d1f3a8efee1f
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho2
+		dataType: string
+		lineageTag: e1faee71-479e-4570-9b30-34f306970b57
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_hp1
+		dataType: string
+		lineageTag: d528a4d0-2bfc-472b-8c19-b76abb13baa4
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_caug
+		dataType: string
+		lineageTag: 6d0bdd8f-dcb4-4d7b-adbb-96e76e7cb4d8
+		summarizeBy: none
+		sourceColumn: statut_caug
+
+		annotation SummarizationSetBy = Automatic
+
+	column quitm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 6fb85e52-559b-462b-9d40-6c26e3de6b0b
+		summarizeBy: sum
+		sourceColumn: quitm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column encaissm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: f8f4a8c8-5ad4-4af9-bdfb-851ecdbfc718
+		summarizeBy: sum
+		sourceColumn: encaissm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column allocm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 29b922d7-de29-4b4b-a4af-c345a57364c6
+		summarizeBy: sum
+		sourceColumn: allocm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column soldem_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: c55dee55-19c7-4786-aaac-ed9417d56ee4
+		summarizeBy: sum
+		sourceColumn: soldem_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column quitALm_ca_operation
+		dataType: double
+		lineageTag: e78dd368-b6ee-45bb-a5a5-1e3d65346ae7
+		summarizeBy: sum
+		sourceColumn: quitALm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column quitYTDm_ca_operation
+		dataType: double
+		lineageTag: 7527e198-5314-4dc1-969e-4b6a1d6907f8
+		summarizeBy: sum
+		sourceColumn: quitYTDm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column soldem1_ca_operation
+		dataType: double
+		lineageTag: 3d98e05b-48cc-48eb-bdfc-d0af51e7e4e2
+		summarizeBy: sum
+		sourceColumn: soldem1_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column txrecouvm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 14880951-6ed2-4c55-8aac-bf546b99d954
+		summarizeBy: sum
+		sourceColumn: txrecouvm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column txrecouvYTDm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: d77593f2-5bb9-48c5-925b-54724cd63800
+		summarizeBy: sum
+		sourceColumn: txrecouvYTDm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column txrecouvhppm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8f1cc86f-3c3d-405c-b2a6-1b8814d9c256
+		summarizeBy: sum
+		sourceColumn: txrecouvhppm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column txrecouvhppYTDm_ca_operation
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 82aff770-79af-4849-81ce-e4f08e7d9158
+		summarizeBy: sum
+		sourceColumn: txrecouvhppYTDm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column impayem_ca_operation
+		dataType: double
+		lineageTag: fe0d0a2c-4480-4ea2-bf00-5cab22ad9478
+		summarizeBy: sum
+		sourceColumn: impayem_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tximpayem_ca_operation
+		dataType: double
+		lineageTag: d1b8fba9-5248-4459-a57c-914a8ce3506f
+		summarizeBy: sum
+		sourceColumn: tximpayem_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column passage_en_perte_CAYTDm
+		dataType: double
+		lineageTag: 5ae3d080-582f-4cb0-be87-a624059286c9
+		summarizeBy: sum
+		sourceColumn: passage_en_perte_CAYTDm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dimension_ca
+		dataType: string
+		lineageTag: 4c232b5b-c81b-43c2-9216-ef6e9c7fbde9
+		summarizeBy: none
+		sourceColumn: dimension_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column passage_en_perte_CAm
+		dataType: double
+		lineageTag: 78906bbf-bf3b-41a1-94e3-355677bf75a3
+		summarizeBy: sum
+		sourceColumn: passage_en_perte_CAm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Année = value(left(IndicateursFinanciersShrEnGestionDepuis2023[periode], 4))
+		lineageTag: 5affae95-827a-4b4c-9895-8bb8d95a1b68
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column autresfactum_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: c843fc3c-5daf-4862-ae7f-9606df779066
+		summarizeBy: sum
+		sourceColumn: autresfactum_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column loyerHCm_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 9b6ee92a-a8a6-4448-83a3-3b20aa241cc5
+		summarizeBy: sum
+		sourceColumn: loyerHCm_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column chargesfactum_ca_operation
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 09d05087-bd69-456e-824d-a34f59711b81
+		summarizeBy: sum
+		sourceColumn: chargesfactum_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column quit12m_ca_operation
+		dataType: double
+		lineageTag: a640973f-1f0b-4a17-bc9e-dd77277c6345
+		summarizeBy: sum
+		sourceColumn: quit12m_ca_operation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column batiment
+		dataType: string
+		lineageTag: 1b30fbc0-c32b-4d90-b4e1-f2b69301a81c
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Territoire = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "ANDR", "EST",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "ARCD", "OUEST",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "CALB", "NORD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "LOUI", "SUD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "PORT", "OUEST",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "RUIS", "NORD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "SMAR", "NORD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "SPRE", "SUD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "TAMP", "SUD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "Z010", "DIXIT",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "Z011", "DIXIT",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: 33e59898-f13d-40a6-9c37-4356b0a28c7c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Agence = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "ANDR", "ANDR",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "ARCD", "ARCD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "CALB", "CALB",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "LOUI", "LOUI",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "PORT", "PORT",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "RUIS", "RUIS",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "SMAR", "CALB",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "SPRE", "SPRE",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "TAMP", "TAMP",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "Z010", "Z011",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "Z011", "Z011",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: bc501ac9-f3fd-40b6-bd44-2f404ab163d3
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Interco = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "ANDR", "CIREST",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "ARCD", "TO",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "CALB", "CINOR",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "LOUI", "CIVIS/CASUD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "PORT", "TO",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "RUIS", "CINOR",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "SMAR", "CINOR",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "SPRE", "CIVIS/CASUD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "TAMP", "CIVIS/CASUD",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "Z010", "DIXIT",
+			    'IndicateursFinanciersShrEnGestionDepuis2023'[Code_ho2] = "Z011", "DIXIT",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: e7eff9a2-6fd2-43ad-847f-0d78e68029a5
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( IndicateursFinanciersShrEnGestionDepuis2023[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( IndicateursFinanciersShrEnGestionDepuis2023[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 8f77abc3-9dd7-495f-9be2-a0a85c9ec517
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = IndicateursFinanciersShrEnGestionDepuis2023[code_hp1]   -- ou [code_HP1] selon ton modèle
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        
+			        // Mises à jour basées sur l'image (Message vs Tableau)
+			        hp = "CLVE", "ANDR",  // Clos du Verger
+			        hp = "CTI5", "ARCD",  // Centaure Ilot 5
+			        hp = "FCHE", "PORT",  // Francis Hallé
+			        hp = "FLQE", "ARCD",  // Foulque
+			        hp = "JCTL", "RUIS",  // Res Jean Chatel
+			        hp = "JDGS", "CALB",  // Jardin des Gardenias
+			        hp = "LOBL", "CALB",  // Lobelie
+			        hp = "MPTO", "PORT",  // Maputo
+			        hp = "SRTL", "PORT",  // Serins et Tourterelles
+			        hp = "TRG2", "CALB",  // Tregor 2
+			        
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        -- si on a trouvé un matching sur code_hp1
+			    IndicateursFinanciersShrEnGestionDepuis2023[code_HO2]    -- sinon on reprend code_HO2
+			)
+			
+			```
+		lineageTag: e7edae53-ef53-469b-a610-10c66f5223dc
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 3c011fb3-bcb7-4ccf-9f81-f69954198626
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition IndicateursFinanciersShrEnGestionDepuis2023-f85f7d45-3e79-47be-bfd2-b46758834c9c = m
+		mode: import
+		source =
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin",Kind="Schema"]}[Data],
+				    ind_fi_dim_ca_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema"{[Name="ind_fi_dim_ca",Kind="View"]}[Data],
+				#"Columns removed by Measure Killer"= Table.SelectColumns(ind_fi_dim_ca_View,{"delegation_dixit","batiment","quit12m_ca_operation","autresfactum_ca_operation","loyerHCm_ca_operation","chargesfactum_ca_operation","passage_en_perte_CAm", "dimension_ca", "txrecouvYTDm_ca_operation", "code_ho2", "txrecouvm_ca_operation", "allocm_ca_operation", "soldem1_ca_operation", "code_nature_ug", "periode", "soldem_ca_operation", "txrecouvhppYTDm_ca_operation", "impayem_ca_operation", "code_type_ca", "txrecouvhppm_ca_operation", "statut_caug", "code_ca", "passage_en_perte_CAYTDm", "tximpayem_ca_operation", "quitALm_ca_operation", "code_hp1", "encaissm_ca_operation", "quitYTDm_ca_operation", "code_ug_principale", "quitm_ca_operation"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

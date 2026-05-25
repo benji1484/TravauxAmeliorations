@@ -1,0 +1,1062 @@
+table 'Scoring Patrimoine'
+	lineageTag: 0a14041f-1f2f-4482-8506-6323d084a97f
+
+	column epci
+		dataType: string
+		lineageTag: e02e5de6-ed9a-449b-98a0-e55834c78e38
+		summarizeBy: none
+		sourceColumn: epci
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_insee
+		dataType: double
+		lineageTag: 0908cfa4-e063-45dd-9aac-f528cdc78411
+		summarizeBy: sum
+		sourceColumn: code_insee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nom_commune
+		dataType: string
+		lineageTag: 33a6378c-5909-4895-9bf6-abf259224dbb
+		summarizeBy: none
+		sourceColumn: nom_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_qplh
+		dataType: double
+		lineageTag: 842f9530-11ae-454d-95d3-eeae9efdb846
+		summarizeBy: sum
+		sourceColumn: id_qplh
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nom_qplh
+		dataType: string
+		lineageTag: 0d8ff5d1-e76b-4709-a045-53806e30be33
+		summarizeBy: none
+		sourceColumn: nom_qplh
+
+		annotation SummarizationSetBy = Automatic
+
+	column IRIS
+		dataType: double
+		lineageTag: fca72626-dd8b-4c85-9d64-19cb6c229641
+		summarizeBy: sum
+		sourceColumn: IRIS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column libiris
+		dataType: string
+		lineageTag: 038cbba9-e5ec-4711-974c-9f707f8d245e
+		summarizeBy: none
+		sourceColumn: libiris
+
+		annotation SummarizationSetBy = Automatic
+
+	column x
+		dataType: double
+		lineageTag: 22281202-4305-4180-9bd5-64bd8ba086e7
+		summarizeBy: sum
+		sourceColumn: x
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column y
+		dataType: double
+		lineageTag: 131e420e-25d1-4f63-88ce-c1c07cbbdd21
+		summarizeBy: sum
+		sourceColumn: y
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id_unique_operation
+		dataType: string
+		lineageTag: 677cbfa8-9e86-430e-9190-197e805364c0
+		summarizeBy: none
+		sourceColumn: id_unique_operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column adresse
+		dataType: string
+		lineageTag: 1da78371-6e62-4e5d-b880-85f2522362b1
+		summarizeBy: none
+		sourceColumn: adresse
+
+		annotation SummarizationSetBy = Automatic
+
+	column operation
+		dataType: string
+		lineageTag: ee69a2b2-1c62-4589-a271-88114bf14221
+		summarizeBy: none
+		sourceColumn: operation
+
+		annotation SummarizationSetBy = Automatic
+
+	column fid
+		dataType: double
+		lineageTag: 97d34c0b-ff56-48e9-8823-bb3e9ff3b97e
+		summarizeBy: sum
+		sourceColumn: fid
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id
+		dataType: double
+		lineageTag: de387d48-8063-4393-bb8d-f6ea1d708082
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column section
+		dataType: string
+		lineageTag: eea0c1bf-dbc8-41d6-974f-19e4abec15c6
+		summarizeBy: none
+		sourceColumn: section
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_sogefi
+		dataType: double
+		lineageTag: 73914c38-9a88-43bb-b716-e98b9c104b5d
+		summarizeBy: sum
+		sourceColumn: id_sogefi
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column occupation
+		dataType: string
+		lineageTag: 8dccf688-19bd-4f51-9a29-9a179b7fb8be
+		summarizeBy: none
+		sourceColumn: occupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column superficie
+		dataType: double
+		lineageTag: a614f45e-89d2-41ea-b4e1-24dd7efdfb98
+		summarizeBy: sum
+		sourceColumn: superficie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nombre_de_parcelle
+		dataType: double
+		lineageTag: 10981721-9ee2-4f03-abcc-8f82f0a652cc
+		summarizeBy: sum
+		sourceColumn: nombre_de_parcelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sogefi_identifiant
+		dataType: double
+		lineageTag: cb9c1367-af25-4cde-b0de-b347bbc8dbda
+		summarizeBy: sum
+		sourceColumn: sogefi_identifiant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column groupe_habitation_type
+		dataType: string
+		lineageTag: b7e67671-484e-4934-aa18-c5e5d3fca268
+		summarizeBy: none
+		sourceColumn: groupe_habitation_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column premier_numero_parcelle
+		dataType: double
+		lineageTag: 00da9dbc-a2fd-4128-a7a4-d0f3822b5b03
+		summarizeBy: sum
+		sourceColumn: premier_numero_parcelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nom_groupe
+		dataType: string
+		lineageTag: f8059d0d-1dcb-4737-ab27-c00192a19e48
+		summarizeBy: none
+		sourceColumn: nom_groupe
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_t1
+		dataType: double
+		lineageTag: 6e8a9fc9-bedc-46bd-b5e7-47fd607bc53e
+		summarizeBy: sum
+		sourceColumn: nb_t1
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_t2
+		dataType: double
+		lineageTag: b2020927-823e-44d2-9fe5-1e8b73335991
+		summarizeBy: sum
+		sourceColumn: nb_t2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_t3
+		dataType: double
+		lineageTag: 0a70a0b1-6cb3-4ab4-94a5-25ec8b9ea701
+		summarizeBy: sum
+		sourceColumn: nb_t3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_t4
+		dataType: double
+		lineageTag: cddb5408-0085-4e17-a16d-14dafbff9b15
+		summarizeBy: sum
+		sourceColumn: nb_t4
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_t5
+		dataType: double
+		lineageTag: c9e949ef-5ca3-4cb4-8b01-ef5873f0a547
+		summarizeBy: sum
+		sourceColumn: nb_t5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_t6
+		dataType: double
+		lineageTag: 6b2c7970-a0fe-4af1-9946-39e4e7b8d79e
+		summarizeBy: sum
+		sourceColumn: nb_t6
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_t7
+		dataType: double
+		lineageTag: 18201433-2fd4-4615-8302-e2ae0d71c4f7
+		summarizeBy: sum
+		sourceColumn: nb_t7
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gerance
+		dataType: string
+		lineageTag: 6f584382-3120-4f09-ab36-5b071a3d1e6b
+		summarizeBy: none
+		sourceColumn: gerance
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_loge
+		dataType: double
+		lineageTag: d332a3b4-307d-4805-a03c-684df1bfeecd
+		summarizeBy: sum
+		sourceColumn: nb_loge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mobilite
+		dataType: double
+		lineageTag: c133568e-fcc1-4f78-a8bb-5f92a40fb70a
+		summarizeBy: sum
+		sourceColumn: mobilite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column code_groupe
+		dataType: string
+		lineageTag: 89cadbf3-c9ee-4aff-a2b9-702a9b025910
+		summarizeBy: none
+		sourceColumn: code_groupe
+
+		annotation SummarizationSetBy = Automatic
+
+	column financement
+		dataType: string
+		lineageTag: c1ec4aa7-336f-4a03-8ab1-d90bc0b20fe5
+		summarizeBy: none
+		sourceColumn: financement
+
+		annotation SummarizationSetBy = Automatic
+
+	column taux_de_vacance
+		dataType: double
+		lineageTag: 115a0a6d-d5a8-4c6b-85c3-0b8aaf893876
+		summarizeBy: sum
+		sourceColumn: taux_de_vacance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nombre_logements
+		dataType: double
+		lineageTag: 0f87bbb0-5481-4866-bf41-e9266fa32192
+		summarizeBy: sum
+		sourceColumn: nombre_logements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p_beneficiaire_al
+		dataType: double
+		lineageTag: 830b94a1-4b35-4b6f-b5bd-4a02a23dbb5b
+		summarizeBy: sum
+		sourceColumn: p_beneficiaire_al
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dette_par_logement
+		dataType: double
+		lineageTag: 66314fe9-a1a0-4f13-bf54-cddeff12db0b
+		summarizeBy: sum
+		sourceColumn: dette_par_logement
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column annee_mise_en_service
+		dataType: double
+		lineageTag: 3f042af2-1953-4e69-8538-d7935b0e486a
+		summarizeBy: sum
+		sourceColumn: annee_mise_en_service
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stock_logement_en_vente
+		dataType: double
+		lineageTag: 6b4d3303-b6d2-4375-918b-c2e654c3f500
+		summarizeBy: sum
+		sourceColumn: stock_logement_en_vente
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nombre_logement_mise_en_vente
+		dataType: double
+		lineageTag: 0debac1c-56a1-455b-b23d-502fa07639af
+		summarizeBy: sum
+		sourceColumn: nombre_logement_mise_en_vente
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column facturation_theorique_hors_char
+		dataType: double
+		lineageTag: 803b113b-eee3-4e41-8c3f-96c75d49e7e2
+		summarizeBy: sum
+		sourceColumn: facturation_theorique_hors_char
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column log21
+		dataType: double
+		lineageTag: df58d452-1956-450c-bae8-edd79d5bc754
+		summarizeBy: sum
+		sourceColumn: log21
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21
+		dataType: double
+		lineageTag: 097ac726-c7b3-44c7-a524-900b58c4d19d
+		summarizeBy: sum
+		sourceColumn: pop21
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_0_14
+		dataType: double
+		lineageTag: 7a7ca5d4-4365-4626-adf6-342280ee9e47
+		summarizeBy: sum
+		sourceColumn: pop21_0_14
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_15_29
+		dataType: double
+		lineageTag: 37d41018-caad-4238-82b1-cf803c656774
+		summarizeBy: sum
+		sourceColumn: pop21_15_29
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_15_64
+		dataType: double
+		lineageTag: f0f9a117-3dbb-4ede-ac32-e558b0944ec4
+		summarizeBy: sum
+		sourceColumn: pop21_15_64
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_30_44
+		dataType: double
+		lineageTag: bea737bc-3d4f-451f-bbe7-d83c3ef10517
+		summarizeBy: sum
+		sourceColumn: pop21_30_44
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_45_59
+		dataType: double
+		lineageTag: 75c18160-c640-4020-bae3-3e3a6867dca4
+		summarizeBy: sum
+		sourceColumn: pop21_45_59
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_60_74
+		dataType: double
+		lineageTag: b2150776-c1e9-46c3-88e4-eb7f046baffb
+		summarizeBy: sum
+		sourceColumn: pop21_60_74
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop21_75_ou_plus
+		dataType: double
+		lineageTag: f7b21b8b-45b1-4919-a09c-8a072eb2bd6c
+		summarizeBy: sum
+		sourceColumn: pop21_75_ou_plus
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21
+		dataType: double
+		lineageTag: 2254b064-9281-46fb-b48b-d8ce1ddd249e
+		summarizeBy: sum
+		sourceColumn: actocc21
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21_agriculteurs
+		dataType: double
+		lineageTag: 50ddb37a-518e-4efd-bed6-390e770c0486
+		summarizeBy: sum
+		sourceColumn: actocc21_agriculteurs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21_acce
+		dataType: double
+		lineageTag: 5dc32be4-6093-483e-84c6-b27f64885522
+		summarizeBy: sum
+		sourceColumn: actocc21_acce
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21_cadres
+		dataType: double
+		lineageTag: 798bed41-0cb2-4abb-a597-45c144e7fd48
+		summarizeBy: sum
+		sourceColumn: actocc21_cadres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21_prof_interm
+		dataType: double
+		lineageTag: ad988359-f5ee-4ce0-a416-f7486b90ffb8
+		summarizeBy: sum
+		sourceColumn: actocc21_prof_interm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21_employes
+		dataType: double
+		lineageTag: acaba347-7482-4991-9ba1-b93c5f1ba30a
+		summarizeBy: sum
+		sourceColumn: actocc21_employes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actocc21_ouvriers
+		dataType: double
+		lineageTag: cbc95c02-498f-4059-95b6-9a75da5cd416
+		summarizeBy: sum
+		sourceColumn: actocc21_ouvriers
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_actifs_occupes
+		dataType: double
+		lineageTag: ac988f71-938a-4567-9586-d8378ad8c4aa
+		summarizeBy: sum
+		sourceColumn: part_actifs_occupes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_activite
+		dataType: double
+		lineageTag: c96d5f3b-cb00-4204-91a3-7f30f7282ef9
+		summarizeBy: sum
+		sourceColumn: taux_activite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rev21_med_dispo
+		dataType: int64
+		formatString: 0
+		lineageTag: 9bacf142-c655-4e19-8f65-5eb2ee09c7d1
+		summarizeBy: sum
+		sourceColumn: rev21_med_dispo
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_produit
+		dataType: string
+		lineageTag: d1ea7469-c0ec-464a-a381-0bcc5e607296
+		summarizeBy: none
+		sourceColumn: type_produit
+
+		annotation SummarizationSetBy = Automatic
+
+	column loy_prive_m2
+		dataType: double
+		lineageTag: e2da0471-dee4-43db-879a-451be8f2ffcc
+		summarizeBy: sum
+		sourceColumn: loy_prive_m2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loy_social_m2
+		dataType: double
+		lineageTag: ecb6cb9a-0f03-45fc-801c-f78b7276a3bc
+		summarizeBy: sum
+		sourceColumn: loy_social_m2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ecart_loyer_prive_social_m2
+		dataType: double
+		lineageTag: d7584c96-1e01-48b0-8ef2-9641e2ce0d96
+		summarizeBy: sum
+		sourceColumn: ecart_loyer_prive_social_m2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loyer_m2_shlmr_tres_social
+		dataType: double
+		lineageTag: fba206ff-c99c-4b3a-b5d5-9ca1c80f1cb4
+		summarizeBy: sum
+		sourceColumn: loyer_m2_shlmr_tres_social
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loyer_m2_shlmr_social
+		dataType: double
+		lineageTag: 9881c369-3513-445d-ab1a-6131983ddaef
+		summarizeBy: sum
+		sourceColumn: loyer_m2_shlmr_social
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loyer_m2_shlmr_intermediaire
+		dataType: double
+		lineageTag: 68edf520-fdda-4c47-8d61-e978a976ed5b
+		summarizeBy: sum
+		sourceColumn: loyer_m2_shlmr_intermediaire
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column densite_batiments_ff24
+		dataType: double
+		lineageTag: 5b697340-8d83-4a72-a166-9906cd62d29f
+		summarizeBy: sum
+		sourceColumn: densite_batiments_ff24
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column densite_logements_ff24
+		dataType: double
+		lineageTag: b45e7350-1def-4f3c-94d6-50b3ac031e50
+		summarizeBy: sum
+		sourceColumn: densite_logements_ff24
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column armature_sar
+		dataType: string
+		lineageTag: 2181a826-863f-4a28-a914-a0870d9b37b8
+		summarizeBy: none
+		sourceColumn: armature_sar
+
+		annotation SummarizationSetBy = Automatic
+
+	column note_armature_sar
+		dataType: double
+		lineageTag: 647ad379-a0f8-429e-ab2c-bc61f3066c49
+		summarizeBy: sum
+		sourceColumn: note_armature_sar
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tx_rev21_dispo_60
+		dataType: int64
+		formatString: 0
+		lineageTag: 59763ade-b837-41a9-832c-230eb8373a7f
+		summarizeBy: sum
+		sourceColumn: tx_rev21_dispo_60
+
+		annotation SummarizationSetBy = Automatic
+
+	column note_taux_pauvrete
+		dataType: int64
+		formatString: 0
+		lineageTag: 041c3856-9a03-4381-b35c-153a50275bda
+		summarizeBy: sum
+		sourceColumn: note_taux_pauvrete
+
+		annotation SummarizationSetBy = Automatic
+
+	column ecart_loyer_prive_shlmr_tres_social
+		dataType: double
+		lineageTag: e40d2c9f-5021-40c2-ad69-95f6ff0b6684
+		summarizeBy: sum
+		sourceColumn: ecart_loyer_prive_shlmr_tres_social
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_ecart_loyer_LLTS
+		dataType: int64
+		formatString: 0
+		lineageTag: 381b23c4-d443-46c8-8f25-91495451d643
+		summarizeBy: sum
+		sourceColumn: note_ecart_loyer_LLTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ecart_loyer_prive_shlmr_social
+		dataType: double
+		lineageTag: 61333c84-f347-41a8-9fa2-2f1505ce8994
+		summarizeBy: sum
+		sourceColumn: ecart_loyer_prive_shlmr_social
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_ecart_loyer_LLS
+		dataType: int64
+		formatString: 0
+		lineageTag: d27ea611-6b1a-43bd-8a6d-0a387d6f0520
+		summarizeBy: sum
+		sourceColumn: note_ecart_loyer_LLS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ecart_loyer_prive_shlmr_intermediaire
+		dataType: double
+		lineageTag: d86e20a4-6a43-4035-b427-30cbfd4bc931
+		summarizeBy: sum
+		sourceColumn: ecart_loyer_prive_shlmr_intermediaire
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_ecart_loyer_PLS_LLI
+		dataType: int64
+		formatString: 0
+		lineageTag: 99a96f80-5874-413e-b7dd-9a8d0d624d84
+		summarizeBy: sum
+		sourceColumn: note_ecart_loyer_PLS_LLI
+
+		annotation SummarizationSetBy = Automatic
+
+	column note_agregee_ecart_loyer
+		dataType: double
+		lineageTag: 1bd212b3-b739-4feb-80f6-9d5816dc49e3
+		summarizeBy: sum
+		sourceColumn: note_agregee_ecart_loyer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column densite_logements_ff24_250m
+		dataType: double
+		lineageTag: 05bf8195-7e74-46d5-a156-7eca4cb051b2
+		summarizeBy: sum
+		sourceColumn: densite_logements_ff24_250m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_densite_logement_250m
+		dataType: double
+		lineageTag: d66c3ca0-6150-4cfc-bbe2-ab02aa52737a
+		summarizeBy: sum
+		sourceColumn: note_densite_logement_250m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_bus_jour_5min
+		dataType: double
+		lineageTag: db645c7f-34c6-4abd-8014-d773707e785f
+		summarizeBy: sum
+		sourceColumn: nb_bus_jour_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_bus_jour_10min
+		dataType: double
+		lineageTag: 638860ba-61cd-48dc-909f-8f860e4ef52c
+		summarizeBy: sum
+		sourceColumn: nb_bus_jour_10min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_bus_jour_15min
+		dataType: double
+		lineageTag: a9078b95-19cd-4857-9861-14433a5c803b
+		summarizeBy: sum
+		sourceColumn: nb_bus_jour_15min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_accessibilite_bus
+		dataType: double
+		lineageTag: 75dc0203-7f81-45a7-a7b6-42fee5ccfca3
+		summarizeBy: sum
+		sourceColumn: note_accessibilite_bus
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_equip_5min
+		dataType: double
+		lineageTag: af4eaa1f-a52b-4eeb-8244-2be2c09311d8
+		summarizeBy: sum
+		sourceColumn: nb_equip_5min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column type_equip_5min
+		dataType: string
+		lineageTag: abfb12d6-24ab-4a5a-a662-a91c1f885177
+		summarizeBy: none
+		sourceColumn: type_equip_5min
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_equip_10min
+		dataType: double
+		lineageTag: 76c8bc41-b929-4327-af30-718674c7c967
+		summarizeBy: sum
+		sourceColumn: nb_equip_10min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column type_equip_10min
+		dataType: string
+		lineageTag: 3e1570d3-fb36-434e-8e4e-9ef7aa3a2e52
+		summarizeBy: none
+		sourceColumn: type_equip_10min
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_equip_15min
+		dataType: double
+		lineageTag: 6e87153d-90fa-4e77-900a-4f7fd4a0f6fb
+		summarizeBy: sum
+		sourceColumn: nb_equip_15min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column type_equip_15min
+		dataType: string
+		lineageTag: 6c39c38d-202c-4bde-84dc-8c79e5c33969
+		summarizeBy: none
+		sourceColumn: type_equip_15min
+
+		annotation SummarizationSetBy = Automatic
+
+	column note_accessibilite_relative_equipements
+		dataType: double
+		lineageTag: 5f755e3a-4619-4a01-bff0-efcd21a06e5a
+		summarizeBy: sum
+		sourceColumn: note_accessibilite_relative_equipements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_total_equipements
+		dataType: double
+		lineageTag: 0a3b5f47-3215-48f0-99d7-5648d1de2663
+		summarizeBy: sum
+		sourceColumn: nb_total_equipements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_volume_equipements
+		dataType: double
+		lineageTag: e58be05c-05f8-4364-bf51-c64bb5de37f0
+		summarizeBy: sum
+		sourceColumn: note_volume_equipements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_divers_equip
+		dataType: double
+		lineageTag: f5281bb0-9389-4c6b-8b94-5ed1cf06f4ef
+		summarizeBy: sum
+		sourceColumn: nb_divers_equip
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_diversite_equipements
+		dataType: double
+		lineageTag: 84d0d2a0-896b-493c-8ad2-dee0dec5165a
+		summarizeBy: sum
+		sourceColumn: note_diversite_equipements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column note_agregee_accessibilite_equipements
+		dataType: double
+		lineageTag: c0a3d45f-09cf-4979-a9a8-8da88bc1f0f9
+		summarizeBy: sum
+		sourceColumn: note_agregee_accessibilite_equipements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column temps_acces_axe_routier
+		dataType: string
+		lineageTag: d10f39b9-1c72-46dc-8800-9d811c0e002b
+		summarizeBy: none
+		sourceColumn: temps_acces_axe_routier
+
+		annotation SummarizationSetBy = Automatic
+
+	column note_acces_axe_routier
+		dataType: double
+		lineageTag: b4bf8a90-4aca-41e8-a3c6-7c166fc1a7ef
+		summarizeBy: sum
+		sourceColumn: note_acces_axe_routier
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column score_final_avec_SAR
+		dataType: double
+		lineageTag: 65956b63-372d-4110-88fc-6c5c2924a006
+		summarizeBy: sum
+		sourceColumn: score_final_avec_SAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column score_final_sans_SAR
+		dataType: double
+		lineageTag: b35c1242-c34e-4139-9e11-154203458b4f
+		summarizeBy: sum
+		sourceColumn: score_final_sans_SAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column code_cluster
+		dataType: double
+		lineageTag: 0be5efd5-5f68-45f2-b29a-dfb03649b9ca
+		summarizeBy: sum
+		sourceColumn: code_cluster
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lib_cluster
+		dataType: string
+		lineageTag: c233ac1c-0e20-4daf-a102-af11ee10b93a
+		summarizeBy: none
+		sourceColumn: lib_cluster
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_hp1
+		dataType: string
+		lineageTag: 0bd02c25-ce21-4d14-a1a3-63817dbb0a25
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_cluster_2016_2022
+		dataType: string
+		lineageTag: 99c9d033-0fc1-4795-b711-87b48ebc8108
+		summarizeBy: none
+		sourceColumn: code_cluster_2016_2022
+
+		annotation SummarizationSetBy = Automatic
+
+	column lib_typologie_6_clusters_2016_2022
+		dataType: string
+		lineageTag: ef5edf28-363a-4c30-8e22-975dd20b262f
+		summarizeBy: none
+		sourceColumn: lib_typologie_6_clusters_2016_2022
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Scoring Patrimoine' = m
+		mode: import
+		source =
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin",Kind="Schema"]}[Data],
+				    #"Scoring Patrimoine_View" = #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema"{[Name="Scoring Patrimoine",Kind="View"]}[Data],
+				    #"Valeur remplacée" = Table.ReplaceValue(#"Scoring Patrimoine_View",".",",",Replacer.ReplaceText,{"rev21_med_dispo", "loy_prive_m2", "loy_social_m2", "ecart_loyer_prive_social_m2", "loyer_m2_shlmr_tres_social", "loyer_m2_shlmr_social", "loyer_m2_shlmr_intermediaire"}),
+				    #"Valeur remplacée1" = Table.ReplaceValue(#"Valeur remplacée","nd","",Replacer.ReplaceText,{"rev21_med_dispo", "loy_prive_m2", "loy_social_m2", "ecart_loyer_prive_social_m2", "loyer_m2_shlmr_tres_social", "loyer_m2_shlmr_social", "loyer_m2_shlmr_intermediaire"}),
+				    #"Type modifié" = Table.TransformColumnTypes(#"Valeur remplacée1",{{"rev21_med_dispo", Int64.Type}, {"loy_prive_m2", type number}, {"loy_social_m2", type number}, {"ecart_loyer_prive_social_m2", type number}, {"loyer_m2_shlmr_tres_social", type number}, {"loyer_m2_shlmr_social", type number}, {"loyer_m2_shlmr_intermediaire", type number}}),
+				    #"Valeur remplacée2" = Table.ReplaceValue(#"Type modifié",".",",",Replacer.ReplaceText,{"tx_rev21_dispo_60", "note_taux_pauvrete", "ecart_loyer_prive_shlmr_tres_social", "note_ecart_loyer_LLTS", "ecart_loyer_prive_shlmr_social", "note_ecart_loyer_LLS", "ecart_loyer_prive_shlmr_intermediaire", "note_ecart_loyer_PLS_LLI", "note_agregee_ecart_loyer"}),
+				    #"Valeur remplacée3" = Table.ReplaceValue(#"Valeur remplacée2","nd","",Replacer.ReplaceText,{"tx_rev21_dispo_60", "note_taux_pauvrete", "ecart_loyer_prive_shlmr_tres_social", "note_ecart_loyer_LLTS", "ecart_loyer_prive_shlmr_social", "note_ecart_loyer_LLS", "ecart_loyer_prive_shlmr_intermediaire", "note_ecart_loyer_PLS_LLI", "note_agregee_ecart_loyer"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Valeur remplacée3",{{"tx_rev21_dispo_60", Int64.Type}, {"note_taux_pauvrete", Int64.Type}, {"ecart_loyer_prive_shlmr_tres_social", type number}, {"note_ecart_loyer_LLTS", Int64.Type}, {"ecart_loyer_prive_shlmr_social", type number}, {"note_ecart_loyer_LLS", Int64.Type}, {"ecart_loyer_prive_shlmr_intermediaire", type number}, {"note_ecart_loyer_PLS_LLI", Int64.Type}, {"note_agregee_ecart_loyer", type number}}),
+				    #"Doublons supprimés" = Table.Distinct(#"Type modifié1", {"code_hp1"}),
+				    #"Autres colonnes supprimées" = Table.SelectColumns(#"Doublons supprimés",{"epci", "code_insee", "nom_commune", "id_qplh", "nom_qplh", "IRIS", "libiris", "x", "y", "id_unique_operation", "adresse", "operation", "fid", "id", "section", "id_sogefi", "occupation", "superficie", "nombre_de_parcelle", "sogefi_identifiant", "groupe_habitation_type", "premier_numero_parcelle", "nom_groupe", "nb_t1", "nb_t2", "nb_t3", "nb_t4", "nb_t5", "nb_t6", "nb_t7", "gerance", "nb_loge", "mobilite", "code_groupe", "financement", "taux_de_vacance", "nombre_logements", "p_beneficiaire_al", "dette_par_logement", "annee_mise_en_service", "stock_logement_en_vente", "nombre_logement_mise_en_vente", "facturation_theorique_hors_char", "log21", "pop21", "pop21_0_14", "pop21_15_29", "pop21_15_64", "pop21_30_44", "pop21_45_59", "pop21_60_74", "pop21_75_ou_plus", "actocc21", "actocc21_agriculteurs", "actocc21_acce", "actocc21_cadres", "actocc21_prof_interm", "actocc21_employes", "actocc21_ouvriers", "part_actifs_occupes", "taux_activite", "rev21_med_dispo", "type_produit", "loy_prive_m2", "loy_social_m2", "ecart_loyer_prive_social_m2", "loyer_m2_shlmr_tres_social", "loyer_m2_shlmr_social", "loyer_m2_shlmr_intermediaire", "densite_batiments_ff24", "densite_logements_ff24", "armature_sar", "note_armature_sar", "tx_rev21_dispo_60", "note_taux_pauvrete", "ecart_loyer_prive_shlmr_tres_social", "note_ecart_loyer_LLTS", "ecart_loyer_prive_shlmr_social", "note_ecart_loyer_LLS", "ecart_loyer_prive_shlmr_intermediaire", "note_ecart_loyer_PLS_LLI", "note_agregee_ecart_loyer", "densite_logements_ff24_250m", "note_densite_logement_250m", "nb_bus_jour_5min", "nb_bus_jour_10min", "nb_bus_jour_15min", "note_accessibilite_bus", "nb_equip_5min", "nb_equip_10min", "nb_equip_15min", "type_equip_15min", "note_accessibilite_relative_equipements", "nb_total_equipements", "note_volume_equipements", "nb_divers_equip", "note_diversite_equipements", "note_agregee_accessibilite_equipements", "temps_acces_axe_routier", "note_acces_axe_routier", "score_final_avec_SAR", "score_final_sans_SAR", "code_cluster", "lib_cluster", "code_cluster_2016_2022", "lib_typologie_6_clusters_2016_2022", "code_hp1", "type_equip_5min", "type_equip_10min"})
+				
+				in
+				    #"Autres colonnes supprimées"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

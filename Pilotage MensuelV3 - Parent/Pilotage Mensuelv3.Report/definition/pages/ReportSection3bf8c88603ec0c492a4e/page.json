@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "ReportSection3bf8c88603ec0c492a4e",
+  "displayName": "Accueil",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "5517783fdb01a5cbdc54",
+      "target": "4a4441a786c65aa42610",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5517783fdb01a5cbdc54",
+      "target": "b8ae45be54f494dd605f",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5517783fdb01a5cbdc54",
+      "target": "12e81131eb2f911e397c",
+      "type": "NoFilter"
+    }
+  ]
+}

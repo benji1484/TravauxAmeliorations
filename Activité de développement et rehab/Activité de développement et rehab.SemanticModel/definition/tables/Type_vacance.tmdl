@@ -1,0 +1,41 @@
+table Type_vacance
+	lineageTag: 50dcb61b-a4ca-4c67-8ab5-0466234bc3c5
+	sourceLineageTag: 5813ea09-1348-4116-b908-45d3f67613b8
+
+	column code_etat_ug
+		dataType: string
+		isNullable: false
+		lineageTag: ddf09ac0-d982-4b4d-b468-463720650efb
+		sourceLineageTag: 671055ee-30a1-4f40-a139-b07735baf4cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_etat_ug
+
+		annotation SummarizationSetBy = User
+
+	column type_vacance
+		dataType: string
+		lineageTag: a962f344-6aa0-48d7-bb73-91dd7bdef43b
+		sourceLineageTag: a900f7de-c8e6-4bce-b96f-1864acf14a47
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: type_vacance
+
+		annotation SummarizationSetBy = User
+
+	column type_vacance_light
+		dataType: string
+		lineageTag: 231d4fd9-239d-4426-9940-bd7839c21d3b
+		sourceLineageTag: 27e70a75-d318-4dd7-a19a-1d9cec60234d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: type_vacance_light
+
+		annotation SummarizationSetBy = User
+
+	partition Type_vacance = entity
+		mode: directQuery
+		source
+			entityName: Type_vacance
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

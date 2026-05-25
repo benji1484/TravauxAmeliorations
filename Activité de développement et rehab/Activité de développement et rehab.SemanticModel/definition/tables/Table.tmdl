@@ -1,0 +1,33 @@
+table Table
+	lineageTag: a296ab0d-61bd-4d60-92ba-b7288ec2cd35
+
+	column Interco
+		dataType: string
+		lineageTag: 59ba3bdc-4798-4f3d-8a6e-7f939fa59c20
+		summarizeBy: none
+		sourceColumn: Interco
+
+		annotation SummarizationSetBy = Automatic
+
+	column Indécence
+		dataType: int64
+		formatString: 0
+		lineageTag: 75fa8c90-47e4-48a4-b7cf-3e6277b7d75e
+		summarizeBy: none
+		sourceColumn: Indécence
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Table = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45Wcvb08w9S0lGyVIrViVYK8QcyTcBMZ88wz2B9Z8fgUBegmLFSbCwA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Interco = _t, Indécence = _t]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"Interco", type text}, {"Indécence", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

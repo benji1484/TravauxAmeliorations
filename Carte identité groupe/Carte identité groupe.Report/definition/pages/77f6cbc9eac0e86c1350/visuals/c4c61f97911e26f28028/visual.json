@@ -1,0 +1,430 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "c4c61f97911e26f28028",
+  "position": {
+    "x": 0,
+    "y": 142.5,
+    "z": 0,
+    "height": 577.5,
+    "width": 1280,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "xAgence"
+                }
+              },
+              "queryRef": "MapTerritoire.xAgence",
+              "nativeQueryRef": "Agence",
+              "displayName": "Agence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "code_HP1"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.code_HP1",
+              "nativeQueryRef": "code_HP1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements"
+                }
+              },
+              "queryRef": "Mesure.# Logements",
+              "nativeQueryRef": "Logements",
+              "displayName": "Logements"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements Vacants"
+                }
+              },
+              "queryRef": "Mesure.# Logements Vacants",
+              "nativeQueryRef": "Dont Vacants",
+              "displayName": "Dont Vacants"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements Vacants Stratégique"
+                }
+              },
+              "queryRef": "Mesure.# Logements Vacants Stratégique",
+              "nativeQueryRef": "Dont vac stratégique",
+              "displayName": "Dont vac stratégique"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements Vacants Commercial"
+                }
+              },
+              "queryRef": "Mesure.# Logements Vacants Commercial",
+              "nativeQueryRef": "Dont Vac commerciale",
+              "displayName": "Dont Vac commerciale"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# UG Vacants Technique"
+                }
+              },
+              "queryRef": "Mesure.# UG Vacants Technique",
+              "nativeQueryRef": "Dont vac technique",
+              "displayName": "Dont vac technique"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance Financière Logements M"
+                }
+              },
+              "queryRef": "Mesure.Vacance Financière Logements M",
+              "nativeQueryRef": "Vacance Logement",
+              "displayName": "Vacance Logement"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance Financière Logements YTD"
+                }
+              },
+              "queryRef": "Mesure.Vacance Financière Logements YTD",
+              "nativeQueryRef": "Vacance Logement YTD",
+              "displayName": "Vacance Logement YTD"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance < 3M"
+                }
+              },
+              "queryRef": "Mesure.Vacance < 3M",
+              "nativeQueryRef": "Vacance < 3M"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "MontantTotal3*vacance_SUMX"
+                }
+              },
+              "queryRef": "Mesure.MontantTotal3*vacance_SUMX",
+              "nativeQueryRef": "Vacance >= 3M",
+              "displayName": "Vacance >= 3M"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Commerces"
+                }
+              },
+              "queryRef": "Mesure.# Commerces",
+              "nativeQueryRef": "Commerces",
+              "displayName": "Commerces"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Commerces vacants"
+                }
+              },
+              "queryRef": "Mesure.# Commerces vacants",
+              "nativeQueryRef": "Dont vacants1",
+              "displayName": "Dont vacants"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance Financière Commerces M"
+                }
+              },
+              "queryRef": "Mesure.Vacance Financière Commerces M",
+              "nativeQueryRef": "Vacance Commerces",
+              "displayName": "Vacance Commerces"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance Financière Commerces YTD"
+                }
+              },
+              "queryRef": "Mesure.Vacance Financière Commerces YTD",
+              "nativeQueryRef": "Vacance Commerces YTD",
+              "displayName": "Vacance Commerces YTD"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mesure"
+                  }
+                },
+                "Property": "# Logements"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85.45879507910989D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.# UG Vacants Technique"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "963c52aa55d13b65e258",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UG - Lib Patrimoine"
+              }
+            },
+            "Property": "code_HP1"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "u",
+              "Entity": "UG - Lib Patrimoine",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "u"
+                              }
+                            },
+                            "Property": "code_HP1"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "42989cda311a0d97f929",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MapTerritoire"
+              }
+            },
+            "Property": "xAgence"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "MapTerritoire",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "xAgence"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f5b79677729b6e714b1b",
+  "displayName": "Vacance physique logements",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "180L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "964835cc545a5a7dfe65",
+      "target": "70c7150d6f7ca72b03b4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "964835cc545a5a7dfe65",
+      "target": "671a970285a1a8173528",
+      "type": "NoFilter"
+    }
+  ]
+}

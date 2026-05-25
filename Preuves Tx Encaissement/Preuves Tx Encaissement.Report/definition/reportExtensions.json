@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Mesure",
+      "measures": [
+        {
+          "name": "Ecart DTP RALI YTD",
+          "dataType": "Double",
+          "expression": "([Taux d'encaissement YTD DTP Corrigé] - [Taux RALI YTD])",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+          "references": {
+            "measures": [
+              {
+                "entity": "Mesure",
+                "name": "Taux d'encaissement YTD DTP Corrigé"
+              },
+              {
+                "entity": "Mesure",
+                "name": "Taux RALI YTD"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ecart DTP RALI mensuels",
+          "dataType": "Double",
+          "expression": "([Taux d'encaissement mensuel DTP Corrigé] - [Taux RALI mensuel])",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+          "references": {
+            "measures": [
+              {
+                "entity": "Mesure",
+                "name": "Taux d'encaissement mensuel DTP Corrigé"
+              },
+              {
+                "entity": "Mesure",
+                "name": "Taux RALI mensuel"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

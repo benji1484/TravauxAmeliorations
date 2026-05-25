@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "1292c635e259f7bef004",
+  "position": {
+    "x": 0,
+    "y": 74.8936170212766,
+    "z": 2000,
+    "height": 57.38601823708207,
+    "width": 551.48936170212767,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Suivi des ruptures d'AL",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#18365c"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,47 @@
+table Paramètre
+	lineageTag: 29e87c64-b1f6-4fbc-986d-a1d48ffed945
+
+	column Paramètre
+		lineageTag: 9804d5b4-3388-461b-8791-e8d694d6d3ff
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Paramètre Commande'
+
+		relatedColumnDetails
+			groupByColumn: 'Paramètre Champs'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Paramètre Champs'
+		isHidden
+		lineageTag: 4dba3325-5350-4044-bc4a-926efda64c00
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Paramètre Commande'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Paramètre Commande'
+		isHidden
+		formatString: 0
+		lineageTag: d23dfd54-4709-4cb9-b03c-e8eeebd3b60c
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Paramètre-3b39d464-57ad-44e0-b6d8-2ab634dbdac2 = calculated
+		mode: import
+		source =
+				{
+				    ("code_nature_ug", NAMEOF('Nature UG'[code_nature_ug]), 0)
+				}
+
+	annotation PBI_Id = 0fc7197a103d43cab181eea7b47795c6
+

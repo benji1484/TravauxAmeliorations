@@ -1,0 +1,40 @@
+table 'Scoring Patrimoine dépiv'
+	lineageTag: 0c08f813-4ad7-429c-b52e-77abb74df5ae
+	sourceLineageTag: 23ab3a2f-e498-42b5-a0ac-c3ba4f641b3f
+
+	column code_hp1
+		dataType: string
+		lineageTag: cb8f0de3-a3b4-4675-8c99-acdc229fb800
+		sourceLineageTag: 6ec90bd9-e6f7-45fb-9c96-b5c0083d940b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = User
+
+	column Attribut
+		dataType: string
+		lineageTag: b113bcbc-1714-43ba-911d-bb21ef5b9183
+		sourceLineageTag: ba8dce5b-a715-4d5b-973e-c8c996d7befb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Attribut
+
+		annotation SummarizationSetBy = User
+
+	column Valeur
+		dataType: double
+		lineageTag: 97be00ab-d04b-4676-9c98-f09f1dd9c38b
+		sourceLineageTag: 1de2e877-bef5-41f6-add2-d0f49237b1bf
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Valeur
+
+		annotation SummarizationSetBy = User
+
+	partition 'Scoring Patrimoine dépiv' = entity
+		mode: directQuery
+		source
+			entityName: Scoring Patrimoine dépiv
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

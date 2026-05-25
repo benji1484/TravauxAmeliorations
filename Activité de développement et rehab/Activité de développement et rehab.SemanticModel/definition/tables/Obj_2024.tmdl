@@ -1,0 +1,111 @@
+table Obj_2024
+	lineageTag: 21834190-e514-4d2c-9a2f-e4b90a27349f
+	sourceLineageTag: fae2b7ac-dcc9-469b-a7d8-911e68f973ca
+
+	column code_ho2
+		dataType: string
+		lineageTag: 1ca61ca5-e698-451e-ad2f-7b35cce094d5
+		sourceLineageTag: 8397ca51-b78e-4f5e-b564-fbf174e42127
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = User
+
+	column periode
+		dataType: string
+		lineageTag: 94b1b81a-2316-484a-9bd5-33e0098d52e2
+		sourceLineageTag: 40341a5f-ec29-43cc-bf2b-61e18a7d4886
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = User
+
+	column Obj_DureeTraitementReclam-20j
+		dataType: double
+		lineageTag: 0a65eaf8-a2c3-4d5d-9110-e7fcd752f770
+		sourceLineageTag: a10baedd-ea80-4ef8-b603-d352547da3d5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_DureeTraitementReclam-20j
+
+		annotation SummarizationSetBy = User
+
+	column Obj_Entrees_Salariees
+		dataType: double
+		lineageTag: d9ce032f-89e4-400f-b66a-e9e8260d5f85
+		sourceLineageTag: 60a9aebe-d4bb-4562-8f46-6351174c4e86
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_Entrees_Salariees
+
+		annotation SummarizationSetBy = User
+
+	column Obj_Int_TotalVacanceCommm_LGH_LGT
+		dataType: double
+		lineageTag: 7bc6f306-2dda-4e33-9fb0-c2bf21f2b3c6
+		sourceLineageTag: ee981200-903a-4c02-a321-39551e0d69cd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_Int_TotalVacanceCommm_LGH_LGT
+
+		annotation SummarizationSetBy = User
+
+	column Obj_Int_TxEncaissementGlobal_HrFoyAcc
+		dataType: double
+		lineageTag: 78436627-2264-4e93-973c-f60b34ff66fd
+		sourceLineageTag: 0c383302-d611-4516-8dd1-dbafa00bc7f1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_Int_TxEncaissementGlobal_HrFoyAcc
+
+		annotation SummarizationSetBy = User
+
+	column Obj_TotalVacanceYTDm_Logements
+		dataType: double
+		lineageTag: 7b01500f-5152-43dc-8fdf-1d34cd2778d4
+		sourceLineageTag: 12ef218b-ae74-4bbb-a214-ce8ed56aa896
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_TotalVacanceYTDm_Logements
+
+		annotation SummarizationSetBy = User
+
+	column Obj_Variation_soldeYTDm_ca_operation_Locataires
+		dataType: double
+		lineageTag: 2496eb09-c846-49f2-9be2-e27ff4800de2
+		sourceLineageTag: 725f1f18-065c-4348-ae35-e19c3eecb776
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_Variation_soldeYTDm_ca_operation_Locataires
+
+		annotation SummarizationSetBy = User
+
+	column Obj_mutation
+		dataType: double
+		lineageTag: 04bdc43e-89f5-47f8-b557-dff342bb93df
+		sourceLineageTag: 2ccf2b49-71f2-45e4-92c1-ec146cc6681f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Obj_mutation
+
+		annotation SummarizationSetBy = User
+
+	column dte_fin_mois
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 98a48b06-af26-4eab-b414-33faa5278bdc
+		sourceLineageTag: df9de208-5f72-4a99-be53-af9bd43d49cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: dte_fin_mois
+
+		annotation SummarizationSetBy = User
+
+	partition Obj_2024 = entity
+		mode: directQuery
+		source
+			entityName: Obj_2024
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

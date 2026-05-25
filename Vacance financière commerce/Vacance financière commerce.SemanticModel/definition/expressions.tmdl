@@ -1,0 +1,46 @@
+expression 'Erreurs dans Scoring Patrimoine' =
+		let
+		Source = #"Scoring Patrimoine",
+		  #"Incompatibilités de types détectées" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "Le type de la valeur ne correspond pas à celui de la colonne.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Source, pairs),
+		  #"Index ajouté" = Table.AddIndexColumn(#"Incompatibilités de types détectées", "Numéro de ligne" ,1),
+		  #"Conserver les erreurs" = Table.SelectRowsWithErrors(#"Index ajouté", {"epci", "code_insee", "nom_commune", "id_qplh", "nom_qplh", "IRIS", "libiris", "x", "y", "id_unique_operation", "adresse", "operation", "fid", "id", "section", "id_sogefi", "occupation", "superficie", "nombre_de_parcelle", "sogefi_identifiant", "groupe_habitation_type", "premier_numero_parcelle", "nom_groupe", "nb_t1", "nb_t2", "nb_t3", "nb_t4", "nb_t5", "nb_t6", "nb_t7", "gerance", "nb_loge", "mobilite", "code_groupe", "financement", "taux_de_vacance", "nombre_logements", "p_beneficiaire_al", "dette_par_logement", "annee_mise_en_service", "stock_logement_en_vente", "nombre_logement_mise_en_vente", "facturation_theorique_hors_char", "log21", "pop21", "pop21_0_14", "pop21_15_29", "pop21_15_64", "pop21_30_44", "pop21_45_59", "pop21_60_74", "pop21_75_ou_plus", "actocc21", "actocc21_agriculteurs", "actocc21_acce", "actocc21_cadres", "actocc21_prof_interm", "actocc21_employes", "actocc21_ouvriers", "part_actifs_occupes", "taux_activite", "rev21_med_dispo", "type_produit", "loy_prive_m2", "loy_social_m2", "ecart_loyer_prive_social_m2", "loyer_m2_shlmr_tres_social", "loyer_m2_shlmr_social", "loyer_m2_shlmr_intermediaire", "densite_batiments_ff24", "densite_logements_ff24", "armature_sar", "note_armature_sar", "tx_rev21_dispo_60", "note_taux_pauvrete", "ecart_loyer_prive_shlmr_tres_social", "note_ecart_loyer_LLTS", "ecart_loyer_prive_shlmr_social", "note_ecart_loyer_LLS", "ecart_loyer_prive_shlmr_intermediaire", "note_ecart_loyer_PLS_LLI", "note_agregee_ecart_loyer", "densite_logements_ff24_250m", "note_densite_logement_250m", "nb_bus_jour_5min", "nb_bus_jour_10min", "nb_bus_jour_15min", "note_accessibilite_bus", "nb_equip_5min", "type_equip_5min", "nb_equip_10min", "type_equip_10min", "nb_equip_15min", "type_equip_15min", "note_accessibilite_relative_equipements", "nb_total_equipements", "note_volume_equipements", "nb_divers_equip", "note_diversite_equipements", "note_agregee_accessibilite_equipements", "temps_acces_axe_routier", "note_acces_axe_routier", "score_final_avec_SAR", "score_final_sans_SAR", "code_cluster", "lib_cluster", "code_hp1"}),
+		  #"Colonnes permutées" = Table.ReorderColumns(#"Conserver les erreurs", {"Numéro de ligne", "epci", "code_insee", "nom_commune", "id_qplh", "nom_qplh", "IRIS", "libiris", "x", "y", "id_unique_operation", "adresse", "operation", "fid", "id", "section", "id_sogefi", "occupation", "superficie", "nombre_de_parcelle", "sogefi_identifiant", "groupe_habitation_type", "premier_numero_parcelle", "nom_groupe", "nb_t1", "nb_t2", "nb_t3", "nb_t4", "nb_t5", "nb_t6", "nb_t7", "gerance", "nb_loge", "mobilite", "code_groupe", "financement", "taux_de_vacance", "nombre_logements", "p_beneficiaire_al", "dette_par_logement", "annee_mise_en_service", "stock_logement_en_vente", "nombre_logement_mise_en_vente", "facturation_theorique_hors_char", "log21", "pop21", "pop21_0_14", "pop21_15_29", "pop21_15_64", "pop21_30_44", "pop21_45_59", "pop21_60_74", "pop21_75_ou_plus", "actocc21", "actocc21_agriculteurs", "actocc21_acce", "actocc21_cadres", "actocc21_prof_interm", "actocc21_employes", "actocc21_ouvriers", "part_actifs_occupes", "taux_activite", "rev21_med_dispo", "type_produit", "loy_prive_m2", "loy_social_m2", "ecart_loyer_prive_social_m2", "loyer_m2_shlmr_tres_social", "loyer_m2_shlmr_social", "loyer_m2_shlmr_intermediaire", "densite_batiments_ff24", "densite_logements_ff24", "armature_sar", "note_armature_sar", "tx_rev21_dispo_60", "note_taux_pauvrete", "ecart_loyer_prive_shlmr_tres_social", "note_ecart_loyer_LLTS", "ecart_loyer_prive_shlmr_social", "note_ecart_loyer_LLS", "ecart_loyer_prive_shlmr_intermediaire", "note_ecart_loyer_PLS_LLI", "note_agregee_ecart_loyer", "densite_logements_ff24_250m", "note_densite_logement_250m", "nb_bus_jour_5min", "nb_bus_jour_10min", "nb_bus_jour_15min", "note_accessibilite_bus", "nb_equip_5min", "type_equip_5min", "nb_equip_10min", "type_equip_10min", "nb_equip_15min", "type_equip_15min", "note_accessibilite_relative_equipements", "nb_total_equipements", "note_volume_equipements", "nb_divers_equip", "note_diversite_equipements", "note_agregee_accessibilite_equipements", "temps_acces_axe_routier", "note_acces_axe_routier", "score_final_avec_SAR", "score_final_sans_SAR", "code_cluster", "lib_cluster", "code_hp1"})
+		in
+		  #"Colonnes permutées"
+	lineageTag: 2600ffaa-4fea-44ed-983f-6969e15de0ca
+	queryGroup: 'Erreurs des requêtes – 21/11/2025 10:39:35'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'Erreurs dans Scoring Patrimoine dépiv' =
+		let
+		Source = #"Scoring Patrimoine dépiv",
+		  #"Incompatibilités de types détectées" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "Le type de la valeur ne correspond pas à celui de la colonne.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Source, pairs),
+		  #"Index ajouté" = Table.AddIndexColumn(#"Incompatibilités de types détectées", "Numéro de ligne" ,1),
+		  #"Conserver les erreurs" = Table.SelectRowsWithErrors(#"Index ajouté", {"code_hp1", "Attribut", "Valeur"}),
+		  #"Colonnes permutées" = Table.ReorderColumns(#"Conserver les erreurs", {"Numéro de ligne", "code_hp1", "Attribut", "Valeur"})
+		in
+		  #"Colonnes permutées"
+	lineageTag: 2c47ffb9-9100-4484-98d6-ed0ffd9a72c3
+	queryGroup: 'Erreurs des requêtes – 21/11/2025 10:39:35'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

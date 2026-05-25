@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "f33b3cfcf4c6de1ef531",
+  "position": {
+    "x": 0,
+    "y": 86.449689274527216,
+    "z": 1000,
+    "height": 57.633126183018142,
+    "width": 563.98130621953464,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Quittancement, encaissement, impayé",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#18365c"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

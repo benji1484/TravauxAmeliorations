@@ -1,0 +1,35 @@
+table catégorie
+	lineageTag: d14898ab-d6f4-4fc3-a965-dfe87759037a
+
+	column code_ug
+		dataType: string
+		lineageTag: e0b7a68f-0273-473c-ae21-ddadcf68a7aa
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_categorie_ug
+		dataType: string
+		lineageTag: d908a7ab-a6ae-4e52-a038-16da59b418e8
+		summarizeBy: none
+		sourceColumn: code_categorie_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	partition catégorie = m
+		mode: import
+		source =
+				let
+				Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    PatrimoineSrhEnGestionDepuis1 = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="PatrimoineSrhEnGestionDepuis2023",Kind="View"]}[Data],
+				    #"Autres colonnes supprimées" = Table.SelectColumns(PatrimoineSrhEnGestionDepuis1,{"code_ug", "code_categorie_ug"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées", {"code_ug"})
+				in
+				    #"Doublons supprimés"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

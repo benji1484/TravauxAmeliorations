@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Mesure",
+      "measures": [
+        {
+          "name": "Nb UG Vac Plus 3 Moisv2",
+          "dataType": "Double",
+          "expression": "\nVAR AnneeContexte = LEFT ( MAX ( PatrimoineSrhEnGestionDepuis2023[periode] ), 4 )\nVAR UGVacants =\n    CALCULATETABLE (\n        VALUES ( PatrimoineSrhEnGestionDepuis2023[code_ug] ),\n        PatrimoineSrhEnGestionDepuis2023[code_etat_ug] <> \"CTT\",\n        'Nature UG'[code_nature_ug] IN { \"LGT\", \"LGH\", \"LGE\" }\n    )\nVAR UGVacants_LongueDuree =\n    FILTER (\n        UGVacants,\n        CALCULATE (\n            SUM ( PatrimoineSrhEnGestionDepuis2023[NBJoursVac] ),\n            FILTER (\n                ALL ( PatrimoineSrhEnGestionDepuis2023 ),\n                PatrimoineSrhEnGestionDepuis2023[code_ug] = EARLIER ( PatrimoineSrhEnGestionDepuis2023[code_ug] )\n                    && LEFT ( PatrimoineSrhEnGestionDepuis2023[periode], 4 ) = AnneeContexte\n                    && PatrimoineSrhEnGestionDepuis2023[periode] <= MAX ( PatrimoineSrhEnGestionDepuis2023[periode] )\n            )\n        ) > 90\n    )\nRETURN\n    CALCULATE (\n        DISTINCTCOUNT ( PatrimoineSrhEnGestionDepuis2023[code_ug] ),\n        PatrimoineSrhEnGestionDepuis2023[code_ug] IN UGVacants_LongueDuree\n    )\n",
+          "formatString": "General Number"
+        },
+        {
+          "name": "Dont à moins de 3 mois",
+          "dataType": "Double",
+          "expression": "[# Logements Vacants] - [Nb UG Vac Plus 3 Moisv2]",
+          "formatString": "General Number",
+          "references": {
+            "measures": [
+              {
+                "entity": "Mesure",
+                "name": "# Logements Vacants"
+              },
+              {
+                "schema": "extension",
+                "entity": "Mesure",
+                "name": "Nb UG Vac Plus 3 Moisv2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

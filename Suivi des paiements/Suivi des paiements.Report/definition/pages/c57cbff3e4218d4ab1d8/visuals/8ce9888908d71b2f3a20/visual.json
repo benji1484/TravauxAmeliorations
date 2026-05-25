@@ -1,0 +1,401 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "8ce9888908d71b2f3a20",
+  "position": {
+    "x": 1.6690436412534126,
+    "y": 450.64178313842143,
+    "z": 7000,
+    "height": 268.71602624179945,
+    "width": 1278.4874292001141,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "decompositionTreeVisual",
+    "query": {
+      "queryState": {
+        "Analyze": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Règlements HPP"
+                }
+              },
+              "queryRef": "Mesure.Règlements HPP",
+              "nativeQueryRef": "Règlements",
+              "displayName": "Règlements"
+            }
+          ]
+        },
+        "ExplainBy": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "Territoire"
+                }
+              },
+              "queryRef": "MapTerritoire.Territoire",
+              "nativeQueryRef": "Territoire",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "lbl_patrimoine_ptm"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.lbl_patrimoine_ptm",
+              "nativeQueryRef": "Patrimoine",
+              "active": true,
+              "displayName": "Patrimoine"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "xAgence"
+                }
+              },
+              "queryRef": "MapTerritoire.xAgence",
+              "nativeQueryRef": "Agence",
+              "active": false,
+              "displayName": "Agence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "reglements"
+                    }
+                  },
+                  "Property": "Catégorie règlement"
+                }
+              },
+              "queryRef": "reglements.Catégorie règlement",
+              "nativeQueryRef": "Catégorie règlement",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_type_ca"
+                    }
+                  },
+                  "Property": "code_ca"
+                }
+              },
+              "queryRef": "dimension_type_ca.code_ca",
+              "nativeQueryRef": "code_ca",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PeriodeCal"
+                    }
+                  },
+                  "Property": "Période"
+                }
+              },
+              "queryRef": "PeriodeCal.Période",
+              "nativeQueryRef": "Période",
+              "active": false
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mesure"
+                  }
+                },
+                "Property": "Règlements HPP"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "ExplainBy"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "MapTerritoire.Territoire"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "Territoire"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "UG - Lib Patrimoine.lbl_patrimoine_ptm"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "MapTerritoire.xAgence"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "reglements.Catégorie règlement"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "dimension_type_ca.code_ca"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "PeriodeCal.Période"
+            ],
+            "isCollapsed": true
+          }
+        ],
+        "root": {
+          "isToggled": true,
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'NORD'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
+    "objects": {
+      "tree": [
+        {
+          "properties": {
+            "effectiveBarsPerLevel": {
+              "expr": {
+                "Literal": {
+                  "Value": "3L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "insights": [
+        {
+          "properties": {
+            "isAINode": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "MapTerritoire"
+                          }
+                        },
+                        "Property": "Territoire"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'NORD'"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "MapTerritoire"
+                          }
+                        },
+                        "Property": "xAgence"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CALB'"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "reglements"
+                          }
+                        },
+                        "Property": "Catégorie règlement"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Carte bancaire'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Recherche personnalisée'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e75faf24b1fc64ed602a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "reglements"
+              }
+            },
+            "Property": "Categorie_Aide"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

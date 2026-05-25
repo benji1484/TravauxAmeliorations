@@ -1,0 +1,206 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "78c2f68303d213d5b1ad",
+  "position": {
+    "x": 0,
+    "y": 171.14754098360655,
+    "z": 6000,
+    "height": 510.91334894613584,
+    "width": 386.135831381733,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Facteurs explicatifs des écarts :",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "inherit"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "DTP : ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "1/ Exclusion des créditeurs 2/ Vision solde = historique (on ne démarre pas de 0) "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "RALI :",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "1/ Tous règlements confondus 2/ les périodes sont bornées sans prise en comte de l'historique (on redémarre de 0) "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Pour les deux : ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "le terme (échu / à échoir) n'est pas pris en compte pour les commerces "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Avantages / inconvénients",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "DTP : mesure de la situation financière "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "+ situation financière réelle, "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "+prise en compte de l'historique, "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "- lecture et compréhension, "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "+ / - exclusion des créditeurs = vision performance "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "RALI : mesure la performance de l'encaissement à un moment donné "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "+ réactif aux paiements, "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "+ simple à lire, "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "- masque la situation financière réelle"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Les deux indicateurs sont complémentaires"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

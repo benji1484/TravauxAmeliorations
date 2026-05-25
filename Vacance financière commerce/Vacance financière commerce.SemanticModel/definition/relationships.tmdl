@@ -1,0 +1,264 @@
+relationship AutoDetected_1f4eef80-f416-4294-b427-6f27d8f46ad3
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship AutoDetected_c8fe692f-f8b7-41e3-ab69-48360f61a83c
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_HO2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship AutoDetected_dbe004aa-9f94-4a57-a91f-05f2af781a7f
+	fromColumn: PeuplementShrDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship AutoDetected_6105acea-e760-446b-b623-0f34de83738a
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship AutoDetected_47bcfc18-d053-44af-8502-951a4e738567
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship AutoDetected_975f8fa9-558f-45be-825a-8d21fa98f8e7
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ca
+	toColumn: CA.code_ca
+
+relationship AutoDetected_1b24f466-0130-445c-8d7d-27a90202e769
+	fromColumn: PeuplementShrDepuis2023.code_ca
+	toColumn: CA.code_ca
+
+relationship 0e92f259-75c5-d343-19e6-613c05393c93
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship 813faa4a-1df1-64d9-e424-2300235017c6
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship AutoDetected_45ab8da7-7a25-4eaf-981b-c848982c8e40
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship AutoDetected_a212cb47-6475-46ad-9f78-70ee5e6e0bb9
+	fromColumn: PeuplementShrDepuis2023.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship AutoDetected_63960036-fe05-4cd7-b0f8-6aca452b6f19
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship AutoDetected_3ae9884a-55a8-44f3-959f-ed053b7a2d7c
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: CA.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship 3a6d4faf-ac90-344c-9a83-00d515c8b14b
+	fromColumn: Obj_2024.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship d05b3898-b9a9-2175-95b8-21dcc4f90028
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship AutoDetected_c26dd9ae-a27a-4bf8-a7c7-34795a33cd48
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship eea35f47-4e80-d833-5a87-93560d71fc92
+	fromColumn: PeuplementShrDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship AutoDetected_2af668f5-4e7e-4285-80a4-649eab63a6d5
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 1085987c-8fc9-b191-a579-587d5159765c
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship AutoDetected_fa6c1da2-8b39-41b1-906f-0ce4b8f1f4a5
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship AutoDetected_06845b9c-d411-479a-8d96-4224fa4003cd
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship AutoDetected_8b75daef-9167-417e-810f-1b38b425d063
+	fromColumn: PeuplementShrDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship AutoDetected_2e6ac23c-026a-4ad3-8751-36a4d2e5c71d
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship 00271e81-f861-8385-8b02-b70b9b5203e8
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ug_principale
+	toColumn: UG_INSEE.code_ug
+
+relationship bce9cc39-87b6-1c0f-da9f-554d0ccfb049
+	fromColumn: PeuplementShrDepuis2023.code_nature_ug
+	toColumn: 'Nature UG'.code_nature_ug
+
+relationship AutoDetected_cc618677-923c-48f9-bc64-950eb65ad08d
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: catégorie.code_ug
+	toColumn: UG_INSEE.code_ug
+
+relationship bf23d647-39b5-77b0-646e-6353c4954a64
+	isActive: false
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_ug
+	toColumn: catégorie.code_ug
+
+relationship 72605c69-e012-97fb-9ac5-226d564df052
+	isActive: false
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.code_ug
+	toColumn: catégorie.code_ug
+
+relationship AutoDetected_9410bcfd-2ff2-485d-b6ca-a2587e338b86
+	isActive: false
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.unique_key
+	toColumn: PatrimoineSrhEnGestionDepuis2023.unique_key
+
+relationship e126c345-5604-1f19-af42-54eaf6ab5c9d
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_HP1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship AutoDetected_e1785368-43c5-4f19-85e8-b338c85757f9
+	fromColumn: reglements.code_ca
+	toColumn: dimension_type_ca.code_ca
+
+relationship AutoDetected_659e3a1a-3ab6-4934-bdc1-eb2b0ee60368
+	fromColumn: reglements.code_ho2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship 830ce43b-f3a5-33d5-c2df-412b3e945e07
+	fromColumn: reglements.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship AutoDetected_435fe8c8-2346-4ccf-a612-83175e5de595
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.code_etat_ug
+	toColumn: Type_vacance.code_etat_ug
+
+relationship 3b2cbb70-ed0a-d451-729a-fe4e0e7a1605
+	fromColumn: indicateurs_affaires_v2.code_HP1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 70909d07-6c94-a66b-b0c9-53aefe634204
+	fromColumn: indicateurs_affaires_v2.code_HO2
+	toColumn: MapTerritoire.Code_ho2
+
+relationship d7021ae9-3d0d-5a3e-1517-e709adc32825
+	fromColumn: indicateurs_affaires_v2.code_ug
+	toColumn: catégorie.code_ug
+
+relationship d604f396-1a71-97c3-1d9c-c0160dd87c2f
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_type_ca
+	toColumn: code_type_ca.code_type_ca
+
+relationship AutoDetected_ae4f9af7-5b5d-436d-aafa-ffe534244c74
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_type_ca
+	toColumn: code_type_ca.code_type_ca
+
+relationship AutoDetected_94317d4d-a08b-4362-a1ce-c6c2d15a94b7
+	fromColumn: LocatairesShrEnGestionDepuis2023.lbl_nature_ug
+	toColumn: 'Nature UG'.lbl_nature_ug
+
+relationship 82896699-f337-faa6-d5f4-de254835ebbb
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship bc326029-9994-3737-8d9e-5cc1a7659e47
+	fromColumn: LocatairesShrEnGestionDepuis2023.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship db38501b-50b7-df2b-78ac-b3c6fe57e1fa
+	fromColumn: PeuplementShrDepuis2023.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship f977af2a-92a7-d9e2-34e9-51b6c2ad63e2
+	fromColumn: indicateurs_affaires_v2.code_ca
+	toColumn: TranchAge.code_ca
+
+relationship 1e52032a-dc2e-6621-7c1c-ac1d8e1bea72
+	fromColumn: indicateurs_affaires_v2.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship bce18951-f340-0321-ca24-a7a9766af56e
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship abf639e7-b908-5966-87cf-00832ec44b62
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship aa41b4fb-b45d-a27a-d0a5-c46132b00230
+	fromColumn: LocatairesShrEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 641b323d-9ca9-ebb6-0865-c5e32c829da1
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship 3596d7a0-9217-63cc-ba34-20d647d3af6e
+	fromColumn: PeuplementShrDepuis2023.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship b9867da0-b4b6-29be-d9f9-64d9080350ff
+	fromColumn: Obj_2024.dte_fin_mois
+	toColumn: DateTable.Date
+
+relationship ea6b0258-e544-7e7e-23a0-428bd200148d
+	isActive: false
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.dte_ref
+	toColumn: DateTable.Date
+
+relationship 02d16656-2718-6036-4344-665f646cb76f
+	fromColumn: reglements.dte_operation
+	toColumn: DateTable.Date
+
+relationship AutoDetected_366047d4-e64d-4861-acda-6bd2dc892543
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Scoring Patrimoine'.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 66682331-dc95-3834-1386-722dbafc7b14
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Scoring Patrimoine dépiv'.code_hp1
+	toColumn: 'UG - Lib Patrimoine'.code_HP1
+
+relationship 2dd756b8-f258-87a6-3e58-ddca243e5fb7
+	fromColumn: PatrimoineSrhEnGestionDepuis2023.Délégation
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 25f30f7e-e893-be31-fca7-94fc9feda994
+	fromColumn: indicateurs_affaires_v2.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship cd37f363-2b1d-5b26-4572-93bcb47dd96e
+	fromColumn: IndicateursVacanceShrEnGestionDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship b57db5b9-8472-8243-4892-8435995a51b8
+	fromColumn: LocatairesShrEnGestionDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 6402f8d0-11af-a927-88e1-479aea338c1f
+	fromColumn: PeuplementShrDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship adb0d180-08f6-c8ba-79aa-b83f523c1529
+	fromColumn: IndicateursFinanciersShrEnGestionDepuis2023.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship 537b6385-b017-a2d1-366e-f49a075c7634
+	fromColumn: reglements.delegation_dixit
+	toColumn: 'Délégation (2)'.Délégation
+
+relationship AutoDetected_34d3fa0a-85fe-4d33-9bbc-82b960bb30d9
+	fromColumn: Coordonnees.code_ca
+	toColumn: dimension_type_ca.code_ca
+

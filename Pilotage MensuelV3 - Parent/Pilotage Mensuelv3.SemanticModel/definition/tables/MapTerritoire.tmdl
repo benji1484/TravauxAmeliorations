@@ -1,0 +1,57 @@
+table MapTerritoire
+	lineageTag: d4dabf75-fc34-4199-a560-2fe0e7309656
+
+	column Code_ho2
+		dataType: string
+		lineageTag: 398076c8-8680-4de1-ac57-99bdbfd3162d
+		summarizeBy: none
+		sourceColumn: Code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Territoire
+		dataType: string
+		lineageTag: 0e0696a9-d877-4cd5-8e1d-51cdb8682636
+		summarizeBy: none
+		sourceColumn: Territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column xAgence
+		dataType: string
+		lineageTag: 2776ae95-a31f-499e-a600-a94450ffc008
+		summarizeBy: none
+		sourceColumn: xAgence
+
+		annotation SummarizationSetBy = Automatic
+
+	column Interco =
+			
+			SWITCH(
+			    TRUE(),
+			    'MapTerritoire'[Territoire] = "EST", "CIREST",
+			    'MapTerritoire'[Territoire] = "OUEST", "TO",
+			    'MapTerritoire'[Territoire] = "NORD", "CINOR",
+			    'MapTerritoire'[Territoire] = "SUD", "CIVIS/CASUD",
+			    'MapTerritoire'[Territoire] = "DIXIT", "DIXIT",  -- Si tu veux garder cette valeur
+			    BLANK()
+			)
+		lineageTag: 101e12f4-a663-40c7-9ce1-288cf99fd5b0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MapTerritoire = m
+		mode: import
+		source =
+				let
+				Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    MapTerritoire_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="MapTerritoireV2",Kind="View"]}[Data]
+				in
+				    MapTerritoire_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

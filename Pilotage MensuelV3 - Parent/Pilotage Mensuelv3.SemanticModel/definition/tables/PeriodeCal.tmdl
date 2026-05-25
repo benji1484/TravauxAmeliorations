@@ -1,0 +1,212 @@
+table PeriodeCal
+	lineageTag: 5ace413e-14f5-4b84-93b5-233d1de6422b
+
+	column Période
+		lineageTag: 57df8ea7-0250-47a1-8370-4f9d218b50d3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Période]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		formatString: 0
+		lineageTag: 70983bd8-4b1f-4c69-916d-452730d849de
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Année]
+
+		annotation SummarizationSetBy = Automatic
+
+	column finAnneeDerniereEtMoisMoin1 = ```
+			
+			VAR AnneeActuelle = YEAR(TODAY())
+			VAR MoisMax =
+			    CALCULATE(
+			        MAX(PeriodeCal[Période]),
+			        ALL(PeriodeCal)
+			    )
+			VAR MoisMoin1 =
+			    CALCULATE(
+			        MAX(PeriodeCal[Période]),
+			        FILTER(
+			            ALL(PeriodeCal),
+			            PeriodeCal[Période] < MoisMax
+			        )
+			    )
+			VAR FinAnneeDerniere = (AnneeActuelle - 1) & "-12"
+			RETURN
+			IF(
+			    PeriodeCal[Période] = FinAnneeDerniere || PeriodeCal[Période] = MoisMoin1,
+			    1,
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 13593e76-7f63-47ac-9c94-4b7514ee5522
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column moisActuelle = ```
+			
+			VAR MaxPeriode =
+			    CALCULATE(
+			        MAX(PeriodeCal[Période]),
+			        ALL(PeriodeCal)
+			    )
+			VAR MoisPrecedent =
+			    CALCULATE(
+			        MAX(PeriodeCal[Période]),
+			        FILTER(
+			            ALL(PeriodeCal),
+			            PeriodeCal[Période] < MaxPeriode
+			        )
+			    )
+			RETURN
+			IF(PeriodeCal[Période] = MoisPrecedent, 1, 0)
+			
+			```
+		formatString: 0
+		lineageTag: 6f9927e4-8344-420e-8723-4e8890173092
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnneeActuelle =
+			
+			VAR AnneeActuel = max(PeriodeCal[Année])
+			
+			RETURN
+			IF(PeriodeCal[Année] = AnneeActuel, 1, 0)
+		formatString: 0
+		lineageTag: 6ddf8246-1687-4225-a2a1-eb218e23d147
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column DerniersTroisMois = ```
+			
+			VAR MoisActuel = MAX(PeriodeCal[Période]) -- Période maximale (exemple : "2024-11")
+			VAR TroisDerniersMois =
+			    ADDCOLUMNS(
+			        GENERATESERIES(-3, 0, 1), -- Les trois derniers mois
+			        "Période", FORMAT(EDATE(MoisActuel, [Value]), "yyyy-MM")
+			    )-- je décale d'encore 1 mois pour prendre ne compte la nouvelle règle de calcul (estmoisactuel true / false)
+			RETURN
+			IF(
+			    PeriodeCal[Période] IN SELECTCOLUMNS(TroisDerniersMois, "Période", [Période]),
+			    1,
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 3969c924-6079-4249-a1b6-3bdb86582057
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column DerniersTreizeMois = ```
+			
+			VAR MoisActuel = MAXX(PeriodeCal, PeriodeCal[Période]) -- Période maximale au format "YYYY-MM"
+			VAR MoisActuelDate = DATE(LEFT(MoisActuel, 4), RIGHT(MoisActuel, 2), 1) -- Conversion en date
+			VAR MoisDebutDate = EOMONTH(MoisActuelDate, -14) + 1 -- Premier jour du mois il y a 12 mois
+			-- je décale d'encore 1 mois pour prendre ne compte la nouvelle règle de calcul (estmoisactuel true / false)
+			RETURN 
+			IF(
+			    PeriodeCal[Période] >= FORMAT(MoisDebutDate, "YYYY-MM") &&
+			    PeriodeCal[Période] <= FORMAT(MoisActuelDate, "YYYY-MM"),
+			    1,
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 235b32bd-6eaa-4489-9c7d-63ea4fa22c07
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateCible
+		formatString: Short Date
+		lineageTag: 8ff23b59-23b5-4d0f-bf88-94ccad97f13c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DateCible]
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstMoisActuel
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 95bdda03-3891-4fe0-9aba-65cb174e24df
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [EstMoisActuel]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DerniersDeuxMois = ```
+			
+			VAR MoisActuel = MAX(PeriodeCal[Période]) -- Période maximale (exemple : "2024-11")
+			VAR TroisDerniersMois =
+			    ADDCOLUMNS(
+			        GENERATESERIES(-2, 0, 1), -- Les trois derniers mois
+			        "Période", FORMAT(EDATE(MoisActuel, [Value]), "yyyy-MM")
+			    )-- je décale d'encore 1 mois pour prendre ne compte la nouvelle règle de calcul (estmoisactuel true / false)
+			RETURN
+			IF(
+			    PeriodeCal[Période] IN SELECTCOLUMNS(TroisDerniersMois, "Période", [Période]),
+			    1,
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: df28fa08-feb8-44a8-ab4f-f53d0e7580dc
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PeriodeCal-6aff0217-0f73-4b0d-8ff6-ef0f8adac5b4 = calculated
+		mode: import
+		source = ```
+				
+				VAR StartDate = DATE(2022, 1, 1)
+				VAR EndDate = EOMONTH(TODAY(), 0)
+				VAR MoisActuel = FORMAT(TODAY(), "YYYY-MM")
+				VAR MonthsTable =
+				    GENERATE(
+				        CALENDAR(StartDate, EndDate),
+				        VAR CurrentMonthStart = EOMONTH([Date], -1) + 1
+				        VAR CurrentPeriode = FORMAT(CurrentMonthStart, "YYYY-MM")
+				        VAR DateCible =
+				            IF(
+				                CurrentPeriode = MoisActuel,
+				                TODAY() - 1,
+				                EOMONTH([Date], 0)
+				            )
+				        RETURN ROW(
+				            "MoisAnnée", CurrentPeriode,
+				            "Année", YEAR(CurrentMonthStart),
+				            "DateCible", DateCible,
+				            "EstMoisActuel", CurrentPeriode = MoisActuel
+				        )
+				    )
+				RETURN
+				    DISTINCT(
+				        SELECTCOLUMNS(
+				            MonthsTable,
+				            "Période", [MoisAnnée],
+				            "Année", [Année],
+				            "DateCible", [DateCible],
+				            "EstMoisActuel", [EstMoisActuel]
+				        )
+				    )
+				
+				
+				```
+
+	annotation PBI_Id = bf179482f2b24322a4d282db5ee588a0
+

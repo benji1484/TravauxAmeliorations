@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "839e11f0a2322737d81f",
+  "position": {
+    "x": 0,
+    "y": 74.8936170212766,
+    "z": 6000,
+    "height": 57.38601823708207,
+    "width": 551.48936170212767,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Analyse de la croissance de la dette ",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#18365c"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

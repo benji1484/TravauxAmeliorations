@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Mesure",
+      "measures": [
+        {
+          "name": "Encaissement total",
+          "dataType": "Double",
+          "expression": "[Règlements HPP] + sum(IndicateursFinanciersShrEnGestionDepuis2023[allocm_ca_operation])",
+          "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+          "references": {
+            "measures": [
+              {
+                "entity": "Mesure",
+                "name": "Règlements HPP"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Nombre de CA paiements",
+          "dataType": "Double",
+          "expression": "\r\nCALCULATE(\r\n    DISTINCTCOUNT(reglements[code_ca]))",
+          "formatString": "General Number"
+        },
+        {
+          "name": "Nombre de paiements",
+          "dataType": "Double",
+          "expression": "\r\nCALCULATE(\r\n    COUNT(reglements[code_ca]))",
+          "formatString": "General Number"
+        },
+        {
+          "name": "# CA pas distincts",
+          "dataType": "Double",
+          "expression": "count(reglements[code_ca])",
+          "formatString": "General Number"
+        }
+      ]
+    }
+  ]
+}

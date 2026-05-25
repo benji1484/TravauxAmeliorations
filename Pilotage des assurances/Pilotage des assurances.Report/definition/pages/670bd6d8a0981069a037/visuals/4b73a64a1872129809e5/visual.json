@@ -1,0 +1,615 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "4b73a64a1872129809e5",
+  "position": {
+    "x": 435.74468085106383,
+    "y": 330.69908814589667,
+    "z": 0,
+    "height": 382.24924012158056,
+    "width": 426.01823708206689,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CA"
+                    }
+                  },
+                  "Property": "code_ca"
+                }
+              },
+              "queryRef": "CA.code_ca",
+              "nativeQueryRef": "code_ca"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "code_ug"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.code_ug",
+              "nativeQueryRef": "code_ug"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "code_type_ca"
+                    }
+                  },
+                  "Property": "Type_Locataire"
+                }
+              },
+              "queryRef": "code_type_ca.Type_Locataire",
+              "nativeQueryRef": "Type_Locataire"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "xAgence"
+                }
+              },
+              "queryRef": "MapTerritoire.xAgence",
+              "nativeQueryRef": "Agence",
+              "displayName": "Agence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "ind_assurance"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.ind_assurance",
+              "nativeQueryRef": "Assurance",
+              "displayName": "Assurance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "Patrimoine"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.Patrimoine",
+              "nativeQueryRef": "Patrimoine1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "dte_debut_validite_assurance"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.dte_debut_validite_assurance",
+              "nativeQueryRef": "Début validité assurance",
+              "displayName": "Début validité assurance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "dte_fin_validite_assurance"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.dte_fin_validite_assurance",
+              "nativeQueryRef": "Fin validité Assurance",
+              "displayName": "Fin validité Assurance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "Coordonnees.email_tiers"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.Coordonnees.email_tiers",
+              "nativeQueryRef": "Email",
+              "displayName": "Email"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "Coordonnees.tel_fixe"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.Coordonnees.tel_fixe",
+              "nativeQueryRef": "Fixe",
+              "displayName": "Fixe"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocatairesShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "Coordonnees.tel_portable"
+                }
+              },
+              "queryRef": "LocatairesShrEnGestionDepuis2023.Coordonnees.tel_portable",
+              "nativeQueryRef": "Portable",
+              "displayName": "Portable"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Liste exportable des locataires présents non assurés'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0d4558f5e0d8070457b4",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocatairesShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "code_ho2"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "09f31360dd610e3cc7ee",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocatairesShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "ind_assurance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "75fc4082836699da6180",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocatairesShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "ind_assurance"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "l",
+              "Entity": "LocatairesShrEnGestionDepuis2023",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "l"
+                          }
+                        },
+                        "Property": "ind_assurance"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'N'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "8c5d865347334649913d",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "statut_caug"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "IndicateursFinanciersShrEnGestionDepuis2023",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "i"
+                          }
+                        },
+                        "Property": "statut_caug"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Present'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "3e13d7a70000d8d48001",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CA"
+              }
+            },
+            "Property": "code_ca"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "31f54deaceeb10083909",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocatairesShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "dte_debut_validite_assurance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fae5156854721266de0b",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocatairesShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "dte_fin_validite_assurance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7015db9048b07613e442",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "code_type_ca"
+              }
+            },
+            "Property": "Type_Locataire"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "c",
+              "Entity": "code_type_ca",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "c"
+                              }
+                            },
+                            "Property": "Type_Locataire"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Foyers'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "c09a176a1acc5aa5a35a",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MapTerritoire"
+              }
+            },
+            "Property": "xAgence"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0b185ebe7069872b9014",
+        "ordinal": 9,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UG - Lib Patrimoine"
+              }
+            },
+            "Property": "Patrimoine"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fa4befe52209b317e642",
+        "ordinal": 10,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocatairesShrEnGestionDepuis2023"
+              }
+            },
+            "Property": "code_ug"
+          }
+        },
+        "type": "Categorical"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

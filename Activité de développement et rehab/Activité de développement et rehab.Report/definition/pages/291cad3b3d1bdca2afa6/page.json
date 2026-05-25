@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "291cad3b3d1bdca2afa6",
+  "displayName": "Activité de développement",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "14fbcbe7e02d0b379539",
+      "target": "0720d9657544a995b4b5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14fbcbe7e02d0b379539",
+      "target": "ce97734095ce11fa36c8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14fbcbe7e02d0b379539",
+      "target": "c4489d2f079791f165e9",
+      "type": "NoFilter"
+    },
+    {
+      "source": "14fbcbe7e02d0b379539",
+      "target": "b6fe2dad5aede3a09e70",
+      "type": "NoFilter"
+    }
+  ]
+}

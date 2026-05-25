@@ -1,0 +1,447 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "b966687d977e38c96609",
+  "position": {
+    "x": 0,
+    "y": 454.231414986526,
+    "z": 7000,
+    "height": 265.83517925420097,
+    "width": 1279.4762758017412,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "Territoire"
+                }
+              },
+              "queryRef": "MapTerritoire.Territoire",
+              "nativeQueryRef": "Territoire",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "lbl_commune"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.lbl_commune",
+              "nativeQueryRef": "Commune",
+              "active": false,
+              "displayName": "Commune"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "code_HP1"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.code_HP1",
+              "nativeQueryRef": "code_HP1",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "code_type_ca"
+                    }
+                  },
+                  "Property": "Type_Locataire"
+                }
+              },
+              "queryRef": "code_type_ca.Type_Locataire",
+              "nativeQueryRef": "Type_Locataire",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "statut_caug"
+                }
+              },
+              "queryRef": "IndicateursFinanciersShrEnGestionDepuis2023.statut_caug",
+              "nativeQueryRef": "statut_caug",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements"
+                }
+              },
+              "queryRef": "Mesure.# Logements",
+              "nativeQueryRef": "Logements",
+              "displayName": "Logements"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "€ Quittancement YTD"
+                }
+              },
+              "queryRef": "Mesure.€ Quittancement YTD",
+              "nativeQueryRef": "Quittancement YTD",
+              "displayName": "Quittancement YTD"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "€ Quitm_ca_operation"
+                }
+              },
+              "queryRef": "Mesure.€ Quitm_ca_operation",
+              "nativeQueryRef": "Quittancement M",
+              "displayName": "Quittancement M"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "loyerHCm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.loyerHCm_ca_operation)",
+              "nativeQueryRef": "Dont Loyer HC",
+              "displayName": "Dont Loyer HC"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "chargesfactum_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.chargesfactum_ca_operation)",
+              "nativeQueryRef": "Dont charges",
+              "displayName": "Dont charges"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "autresfactum_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.autresfactum_ca_operation)",
+              "nativeQueryRef": "Dont Autres facturations",
+              "displayName": "Dont Autres facturations"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Règlements"
+                }
+              },
+              "queryRef": "Mesure.Règlements",
+              "nativeQueryRef": "Encaissements M",
+              "displayName": "Encaissements M"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "allocm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.allocm_ca_operation)",
+              "nativeQueryRef": "AL",
+              "displayName": "AL"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Encaissement + alloc"
+                }
+              },
+              "queryRef": "Mesure.Encaissement + alloc",
+              "nativeQueryRef": "Encaissement + AL",
+              "displayName": "Encaissement + AL"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "MapTerritoire.Territoire"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "UG - Lib Patrimoine.lbl_commune"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "UG - Lib Patrimoine.code_HP1"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "code_HP1"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "code_type_ca.Type_Locataire"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "code_type_ca"
+                    }
+                  },
+                  "Property": "Type_Locataire"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "IndicateursFinanciersShrEnGestionDepuis2023.statut_caug"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Facturation et encaissements'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Territoire / Commune / Groupe / Type client / Présent partis'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d92b1fca9861c6bfa3c3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MapTerritoire"
+              }
+            },
+            "Property": "xAgence"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "MapTerritoire",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "xAgence"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

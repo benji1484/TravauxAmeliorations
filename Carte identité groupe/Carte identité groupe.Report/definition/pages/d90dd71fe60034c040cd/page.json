@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d90dd71fe60034c040cd",
+  "displayName": "Indice de densité urbaine",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

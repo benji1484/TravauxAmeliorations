@@ -1,0 +1,119 @@
+table Obj_2024
+	lineageTag: fae2b7ac-dcc9-469b-a7d8-911e68f973ca
+
+	column code_ho2
+		dataType: string
+		lineageTag: 8397ca51-b78e-4f5e-b564-fbf174e42127
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column periode
+		dataType: string
+		lineageTag: 40341a5f-ec29-43cc-bf2b-61e18a7d4886
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Obj_DureeTraitementReclam-20j
+		dataType: double
+		lineageTag: a10baedd-ea80-4ef8-b603-d352547da3d5
+		summarizeBy: sum
+		sourceColumn: Obj_DureeTraitementReclam-20j
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Obj_Entrees_Salariees
+		dataType: double
+		lineageTag: 60a9aebe-d4bb-4562-8f46-6351174c4e86
+		summarizeBy: sum
+		sourceColumn: Obj_Entrees_Salariees
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Obj_Int_TotalVacanceCommm_LGH_LGT
+		dataType: double
+		lineageTag: ee981200-903a-4c02-a321-39551e0d69cd
+		summarizeBy: sum
+		sourceColumn: Obj_Int_TotalVacanceCommm_LGH_LGT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Obj_Int_TxEncaissementGlobal_HrFoyAcc
+		dataType: double
+		lineageTag: 0c383302-d611-4516-8dd1-dbafa00bc7f1
+		summarizeBy: sum
+		sourceColumn: Obj_Int_TxEncaissementGlobal_HrFoyAcc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Obj_TotalVacanceYTDm_Logements
+		dataType: double
+		lineageTag: 12ef218b-ae74-4bbb-a214-ce8ed56aa896
+		summarizeBy: sum
+		sourceColumn: Obj_TotalVacanceYTDm_Logements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Obj_Variation_soldeYTDm_ca_operation_Locataires
+		dataType: double
+		lineageTag: 725f1f18-065c-4348-ae35-e19c3eecb776
+		summarizeBy: sum
+		sourceColumn: Obj_Variation_soldeYTDm_ca_operation_Locataires
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Obj_mutation
+		dataType: double
+		lineageTag: 2ccf2b49-71f2-45e4-92c1-ec146cc6681f
+		summarizeBy: sum
+		sourceColumn: Obj_mutation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dte_fin_mois =
+			
+			EOMONTH (
+			    DATE(
+			        VALUE(LEFT(Obj_2024[periode],4)),        -- Année
+			        VALUE(RIGHT(Obj_2024[periode],2)),       -- Mois
+			        1
+			    ),
+			    0
+			)
+		formatString: General Date
+		lineageTag: df9de208-5f72-4a99-be53-af9bd43d49cb
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Obj_2024-2476f32c-fdad-445d-98c2-6ebab68b5d8b = m
+		mode: import
+		source =
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"@benjamin_didier-le-moal@shlmr.fr_Schema" = Source{[Name="@benjamin_didier-le-moal@shlmr.fr",Kind="Schema"]}[Data],
+				    Objectifs_DTP_Table = #"@benjamin_didier-le-moal@shlmr.fr_Schema"{[Name="Objectifs_DTP",Kind="Table"]}[Data]
+				in
+				    Objectifs_DTP_Table
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

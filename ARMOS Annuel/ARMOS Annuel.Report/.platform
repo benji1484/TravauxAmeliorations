@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ARMOS Annuel"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cf187d27-6e3f-4056-8052-a087d63d9e08"
+  }
+}

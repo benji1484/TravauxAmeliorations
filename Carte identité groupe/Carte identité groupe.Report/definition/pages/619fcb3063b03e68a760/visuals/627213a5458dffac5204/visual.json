@@ -1,0 +1,332 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "627213a5458dffac5204",
+  "position": {
+    "x": 0,
+    "y": 143.31983577183007,
+    "z": 4000,
+    "height": 576.74675846889681,
+    "width": 1279.4762758017412,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "Territoire"
+                }
+              },
+              "queryRef": "MapTerritoire.Territoire",
+              "nativeQueryRef": "Territoire"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "xAgence"
+                }
+              },
+              "queryRef": "MapTerritoire.xAgence",
+              "nativeQueryRef": "Agence",
+              "displayName": "Agence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "code_hp1"
+                }
+              },
+              "queryRef": "IndicateursFinanciersShrEnGestionDepuis2023.code_hp1",
+              "nativeQueryRef": "Groupe",
+              "displayName": "Groupe"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "dimension_ca"
+                }
+              },
+              "queryRef": "IndicateursFinanciersShrEnGestionDepuis2023.dimension_ca",
+              "nativeQueryRef": "Type de client",
+              "displayName": "Type de client"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "code_ca"
+                }
+              },
+              "queryRef": "IndicateursFinanciersShrEnGestionDepuis2023.code_ca",
+              "nativeQueryRef": "Compte affaire",
+              "displayName": "Compte affaire"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "statut_caug"
+                }
+              },
+              "queryRef": "IndicateursFinanciersShrEnGestionDepuis2023.statut_caug",
+              "nativeQueryRef": "Présent / Partis",
+              "displayName": "Présent / Partis"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                    }
+                  },
+                  "Property": "code_ug_principale"
+                }
+              },
+              "queryRef": "IndicateursFinanciersShrEnGestionDepuis2023.code_ug_principale",
+              "nativeQueryRef": "UG (principale)",
+              "displayName": "UG (principale)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "soldem_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.soldem_ca_operation)",
+              "nativeQueryRef": "Solde",
+              "displayName": "Solde"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "quitALm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.quitALm_ca_operation)",
+              "nativeQueryRef": "Reste à charge",
+              "displayName": "Reste à charge"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "quitm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.quitm_ca_operation)",
+              "nativeQueryRef": "Quittancé",
+              "displayName": "Quittancé"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "loyerHCm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.loyerHCm_ca_operation)",
+              "nativeQueryRef": "Dont loyer hors charges",
+              "displayName": "Dont loyer hors charges"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "chargesfactum_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.chargesfactum_ca_operation)",
+              "nativeQueryRef": "Dont charges",
+              "displayName": "Dont charges"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "autresfactum_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.autresfactum_ca_operation)",
+              "nativeQueryRef": "Dont autre facturation ",
+              "displayName": "Dont autre facturation "
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "encaissm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.encaissm_ca_operation)",
+              "nativeQueryRef": "Encaissement",
+              "displayName": "Encaissement"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                        }
+                      },
+                      "Property": "allocm_ca_operation"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(IndicateursFinanciersShrEnGestionDepuis2023.allocm_ca_operation)",
+              "nativeQueryRef": "AL",
+              "displayName": "AL"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "IndicateursFinanciersShrEnGestionDepuis2023"
+                      }
+                    },
+                    "Property": "quitm_ca_operation"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Facturation, encaissement et solde des locataires '"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

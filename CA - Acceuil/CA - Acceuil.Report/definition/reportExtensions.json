@@ -1,0 +1,165 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Mesure",
+      "measures": [
+        {
+          "name": "Rehab - Mises en chantier :",
+          "dataType": "Double",
+          "expression": "\"0 / 744\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Rehab - Agréments :",
+          "dataType": "Double",
+          "expression": "\"0 / 750\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Rehab - Aménagements PMR :",
+          "dataType": "Double",
+          "expression": "43",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Satisfaction client",
+          "dataType": "Double",
+          "expression": "0.723",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Satisfaction réclamation :",
+          "dataType": "Double",
+          "expression": "0.336",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Taux - 20 jours réclamation",
+          "dataType": "Double",
+          "expression": "0.4768",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Ventes ancien",
+          "dataType": "Double",
+          "expression": "\"8 / 50\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Compromis vente :",
+          "dataType": "Double",
+          "expression": "18",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Réservations de PSLA :",
+          "dataType": "Double",
+          "expression": "0",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Salaire injectés :",
+          "dataType": "Double",
+          "expression": "600000",
+          "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Affaires éco et sociales :",
+          "dataType": "Double",
+          "expression": "702",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Financements obtenus",
+          "dataType": "Double",
+          "expression": "76000000",
+          "formatString": "#,0\\ \"€\";-#,0\\ \"€\";#,0\\ \"€\"",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Fonds propres :",
+          "dataType": "Double",
+          "expression": "\"10 305€ / lgt\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Trésoreries :",
+          "dataType": "Double",
+          "expression": "58585000\n",
+          "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "ETP :",
+          "dataType": "Double",
+          "expression": "457.7",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "CDI :",
+          "dataType": "Double",
+          "expression": "422.7",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "% Absenteisme :",
+          "dataType": "Double",
+          "expression": "0.0662",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "DDC - Livraisons à date",
+          "dataType": "Double",
+          "expression": "\"36 / 906\" ",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "DDC - Mises en chantier à date",
+          "dataType": "Double",
+          "expression": "\"0 / 520\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "DDC - Agréments à date",
+          "dataType": "Double",
+          "expression": "\"0 / 600\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Rehab - Réhabilitations livrées",
+          "dataType": "Double",
+          "expression": "\"0 / 750\"",
+          "formatString": "General Number",
+          "displayFolder": "Mesures surchagées"
+        },
+        {
+          "name": "Heures",
+          "dataType": "Double",
+          "expression": "50000",
+          "formatString": "0.00",
+          "displayFolder": "Mesures surchagées"
+        }
+      ]
+    }
+  ]
+}

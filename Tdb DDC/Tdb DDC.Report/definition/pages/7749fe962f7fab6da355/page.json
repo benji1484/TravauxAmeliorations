@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "7749fe962f7fab6da355",
+  "displayName": "Etat du patrimoine",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "937f4b435bc5014744cb",
+      "target": "7b257fe9852594f30d79",
+      "type": "NoFilter"
+    }
+  ]
+}

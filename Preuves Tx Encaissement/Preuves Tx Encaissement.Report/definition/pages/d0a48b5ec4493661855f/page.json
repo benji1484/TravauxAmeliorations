@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d0a48b5ec4493661855f",
+  "displayName": "Preuve Tx Enc Mensuel DTP",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

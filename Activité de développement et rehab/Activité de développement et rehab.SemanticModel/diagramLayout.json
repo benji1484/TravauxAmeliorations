@@ -1,0 +1,1002 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1854.5530692604304,
+        "y": 443.59626699330505
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1854.7184088866059,
+            "y": 1142.5358548933195
+          },
+          "nodeIndex": "Mesure",
+          "nodeLineageTag": "4f2b04b8-7704-4278-be68-ca435ba1b484",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 33
+        },
+        {
+          "location": {
+            "x": 1450.1441842714157,
+            "y": 2141.0836014803208
+          },
+          "nodeIndex": "CA",
+          "nodeLineageTag": "14d49e54-cc92-4b21-bbef-3771b90b147c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 1456.422179801978
+          },
+          "nodeIndex": "catégorie",
+          "nodeLineageTag": "d14898ab-d6f4-4fc3-a965-dfe87759037a",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 1582.9802304083864,
+            "y": 1088.3089741369529
+          },
+          "nodeIndex": "code_type_ca",
+          "nodeLineageTag": "4cb4bdd8-2e51-4c03-b16b-6ce237ffdd59",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 19
+        },
+        {
+          "location": {
+            "x": 1570.0986347663745,
+            "y": 1461.3710900174131
+          },
+          "nodeIndex": "dimension_type_ca",
+          "nodeLineageTag": "9bd0f1b3-7936-4ddb-accb-059a039a09dd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 20
+        },
+        {
+          "location": {
+            "x": 899.09238922211091,
+            "y": 1143.8920778990862
+          },
+          "nodeIndex": "IndicateursFinanciersShrEnGestionDepuis2023",
+          "nodeLineageTag": "59b9bfaf-09ed-4fb7-b58d-3ba3e430c303",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 21
+        },
+        {
+          "location": {
+            "x": 348.69750085785245,
+            "y": 1132.5240293005395
+          },
+          "nodeIndex": "IndicateursVacanceShrEnGestionDepuis2023",
+          "nodeLineageTag": "5eef4bd0-88a5-4c35-876c-83bbab1f0122",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 22
+        },
+        {
+          "location": {
+            "x": 1272.23839168121,
+            "y": 1489.1385196145006
+          },
+          "nodeIndex": "LocatairesShrEnGestionDepuis2023",
+          "nodeLineageTag": "2b05354b-89ab-4164-a9d7-cee6dc3d3fbf",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 23
+        },
+        {
+          "location": {
+            "x": 675.439869619604,
+            "y": 877.83891303404425
+          },
+          "nodeIndex": "MapTerritoire",
+          "nodeLineageTag": "d4dabf75-fc34-4199-a560-2fe0e7309656",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 24
+        },
+        {
+          "location": {
+            "x": 623.37949872085574,
+            "y": 1496.2674446845444
+          },
+          "nodeIndex": "Nature UG",
+          "nodeLineageTag": "ce49b873-0d13-40bd-acd6-ef199398424b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 25
+        },
+        {
+          "location": {
+            "x": 888.07248339544776,
+            "y": -50
+          },
+          "nodeIndex": "Obj_2024",
+          "nodeLineageTag": "fae2b7ac-dcc9-469b-a7d8-911e68f973ca",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 26
+        },
+        {
+          "location": {
+            "x": 2100.9802304083864,
+            "y": 1071.5418007401604
+          },
+          "nodeIndex": "Paramètre",
+          "nodeLineageTag": "29e87c64-b1f6-4fbc-986d-a1d48ffed945",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 34
+        },
+        {
+          "location": {
+            "x": 676.15427732837543,
+            "y": 285.63892557922145
+          },
+          "nodeIndex": "PatrimoineSrhEnGestionDepuis2023",
+          "nodeLineageTag": "20771308-ffee-42e7-89ab-c08dcf85ea27",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 27
+        },
+        {
+          "location": {
+            "x": 1301.660715471505,
+            "y": 500.25148111159638
+          },
+          "nodeIndex": "PeriodeCal",
+          "nodeLineageTag": "84f3409d-b575-452c-bbd8-fdb3d8240a56",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 37
+        },
+        {
+          "location": {
+            "x": 1151.4384567516183,
+            "y": 1853.0118895366936
+          },
+          "nodeIndex": "PeuplementShrDepuis2023",
+          "nodeLineageTag": "163f1297-e3e7-46a6-af8e-16ddfd69194e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 28
+        },
+        {
+          "location": {
+            "x": 1285.8365542719016,
+            "y": 1100.854526252806
+          },
+          "nodeIndex": "reglements",
+          "nodeLineageTag": "ef0a0aa7-f9db-4fc4-979f-3248540daad5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 29
+        },
+        {
+          "location": {
+            "x": 379.26925898221975,
+            "y": 194.32362812623637
+          },
+          "nodeIndex": "Type_vacance",
+          "nodeLineageTag": "c504b1ee-9a67-495e-9f04-c74bc59e79bd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 30
+        },
+        {
+          "location": {
+            "x": 999.11016530152506,
+            "y": 912.60637954044068
+          },
+          "nodeIndex": "UG - Lib Patrimoine",
+          "nodeLineageTag": "1f6907b3-bf1d-408a-8421-40e64c897fa0",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 31
+        },
+        {
+          "location": {
+            "x": 633.16991744074949,
+            "y": 1706.8059261779879
+          },
+          "nodeIndex": "UG_INSEE",
+          "nodeLineageTag": "b66f6bb0-c6e0-4f92-b7af-7ead229b2129",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 32
+        },
+        {
+          "location": {
+            "x": 3687.9011268905715,
+            "y": 947.5418007401604
+          },
+          "nodeIndex": "Data",
+          "nodeLineageTag": "4f40cc21-def5-4540-9836-38c1670e7aa3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 2754.8670562489133,
+            "y": 999.55866001552113
+          },
+          "nodeIndex": "DDC - Engagements promoteurs",
+          "nodeLineageTag": "89c086df-0856-46f2-a379-2de935c40526",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 2535.61456959054,
+            "y": 1345.7493681007313
+          },
+          "nodeIndex": "DDC - Livraisons",
+          "nodeLineageTag": "bed8d337-faa0-40ca-9e03-23d17099331f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 2384.9802304083864,
+            "y": 999.53227271730589
+          },
+          "nodeIndex": "DDC - MEC",
+          "nodeLineageTag": "e0ec840c-81d1-4c27-afcc-8cd0a7afffe1",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 2264.2020302284791,
+            "y": 1517.9451998357022
+          },
+          "nodeIndex": "DDC - Objectifs et atterissage",
+          "nodeLineageTag": "9564328d-e471-4f88-b5eb-2492e97672d2",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 2928.1420979991271,
+            "y": 1349.7822546090347
+          },
+          "nodeIndex": "DDC - Programmation en cours",
+          "nodeLineageTag": "39daed42-6a9e-4f07-a998-2095184d1701",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 3119.9011268905715,
+            "y": 999.57749936629034
+          },
+          "nodeIndex": "DDC - Programmation en cours - suite",
+          "nodeLineageTag": "2552b4dd-d1e4-4909-8c99-9b0f123d3ee0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 2982.8178759391667,
+            "y": 649.33423337958936
+          },
+          "nodeIndex": "DDC - Programmation Reçu",
+          "nodeLineageTag": "0bb8a3dd-258e-4e61-a2d7-9df6980ca62d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 2617.7443027937079,
+            "y": 701.32889825955442
+          },
+          "nodeIndex": "DDC - Programmation Reçu - suite",
+          "nodeLineageTag": "15351d2e-f627-4094-8705-0a3300063d0a",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 5922.6819360338495,
+            "y": 1481.0234785129844
+          },
+          "nodeIndex": "Villes",
+          "nodeLineageTag": "06894c07-0373-4d68-be18-8524420ff4e8",
+          "size": {
+            "height": 170.041340240281,
+            "width": 234
+          },
+          "zIndex": 44
+        },
+        {
+          "location": {
+            "x": 3765.3342552203171,
+            "y": 230.51640965398974
+          },
+          "nodeIndex": "TII",
+          "nodeLineageTag": "5361524b-149e-49d4-b108-c65e3c049352",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 35
+        },
+        {
+          "location": {
+            "x": 4439.9011268905715,
+            "y": 997.5418007401604
+          },
+          "nodeIndex": "indicateurs_affaires_v2",
+          "nodeLineageTag": "58d89e60-d107-4ae2-923e-03cf9b81f569",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 36
+        },
+        {
+          "location": {
+            "x": 2722.241239623861,
+            "y": 293.02627261745693
+          },
+          "nodeIndex": "Table",
+          "nodeLineageTag": "a296ab0d-61bd-4d60-92ba-b7288ec2cd35",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 4673.9011268905715,
+            "y": 997.5418007401604
+          },
+          "nodeIndex": "DateTable",
+          "nodeLineageTag": "d4f615b0-5312-4d2e-8d3b-54215ebfce6d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 4957.9011268905715,
+            "y": 1083.5418007401604
+          },
+          "nodeIndex": "TranchAge",
+          "nodeLineageTag": "9e7292a1-9bf9-47d7-8a09-c96e67fd69e8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 5191.9011268905715,
+            "y": 1095.5418007401604
+          },
+          "nodeIndex": "Délégation (2)",
+          "nodeLineageTag": "6e99228f-5af3-4b6e-9b76-638a98ec2925",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 5475.9011268905715,
+            "y": 997.5418007401604
+          },
+          "nodeIndex": "Scoring Patrimoine",
+          "nodeLineageTag": "0dec6d43-5115-4911-b412-7c0828abf44e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 5759.9011268905715,
+            "y": 1071.5418007401604
+          },
+          "nodeIndex": "Scoring Patrimoine dépiv",
+          "nodeLineageTag": "0c08f813-4ad7-429c-b52e-77abb74df5ae",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 6277.4782303299162,
+            "y": 645.2233195893441
+          },
+          "nodeIndex": "LIVRAISONS",
+          "nodeLineageTag": "12ef96ca-0b92-45f9-8104-8dcaa47b05e2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 38
+        },
+        {
+          "location": {
+            "x": 6033.6492887039185,
+            "y": 56.100466600110678
+          },
+          "nodeIndex": "PROGR",
+          "nodeLineageTag": "cc8967ef-2f97-4a31-b0b1-e884db2f1236",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 42
+        },
+        {
+          "location": {
+            "x": 6327.9011268905715,
+            "y": 997.5418007401604
+          },
+          "nodeIndex": "LOYER QUIT",
+          "nodeLineageTag": "a2837429-20e8-4231-bc0e-c8dc4c69100c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 39
+        },
+        {
+          "location": {
+            "x": 6688.0782498905719,
+            "y": 1291.6209267401603
+          },
+          "nodeIndex": "MEC",
+          "nodeLineageTag": "92d44c8f-a447-43e1-9619-d8756028c46c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 41
+        },
+        {
+          "location": {
+            "x": 6849.8735667303845,
+            "y": 1575.7936189546713
+          },
+          "nodeIndex": "montant_atfpb",
+          "nodeLineageTag": "00e75b0d-b54d-4b45-afc7-9998de223064",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 6720.670535890572,
+            "y": 237.93841698219165
+          },
+          "nodeIndex": "Calendrier graphique",
+          "nodeLineageTag": "24f87a6f-f9a8-40ab-9baa-a8869f5322ec",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 40
+        },
+        {
+          "location": {
+            "x": 7066.6232997039187,
+            "y": 940.69889099999978
+          },
+          "nodeIndex": "Produit",
+          "nodeLineageTag": "900b60cb-e000-414b-83ef-88c7c4a3b6ca",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 43
+        },
+        {
+          "location": {},
+          "nodeIndex": "Coordonnees",
+          "nodeLineageTag": "e1d3558b-e564-4312-a4f9-ed1f4c0d1021",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 44.905697313103992,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 1475.1134344475417,
+        "y": 942.65996639649529
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 283.25700946972592,
+            "y": 0
+          },
+          "nodeIndex": "PeriodeCal",
+          "nodeLineageTag": "84f3409d-b575-452c-bbd8-fdb3d8240a56",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 493.6431178670158,
+            "y": 337.99594253957048
+          },
+          "nodeIndex": "DDC - Livraisons",
+          "nodeLineageTag": "bed8d337-faa0-40ca-9e03-23d17099331f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 658.49937121923745,
+            "y": 530.65927477048035
+          },
+          "nodeIndex": "DDC - MEC",
+          "nodeLineageTag": "e0ec840c-81d1-4c27-afcc-8cd0a7afffe1",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 998.14297752321249,
+            "y": 830.57848267632949
+          },
+          "nodeIndex": "DDC - Engagements promoteurs",
+          "nodeLineageTag": "89c086df-0856-46f2-a379-2de935c40526",
+          "size": {
+            "height": 337.71061831803218,
+            "width": 680.89948197891454
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 971.60009698967576
+          },
+          "nodeIndex": "DDC - Objectifs et atterissage",
+          "nodeLineageTag": "9564328d-e471-4f88-b5eb-2492e97672d2",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1375.5247623054072,
+            "y": 500.86597597188586
+          },
+          "nodeIndex": "DDC - Programmation en cours",
+          "nodeLineageTag": "39daed42-6a9e-4f07-a998-2095184d1701",
+          "size": {
+            "height": 291.03539439344,
+            "width": 408.78735295175329
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1300.0484053489681,
+            "y": 181.08456886697383
+          },
+          "nodeIndex": "DDC - Programmation en cours - suite",
+          "nodeLineageTag": "2552b4dd-d1e4-4909-8c99-9b0f123d3ee0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 330.77308443470019,
+            "y": 822.63360299670444
+          },
+          "nodeIndex": "DDC - Programmation Reçu",
+          "nodeLineageTag": "0bb8a3dd-258e-4e61-a2d7-9df6980ca62d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 96.3991338857583,
+            "y": 534.63171461029287
+          },
+          "nodeIndex": "DDC - Programmation Reçu - suite",
+          "nodeLineageTag": "15351d2e-f627-4094-8705-0a3300063d0a",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 869.03868272930379,
+            "y": 0
+          },
+          "nodeIndex": "Data",
+          "nodeLineageTag": "4f40cc21-def5-4540-9836-38c1670e7aa3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1799.6523598724973,
+            "y": 815.49747435584811
+          },
+          "nodeIndex": "DateTable",
+          "nodeLineageTag": "d4f615b0-5312-4d2e-8d3b-54215ebfce6d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 632.2812667611089,
+            "y": 1039.1315742664897
+          },
+          "nodeIndex": "PROGR",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 2202.5758855874196,
+            "y": 290.815519887393
+          },
+          "nodeIndex": "LIVRAISONS",
+          "nodeLineageTag": "12ef96ca-0b92-45f9-8104-8dcaa47b05e2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 1591.8726551646064,
+            "y": 1273.0413107922732
+          },
+          "nodeIndex": "MEC",
+          "nodeLineageTag": "92d44c8f-a447-43e1-9619-d8756028c46c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 2151.1981586666425,
+            "y": 1048.3677762168556
+          },
+          "nodeIndex": "Calendrier graphique",
+          "nodeLineageTag": "24f87a6f-f9a8-40ab-9baa-a8869f5322ec",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 15
+        }
+      ],
+      "name": "Periode",
+      "zoomValue": 110.43218521090155,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 2,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Data",
+          "nodeLineageTag": "4f40cc21-def5-4540-9836-38c1670e7aa3",
+          "size": {
+            "height": 397,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 553.20000076293945,
+            "y": 0
+          },
+          "nodeIndex": "Villes",
+          "nodeLineageTag": "06894c07-0373-4d68-be18-8524420ff4e8",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 158,
+            "y": 421
+          },
+          "nodeIndex": "PeriodeCal",
+          "nodeLineageTag": "84f3409d-b575-452c-bbd8-fdb3d8240a56",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 534.20000076293945,
+            "y": 339
+          },
+          "nodeIndex": "PROGR",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Data villes",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 3,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 29
+          },
+          "nodeIndex": "PeriodeCal",
+          "nodeLineageTag": "84f3409d-b575-452c-bbd8-fdb3d8240a56",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 432,
+            "y": 77
+          },
+          "nodeIndex": "TII",
+          "nodeLineageTag": "5361524b-149e-49d4-b108-c65e3c049352",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Dates Rehab",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 4,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 12.200000762939453,
+            "y": 21
+          },
+          "nodeIndex": "UG - Lib Patrimoine",
+          "nodeLineageTag": "45520a7b-22db-4419-83bc-392dcaad53ea",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 547.20000076293945,
+            "y": 119
+          },
+          "nodeIndex": "TII",
+          "nodeLineageTag": "5361524b-149e-49d4-b108-c65e3c049352",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "UG - Lib",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 5,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 42.200000762939453,
+            "y": 137
+          },
+          "nodeIndex": "Table",
+          "nodeLineageTag": "a296ab0d-61bd-4d60-92ba-b7288ec2cd35",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 559.20000076293945,
+            "y": 39
+          },
+          "nodeIndex": "MapTerritoire",
+          "nodeLineageTag": "a95f00bc-28f9-48e5-8b3a-1f2039115282",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Disposition 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}

@@ -1,0 +1,343 @@
+table MEC
+	lineageTag: 92d44c8f-a447-43e1-9619-d8756028c46c
+
+	column ID
+		dataType: string
+		lineageTag: 06df2c47-99b3-444c-9830-1878cdba51e6
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column POT
+		dataType: string
+		lineageTag: f949abc3-00da-489d-bd7e-08b6f0c8ed25
+		summarizeBy: none
+		sourceColumn: POT
+
+		annotation SummarizationSetBy = Automatic
+
+	column LBU
+		dataType: int64
+		formatString: 0
+		lineageTag: 51cc80ba-e96c-4912-ab9e-ae07851af6d9
+		summarizeBy: sum
+		sourceColumn: LBU
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROP
+		dataType: string
+		lineageTag: 0e516aa8-59f6-47dc-82b5-48382de96a18
+		summarizeBy: none
+		sourceColumn: ROP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRIORITE/IFABILITE
+		dataType: string
+		lineageTag: e0cde12d-195c-44b2-ae99-c3730237c39d
+		summarizeBy: none
+		sourceColumn: PRIORITE/IFABILITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOM OPERATION'
+		dataType: string
+		lineageTag: 743b78a7-a17f-4965-9d32-615ba042c80f
+		summarizeBy: none
+		sourceColumn: NOM OPERATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMUNE
+		dataType: string
+		lineageTag: 38848915-7c6b-4022-bbf3-e8ae70d06c64
+		summarizeBy: none
+		sourceColumn: COMMUNE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPCI
+		dataType: string
+		lineageTag: 1f15dd62-3feb-4751-9da2-8ce79aacf77e
+		summarizeBy: none
+		sourceColumn: EPCI
+
+		annotation SummarizationSetBy = Automatic
+
+	column INT/VEFA
+		dataType: string
+		lineageTag: 1dc6fbe5-b822-48f9-8659-dfed4bf5f129
+		summarizeBy: none
+		sourceColumn: INT/VEFA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NB LOGTS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5dd83092-278f-4a0e-bda3-7498d7da7837
+		summarizeBy: sum
+		sourceColumn: NB LOGTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUIT
+		dataType: string
+		lineageTag: b5650220-382d-441b-9b81-216127ff0b2f
+		summarizeBy: none
+		sourceColumn: PRODUIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PUBLIC CIBLE'
+		dataType: string
+		lineageTag: edf26b0f-8d45-4f67-b107-07a1c7135d1b
+		summarizeBy: none
+		sourceColumn: PUBLIC CIBLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column FORME
+		dataType: string
+		lineageTag: 3620dd15-0b3a-4756-8692-835555a73d10
+		summarizeBy: none
+		sourceColumn: FORME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CERTIFICATION
+		dataType: string
+		lineageTag: 1438e482-d168-4fc2-a6be-daefa369fdcb
+		summarizeBy: none
+		sourceColumn: CERTIFICATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE LANCEMENT AO PREV'
+		dataType: string
+		lineageTag: 395cf1cf-9ee7-4621-b356-0e3e4bc1cae5
+		summarizeBy: none
+		sourceColumn: DATE LANCEMENT AO PREV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE LANCEMENT AO REELLE'
+		dataType: string
+		lineageTag: a94c61f0-f73f-4abe-8fb1-78d30b41b118
+		summarizeBy: none
+		sourceColumn: DATE LANCEMENT AO REELLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE CAO'
+		dataType: string
+		lineageTag: 2c4a6154-db64-4fa8-8cda-6ae5f91b2bb2
+		summarizeBy: none
+		sourceColumn: DATE CAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE OS/ACTE PREV'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 2b8f8392-ce21-4c16-ad58-2a6e1785133f
+		summarizeBy: none
+		sourceColumn: DATE OS/ACTE PREV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'DATE OS/ACTE REELLE'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: ac8c8c42-a962-4529-b547-c43ee218c54b
+		summarizeBy: none
+		sourceColumn: DATE OS/ACTE REELLE
+
+		variation Variation
+			isDefault
+			relationship: 2cb9bb77-dd43-4f0c-950d-7c151c367d58
+			defaultHierarchy: LocalDateTable_6f192a98-987e-4b2b-8556-d4a52e611095.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'DEMANDE DE PRÊT BDT'
+		dataType: string
+		lineageTag: a9e7dc5d-e7fe-41d8-93c9-7aa04d03c254
+		summarizeBy: none
+		sourceColumn: DEMANDE DE PRÊT BDT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DEMANDE DE PRÊT ALS'
+		dataType: string
+		lineageTag: d887ce82-5d13-47d9-aa58-04be7de80e97
+		summarizeBy: none
+		sourceColumn: DEMANDE DE PRÊT ALS
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHAB
+		dataType: string
+		lineageTag: edfd3f63-5fa3-4edf-b4da-6d464b22c07a
+		summarizeBy: none
+		sourceColumn: SHAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MONTANT TVX HT/MONTANT VEFA HT'
+		dataType: string
+		lineageTag: 4b0c2ffb-ee6c-4b6c-8418-1d5773df0c7b
+		summarizeBy: none
+		sourceColumn: MONTANT TVX HT/MONTANT VEFA HT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'COUT TVX/LOGT'
+		dataType: string
+		lineageTag: 5bcfc817-7f86-4b7a-87c0-d24e85ec48fe
+		summarizeBy: none
+		sourceColumn: COUT TVX/LOGT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'COUT TVX/M² HAB'
+		dataType: string
+		lineageTag: 237673fc-d405-4c68-8600-f70502682752
+		summarizeBy: none
+		sourceColumn: COUT TVX/M² HAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ANNEE DE MEC'
+		dataType: string
+		lineageTag: f4175e18-8f35-42bc-ae82-e03fe5827626
+		summarizeBy: none
+		sourceColumn: ANNEE DE MEC
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMENTAIRES
+		dataType: string
+		lineageTag: e28ebf9a-bdaf-4c12-85bd-b6e08bb3e154
+		summarizeBy: none
+		sourceColumn: COMMENTAIRES
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune_Villes =
+			
+			SWITCH(
+			    TRUE(),
+			    'MEC'[Commune] = "BRAS PANON", "Bras-Panon",
+			    'MEC'[Commune] = "CILAOS", "Cilaos",
+			    'MEC'[Commune] = "ENTRE DEUX", "Entre-Deux",
+			    'MEC'[Commune] = "ETANG SALE", "L'Étang-Salé",
+			    'MEC'[Commune] = "LA POSSESSION", "La Possession",
+			    'MEC'[Commune] = "LE PORT", "Le Port",
+			    'MEC'[Commune] = "LE TAMPON", "Le Tampon",
+			    'MEC'[Commune] = "LES AVIRONS", "Les Avirons",
+			    'MEC'[Commune] = "PETITE ILE", "Petite-Île",
+			    'MEC'[Commune] = "PLAINE DES PALMISTES", "Plaine des palmistes",
+			    'MEC'[Commune] = "SAINT ANDRE", "Saint-André",
+			    'MEC'[Commune] = "SAINT BENOIT", "Saint-Benoît",
+			    'MEC'[Commune] = "SAINT DENIS", "Saint-Denis",
+			    'MEC'[Commune] = "SAINT JOSEPH", "Saint-Joseph",
+			    'MEC'[Commune] = "SAINT LEU", "Saint-Leu",
+			    'MEC'[Commune] = "SAINT LOUIS", "Saint-Louis",
+			    'MEC'[Commune] = "SAINT PAUL", "Saint-Paul",
+			    'MEC'[Commune] = "SAINT PHILIPPE", "Saint-Philippe",
+			    'MEC'[Commune] = "SAINT PIERRE", "Saint-Pierre",
+			    'MEC'[Commune] = "SAINTE MARIE", "Sainte-Marie",
+			    'MEC'[Commune] = "SAINTE ROSE", "Sainte-Rose",
+			    'MEC'[Commune] = "SAINTE SUZANNE", "Sainte-Suzanne",
+			    'MEC'[Commune] = "SALAZIE", "Salazie",
+			    'MEC'[Commune] = "TROIS BASSINS", "Trois-Bassins",
+			    BLANK()
+			)
+		lineageTag: a04ef19a-02d1-473a-8d64-e664320c320d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prévisonnel graph'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6f360301-dd3d-4452-b11b-a58d4f0d5b2c
+		summarizeBy: none
+		sourceColumn: Prévisonnel graph
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Réel graph'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e81d6a72-f8b2-40e8-a89a-28559d013b17
+		summarizeBy: none
+		sourceColumn: Réel graph
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition MEC = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint Source
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/productionneuve/", [ApiVersion = 15]),
+				
+				    // 2. Filtrer les fichiers Excel
+				    #"Lignes filtrées" = Table.SelectRows(Source, each ([Extension] = ".xls" or [Extension] = ".xlsm" or [Extension] = ".xlsx")),
+				
+				    // 3. Trier par date de modif décroissante
+				    #"Lignes triées" = Table.Sort(#"Lignes filtrées", {{"Date modified", Order.Descending}}),
+				
+				    // 4. Filtrer uniquement TDB DES INDICATEURS PRODUCTION NEUVE.xlsx
+				    #"Lignes filtrées1" = Table.SelectRows(#"Lignes triées", each ([Name] = "TDB DES INDICATEURS PRODUCTION NEUVE.xlsx")),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Lignes filtrées1", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Prendre la dernière version
+				    DerniereVersion = Table.FirstN(#"Fichiers masqués filtrés1", 1),
+				
+				    // 7. Charger le fichier Excel et repérer l'onglet "PROGR"
+				    ExcelFile = Excel.Workbook(DerniereVersion{0}[Content], null, true),
+				    MEC = Table.SelectRows(ExcelFile, each [Name] = "MEC"){0}[Data],
+				
+				    // 8. Supprimer les 3 premières lignes (tableau commence ligne 4)
+				    #"Premières lignes supprimées" = Table.Skip(MEC, 3),
+				
+				    // 9. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Premières lignes supprimées", [PromoteAllScalars=true]),
+				
+				    // 10. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(
+				        #"En-têtes promus",
+				        List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})
+				    ),
+				    #"Lignes filtrées2" = Table.SelectRows(#"Type modifié", each ([LBU] <> null and [LBU] <> 0 and [LBU] <> "" and [LBU] <> "XXXX")),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Lignes filtrées2",{{"LBU", type date}}),
+				    #"Année extraite" = Table.TransformColumns(#"Type modifié1",{{"LBU", Date.Year, Int64.Type}}),
+				    #"Type modifié2" = Table.TransformColumnTypes(#"Année extraite",{{"DATE OS/ACTE PREV", type date}}),
+				    #"Lignes filtrées3" = Table.SelectRows(#"Type modifié2", each true),
+				    #"Type modifié3" = Table.TransformColumnTypes(#"Lignes filtrées3",{{"NB LOGTS", Int64.Type}, {"DATE OS/ACTE REELLE", type date}}),
+				    #"Duplication de la colonne" = Table.DuplicateColumn(#"Type modifié3", "DATE OS/ACTE PREV", "DATE OS/ACTE PREV - Copier"),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Duplication de la colonne",{{"DATE OS/ACTE PREV - Copier", "Prévisonnel graph"}}),
+				    #"Duplication de la colonne1" = Table.DuplicateColumn(#"Colonnes renommées", "DATE OS/ACTE REELLE", "DATE OS/ACTE REELLE - Copier"),
+				    #"Colonnes renommées1" = Table.RenameColumns(#"Duplication de la colonne1",{{"DATE OS/ACTE REELLE - Copier", "Réel graph"}})
+				in
+				    #"Colonnes renommées1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

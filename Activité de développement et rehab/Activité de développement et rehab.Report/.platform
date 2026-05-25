@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Activité de développement et rehab"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "67963bb8-e64c-4035-bcd5-527ff52ed05b"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/Patrimoine;initial catalog=\"Pilotage Mensuelv3\";access mode=readonly;integrated security=ClaimsToken;semanticmodelid=be09a186-af88-4abe-bfe6-3a76507d8d3f"
+    }
+  }
+}

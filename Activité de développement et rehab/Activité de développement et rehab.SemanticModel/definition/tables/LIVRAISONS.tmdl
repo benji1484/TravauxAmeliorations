@@ -1,0 +1,359 @@
+table LIVRAISONS
+	lineageTag: 12ef96ca-0b92-45f9-8104-8dcaa47b05e2
+
+	column ID
+		dataType: string
+		lineageTag: 42f53b62-98c9-4b4c-9cdb-8c1049e06925
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column POT
+		dataType: string
+		lineageTag: 97747096-c272-4592-9976-255eac54ac96
+		summarizeBy: none
+		sourceColumn: POT
+
+		annotation SummarizationSetBy = Automatic
+
+	column LBU
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a33278f-4425-4aad-9f00-d59efe74bdb1
+		summarizeBy: sum
+		sourceColumn: LBU
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROP
+		dataType: string
+		lineageTag: 91b319e4-3eb5-4c4a-b275-162e159d54e5
+		summarizeBy: none
+		sourceColumn: ROP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRIORITE/IFABILITE
+		dataType: string
+		lineageTag: cf981e94-0912-4596-a487-790c75160cf4
+		summarizeBy: none
+		sourceColumn: PRIORITE/IFABILITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOM OPERATION'
+		dataType: string
+		lineageTag: d2a54050-6e00-4e75-8ca1-1984d8b79b41
+		summarizeBy: none
+		sourceColumn: NOM OPERATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMUNE
+		dataType: string
+		lineageTag: 80e23d4a-9650-40f5-8df4-3bc22512d5f5
+		summarizeBy: none
+		sourceColumn: COMMUNE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPCI
+		dataType: string
+		lineageTag: 04aee308-1aec-4fa5-9a26-19712741b5fb
+		summarizeBy: none
+		sourceColumn: EPCI
+
+		annotation SummarizationSetBy = Automatic
+
+	column INT/VEFA
+		dataType: string
+		lineageTag: 9598aa0c-5e8a-4654-86e3-298218ea27a9
+		summarizeBy: none
+		sourceColumn: INT/VEFA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NB LOGTS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f3c69fc-92d1-4994-937f-65ee31539e4d
+		summarizeBy: sum
+		sourceColumn: NB LOGTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUIT
+		dataType: string
+		lineageTag: 22a8f076-dbf5-4fd0-bb9d-70467435f579
+		summarizeBy: none
+		sourceColumn: PRODUIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CTX
+		dataType: string
+		lineageTag: 0ba2287e-fbe6-4372-81ab-273594a84038
+		summarizeBy: none
+		sourceColumn: CTX
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TECH GPA'
+		dataType: string
+		lineageTag: ae995319-89c6-43d2-b514-f0640d4c6e39
+		summarizeBy: none
+		sourceColumn: TECH GPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column AGENCE
+		dataType: string
+		lineageTag: ab29eb57-554e-442d-a5b7-909e7e802859
+		summarizeBy: none
+		sourceColumn: AGENCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PUBLIC CIBLE'
+		dataType: string
+		lineageTag: 538b348e-a939-42fa-8ba4-f6ad28b81076
+		summarizeBy: none
+		sourceColumn: PUBLIC CIBLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Certification
+		dataType: string
+		lineageTag: b7a55c68-3a36-4779-be95-84b9d88be91d
+		summarizeBy: none
+		sourceColumn: Certification
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE OS/ACTE REELLE'
+		dataType: string
+		lineageTag: 7666109c-eef0-4230-8e54-80cd15f90505
+		summarizeBy: none
+		sourceColumn: DATE OS/ACTE REELLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DERNIER COMITE'
+		dataType: string
+		lineageTag: 5f7a2c3f-2aec-4bfc-a5fc-f5916faf7330
+		summarizeBy: none
+		sourceColumn: DERNIER COMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE DE LIV CONTRACTUELLE'
+		dataType: string
+		lineageTag: 2e69a211-d41b-4c0a-bc1d-f6f3b41f99dd
+		summarizeBy: none
+		sourceColumn: DATE DE LIV CONTRACTUELLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE DE LIV PREV'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 4949db80-e7c1-4a19-940d-f1ca62f2897e
+		summarizeBy: none
+		sourceColumn: DATE DE LIV PREV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'DATE LIVRAISON REELLE'
+		dataType: string
+		lineageTag: 154ceb27-a346-4e55-94ef-032afcbf4a4e
+		summarizeBy: none
+		sourceColumn: DATE LIVRAISON REELLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DUREE CHANTIER PREV (en mois)'
+		dataType: string
+		lineageTag: 31f70379-325a-4b2b-abb5-a12214c3bffe
+		summarizeBy: none
+		sourceColumn: DUREE CHANTIER PREV (en mois)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DUREE CHANTIER REELLE (en mois)'
+		dataType: int64
+		formatString: 0
+		lineageTag: d8be00da-c074-4ebf-84f3-c6dd2f3491ab
+		summarizeBy: sum
+		sourceColumn: DUREE CHANTIER REELLE (en mois)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RETARD DATE PREV/RAP CONTRAT (en mois)'
+		dataType: string
+		lineageTag: 84e06208-e2c0-49b8-9866-95f7fdead5cc
+		summarizeBy: none
+		sourceColumn: RETARD DATE PREV/RAP CONTRAT (en mois)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Perte de loyer estimée'
+		dataType: string
+		lineageTag: 49479d26-8859-4144-bdbd-db2adcd8f3dd
+		summarizeBy: none
+		sourceColumn: Perte de loyer estimée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RETARD DATE REELLE /RAP CONTRAT (en mois)'
+		dataType: string
+		lineageTag: 370cb6a3-35b6-43ba-9cda-f7b295afa13b
+		summarizeBy: none
+		sourceColumn: RETARD DATE REELLE /RAP CONTRAT (en mois)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Perte de loyer réelle'
+		dataType: string
+		lineageTag: d3f53b20-4316-4b16-9491-7339ccdbfb5f
+		summarizeBy: none
+		sourceColumn: Perte de loyer réelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ANNEE DE LIVRAISON'
+		dataType: string
+		lineageTag: 460b1dfe-9140-4b1a-87db-8e8fd640a7b6
+		summarizeBy: none
+		sourceColumn: ANNEE DE LIVRAISON
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMENTAIRES
+		dataType: string
+		lineageTag: 709b9884-ec81-413c-a3c7-a6ed61eee980
+		summarizeBy: none
+		sourceColumn: COMMENTAIRES
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune_Villes =
+			
+			SWITCH(
+			    TRUE(),
+			    'LIVRAISONS'[Commune] = "BRAS PANON", "Bras-Panon",
+			    'LIVRAISONS'[Commune] = "CILAOS", "Cilaos",
+			    'LIVRAISONS'[Commune] = "ENTRE DEUX", "Entre-Deux",
+			    'LIVRAISONS'[Commune] = "ETANG SALE", "L'Étang-Salé",
+			    'LIVRAISONS'[Commune] = "LA POSSESSION", "La Possession",
+			    'LIVRAISONS'[Commune] = "LE PORT", "Le Port",
+			    'LIVRAISONS'[Commune] = "LE TAMPON", "Le Tampon",
+			    'LIVRAISONS'[Commune] = "LES AVIRONS", "Les Avirons",
+			    'LIVRAISONS'[Commune] = "PETITE ILE", "Petite-Île",
+			    'LIVRAISONS'[Commune] = "PLAINE DES PALMISTES", "Plaine des palmistes",
+			    'LIVRAISONS'[Commune] = "SAINT ANDRE", "Saint-André",
+			    'LIVRAISONS'[Commune] = "SAINT BENOIT", "Saint-Benoît",
+			    'LIVRAISONS'[Commune] = "SAINT DENIS", "Saint-Denis",
+			    'LIVRAISONS'[Commune] = "SAINT JOSEPH", "Saint-Joseph",
+			    'LIVRAISONS'[Commune] = "SAINT LEU", "Saint-Leu",
+			    'LIVRAISONS'[Commune] = "SAINT LOUIS", "Saint-Louis",
+			    'LIVRAISONS'[Commune] = "SAINT PAUL", "Saint-Paul",
+			    'LIVRAISONS'[Commune] = "SAINT PHILIPPE", "Saint-Philippe",
+			    'LIVRAISONS'[Commune] = "SAINT PIERRE", "Saint-Pierre",
+			    'LIVRAISONS'[Commune] = "SAINTE MARIE", "Sainte-Marie",
+			    'LIVRAISONS'[Commune] = "SAINTE ROSE", "Sainte-Rose",
+			    'LIVRAISONS'[Commune] = "SAINTE SUZANNE", "Sainte-Suzanne",
+			    'LIVRAISONS'[Commune] = "SALAZIE", "Salazie",
+			    'LIVRAISONS'[Commune] = "TROIS BASSINS", "Trois-Bassins",
+			    BLANK()
+			)
+		lineageTag: 0f60085f-655a-41e0-9133-17c69ad05bb2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE RELLE CFL'
+		dataType: string
+		lineageTag: 3102ecac-ab00-4f59-af57-042a618399aa
+		summarizeBy: none
+		sourceColumn: DATE RELLE CFL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Livraison prévisionnelle'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4ec43a5f-c74a-44a3-9cbf-cc25f3d48aad
+		summarizeBy: none
+		sourceColumn: Livraison prévisionnelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Livraison réelle'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 7acd36ca-80c4-47f3-a904-9becf0ef66ff
+		summarizeBy: none
+		sourceColumn: Livraison réelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition LIVRAISONS = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint Source
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/productionneuve/", [ApiVersion = 15]),
+				
+				    // 2. Filtrer les fichiers Excel
+				    #"Lignes filtrées" = Table.SelectRows(Source, each ([Extension] = ".xls" or [Extension] = ".xlsm" or [Extension] = ".xlsx")),
+				
+				    // 3. Trier par date de modif décroissante
+				    #"Lignes triées" = Table.Sort(#"Lignes filtrées", {{"Date modified", Order.Descending}}),
+				
+				    // 4. Filtrer uniquement TDB DES INDICATEURS PRODUCTION NEUVE.xlsx
+				    #"Lignes filtrées1" = Table.SelectRows(#"Lignes triées", each ([Name] = "TDB DES INDICATEURS PRODUCTION NEUVE.xlsx")),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Lignes filtrées1", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Prendre la dernière version
+				    DerniereVersion = Table.FirstN(#"Fichiers masqués filtrés1", 1),
+				
+				    // 7. Charger le fichier Excel et repérer l'onglet "PROGR"
+				    ExcelFile = Excel.Workbook(DerniereVersion{0}[Content], null, true),
+				    LIV = Table.SelectRows(ExcelFile, each [Name] = "LIV"){0}[Data],
+				
+				    // 8. Supprimer les 3 premières lignes (tableau commence ligne 4)
+				    #"Premières lignes supprimées" = Table.Skip(LIV, 3),
+				
+				    // 9. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Premières lignes supprimées", [PromoteAllScalars=true]),
+				
+				    // 10. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(
+				        #"En-têtes promus",
+				        List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})
+				    ),
+				    #"Lignes filtrées2" = Table.SelectRows(#"Type modifié", each ([LBU] <> null and [LBU] <> 0 and [LBU] <> "" and [LBU] <> "XXXX")),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Lignes filtrées2",{{"LBU", type date}}),
+				    #"Année extraite" = Table.TransformColumns(#"Type modifié1",{{"LBU", Date.Year, Int64.Type}}),
+				    #"Type modifié2" = Table.TransformColumnTypes(#"Année extraite",{{"NB LOGTS", Int64.Type}, {"DATE DE LIV PREV", type date}}),
+				    #"Majuscule à chaque mot" = Table.TransformColumns(#"Type modifié2",{{"NOM OPERATION", Text.Proper, type text}}),
+				    #"Duplication de la colonne" = Table.DuplicateColumn(#"Majuscule à chaque mot", "DATE DE LIV PREV", "DATE DE LIV PREV - Copier"),
+				    #"Duplication de la colonne1" = Table.DuplicateColumn(#"Duplication de la colonne", "DATE LIVRAISON REELLE", "DATE LIVRAISON REELLE - Copier"),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Duplication de la colonne1",{{"DATE DE LIV PREV - Copier", "Livraison prévisionnelle"}, {"DATE LIVRAISON REELLE - Copier", "Livraison réelle"}}),
+				    #"Type modifié3" = Table.TransformColumnTypes(#"Colonnes renommées",{{"Livraison réelle", type date}, {"DUREE CHANTIER REELLE (en mois)", Int64.Type}})
+				in
+				    #"Type modifié3"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

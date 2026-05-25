@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 0,
+    "y": 921,
+    "z": 7,
+    "height": 263,
+    "width": 324
+  },
+  "objects": {
+    "values": [],
+    "total": [],
+    "columnHeaders": [],
+    "grid": [],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "81.75096613289548D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Mesure.CroissanceSoldem_CA_Operation_YTD"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "77D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Mesure.obj_2024_dette"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "77D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Mesure.objectif_total_dette"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+table TranchAge
+	lineageTag: 9e7292a1-9bf9-47d7-8a09-c96e67fd69e8
+	sourceLineageTag: 6fda6af7-c958-4276-bde2-003fab0c0490
+
+	column 'Tranche d''âge'
+		dataType: string
+		lineageTag: 8dcb79fe-f2ac-41cd-a900-9483460149b0
+		sourceLineageTag: cfaf48ec-8061-4410-8de2-411a8aeea013
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Tranche d'âge
+
+		annotation SummarizationSetBy = User
+
+	column code_ca
+		dataType: string
+		isNullable: false
+		lineageTag: b3d12393-fc65-4086-b220-216c95a5f261
+		sourceLineageTag: 50c0bf79-e877-4df0-a1bd-f18e44bdaf1e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = User
+
+	partition TranchAge = entity
+		mode: directQuery
+		source
+			entityName: TranchAge
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

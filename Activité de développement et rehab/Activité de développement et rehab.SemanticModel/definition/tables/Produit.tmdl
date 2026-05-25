@@ -1,0 +1,47 @@
+table Produit
+	lineageTag: 900b60cb-e000-414b-83ef-88c7c4a3b6ca
+
+	column PRODUIT
+		dataType: string
+		lineageTag: ad0116cc-4254-48d1-a50f-8f55cec98305
+		summarizeBy: none
+		sourceColumn: PRODUIT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Produit = m
+		mode: import
+		source =
+				let
+				    Source = #table(
+				        {"PRODUIT"},
+				        {
+				            {"LLI"},
+				            {"PLS"},
+				            {"LLS"},
+				            {"LLTS"},
+				            {"LLTS_pa"},
+				            {"LLS_pa"},
+				            {"PLS_pa"},
+				            {"LLI_pa"},
+				            {"LES"},
+				            {"COM"},
+				            {"PTZ"},
+				            {"PSLA"},
+				            {"LOTS"},
+				            {"LIBRE"},
+				            {"LLS_JA"},
+				            {"PLS ETUD"},
+				            {"LLTS_FOY"},
+				            {"LLS_ETUD"},
+				            {"LLS_FOY"},
+				            {"AUTRE"}
+				        }
+				    )
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

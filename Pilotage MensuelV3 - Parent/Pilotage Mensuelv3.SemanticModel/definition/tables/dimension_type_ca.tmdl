@@ -1,0 +1,33 @@
+table dimension_type_ca
+	lineageTag: 9bd0f1b3-7936-4ddb-accb-059a039a09dd
+
+	column code_ca
+		dataType: string
+		lineageTag: 81ee06cd-e189-4e15-a793-dd5cd0d45fac
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_ca
+		dataType: string
+		lineageTag: 790d915f-5abc-47d9-9915-a3a5e1340e30
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimension_type_ca = m
+		mode: import
+		source =
+				let
+				    Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin",Kind="Schema"]}[Data],
+				    dimension_type_ca_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin_Schema"{[Name="dimension_type_ca",Kind="View"]}[Data]
+				in
+				    dimension_type_ca_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

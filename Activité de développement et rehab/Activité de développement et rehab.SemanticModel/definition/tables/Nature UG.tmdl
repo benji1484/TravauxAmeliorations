@@ -1,0 +1,42 @@
+table 'Nature UG'
+	lineageTag: 8222fcce-4172-4811-9868-09caa17a358d
+	sourceLineageTag: ce49b873-0d13-40bd-acd6-ef199398424b
+
+	column code_nature_ug
+		dataType: string
+		isNullable: false
+		lineageTag: 9d2ed5f0-a123-49bc-af00-4dbb1f6b3951
+		sourceLineageTag: 4acebaea-ba63-4dd7-8c84-bec27bd72cfd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = User
+
+	column lbl_nature_ug
+		dataType: string
+		isNullable: false
+		lineageTag: 1cdb4681-8b06-45ca-826b-566a0e3852f4
+		sourceLineageTag: 741e24b6-ba00-4967-bc57-fd081f357b62
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_nature_ug
+
+		annotation SummarizationSetBy = User
+
+	column GroupeNature
+		dataType: string
+		lineageTag: f1549d7c-6e65-4b09-93f3-e2e4aa67e0cf
+		sourceLineageTag: 75d5c727-433b-47f2-979f-a39e7bdd56b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: GroupeNature
+
+		annotation SummarizationSetBy = User
+
+	partition 'Nature UG' = entity
+		mode: directQuery
+		source
+			entityName: Nature UG
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

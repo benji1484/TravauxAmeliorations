@@ -1,0 +1,111 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "1467dfc05b458054d043",
+  "position": {
+    "x": 425.30874953327526,
+    "y": 157.30597585477304,
+    "z": 5000,
+    "height": 219.93705883398823,
+    "width": 272.37238411891258,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "En Cumul Annuel",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "textDecoration": "underline",
+                      "color": "#f21753"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Pour les locataires ordinaires : ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#f21753"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ecart du cumul annuel en 2024-12 = -0,15%"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ecart du cumul annuel en 2023-12 = 0,06%",
+                    "textStyle": {
+                      "fontSize": "13.3333px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Toutes catégories : ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#f21753"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ecart du cumul annuel en 2024-12 = -0,25%"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ecart du cumul annuel en 2023-12 = 0,06%",
+                    "textStyle": {
+                      "fontSize": "13.3333px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Effet de lissage annuel ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,476 @@
+table PROGR
+	lineageTag: cc8967ef-2f97-4a31-b0b1-e884db2f1236
+
+	column LBU
+		dataType: int64
+		formatString: 0
+		lineageTag: 5931fb4f-caf8-42d4-8aa2-d2892cad7150
+		summarizeBy: sum
+		sourceColumn: LBU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PORTAGE FONCIER'
+		dataType: string
+		lineageTag: 96ccb689-c532-43a8-8fe5-c1a690bd0fa7
+		summarizeBy: none
+		sourceColumn: PORTAGE FONCIER
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nom_abrégé = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'PROGR'[COMMUNE] = "SAINT DENIS", "St-Denis",
+			    'PROGR'[COMMUNE] = "SAINT PAUL", "St-Paul",
+			    'PROGR'[COMMUNE] = "SAINT LEU", "St-Leu",
+			    'PROGR'[COMMUNE] = "SAINT PIERRE", "St-Pierre",
+			    'PROGR'[COMMUNE] = "LE PORT", "Le Port",
+			    'PROGR'[COMMUNE] = "SAINTE MARIE", "Sainte-Marie",
+			    'PROGR'[COMMUNE] = "SAINT LOUIS", "St-Louis",
+			    'PROGR'[COMMUNE] = "LE TAMPON", "Le Tampon",
+			    'PROGR'[COMMUNE] = "SAINT ANDRE", "St-André",
+			    'PROGR'[COMMUNE] = "SAINTE SUZANNE", "Ste-Suzanne",
+			    'PROGR'[COMMUNE] = "LES AVIRONS", "Les Avirons",
+			    'PROGR'[COMMUNE] = "TROIS BASSINS", "Trois-Basins",
+			    'PROGR'[COMMUNE] = "PETITE ILE", "Petite-île",
+			    'PROGR'[COMMUNE] = "BRAS PANON", "Bras-Panon",
+			    'PROGR'[COMMUNE] = "ENTRE DEUX", "Entre-Deux",
+			    'PROGR'[COMMUNE] = "SAINT JOSEPH", "St-Joseph",
+			    'PROGR'[COMMUNE] = "SAINT BENOIT", "St-Benoît",
+			    'PROGR'[COMMUNE] = "LA POSSESSION", "La Possession",
+			    'PROGR'[COMMUNE] = "PLAINE DES PALMISTES", "Plaine des palmistes",
+			    'PROGR'[COMMUNE] = "L'ETANG SALE", "L'Étang-Salé",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: c4899d51-927e-4904-897e-73b5557903d6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Statut =
+			
+			VAR Depot = TRIM('PROGR'[DATE DEPOT AGREMENT] & "")
+			VAR Obtention = TRIM('PROGR'[DATE OBT AGREMENT] & "")
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    Depot = "", "Non déposés",
+			    Obtention = "" || Obtention IN {"x","ci","Q"}, "Agréments en cours",
+			    "Agréments obtenus"
+			)
+		lineageTag: a4e5d041-f1ce-4f18-940f-ac21f47b61bd
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Statut_détaillé = 'PROGR'[PDT] &" : " & IF(len('PROGR'[DATE DEPOT AGREMENT]) = 0, "Non déposés", if(len('PROGR'[DATE DEPOT AGREMENT]) > 0 && LEN('PROGR'[DATE OBT AGREMENT]) > 0, "Agréments obtenus", "Agréments en cours"))
+		lineageTag: d21c7aa2-9870-4d00-be80-2ff105a3bb1e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROP
+		dataType: string
+		lineageTag: 764d04ba-c478-4c83-8321-39c7828a6bc4
+		summarizeBy: none
+		sourceColumn: ROP
+
+		annotation SummarizationSetBy = Automatic
+
+	column FRAFU
+		dataType: string
+		lineageTag: 7982e6f7-c0f0-4727-a0fe-473eb56973f1
+		summarizeBy: none
+		sourceColumn: FRAFU
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: string
+		lineageTag: 5900fd94-0463-46c9-a638-df72c981ba40
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column POT
+		dataType: string
+		lineageTag: a4dcf763-56b9-421a-8117-9dc4bdb1a34e
+		summarizeBy: none
+		sourceColumn: POT
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOUBLON
+		dataType: string
+		lineageTag: 780f5b4e-304e-42e0-8499-f046820ac514
+		summarizeBy: none
+		sourceColumn: DOUBLON
+
+		annotation SummarizationSetBy = Automatic
+
+	column RALI
+		dataType: string
+		lineageTag: fbc00275-0a03-4460-8d54-247364cdbe5f
+		summarizeBy: none
+		sourceColumn: RALI
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRIORITE/IFABILITE
+		dataType: string
+		lineageTag: d77b2173-d35a-4c8e-b1df-0df659e94cfa
+		summarizeBy: none
+		sourceColumn: PRIORITE/IFABILITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOM OPERATION'
+		dataType: string
+		lineageTag: a172ea3c-2161-49c4-a3c4-057864459776
+		summarizeBy: none
+		sourceColumn: NOM OPERATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMUNE
+		dataType: string
+		lineageTag: bbf7f042-a054-4c89-a3e5-49dd957be04a
+		summarizeBy: none
+		sourceColumn: COMMUNE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPCI
+		dataType: string
+		lineageTag: 02d6491e-b166-4943-a04e-4b8e0a0e6bb5
+		summarizeBy: none
+		sourceColumn: EPCI
+
+		annotation SummarizationSetBy = Automatic
+
+	column PERIMETRE
+		dataType: string
+		lineageTag: da34495c-b756-4793-8409-a46fa3e923ac
+		summarizeBy: none
+		sourceColumn: PERIMETRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column INT/VEFA
+		dataType: string
+		lineageTag: 9a51ada4-2d63-4e2a-ac9f-b4a2589c8c5e
+		summarizeBy: none
+		sourceColumn: INT/VEFA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NB LOGTS'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 60a398e2-99df-4bf5-b603-c82f19049804
+		summarizeBy: sum
+		sourceColumn: NB LOGTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PDT
+		dataType: string
+		lineageTag: 026caa63-4a38-4ce1-bd0f-8f28a3767742
+		summarizeBy: none
+		sourceColumn: PDT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Public ciblé'
+		dataType: string
+		lineageTag: 5abd5603-3e52-476a-9cfc-e405b1f15bb2
+		summarizeBy: none
+		sourceColumn: Public ciblé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'STATUT OPERATION'
+		dataType: string
+		lineageTag: af27ed25-e778-4d24-a0ff-3af764df05b5
+		summarizeBy: none
+		sourceColumn: STATUT OPERATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'STATUT LBU'
+		dataType: string
+		lineageTag: 53c437a4-bcfc-42cf-9f4f-79b6f9d5bccc
+		summarizeBy: none
+		sourceColumn: STATUT LBU
+
+		annotation SummarizationSetBy = Automatic
+
+	column CERTIF
+		dataType: string
+		lineageTag: 75223d20-77f1-4d72-825e-26da868a5b41
+		summarizeBy: none
+		sourceColumn: CERTIF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'REF CADASTRALES'
+		dataType: string
+		lineageTag: 847435ba-997a-4377-a5e2-39ea05cfd407
+		summarizeBy: none
+		sourceColumn: REF CADASTRALES
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'STATUT FONCIER'
+		dataType: string
+		lineageTag: 1a7e162a-72bd-4f5d-94a8-6bc14f092eb6
+		summarizeBy: none
+		sourceColumn: STATUT FONCIER
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'STATUT PC'
+		dataType: string
+		lineageTag: f4fac847-6681-47a1-af30-5031373b89d5
+		summarizeBy: none
+		sourceColumn: STATUT PC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE DEPOT PC'
+		dataType: string
+		lineageTag: ed2e3cef-6c5c-4a64-849c-d9b640cd1abf
+		summarizeBy: none
+		sourceColumn: DATE DEPOT PC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE OBT PC'
+		dataType: string
+		lineageTag: 565d8a5b-bb80-431c-b466-e4a9cfa96e36
+		summarizeBy: none
+		sourceColumn: DATE OBT PC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE DEPOT AGREMENT'
+		dataType: string
+		lineageTag: 9406aaf7-43f3-4687-b60a-d876f10b5e5f
+		summarizeBy: none
+		sourceColumn: DATE DEPOT AGREMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE OBT AGREMENT'
+		dataType: string
+		lineageTag: 45fa0273-eefb-47fc-a14c-2c09be8d0b1c
+		summarizeBy: none
+		sourceColumn: DATE OBT AGREMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column DLE
+		dataType: string
+		lineageTag: 5aaee610-4aae-4cdf-9848-c91341223dbf
+		summarizeBy: none
+		sourceColumn: DLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column LBU/LOGT
+		dataType: string
+		lineageTag: 411c6d9e-c355-400b-b93a-b2525e1cc1da
+		summarizeBy: none
+		sourceColumn: LBU/LOGT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LBU EN €'
+		dataType: int64
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 3d4692b3-7eb2-490d-aea8-ae07d233cf0e
+		summarizeBy: sum
+		sourceColumn: LBU EN €
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FONDS PROPRES'
+		dataType: int64
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 3694096e-aa85-4b4a-aba9-0ad1bf6c28a2
+		summarizeBy: sum
+		sourceColumn: FONDS PROPRES
+
+		annotation SummarizationSetBy = Automatic
+
+	column FinAnnee = DATE(PROGR[LBU], 12, 31)
+		formatString: General Date
+		lineageTag: 91d0dd13-b7fc-4567-805d-8cf5980a225b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune_Villes =
+			
+			SWITCH(
+			    TRUE(),
+			    'PROGR'[Commune] = "BRAS PANON", "Bras-Panon",
+			    'PROGR'[Commune] = "CILAOS", "Cilaos",
+			    'PROGR'[Commune] = "ENTRE DEUX", "Entre-Deux",
+			    'PROGR'[Commune] = "ETANG SALE", "L'Étang-Salé",
+			    'PROGR'[Commune] = "LA POSSESSION", "La Possession",
+			    'PROGR'[Commune] = "LE PORT", "Le Port",
+			    'PROGR'[Commune] = "LE TAMPON", "Le Tampon",
+			    'PROGR'[Commune] = "LES AVIRONS", "Les Avirons",
+			    'PROGR'[Commune] = "PETITE ILE", "Petite-Île",
+			    'PROGR'[Commune] = "PLAINE DES PALMISTES", "Plaine des palmistes",
+			    'PROGR'[Commune] = "SAINT ANDRE", "Saint-André",
+			    'PROGR'[Commune] = "SAINT BENOIT", "Saint-Benoît",
+			    'PROGR'[Commune] = "SAINT DENIS", "Saint-Denis",
+			    'PROGR'[Commune] = "SAINT JOSEPH", "Saint-Joseph",
+			    'PROGR'[Commune] = "SAINT LEU", "Saint-Leu",
+			    'PROGR'[Commune] = "SAINT LOUIS", "Saint-Louis",
+			    'PROGR'[Commune] = "SAINT PAUL", "Saint-Paul",
+			    'PROGR'[Commune] = "SAINT PHILIPPE", "Saint-Philippe",
+			    'PROGR'[Commune] = "SAINT PIERRE", "Saint-Pierre",
+			    'PROGR'[Commune] = "SAINTE MARIE", "Sainte-Marie",
+			    'PROGR'[Commune] = "SAINTE ROSE", "Sainte-Rose",
+			    'PROGR'[Commune] = "SAINTE SUZANNE", "Sainte-Suzanne",
+			    'PROGR'[Commune] = "SALAZIE", "Salazie",
+			    'PROGR'[Commune] = "TROIS BASSINS", "Trois-Bassins",
+			    BLANK()
+			)
+		lineageTag: 6ef28586-984b-45db-bf93-1b7625dc37c0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dépot agrément graph'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c311a3b2-1a96-4881-9cc7-fe3caf54542c
+		summarizeBy: none
+		sourceColumn: Dépot agrément graph
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Réception agrément date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a3835973-d2b4-4024-8a2c-2b15b5dac742
+		summarizeBy: none
+		sourceColumn: Réception agrément date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition PROGR = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint Source
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/productionneuve/", [ApiVersion = 15]),
+				
+				    // 2. Filtrer les fichiers Excel
+				    #"Lignes filtrées" = Table.SelectRows(Source, each ([Extension] = ".xls" or [Extension] = ".xlsm" or [Extension] = ".xlsx")),
+				
+				    // 3. Trier par date de modif décroissante
+				    #"Lignes triées" = Table.Sort(#"Lignes filtrées", {{"Date modified", Order.Descending}}),
+				
+				    // 4. Filtrer uniquement TDB DES INDICATEURS PRODUCTION NEUVE.xlsx
+				    #"Lignes filtrées1" = Table.SelectRows(#"Lignes triées", each ([Name] = "TDB DES INDICATEURS PRODUCTION NEUVE.xlsx")),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Lignes filtrées1", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Prendre la dernière version
+				    DerniereVersion = Table.FirstN(#"Fichiers masqués filtrés1", 1),
+				
+				    // 7. Charger le fichier Excel et repérer l'onglet "PROGR"
+				    ExcelFile = Excel.Workbook(DerniereVersion{0}[Content], null, true),
+				    Prog = Table.SelectRows(ExcelFile, each [Name] = "PROGR"){0}[Data],
+				
+				    // 8. Supprimer les 3 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(Prog, 3),
+				
+				    // 9. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Premières lignes supprimées", [PromoteAllScalars=true]),
+				
+				    // 10. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(
+				        #"En-têtes promus",
+				        List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})
+				    ),
+				
+				    // 11. Filtrer les lignes avec LBU non null et non "XXXX"
+				    #"Lignes filtrées2" = Table.SelectRows(#"Type modifié", each ([LBU] <> null and [LBU] <> "XXXX")),
+				
+				    // 12. Typer NB LOGTS et LBU
+				    #"Type modifié1" = Table.TransformColumnTypes(
+				        #"Lignes filtrées2",
+				        {{"NB LOGTS", Int64.Type}, {"LBU", type date}}
+				    ),
+				
+				    // 13. Transformer LBU en année, sans filtrer sur 2026
+				    #"Année extraite" = Table.TransformColumns(
+				        #"Type modifié1",
+				        {{"LBU", Date.Year, Int64.Type}}
+				    ),
+				
+				    // 14. Renommer PRODUIT en PDT
+				    #"Colonnes renommées" = Table.RenameColumns(
+				        #"Année extraite",
+				        {{"PRODUIT", "PDT"}}
+				    ),
+				
+				    // 15. Typer LBU EN € et FONDS PROPRES
+				    #"Type modifié2" = Table.TransformColumnTypes(
+				        #"Colonnes renommées",
+				        {{"LBU EN €", Int64.Type}, {"FONDS PROPRES", Int64.Type}}
+				    ),
+				
+				    // 16. Dupliquer DATE DEPOT AGREMENT pour créer Dépot agrément graph
+				    #"Duplication de la colonne" = Table.DuplicateColumn(
+				        #"Type modifié2",
+				        "DATE DEPOT AGREMENT",
+				        "DATE DEPOT AGREMENT - Copier"
+				    ),
+				
+				    #"Colonnes renommées1" = Table.RenameColumns(
+				        #"Duplication de la colonne",
+				        {{"DATE DEPOT AGREMENT - Copier", "Dépot agrément graph"}}
+				    ),
+				
+				    // 17. Dupliquer DATE OBT AGREMENT pour créer Réception agrément date
+				    #"Duplication de la colonne1" = Table.DuplicateColumn(
+				        #"Colonnes renommées1",
+				        "DATE OBT AGREMENT",
+				        "DATE OBT AGREMENT - Copier"
+				    ),
+				
+				    #"Colonnes renommées2" = Table.RenameColumns(
+				        #"Duplication de la colonne1",
+				        {{"DATE OBT AGREMENT - Copier", "Réception agrément date"}}
+				    ),
+				
+				    // 18. Typer les deux colonnes date
+				    #"Type modifié3" = Table.TransformColumnTypes(
+				        #"Colonnes renommées2",
+				        {{"Dépot agrément graph", type date}, {"Réception agrément date", type date}}
+				    )
+				
+				in
+				    #"Type modifié3"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,581 @@
+table indicateurs_affaires_v2
+	lineageTag: 7e6f61d7-c766-4aaf-a30c-e746c871431f
+
+	column lbl_affaire
+		dataType: string
+		lineageTag: 0ef78a62-5be8-4abe-ab4d-dfc7d3cd86d8
+		summarizeBy: none
+		sourceColumn: lbl_affaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_categorie_aff
+		dataType: string
+		lineageTag: 27585d7a-b2bb-4bcf-bd71-25f37c57ec6d
+		summarizeBy: none
+		sourceColumn: code_categorie_aff
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HO2_ptm
+		dataType: string
+		lineageTag: 51f9e828-0148-4342-baff-8086d945b57b
+		summarizeBy: none
+		sourceColumn: code_HO2_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sldfin_Date_Etape
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 926be04d-927f-4ddf-a7da-3070e7d9bf54
+		summarizeBy: none
+		sourceColumn: Sldfin_Date_Etape
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column code_HP1
+		dataType: string
+		lineageTag: 81cdc75f-aa78-4285-adb0-fa9defd12391
+		summarizeBy: none
+		sourceColumn: code_HP1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nb_Commande
+		dataType: int64
+		formatString: 0
+		lineageTag: c897f09d-dcf3-4bb5-9568-e8dc9b5c67ff
+		summarizeBy: sum
+		sourceColumn: Nb_Commande
+
+		annotation SummarizationSetBy = Automatic
+
+	column mVisfin_Date_Etape
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 932d8b3e-abad-40e1-a933-f94b00516052
+		summarizeBy: none
+		sourceColumn: mVisfin_Date_Etape
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column lbl_type_affaire
+		dataType: string
+		lineageTag: 936deaeb-20f7-4fa2-bac4-f59787ea40bf
+		summarizeBy: none
+		sourceColumn: lbl_type_affaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column mBonfin_Date_Etape
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cedf34f8-eb4d-4010-8c02-d5ba5af552a6
+		summarizeBy: none
+		sourceColumn: mBonfin_Date_Etape
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column periode
+		dataType: string
+		lineageTag: 8ca7aab5-d8d3-4dfa-813b-0f1a52346c92
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rcpfin_Date_Etape
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f0eb6276-1c27-4430-b769-d39d8528a051
+		summarizeBy: none
+		sourceColumn: Rcpfin_Date_Etape
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column lbl_collaborateur_exec
+		dataType: string
+		lineageTag: 404494f6-9611-4c52-bc60-a4198ee14411
+		summarizeBy: none
+		sourceColumn: lbl_collaborateur_exec
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nb_ConformeQuali
+		dataType: int64
+		formatString: 0
+		lineageTag: db530a48-9e96-4db8-88d1-a1b3c7d27d0f
+		summarizeBy: sum
+		sourceColumn: Nb_ConformeQuali
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HO2
+		dataType: string
+		lineageTag: 08d08bca-83a7-4b9a-bd8f-6f050d0fae40
+		summarizeBy: none
+		sourceColumn: code_HO2
+
+		annotation SummarizationSetBy = Automatic
+
+	column mExefin_Date_Etape
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 42f0dc6b-d163-425b-9329-b211e84c4484
+		summarizeBy: none
+		sourceColumn: mExefin_Date_Etape
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ecart_enr_aff_exec_cde
+		dataType: int64
+		formatString: 0
+		lineageTag: 42e2d5ba-2e12-4fc5-b27d-b78d05062312
+		summarizeBy: sum
+		sourceColumn: ecart_enr_aff_exec_cde
+
+		annotation SummarizationSetBy = Automatic
+
+	column ecart_enr_aff_enr_cde
+		dataType: int64
+		formatString: 0
+		lineageTag: a946de26-f7fc-4160-8db3-5d281b413b2e
+		summarizeBy: sum
+		sourceColumn: ecart_enr_aff_enr_cde
+
+		annotation SummarizationSetBy = Automatic
+
+	column ecart_bon_exe_cde
+		dataType: int64
+		formatString: 0
+		lineageTag: 27149ad1-b18c-4056-a9b4-3c5e248d2c60
+		summarizeBy: sum
+		sourceColumn: ecart_bon_exe_cde
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_etat_trt
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: baae355e-2f99-4edf-a6dc-035398efeb66
+		summarizeBy: none
+		sourceColumn: dte_etat_trt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column code_ca
+		dataType: string
+		lineageTag: ef7cc2ee-66d4-4aef-8b74-9d096496503b
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nb_jours
+		dataType: int64
+		formatString: 0
+		lineageTag: c6652522-cd5a-47b9-8e09-d03abc7bba1a
+		summarizeBy: sum
+		sourceColumn: Nb_jours
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_aff
+		dataType: string
+		lineageTag: d8cf1724-8e1b-4bb1-aa49-54d6b5bb0948
+		summarizeBy: none
+		sourceColumn: code_type_aff
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_cde_enreg_debut
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ad4654de-0f85-45bf-9419-16cde891dc2a
+		summarizeBy: none
+		sourceColumn: dte_cde_enreg_debut
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column lbl_categorie_aff
+		dataType: string
+		lineageTag: c523d8d0-4f5d-4e46-92c3-f429315b44fd
+		summarizeBy: none
+		sourceColumn: lbl_categorie_aff
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtefinexec_commande
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e0407210-25ce-46af-98cf-5ec20063049a
+		summarizeBy: none
+		sourceColumn: dtefinexec_commande
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_etat_enr
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8ad8d07b-e678-4ce2-8619-df3aa05af9eb
+		summarizeBy: none
+		sourceColumn: dte_etat_enr
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_cde_Annul_fin
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9172e8c4-92ee-4f11-875c-e50d1d2e3cf8
+		summarizeBy: none
+		sourceColumn: dte_cde_Annul_fin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column code_ug
+		dataType: string
+		lineageTag: 90603ad3-2606-41a2-b867-d5629b91f4b5
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_affaire
+		dataType: string
+		lineageTag: 92925669-060e-4b64-b47f-ea33fefb7459
+		summarizeBy: none
+		sourceColumn: statut_affaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_affaire
+		dataType: string
+		lineageTag: 55f5b493-1eaa-4f13-9545-30dcf7efcfc5
+		summarizeBy: none
+		sourceColumn: code_affaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_collaborateur_suiv
+		dataType: string
+		lineageTag: 3c2e62cf-3119-4c87-9371-c4aad4dfc0f8
+		summarizeBy: none
+		sourceColumn: lbl_collaborateur_suiv
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_engagement
+		dataType: int64
+		formatString: 0
+		lineageTag: c37b7101-e004-4014-9666-2c686edddfe1
+		summarizeBy: sum
+		sourceColumn: ind_engagement
+
+		annotation SummarizationSetBy = Automatic
+
+	column cle_synthetique_cat = ```
+			indicateurs_affaires_v2[code_type_aff] & indicateurs_affaires_v2[code_categorie_aff] 
+			```
+		lineageTag: 417b3a6e-3b39-4e96-832f-88feb994c8b5
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column New_Code_Type_Affaire = ```
+			
+			SWITCH(
+			    indicateurs_affaires_v2[cle_synthetique_cat],
+			    "CNTGTE", "CUR",
+			    "CYCGTE", "SIN",
+			    "DDEGTE", "SIN",
+			    "DECGTE", "DEC",
+			    "GPAGTE", "GPA",
+			    "INCGTE", "SIN",
+			    "REEDMP", "REE",
+			    "REXGTE", "CUR",
+			    "TRGGTE", "ENC",
+			    "TRSGTE", "ENC",
+			    "URGGTE", "AST",
+			    "VANGTE", "ENC",
+			    "ASCGTE", "CUR",
+			    "ECIGTE", "ENC",
+			    "ECEGTE", "ENC",
+			    "SOCGTE", "AUT",
+			    "TECGTE", "ENC",
+			    "001DMP", "ENC",
+			    "002DMP", "SIN",
+			    "003DMP", "SEC",
+			    "004GPA", "GPA",
+			    "005GPA", "GPA",
+			    "006GPA", "GPA",
+			    "007GPA", "GPA",
+			    "008GPA", "GPA",
+			    "009GPA", "GPA",
+			    "010GPA", "GPA",
+			    "011GPA", "GPA",
+			    "012GPA", "GPA",
+			    "013CTX", "CTX",
+			    "014CTX", "CTX",
+			    "015CTX", "CTX",
+			    "016CTX", "CTX",
+			    "017CTX", "CTX",
+			    "018CTX", "CTX",
+			    "019DRC", "AST",
+			    "020DRC", "ENC",
+			    "021DRC", "ENC",
+			    "022DRC", "REE",
+			    "023DRC", "SIN",
+			    "024DRC", "CUR",
+			    "025VAN", "VAN",
+			    "026LOC", "LOC",
+			    "027VAN", "VAN",
+			    "028GPA", "GPA",
+			    "029GPA", "GPA",
+			    "030GPA", "GPA",
+			    "031DRC", "REE",
+			    "032DMP", "ENC",
+			    "033DMP", "SIN",
+			    "034DMP", "AUT",
+			    "035DMP", "AST",
+			    "036CTX", "AUT",
+			    "037CTX", "AUT",
+			    "038CTX", "CTX",
+			    "039DRC", "ENC",
+			    "040DRC", "ENC",
+			    "041DRC", "AUT",
+			    "042DRC", "ENC",
+			    "043DRC", "AUT",
+			    "044DRC", "AUT",
+			    "045DRC", "AUT",
+			    "046DRC", "AUT",
+			    "047DRC", "AUT",
+			    "048DRC", "ENC",
+			    "DEPVAN", "VAN",
+			    "TAGVAN", "VAN",
+			    "VANVAN", "VAN",
+			    "013LOC", "LOC",
+			    "038LOC", "LOC",
+			    "043LOC", "LOC",
+			    "044LOC", "LOC",
+			    "EDSEDL", "REE",
+			    "Autres" // Par défaut si aucune correspondance
+			)
+			
+			```
+		lineageTag: a37b8a36-9028-4867-9836-2599a2b54bfa
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type recalculé' = ```
+			
+			SWITCH(
+			    indicateurs_affaires_v2[cle_synthetique_cat],
+			    "CNTGTE", "Maintenance curative",
+			    "CYCGTE", "Sinistre",
+			    "DDEGTE", "Sinistre",
+			    "DECGTE", "Décennale",
+			    "GPAGTE", "GPA",
+			    "INCGTE", "Sinistre",
+			    "REEDMP", "Remise en état",
+			    "REXGTE", "Maintenance curative",
+			    "TRGGTE", "Entretien Courant",
+			    "TRSGTE", "Entretien Courant",
+			    "URGGTE", "Astreinte",
+			    "VANGTE", "Entretien Courant",
+			    "ASCGTE", "Maintenance curative",
+			    "ECIGTE", "Entretien Courant",
+			    "ECEGTE", "Entretien Courant",
+			    "SOCGTE", "Autres non EC",
+			    "TECGTE", "Entretien Courant",
+			    "001DMP", "Entretien Courant",
+			    "002DMP", "Sinistre",
+			    "003DMP", "Sécurité",
+			    "004GPA", "GPA",
+			    "005GPA", "GPA",
+			    "006GPA", "GPA",
+			    "007GPA", "GPA",
+			    "008GPA", "GPA",
+			    "009GPA", "GPA",
+			    "010GPA", "GPA",
+			    "011GPA", "GPA",
+			    "012GPA", "GPA",
+			    "013CTX", "Contentieux",
+			    "014CTX", "Contentieux",
+			    "015CTX", "Contentieux",
+			    "016CTX", "Contentieux",
+			    "017CTX", "Contentieux",
+			    "018CTX", "Contentieux",
+			    "019DRC", "Astreinte",
+			    "020DRC", "Entretien Courant",
+			    "021DRC", "Entretien Courant",
+			    "022DRC", "Remise en état",
+			    "023DRC", "Sinistre",
+			    "024DRC", "Maintenance curative",
+			    "025VAN", "Vandalisme Incivilité Trouble",
+			    "026LOC", "Sollicitations - vie du bail",
+			    "027VAN", "Vandalisme Incivilité Trouble",
+			    "028GPA", "GPA",
+			    "029GPA", "GPA",
+			    "030GPA", "GPA",
+			    "031DRC", "Remise en état",
+			    "032DMP", "Entretien Courant",
+			    "033DMP", "Sinistre",
+			    "034DMP", "Autres non EC",
+			    "035DMP", "Astreinte",
+			    "036CTX", "Autres non EC",
+			    "037CTX", "Autres non EC",
+			    "038CTX", "Contentieux",
+			    "039DRC", "Entretien Courant",
+			    "040DRC", "Entretien Courant",
+			    "041DRC", "Autres non EC",
+			    "042DRC", "Entretien Courant",
+			    "043DRC", "Autres non EC",
+			    "044DRC", "Autres non EC",
+			    "045DRC", "Autres non EC",
+			    "046DRC", "Autres non EC",
+			    "047DRC", "Autres non EC",
+			    "048DRC", "Entretien Courant",
+			    "DEPVAN", "Vandalisme Incivilité Trouble",
+			    "TAGVAN", "Vandalisme Incivilité Trouble",
+			    "VANVAN", "Vandalisme Incivilité Trouble",
+			    "013LOC", "Sollicitations - vie du bail",
+			    "038LOC", "Sollicitations - vie du bail",
+			    "043LOC", "Sollicitations - vie du bail",
+			    "044LOC", "Sollicitations - vie du bail",
+			    "EDSEDL", "Remise en état",
+			    "Autres"  // Par défaut si aucune correspondance
+			)
+			
+			```
+		lineageTag: 1298807d-5e68-46dc-85f7-3a2110a76701
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HP2
+		dataType: string
+		lineageTag: a87072b0-7e09-474d-b664-cfc8bd015ee3
+		summarizeBy: none
+		sourceColumn: code_HP2
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( indicateurs_affaires_v2[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( indicateurs_affaires_v2[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 650777b4-07cb-4d6c-a688-d00f783714aa
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = indicateurs_affaires_v2[code_hp1]   -- ou [code_HP1] selon ton modèle
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        -- si on a trouvé un matching sur code_hp1
+			    indicateurs_affaires_v2[code_HO2]    -- sinon on reprend code_HO2
+			)
+			
+			```
+		lineageTag: 16c6c3e4-5beb-47e5-884f-874ffada5b15
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 2fb0ca00-fbdc-49ab-955f-4dfd2fee0ab2
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition indicateurs_affaires_v2 = m
+		mode: import
+		source =
+				let
+				   Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    indicateurs_affaires_v3_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="indicateurs_affaires_v3",Kind="View"]}[Data],
+				#"Columns removed by Measure Killer"= Table.SelectColumns(indicateurs_affaires_v3_View,{"delegation_dixit", "code_HP2","lbl_affaire","code_categorie_aff","code_HO2_ptm","Sldfin_Date_Etape","code_HP1","Nb_Commande","mVisfin_Date_Etape","lbl_type_affaire","mBonfin_Date_Etape","periode","Rcpfin_Date_Etape","lbl_collaborateur_exec","Nb_ConformeQuali","code_HO2","mExefin_Date_Etape","ecart_enr_aff_exec_cde","ecart_enr_aff_enr_cde","ecart_bon_exe_cde","dte_etat_trt","code_ca","Nb_jours","code_type_aff","dte_cde_enreg_debut","lbl_categorie_aff","dtefinexec_commande","dte_etat_enr","dte_cde_Annul_fin","code_ug","statut_affaire","code_affaire","lbl_collaborateur_suiv","ind_engagement"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

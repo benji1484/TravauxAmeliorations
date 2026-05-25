@@ -1,0 +1,99 @@
+table 'UG - Lib Patrimoine'
+	lineageTag: 45520a7b-22db-4419-83bc-392dcaad53ea
+	sourceLineageTag: 1f6907b3-bf1d-408a-8421-40e64c897fa0
+
+	column lbl_patrimoine_ptm
+		dataType: string
+		lineageTag: f176843d-2036-4380-b6c6-13ff15388b53
+		sourceLineageTag: b82fd883-48a1-4b00-9f36-1b67b00fe278
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_patrimoine_ptm
+
+		annotation SummarizationSetBy = User
+
+	column code_HP1
+		dataType: string
+		isNullable: false
+		lineageTag: dbc59cc2-6dde-48fb-967f-3d0139c65dcf
+		sourceLineageTag: 2986b405-aa80-436a-bd59-673997af257f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_HP1
+
+		annotation SummarizationSetBy = User
+
+	column Adresse_complete
+		dataType: string
+		lineageTag: 1b715b85-b081-4d36-baa8-a31b9f98575e
+		sourceLineageTag: 3ffa94c4-5a65-47ab-92d0-8c9da0fb3f54
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Adresse_complete
+
+		annotation SummarizationSetBy = User
+
+	column code_postal_ptm
+		dataType: string
+		lineageTag: 325b605c-d5f3-475a-9842-e26f1c383f58
+		sourceLineageTag: 3336a0c8-adae-4e1e-8362-9c2a0bbbcb68
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_postal_ptm
+
+		annotation SummarizationSetBy = User
+
+	column adresse_rue_ptm
+		dataType: string
+		lineageTag: 5231348a-4911-4c2b-a29c-af95f8cb6656
+		sourceLineageTag: 7d6d16c1-d9b4-4da1-ad5f-cfb5bf331377
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: adresse_rue_ptm
+
+		annotation SummarizationSetBy = User
+
+	column lbl_commune
+		dataType: string
+		lineageTag: 117f33da-f3db-439d-b741-9856c0e4e0f6
+		sourceLineageTag: bc999d7c-be27-49b6-bf1c-26701f2e08fe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_commune
+
+		annotation SummarizationSetBy = User
+
+	column Adresse_complete_specifique = 'UG - Lib Patrimoine'[adresse_rue_ptm] &", "& 'UG - Lib Patrimoine'[lbl_commune] &", "& 'UG - Lib Patrimoine'[code_postal_ptm] &", "&  "La Réunion" &", "& "France"
+		lineageTag: 73649579-456e-4359-8f08-f1fbb783649c
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Patrimoine
+		dataType: string
+		lineageTag: e4d886f1-21b3-41fd-b65f-da36aba32a8b
+		sourceLineageTag: 679f52ea-4b59-4981-a35d-ea24225896aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Patrimoine
+
+		annotation SummarizationSetBy = User
+
+	column Adresse_complete_geoloc
+		dataType: string
+		lineageTag: a2eb875c-4a90-41ad-a269-70a7b2d69509
+		sourceLineageTag: e1fcd2ad-3f34-410a-800b-0ccf052be4f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Adresse_complete_geoloc
+
+		annotation SummarizationSetBy = User
+
+	partition 'UG - Lib Patrimoine' = entity
+		mode: directQuery
+		source
+			entityName: UG - Lib Patrimoine
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

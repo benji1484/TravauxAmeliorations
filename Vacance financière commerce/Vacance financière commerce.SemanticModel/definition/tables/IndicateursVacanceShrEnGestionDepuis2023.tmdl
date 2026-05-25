@@ -1,0 +1,414 @@
+table IndicateursVacanceShrEnGestionDepuis2023
+	lineageTag: 5eef4bd0-88a5-4c35-876c-83bbab1f0122
+
+	column periode
+		dataType: string
+		lineageTag: 2ceb91ae-73c6-420d-9c66-f1953d3572bd
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: 1c0e09a5-9539-40f1-b958-61fa84609089
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho2
+		dataType: string
+		lineageTag: fa3f9bb7-7d1b-4cd4-b291-a37ee790d8b3
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ug
+		dataType: string
+		lineageTag: b6fcb225-8c09-4d06-8f3c-46fd910591dc
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column NBJoursVACm_ug
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d550b70-923d-4ddc-90a6-82e1031e869a
+		summarizeBy: sum
+		sourceColumn: NBJoursVACm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacanceMELm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: b4c36c81-5489-4d83-85f6-32ce5a2fe7f4
+		summarizeBy: sum
+		sourceColumn: TotalVacanceMELm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacanceCommm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: ef6eb97f-2380-484a-9594-d84faee0edc1
+		summarizeBy: sum
+		sourceColumn: TotalVacanceCommm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacanceTechm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 9b123ae3-9f08-474f-8c2f-dbbb7180c864
+		summarizeBy: sum
+		sourceColumn: TotalVacanceTechm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacanceStratm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 1fd8ae2e-2639-4fda-a03e-f94307f48e7c
+		summarizeBy: sum
+		sourceColumn: TotalVacanceStratm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacancem_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: e6a28db7-5f85-4d8e-9681-f3d9a5b95cc9
+		summarizeBy: sum
+		sourceColumn: TotalVacancem_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacance12m_ug
+		dataType: double
+		lineageTag: 58d2ca6a-1cb0-4672-a657-877219661c7b
+		summarizeBy: sum
+		sourceColumn: TotalVacance12m_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalVacanceYTD_ug
+		dataType: double
+		lineageTag: a276dbb3-6979-49c4-b5ec-42564a0a3d1e
+		summarizeBy: sum
+		sourceColumn: TotalVacanceYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LoyerTheo_TTCm_ug
+		dataType: double
+		lineageTag: 6444f25c-ed32-4201-a5a2-8c0b720af0ee
+		summarizeBy: sum
+		sourceColumn: LoyerTheo_TTCm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LoyerTheo_TTCYTD_ug
+		dataType: double
+		lineageTag: 081c5b1f-912a-4f1e-8d0f-b0d5ca87a8ac
+		summarizeBy: sum
+		sourceColumn: LoyerTheo_TTCYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TxVacancem
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 17ceaae9-c4c0-419c-a59b-44d1c5fdd94c
+		summarizeBy: sum
+		sourceColumn: TxVacancem
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacMELm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 208e085b-f651-4da1-b9ec-1c242ba5a64e
+		summarizeBy: sum
+		sourceColumn: TxVacMELm
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacCommm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: fde2e34a-3cba-40a9-b57c-7682a27b2b57
+		summarizeBy: sum
+		sourceColumn: TxVacCommm
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacTechm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 550c9ca7-c0f6-4ca9-b458-001379ff78ac
+		summarizeBy: sum
+		sourceColumn: TxVacTechm
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacStratm
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 9bd722e3-843f-4e3c-a693-d2c0e073d59c
+		summarizeBy: sum
+		sourceColumn: TxVacStratm
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacFiYTD_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: b13a8c3d-4a6b-4b6f-bc34-0e5e6c73aea0
+		summarizeBy: sum
+		sourceColumn: TxVacFiYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacCommFim_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 1995e11f-0949-4dba-b599-c872c0b319f9
+		summarizeBy: sum
+		sourceColumn: TxVacCommFim_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacCommFiYTD_ug
+		dataType: double
+		lineageTag: 46993a65-dc17-47ad-b992-4a74da0f9ff6
+		summarizeBy: sum
+		sourceColumn: TxVacCommFiYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TxVacStratFim_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8a3b68d3-584c-4aef-9d38-4628d24479e5
+		summarizeBy: sum
+		sourceColumn: TxVacStratFim_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacStratFiYTD_ug
+		dataType: double
+		lineageTag: 187a40b4-daf3-454c-9058-696f72ebbbf7
+		summarizeBy: sum
+		sourceColumn: TxVacStratFiYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TxVacTechFim_ug
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: a965f637-ad02-46cb-b73b-15cfe8bf0d03
+		summarizeBy: sum
+		sourceColumn: TxVacTechFim_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column TxVacTechFiYTD_ug
+		dataType: double
+		lineageTag: 9afa0661-46c3-4eb7-8680-d7e62bfb877d
+		summarizeBy: sum
+		sourceColumn: TxVacTechFiYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column code_hp1
+		dataType: string
+		lineageTag: f3450a95-55c0-47f3-9d54-ee1615892cf6
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacanceCommYTD_ug
+		dataType: double
+		lineageTag: 7c57b063-7319-4309-8735-ba827e7c56d7
+		summarizeBy: sum
+		sourceColumn: TotalVacanceCommYTD_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalVacanceVendum_ug
+		dataType: double
+		lineageTag: a13f5ce6-6edf-4d75-8cd5-800da1941c8b
+		summarizeBy: sum
+		sourceColumn: TotalVacanceVendum_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalVacanceDemoliem_ug
+		dataType: double
+		lineageTag: 5dccdd5a-5fd0-4012-a502-6cb15b274aa3
+		summarizeBy: sum
+		sourceColumn: TotalVacanceDemoliem_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unique_key
+		dataType: string
+		lineageTag: 7583f463-4c9c-472a-be4c-101bcbdf960b
+		summarizeBy: none
+		sourceColumn: unique_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacanceHCm_ug
+		dataType: double
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: e24437c4-ea58-4f77-a422-eef43fbe26b4
+		summarizeBy: sum
+		sourceColumn: TotalVacanceHCm_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column batiment
+		dataType: string
+		lineageTag: 88e0f911-ab47-48e4-8c3d-a4018e14efaf
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( IndicateursVacanceShrEnGestionDepuis2023[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( IndicateursVacanceShrEnGestionDepuis2023[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 5e0add78-4b77-4298-aad2-4cfd4321670e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = IndicateursVacanceShrEnGestionDepuis2023[code_hp1]   -- ou [code_HP1] selon ton modèle
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        
+			        // Mises à jour basées sur l'image (Message vs Tableau)
+			        hp = "CLVE", "ANDR",  // Clos du Verger
+			        hp = "CTI5", "ARCD",  // Centaure Ilot 5
+			        hp = "FCHE", "PORT",  // Francis Hallé
+			        hp = "FLQE", "ARCD",  // Foulque
+			        hp = "JCTL", "RUIS",  // Res Jean Chatel
+			        hp = "JDGS", "CALB",  // Jardin des Gardenias
+			        hp = "LOBL", "CALB",  // Lobelie
+			        hp = "MPTO", "PORT",  // Maputo
+			        hp = "SRTL", "PORT",  // Serins et Tourterelles
+			        hp = "TRG2", "CALB",  // Tregor 2
+			        
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        -- si on a trouvé un matching sur code_hp1
+			    IndicateursVacanceShrEnGestionDepuis2023[code_HO2]    -- sinon on reprend code_HO2
+			)
+			
+			```
+		lineageTag: 20b31308-7921-49b7-b5db-a145a03b9d67
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 93c4139b-8394-4907-85ca-f6f108fcd0bb
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition IndicateursVacanceShrEnGestionDepuis2023-9a0bb549-34c0-4aa9-86b8-34eb753301d7 = m
+		mode: import
+		source =
+				let
+				
+				Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    IndicateursVacanceShrEnGestionDepuis2023_View = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="IndicateursVacanceShrEnGestionDepuis2023",Kind="View"]}[Data],
+				    #"Columns removed by Measure Killer"= Table.SelectColumns(IndicateursVacanceShrEnGestionDepuis2023_View,{"delegation_dixit", "batiment","code_ug", "TxVacStratFiYTD_ug", "TotalVacanceCommm_ug", "code_nature_ug", "LoyerTheo_TTCYTD_ug", "TxVacTechFiYTD_ug", "NBJoursVACm_ug", "TxVacStratFim_ug", "TotalVacanceYTD_ug", "TxVacCommFiYTD_ug", "TotalVacanceTechm_ug", "LoyerTheo_TTCm_ug", "TotalVacanceHCm_ug", "unique_key", "TxVacMELm", "TxVacFiYTD_ug", "TotalVacance12m_ug", "TxVacStratm", "TotalVacanceVendum_ug", "code_hp1", "TxVacTechm", "TxVacCommFim_ug", "TxVacCommm", "TotalVacancem_ug", "periode", "TotalVacanceDemoliem_ug", "TxVacancem", "TotalVacanceCommYTD_ug", "code_ho2", "TotalVacanceMELm_ug", "TxVacTechFim_ug", "TotalVacanceStratm_ug"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

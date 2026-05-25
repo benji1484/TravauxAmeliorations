@@ -1,0 +1,48 @@
+table Paramètre
+	lineageTag: b05f4560-1e77-4c34-a5bc-5fc61ecb5e8c
+	sourceLineageTag: 29e87c64-b1f6-4fbc-986d-a1d48ffed945
+
+	column Paramètre
+		dataType: string
+		lineageTag: fee6e65d-ed2e-4717-a35f-17c7b35f4c97
+		sourceLineageTag: 9804d5b4-3388-461b-8791-e8d694d6d3ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Paramètre
+		sortByColumn: 'Paramètre Commande'
+
+		relatedColumnDetails
+			groupByColumn: 'Paramètre Champs'
+
+		annotation SummarizationSetBy = User
+
+	column 'Paramètre Champs'
+		dataType: string
+		isHidden
+		lineageTag: c2994d38-165f-4a26-aa37-2e6ba72906a0
+		sourceLineageTag: 4dba3325-5350-4044-bc4a-926efda64c00
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Paramètre Champs
+		sortByColumn: 'Paramètre Commande'
+
+		annotation SummarizationSetBy = User
+
+	column 'Paramètre Commande'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e0ddd307-2526-444c-b217-6d41cfe5fae6
+		sourceLineageTag: d23dfd54-4709-4cb9-b03c-e8eeebd3b60c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Paramètre Commande
+
+		annotation SummarizationSetBy = User
+
+	partition Paramètre = entity
+		mode: directQuery
+		source
+			entityName: Paramètre
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

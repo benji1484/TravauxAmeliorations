@@ -1,0 +1,153 @@
+table 'DDC - Engagements promoteurs'
+	lineageTag: 89c086df-0856-46f2-a379-2de935c40526
+
+	column Periode
+		dataType: string
+		lineageTag: 5f164e19-555b-47f7-a354-fd338d955239
+		summarizeBy: none
+		sourceColumn: Periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projections engagements promoteurs'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e4c853a-fcbb-4655-bfbb-4deae20980cf
+		summarizeBy: sum
+		sourceColumn: # Projections engagements promoteurs
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projections engagements promoteurs LLS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b72ea83-3111-4794-a65c-63f3244dbe64
+		summarizeBy: sum
+		sourceColumn: # Projections engagements promoteurs LLS
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projections engagements promoteurs LI'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2fb6b0f1-1693-401c-9f89-8f56e626742d
+		summarizeBy: sum
+		sourceColumn: # Projections engagements promoteurs LI
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projections engagements promoteurs accession'
+		dataType: int64
+		formatString: 0
+		lineageTag: 537f24bc-50fb-4858-bdf7-e62fcd8e10e3
+		summarizeBy: sum
+		sourceColumn: # Projections engagements promoteurs accession
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Engagements promoteurs'
+		dataType: int64
+		formatString: 0
+		lineageTag: 26ebdb3b-980d-4f80-9de3-6d73f599caab
+		summarizeBy: sum
+		sourceColumn: # Engagements promoteurs
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Engagements promoteurs LLS'
+		dataType: int64
+		formatString: 0
+		lineageTag: c93928ee-8765-4254-85f7-917e1e4af490
+		summarizeBy: sum
+		sourceColumn: # Engagements promoteurs LLS
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Engagements promoteurs LI'
+		dataType: int64
+		formatString: 0
+		lineageTag: f946005a-cb94-48a7-a55d-06d62e5c2895
+		summarizeBy: sum
+		sourceColumn: # Engagements promoteurs LI
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Engagements promoteurs accession'
+		dataType: int64
+		formatString: 0
+		lineageTag: c3ef37d3-2fd7-4619-a4f9-88b6ad9eafb9
+		summarizeBy: sum
+		sourceColumn: # Engagements promoteurs accession
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - Engagements promoteurs'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - Engagements promoteurs'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 72a94332-a265-4a8b-83e4-ca67fa605fde
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: a602ae73-0224-4891-8955-8a5cd4778ae4
+			defaultHierarchy: LocalDateTable_35bee9f1-92e1-4146-96ee-bc58f7357a17.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - Engagements promoteurs' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Mensuel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{0}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Premières lignes supprimées",{{"# Projections engagements promoteurs", Int64.Type}, {"# Projections engagements promoteurs LLS", Int64.Type}, {"# Projections engagements promoteurs LI", Int64.Type}, {"# Projections engagements promoteurs accession", Int64.Type}, {"# Engagements promoteurs", Int64.Type}, {"# Engagements promoteurs LLS", Int64.Type}, {"# Engagements promoteurs LI", Int64.Type}, {"# Engagements promoteurs accession", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

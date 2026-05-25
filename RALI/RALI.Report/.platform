@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "RALI"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "40f24467-c39c-48bc-bcc0-63f3a9b4df33"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Vacance financière commerce"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c98624f5-b938-4b55-a014-acb3cb3bea0d"
+  }
+}

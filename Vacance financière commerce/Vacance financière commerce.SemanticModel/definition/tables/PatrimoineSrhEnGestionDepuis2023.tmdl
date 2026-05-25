@@ -1,0 +1,1042 @@
+table PatrimoineSrhEnGestionDepuis2023
+	lineageTag: 20771308-ffee-42e7-89ab-c08dcf85ea27
+
+	column unique_key
+		dataType: string
+		lineageTag: 754272bb-d79b-4169-b265-0dd430302f97
+		summarizeBy: none
+		sourceColumn: unique_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANNEE
+		dataType: int64
+		formatString: 0
+		lineageTag: 3dc092e4-f2b5-48ea-a11e-3052e769aa90
+		summarizeBy: sum
+		sourceColumn: ANNEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_orga
+		dataType: string
+		lineageTag: e2431878-efac-4745-8495-0be97f09fa40
+		summarizeBy: none
+		sourceColumn: code_orga
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ug
+		dataType: string
+		lineageTag: 119d1cfc-4ffd-453a-b227-1927e051202f
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_patrimoine
+		dataType: string
+		lineageTag: c428b323-1788-4731-9fe4-d8d964cbea90
+		summarizeBy: none
+		sourceColumn: lbl_patrimoine
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HP1
+		dataType: string
+		lineageTag: 145f86ff-125a-4c87-8e9f-e2a5b389f8e3
+		summarizeBy: none
+		sourceColumn: code_HP1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HP2
+		dataType: string
+		lineageTag: 2baae753-85f9-4ee1-89b9-a9bd7b9bf16b
+		summarizeBy: none
+		sourceColumn: code_HP2
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HP3
+		dataType: string
+		lineageTag: 9afe1268-0b5b-4281-ad37-792a0fad4be9
+		summarizeBy: none
+		sourceColumn: code_HP3
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HO1_ptm
+		dataType: string
+		lineageTag: 6ca7052a-8e35-47c2-b97e-b907329163ba
+		summarizeBy: none
+		sourceColumn: code_HO1_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HO2_ptm
+		dataType: string
+		lineageTag: c512570c-60df-4f28-81ad-8c1fcaf36fe2
+		summarizeBy: none
+		sourceColumn: code_HO2_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HO1
+		dataType: string
+		lineageTag: 7dc29a5f-092a-4131-8503-0d269c06b64b
+		summarizeBy: none
+		sourceColumn: code_HO1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_HO2
+		dataType: string
+		lineageTag: cf425ae9-77fe-4bd5-af3a-f80b0abe4cd4
+		summarizeBy: none
+		sourceColumn: code_HO2
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_agence
+		dataType: string
+		lineageTag: d06454e8-546f-4e28-a2fc-cd732fb9fe5e
+		summarizeBy: none
+		sourceColumn: lbl_agence
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ug_rattach
+		dataType: string
+		lineageTag: 6fe9c4cd-bfae-44be-b26f-c8f37d9e44b8
+		summarizeBy: none
+		sourceColumn: code_ug_rattach
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_porte
+		dataType: string
+		lineageTag: 4d82852c-d420-4402-aa33-5953ba190425
+		summarizeBy: none
+		sourceColumn: num_porte
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_acheminement
+		dataType: string
+		lineageTag: 67dc585f-8c8b-43b5-b9ec-f4091d96fe24
+		summarizeBy: none
+		sourceColumn: code_acheminement
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_acheminement
+		dataType: string
+		lineageTag: 49b5af10-108f-456a-b34c-f88aaeda554c
+		summarizeBy: none
+		sourceColumn: lbl_acheminement
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_categorie_ug
+		dataType: string
+		lineageTag: e5224a20-bf83-4ebc-a239-f97522d1bc7c
+		summarizeBy: none
+		sourceColumn: code_categorie_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_categorie_ug
+		dataType: string
+		lineageTag: 2979c75a-cd83-4661-8939-3944418aa7cc
+		summarizeBy: none
+		sourceColumn: lbl_categorie_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_etage
+		dataType: string
+		lineageTag: 1a2d4167-e6a7-44c3-97a5-afb0d46e41f2
+		summarizeBy: none
+		sourceColumn: code_etage
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_etage
+		dataType: string
+		lineageTag: 6e0522c9-2ab0-42bf-9a5a-cddb0c0f68c0
+		summarizeBy: none
+		sourceColumn: lbl_etage
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: a670e605-a538-4b83-a83d-1ee5f0aacf07
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_nature_ug
+		dataType: string
+		lineageTag: 48bf2d90-206c-4a78-b947-479cc5fc3072
+		summarizeBy: none
+		sourceColumn: lbl_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_regroup_nature_ug
+		dataType: string
+		lineageTag: d256a220-e2b6-4392-b933-c07529571638
+		summarizeBy: none
+		sourceColumn: code_regroup_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_terme
+		dataType: string
+		lineageTag: 77845020-0ec8-48d6-8575-59c881c716b9
+		summarizeBy: none
+		sourceColumn: code_terme
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_terme
+		dataType: string
+		lineageTag: 1200b2fa-1312-44f1-b86d-6c1014068aee
+		summarizeBy: none
+		sourceColumn: lbl_terme
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_periodicite
+		dataType: string
+		lineageTag: 4c9c0bae-f4dc-4832-a838-7ced59e73473
+		summarizeBy: none
+		sourceColumn: code_periodicite
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_periodicite
+		dataType: string
+		lineageTag: 1ab75fef-9763-427b-a362-6d54f3b65dc3
+		summarizeBy: none
+		sourceColumn: lbl_periodicite
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_zone_sensible
+		dataType: string
+		lineageTag: c5bb00ce-a8f9-4f54-9ddc-ca8a758add4a
+		summarizeBy: none
+		sourceColumn: code_zone_sensible
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_secteur_TVA
+		dataType: string
+		lineageTag: 12607899-9849-4a6a-8e5a-8b522cd40657
+		summarizeBy: none
+		sourceColumn: code_secteur_TVA
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_tarif
+		dataType: string
+		lineageTag: 9fbe43f6-236a-46dd-b26c-63ffce820680
+		summarizeBy: none
+		sourceColumn: code_tarif
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_ug
+		dataType: string
+		lineageTag: 08ead1a8-d756-4913-aa3c-6fd0a0049c92
+		summarizeBy: none
+		sourceColumn: code_type_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_type_ug
+		dataType: string
+		lineageTag: 6eebccb8-fd94-4b0f-8c67-b1823d83885a
+		summarizeBy: none
+		sourceColumn: lbl_type_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_zone_APL
+		dataType: string
+		lineageTag: bc5a6bbd-f6be-44dc-ae87-adcb3c89d6df
+		summarizeBy: none
+		sourceColumn: code_zone_APL
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_zone_loyer
+		dataType: string
+		lineageTag: 65315df0-86a0-41ce-80ca-abe1d9e61852
+		summarizeBy: none
+		sourceColumn: code_zone_loyer
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_zone_reserve_1
+		dataType: string
+		lineageTag: fa2fc049-a014-4dee-9937-db58577a1240
+		summarizeBy: none
+		sourceColumn: code_zone_reserve_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_zone_reserve_1
+		dataType: string
+		lineageTag: fa4a62d7-d53f-47a4-9b3b-d19e57de9270
+		summarizeBy: none
+		sourceColumn: lbl_zone_reserve_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_zone_reserve_2
+		dataType: string
+		lineageTag: 6c1f64b8-b4db-4698-a626-eb85408c8292
+		summarizeBy: none
+		sourceColumn: code_zone_reserve_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_zone_reserve_2
+		dataType: string
+		lineageTag: 95cf2f57-3f15-405c-9186-eb974f6f455c
+		summarizeBy: none
+		sourceColumn: lbl_zone_reserve_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ind_collectif
+		dataType: string
+		lineageTag: 5f320630-43c5-4f58-b0a6-131dd6db139c
+		summarizeBy: none
+		sourceColumn: code_ind_collectif
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_creation
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4082817d-697d-4bfd-8348-f804140f07b9
+		summarizeBy: none
+		sourceColumn: dte_creation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_mise_en_service_UG
+		dataType: dateTime
+		formatString: yyyy-mm
+		lineageTag: 0f480f29-8057-443c-b07c-0f531d4c53c8
+		summarizeBy: none
+		sourceColumn: dte_mise_en_service_UG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column ind_amenage_handicape
+		dataType: string
+		lineageTag: c462f252-c675-49de-b12a-7396bdd69936
+		summarizeBy: none
+		sourceColumn: ind_amenage_handicape
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_accessibilite_handic
+		dataType: string
+		lineageTag: db88aa71-62ed-4f34-ac6d-a3db3f5d9338
+		summarizeBy: none
+		sourceColumn: ind_accessibilite_handic
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_accessibilite_public
+		dataType: string
+		lineageTag: b4e2d113-c1de-4a30-9bef-bd750122455f
+		summarizeBy: none
+		sourceColumn: ind_accessibilite_public
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_dpt
+		dataType: string
+		lineageTag: 4390e43e-cdb8-4877-8dd0-349475521cad
+		summarizeBy: none
+		sourceColumn: code_dpt
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_insee
+		dataType: string
+		lineageTag: 456a9ad8-9942-4f62-9cd0-34a22673aeaf
+		summarizeBy: none
+		sourceColumn: code_insee
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_rcpt_trvx
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 819b41be-cc29-45a5-89e9-8615f964977e
+		summarizeBy: none
+		sourceColumn: dte_rcpt_trvx
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_debut_commercial
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 36d99aaa-e50c-4a66-99e9-b60f839a9906
+		summarizeBy: none
+		sourceColumn: dte_debut_commercial
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_construction
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fb1aabbd-c5c5-4ada-b48c-41e1fcda219f
+		summarizeBy: none
+		sourceColumn: dte_construction
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dte_livraison
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a0bcc75f-ce89-4037-adeb-4fdd98535ec0
+		summarizeBy: none
+		sourceColumn: dte_livraison
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ind_duplex_triplex
+		dataType: string
+		lineageTag: be4236d9-6ebe-4a6f-80c8-4754c27378c9
+		summarizeBy: none
+		sourceColumn: ind_duplex_triplex
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_annulation
+		dataType: string
+		lineageTag: e5e6e678-38d5-4847-8a00-033e95f021ab
+		summarizeBy: none
+		sourceColumn: ind_annulation
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_etat_ug
+		dataType: string
+		lineageTag: a5b8be9e-7f43-4073-8319-59150235d57c
+		summarizeBy: none
+		sourceColumn: code_etat_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_etat_ug
+		dataType: string
+		lineageTag: c94385a6-5d4a-4eaa-83d4-393a4094d440
+		summarizeBy: none
+		sourceColumn: lbl_etat_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_etat_ug
+		dataType: string
+		lineageTag: a492f9a8-5eae-4062-9858-8468abb97484
+		summarizeBy: none
+		sourceColumn: status_etat_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column NBJoursCTT
+		dataType: int64
+		formatString: 0
+		lineageTag: f923de29-8bc5-46cb-98d1-778f04cb09a4
+		summarizeBy: sum
+		sourceColumn: NBJoursCTT
+
+		annotation SummarizationSetBy = Automatic
+
+	column NBJoursVac
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e6c2668-a308-4620-8e41-76b32519c251
+		summarizeBy: sum
+		sourceColumn: NBJoursVac
+
+		annotation SummarizationSetBy = Automatic
+
+	column NBjoursPertesFi
+		dataType: int64
+		formatString: 0
+		lineageTag: cd7e8beb-8be6-4129-ba6a-1bfb1e1e4d0e
+		summarizeBy: sum
+		sourceColumn: NBjoursPertesFi
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalVacance
+		dataType: double
+		lineageTag: 75a917fd-26dc-4b8e-ace6-b9e442cd2dec
+		summarizeBy: sum
+		sourceColumn: TotalVacance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dte_ref
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 4915ae83-bf8f-4fdf-880d-8f524b3aeb13
+		summarizeBy: none
+		sourceColumn: dte_ref
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column position_de_gestion
+		dataType: string
+		lineageTag: e03254b9-191f-4d0c-87b4-7e42bb524039
+		summarizeBy: none
+		sourceColumn: position_de_gestion
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_epci
+		dataType: string
+		lineageTag: d28bec75-7448-4f68-8107-c343bbf9f232
+		summarizeBy: none
+		sourceColumn: code_epci
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_epci
+		dataType: string
+		lineageTag: 248c34f5-33e6-48ef-b4f7-a1e955f33ac0
+		summarizeBy: none
+		sourceColumn: lbl_epci
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_commune
+		dataType: string
+		lineageTag: 8aef48a2-de5d-402c-a1f9-f7739f7af7e6
+		summarizeBy: none
+		sourceColumn: lbl_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column adresse_postale_rue
+		dataType: string
+		lineageTag: a62a41e7-dcde-4ba9-a5b8-f9e884eb96f8
+		summarizeBy: none
+		sourceColumn: adresse_postale_rue
+
+		annotation SummarizationSetBy = Automatic
+
+	column adresse_postale_rue_suite
+		dataType: string
+		lineageTag: eb9b3157-553d-40c0-bb52-414feb00e8f3
+		summarizeBy: none
+		sourceColumn: adresse_postale_rue_suite
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_postal
+		dataType: string
+		lineageTag: 7aa3122e-3cee-42b5-aaf4-dd4f4584745b
+		summarizeBy: none
+		sourceColumn: code_postal
+
+		annotation SummarizationSetBy = Automatic
+
+	column localite
+		dataType: string
+		lineageTag: db0a826f-04e7-4235-92f0-c743de196f23
+		summarizeBy: none
+		sourceColumn: localite
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_patrimoine_ptm
+		dataType: string
+		lineageTag: 021de8f2-5956-473e-a20a-f7227f48c813
+		summarizeBy: none
+		sourceColumn: lbl_patrimoine_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column adresse_rue_ptm
+		dataType: string
+		lineageTag: 2c46348d-71a3-4eaa-b9f5-4828fc526663
+		summarizeBy: none
+		sourceColumn: adresse_rue_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column adresse_rue_suite_ptm
+		dataType: string
+		lineageTag: 781e1479-a3e2-40a7-95d0-c18c0265f32d
+		summarizeBy: none
+		sourceColumn: adresse_rue_suite_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_postal_ptm
+		dataType: string
+		lineageTag: 073ca97f-903f-427d-b97d-edf1051c73fb
+		summarizeBy: none
+		sourceColumn: code_postal_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column localite_ptm
+		dataType: string
+		lineageTag: 5245f7d0-f419-4416-859d-22290183fbef
+		summarizeBy: none
+		sourceColumn: localite_ptm
+
+		annotation SummarizationSetBy = Automatic
+
+	column SurfaceCharge
+		dataType: double
+		lineageTag: f49d30e4-dd9a-4f42-87d4-42ed4971e4ce
+		summarizeBy: sum
+		sourceColumn: SurfaceCharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SurfaceHabitable
+		dataType: double
+		lineageTag: 26f27505-4d77-4fd1-a196-5a8aee016286
+		summarizeBy: sum
+		sourceColumn: SurfaceHabitable
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SurfaceAscenceur
+		dataType: double
+		lineageTag: e3bf2640-1416-49db-9758-cc59bc527599
+		summarizeBy: sum
+		sourceColumn: SurfaceAscenceur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TaxOrdMenage
+		dataType: double
+		lineageTag: a5a4f4a2-47d2-4e65-af05-0832236cbf54
+		summarizeBy: sum
+		sourceColumn: TaxOrdMenage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ValeurTauxTheo
+		dataType: double
+		lineageTag: a8f0b3d7-f77d-49b2-9646-638a38abc497
+		summarizeBy: sum
+		sourceColumn: ValeurTauxTheo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DepotGarantie_Theo
+		dataType: double
+		lineageTag: 8a4a53cc-f63f-4901-9d1c-e9711e136f31
+		summarizeBy: sum
+		sourceColumn: DepotGarantie_Theo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LoyerThéo_HT
+		dataType: double
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		lineageTag: 90f79dda-c8cb-45d3-acb6-56c6c696a8a8
+		summarizeBy: sum
+		sourceColumn: LoyerThéo_HT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Charge
+		dataType: double
+		lineageTag: 94617192-859a-42d9-ac3f-86b31343558d
+		summarizeBy: sum
+		sourceColumn: Charge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LoyerTheo_TTC
+		dataType: double
+		lineageTag: 83496bf0-5840-4f14-9570-84077390fffa
+		summarizeBy: sum
+		sourceColumn: LoyerTheo_TTC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_plafond_loyer_max
+		dataType: double
+		lineageTag: 9740cea8-ad09-48e4-8be2-fcc0ecb7be75
+		summarizeBy: sum
+		sourceColumn: taux_plafond_loyer_max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LoyerPlafond_HT
+		dataType: double
+		lineageTag: 6800bb72-8edc-4bd5-ac9d-96c42e2752c3
+		summarizeBy: sum
+		sourceColumn: LoyerPlafond_HT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RLS
+		dataType: string
+		lineageTag: c43307fb-076d-4fdc-a620-5d2aaf138c77
+		summarizeBy: none
+		sourceColumn: RLS
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tiers_CVN
+		dataType: string
+		lineageTag: 8a5343fe-afa5-4e27-993c-c6b3e4896d64
+		summarizeBy: none
+		sourceColumn: Tiers_CVN
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tiers_RSA
+		dataType: string
+		lineageTag: adca8169-aba5-49ab-a8cd-fcc8d4f6f1ae
+		summarizeBy: none
+		sourceColumn: Tiers_RSA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tiers_RSO
+		dataType: string
+		lineageTag: 70663b06-81d7-4d1b-9c08-5425e411b0d4
+		summarizeBy: none
+		sourceColumn: Tiers_RSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column Invariant
+		dataType: string
+		lineageTag: 04dd7229-e57a-4ab8-8c5f-1dd62d0a3dd6
+		summarizeBy: none
+		sourceColumn: Invariant
+
+		annotation SummarizationSetBy = Automatic
+
+	column financement_CSP
+		dataType: string
+		lineageTag: f3a9b965-79a0-40dc-b62e-7da46733feea
+		summarizeBy: none
+		sourceColumn: financement_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nature_CSP
+		dataType: string
+		lineageTag: 483a66ed-9d0e-44e7-98cc-d12d9fc5f963
+		summarizeBy: none
+		sourceColumn: Nature_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type_CSP
+		dataType: string
+		lineageTag: 1f281a17-e77b-4be1-9479-16a29269b8d8
+		summarizeBy: none
+		sourceColumn: Type_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_collectif_CSP
+		dataType: string
+		lineageTag: 8cf98fc2-b1b5-43fd-8fd4-d27818fd1c9f
+		summarizeBy: none
+		sourceColumn: ind_collectif_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column batiment
+		dataType: string
+		lineageTag: d324212c-383f-4aba-a65d-2c5239f6c5a6
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = Automatic
+
+	column entree
+		dataType: string
+		lineageTag: b73f1537-6362-49d1-b6bb-e0e5251d6c77
+		summarizeBy: none
+		sourceColumn: entree
+
+		annotation SummarizationSetBy = Automatic
+
+	column mouvement_stock
+		dataType: string
+		lineageTag: 8aabac74-8c40-45ad-a697-026a3b29f398
+		summarizeBy: none
+		sourceColumn: mouvement_stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column etat_ug_CSP
+		dataType: string
+		lineageTag: 6b6de865-59bd-492e-bb57-bcbef1e8f61b
+		summarizeBy: none
+		sourceColumn: etat_ug_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_acquisition
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b5ff4697-3591-464f-b524-32b2e429d96d
+		summarizeBy: none
+		sourceColumn: dte_acquisition
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column periode
+		dataType: string
+		lineageTag: ba70af69-2099-4f9b-a785-df163b4c61bc
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geoloc
+		type: calculated
+		lineageTag: 411bf87d-4e15-44c4-8813-9fc844fedaab
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Etage numerique' = IFERROR(if(ISNUMBER(VALUE(PatrimoineSrhEnGestionDepuis2023[code_etage])), VALUE(PatrimoineSrhEnGestionDepuis2023[code_etage]), BLANK()), BLANK())
+		lineageTag: 009138e6-d1c7-4103-95db-d02655101034
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'équivalence Catégorie' =
+			
+			SWITCH(
+			    TRUE(),
+			    PatrimoineSrhEnGestionDepuis2023[financement_CSP] = "PLUS", "LLS",
+			    PatrimoineSrhEnGestionDepuis2023[financement_CSP] = "PLAI", "LLTS",
+			    PatrimoineSrhEnGestionDepuis2023[financement_CSP]   // sinon on garde la valeur d'origine
+			)
+		lineageTag: 67526c23-d75e-4e26-9226-3f82c81cb083
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Adresse_complete_geoloc_patr = ```
+			PatrimoineSrhEnGestionDepuis2023[adresse_rue_ptm] &", "& PatrimoineSrhEnGestionDepuis2023[code_postal_ptm]  &", "& PatrimoineSrhEnGestionDepuis2023[lbl_commune]  
+			```
+		lineageTag: 61693f90-1cde-40ae-8066-718f8660745f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( PatrimoineSrhEnGestionDepuis2023[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( PatrimoineSrhEnGestionDepuis2023[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 6c39712d-2d60-4cff-8be6-da1622be9f68
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = PatrimoineSrhEnGestionDepuis2023[code_hp1]   
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        
+			        // Mises à jour basées sur l'image (Message vs Tableau)
+			        hp = "CLVE", "ANDR",  // Clos du Verger
+			        hp = "CTI5", "ARCD",  // Centaure Ilot 5
+			        hp = "FCHE", "PORT",  // Francis Hallé
+			        hp = "FLQE", "ARCD",  // Foulque
+			        hp = "JCTL", "RUIS",  // Res Jean Chatel
+			        hp = "JDGS", "CALB",  // Jardin des Gardenias
+			        hp = "LOBL", "CALB",  // Lobelie
+			        hp = "MPTO", "PORT",  // Maputo
+			        hp = "SRTL", "PORT",  // Serins et Tourterelles
+			        hp = "TRG2", "CALB",  // Tregor 2
+			        
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        
+			    PatrimoineSrhEnGestionDepuis2023[code_HO2]    
+			)
+			
+			```
+		lineageTag: 691d9b59-049f-4ba1-82dc-224f59e3c4a2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_ascenseur
+		dataType: double
+		lineageTag: b92a011e-66a9-46ef-8b06-dbab422732d9
+		summarizeBy: sum
+		sourceColumn: montant_ascenseur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ind_presence_ascenseur
+		dataType: int64
+		formatString: 0
+		lineageTag: 01dd5b2c-928e-441c-8293-1f9ba517ef7a
+		summarizeBy: sum
+		sourceColumn: ind_presence_ascenseur
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 4150bd6b-00d7-48b5-ad3b-049fa18fc28c
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categorie_Reunion =
+			
+			SWITCH(
+			    TRUE(),
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "PLAI", "LLTS",
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "PLUS", "LLS",
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "PLS", "PLS",
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "PSLA", "PSLA",
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "PLI", "PLI",
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "LIBRE", "LIBRE",
+			    'PatrimoineSrhEnGestionDepuis2023'[financement_CSP] = "NA", "",
+			    ""
+			)
+		lineageTag: e5152717-d500-4c3d-a812-e7623fa500d8
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PatrimoineSrhEnGestionDepuis2023-e4b7886b-d7cf-4c23-b726-82bddad88c24 = m
+		mode: import
+		source =
+				let
+				Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    PatrimoineSrhEnGestionDepuis1 = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="PatrimoineSrhEnGestionDepuis2023",Kind="View"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(PatrimoineSrhEnGestionDepuis1,{"latitude", "longitude"})
+				
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

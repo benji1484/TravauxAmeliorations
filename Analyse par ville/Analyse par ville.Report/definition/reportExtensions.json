@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Mesure",
+      "measures": [
+        {
+          "name": "Batiments",
+          "dataType": "Double",
+          "expression": "\nCALCULATE(\n    COUNTROWS(\n        SUMMARIZE(\n            PatrimoineSrhEnGestionDepuis2023,\n            PatrimoineSrhEnGestionDepuis2023[code_hp1],\n            PatrimoineSrhEnGestionDepuis2023[code_hp2]\n        )\n    ),\n    PatrimoineSrhEnGestionDepuis2023[code_nature_ug] IN {\"LGE\", \"LGH\", \"LGT\"},\n    PatrimoineSrhEnGestionDepuis2023[code_orga] = \"SHR\",\n    PatrimoineSrhEnGestionDepuis2023[position_de_gestion] = \"En Gestion\"\n)\n",
+          "formatString": "General Number"
+        },
+        {
+          "name": "Mesure 6",
+          "dataType": "Double",
+          "expression": "",
+          "formatString": "General Number",
+          "annotations": [
+            {
+              "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "name": "Mesure 7",
+          "dataType": "Double",
+          "expression": "",
+          "formatString": "General Number",
+          "annotations": [
+            {
+              "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "name": "Mesure 8",
+          "dataType": "Double",
+          "expression": "",
+          "formatString": "General Number",
+          "annotations": [
+            {
+              "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "name": "Mesure 9",
+          "dataType": "Double",
+          "expression": "",
+          "formatString": "General Number",
+          "annotations": [
+            {
+              "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "name": "Mesure 10",
+          "dataType": "Double",
+          "expression": "",
+          "formatString": "General Number",
+          "annotations": [
+            {
+              "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "name": "Mesure 11",
+          "dataType": "Double",
+          "expression": "",
+          "formatString": "General Number",
+          "annotations": [
+            {
+              "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "name": "Vacance Financière Commerce HC M",
+          "dataType": "Double",
+          "expression": "CALCULATE(sum(IndicateursVacanceShrEnGestionDepuis2023[TotalVacanceHCm_ug]), 'Nature UG'[GroupeNature] in {\"Commerces\"})",
+          "formatString": "General Number"
+        },
+        {
+          "name": "Vacance Financière Logement HC M",
+          "dataType": "Double",
+          "expression": "CALCULATE(sum(IndicateursVacanceShrEnGestionDepuis2023[TotalVacanceHCm_ug]), 'Nature UG'[GroupeNature] in { \"Logements\"})",
+          "formatString": "General Number"
+        },
+        {
+          "name": "Vacance Financière Logement HC YTD",
+          "dataType": "Double",
+          "expression": "TOTALYTD([Vacance Financière Logement HC M], DateTable[Date])",
+          "formatString": "#,0\\ \"€\";-#,0\\ \"€\";#,0\\ \"€\"",
+          "references": {
+            "measures": [
+              {
+                "schema": "extension",
+                "entity": "Mesure",
+                "name": "Vacance Financière Logement HC M"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Vacance Financière Commerce HC YTD",
+          "dataType": "Double",
+          "expression": "TOTALYTD([Vacance Financière Commerce HC M], DateTable[Date])",
+          "formatString": "#,0\\ \"€\";-#,0\\ \"€\";#,0\\ \"€\"",
+          "references": {
+            "measures": [
+              {
+                "schema": "extension",
+                "entity": "Mesure",
+                "name": "Vacance Financière Commerce HC M"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

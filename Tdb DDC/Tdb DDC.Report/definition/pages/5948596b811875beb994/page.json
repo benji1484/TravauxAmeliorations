@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "5948596b811875beb994",
+  "displayName": "Widget Mise en chantier",
+  "displayOption": "FitToPage",
+  "height": 365,
+  "width": 620
+}

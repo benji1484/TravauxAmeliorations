@@ -1,0 +1,121 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Transformer le fichier à partir de Requête1'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformer le fichier à partir de Requête1\Requêtes d''assistance'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformer le fichier à partir de TII (2)'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Transformer le fichier à partir de TII (2)\Requêtes d''assistance'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformer le fichier à partir de TII'
+
+	annotation PBI_QueryGroupOrder = 4
+
+queryGroup 'Transformer le fichier à partir de TII\Requêtes d''assistance'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Erreurs dans les requêtes qui ont été chargées sur 05/08/2025 10:06:27.
+queryGroup 'Erreurs des requêtes – 05/08/2025 10:06:27'
+
+	annotation PBI_QueryGroupOrder = 6
+
+/// Erreurs dans les requêtes qui ont été chargées sur 05/08/2025 10:27:39.
+queryGroup 'Erreurs des requêtes – 05/08/2025 10:27:39'
+
+	annotation PBI_QueryGroupOrder = 7
+
+queryGroup 'Transformer le fichier à partir de Requête3'
+
+	annotation PBI_QueryGroupOrder = 8
+
+queryGroup 'Transformer le fichier à partir de Requête3\Requêtes d''assistance'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation PBI_QueryOrder = ["DirectQuery à AS – Pilotage Mensuelv3","DDC - Engagements promoteurs","DDC - Programmation en cours","DDC - Programmation Reçu","DDC - Objectifs et atterissage","DDC - Livraisons","DDC - MEC","DDC - Programmation en cours - suite","DDC - Programmation Reçu - suite","Data","Villes","PROGR","Paramètre1","Transformer l'exemple de fichier","Exemple de fichier","Transformer le fichier","TII","Paramètre2","Transformer l'exemple de fichier (2)","Exemple de fichier (2)","Transformer le fichier (2)","Paramètre3","Transformer l'exemple de fichier (3)","Exemple de fichier (3)","Transformer le fichier (3)","Table","LIVRAISONS","Paramètre4","Transformer l'exemple de fichier (4)","Exemple de fichier (4)","Transformer le fichier (4)","LOYER QUIT","MEC","montant_atfpb","Produit"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table LocatairesShrEnGestionDepuis2023
+ref table PatrimoineSrhEnGestionDepuis2023
+ref table PeuplementShrDepuis2023
+ref table IndicateursFinanciersShrEnGestionDepuis2023
+ref table IndicateursVacanceShrEnGestionDepuis2023
+ref table PeriodeCal
+ref table Mesure
+ref table Obj_2024
+ref table Paramètre
+ref table MapTerritoire
+ref table CA
+ref table 'UG - Lib Patrimoine'
+ref table 'Nature UG'
+ref table code_type_ca
+ref table dimension_type_ca
+ref table UG_INSEE
+ref table catégorie
+ref table reglements
+ref table 'DDC - Engagements promoteurs'
+ref table 'DDC - Programmation en cours'
+ref table 'DDC - Programmation Reçu'
+ref table 'DDC - Objectifs et atterissage'
+ref table 'DDC - Livraisons'
+ref table 'DDC - MEC'
+ref table 'DDC - Programmation en cours - suite'
+ref table 'DDC - Programmation Reçu - suite'
+ref table Data
+ref table DateTableTemplate_38910e80-8a8a-4832-8e62-2efd976054da
+ref table LocalDateTable_c7963513-07e3-4391-93a0-34661d4d155a
+ref table Villes
+ref table PROGR
+ref table TII
+ref table LocalDateTable_98fb984b-0785-4a93-8076-3e8efb1fdba5
+ref table LocalDateTable_73ed19db-cffd-449c-a4af-570c499c3eb2
+ref table LocalDateTable_cae54402-f79e-4e07-9dd1-4c9bd93a450b
+ref table LocalDateTable_c6a1fb78-7351-4cb4-8c92-e37e2041a512
+ref table LocalDateTable_4848e38a-692a-4359-abaa-cad783380691
+ref table indicateurs_affaires_v2
+ref table Type_vacance
+ref table LocalDateTable_069f42e7-5d0f-4ce6-824c-da06b8e6cbc6
+ref table LocalDateTable_61b3af18-f7e7-4773-ba32-88502aea71ad
+ref table Table
+ref table TranchAge
+ref table DateTable
+ref table LocalDateTable_adcc7b3c-6018-456d-ae4c-7fb0ddcd7988
+ref table LocalDateTable_a8f447c0-0b4c-46f3-8f38-96480e2f292b
+ref table LocalDateTable_35bee9f1-92e1-4146-96ee-bc58f7357a17
+ref table LocalDateTable_83b2a3bd-1731-4cd5-9d2a-62b2958e038d
+ref table LocalDateTable_6fe7bb58-6e4c-4172-96d6-70477dd298fd
+ref table LocalDateTable_3a16d762-0674-4bf2-beac-6d4251bb56a7
+ref table 'Scoring Patrimoine'
+ref table 'Scoring Patrimoine dépiv'
+ref table 'Délégation (2)'
+ref table LIVRAISONS
+ref table 'LOYER QUIT'
+ref table MEC
+ref table montant_atfpb
+ref table 'Calendrier graphique'
+ref table LocalDateTable_6f192a98-987e-4b2b-8556-d4a52e611095
+ref table Produit
+ref table LocalDateTable_0b923ac2-1492-4cc5-9969-cc234d6dba00
+ref table Coordonnees
+
+ref cultureInfo fr-FR
+

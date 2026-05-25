@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Analyse par ville"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b639f6eb-2257-479f-b981-995f6d7bbfe8"
+  }
+}

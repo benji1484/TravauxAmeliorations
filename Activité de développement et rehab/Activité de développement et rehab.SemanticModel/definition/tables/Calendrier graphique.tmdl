@@ -1,0 +1,126 @@
+table 'Calendrier graphique'
+	lineageTag: 24f87a6f-f9a8-40ab-9baa-a8869f5322ec
+
+	column Date
+		formatString: General Date
+		lineageTag: cdb3194c-c6ba-4524-a802-fa87644159b7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 0c908fad-cc28-463b-9e19-4f98aabec40d
+			defaultHierarchy: LocalDateTable_0b923ac2-1492-4cc5-9969-cc234d6dba00.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		formatString: 0
+		lineageTag: 7cb962d3-f273-4ef0-aa98-efc9b44ddbbe
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Année]
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois Num'
+		formatString: 0
+		lineageTag: 8800a285-2af9-48cd-87d0-806a3f6998e1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mois Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		lineageTag: 378bba19-97c8-4544-8fbd-f84bc155bfa4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mois]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois Court'
+		lineageTag: a95fb297-5e97-4b09-b83e-ad351c951a21
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mois Court]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: f2ee652a-3009-440a-a423-9093ca4e0e86
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine Num'
+		formatString: 0
+		lineageTag: d8a7c0f8-afd5-4b65-bf36-68649a7bc93a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Semaine Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour Semaine Num'
+		formatString: 0
+		lineageTag: 52947a3b-7d83-4127-a817-71759a4b4790
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Jour Semaine Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour Semaine'
+		lineageTag: 05277b14-2da8-494d-8865-89e76e1ebd0f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Jour Semaine]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année Mois Num'
+		formatString: 0
+		lineageTag: a3c30bec-043f-46ac-b657-d5fca3586161
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Année Mois Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année Mois'
+		lineageTag: 64896f76-a51b-4412-bf38-006f148f942d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Année Mois]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Calendrier graphique' = calculated
+		mode: import
+		source =
+				
+				VAR _AnneeEnCours = YEAR(TODAY())
+				VAR _DateDebut = DATE(2015, 1, 1)
+				VAR _DateFin = DATE(_AnneeEnCours, 12, 31)
+				RETURN
+				ADDCOLUMNS (
+				    CALENDAR(_DateDebut, _DateFin),
+				    "Année", YEAR([Date]),
+				    "Mois Num", MONTH([Date]),
+				    "Mois", FORMAT([Date], "MMMM"),
+				    "Mois Court", FORMAT([Date], "MMM"),
+				    "Trimestre", "T" & QUARTER([Date]),
+				    "Semaine Num", WEEKNUM([Date], 2),
+				    "Jour Semaine Num", WEEKDAY([Date], 2),
+				    "Jour Semaine", FORMAT([Date], "dddd"),
+				    "Année Mois Num", YEAR([Date]) * 100 + MONTH([Date]),
+				    "Année Mois", FORMAT([Date], "mmm yyyy")
+				)
+
+	annotation PBI_Id = 9bc3e9e5ad214354b10333952e958275
+

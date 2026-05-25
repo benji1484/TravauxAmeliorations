@@ -1,0 +1,643 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "f2a1743d9aeae27d320c",
+  "position": {
+    "x": 0,
+    "y": 142.5,
+    "z": 0,
+    "height": 577.5,
+    "width": 1280,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MapTerritoire"
+                    }
+                  },
+                  "Property": "xAgence"
+                }
+              },
+              "queryRef": "MapTerritoire.xAgence",
+              "nativeQueryRef": "Agence",
+              "displayName": "Agence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG - Lib Patrimoine"
+                    }
+                  },
+                  "Property": "code_HP1"
+                }
+              },
+              "queryRef": "UG - Lib Patrimoine.code_HP1",
+              "nativeQueryRef": "code_HP1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements"
+                }
+              },
+              "queryRef": "Mesure.# Logements",
+              "nativeQueryRef": "Nombre de logements",
+              "displayName": "Nombre de logements"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "densite_batiments_ff24"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.densite_batiments_ff24)",
+              "nativeQueryRef": "densite_batiments_ff24"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "densite_logements_ff24"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.densite_logements_ff24)",
+              "nativeQueryRef": "densite_logements_ff24"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "densite_logements_ff24_250m"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.densite_logements_ff24_250m)",
+              "nativeQueryRef": "densite_logements_ff24_250m"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "dette_par_logement"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.dette_par_logement)",
+              "nativeQueryRef": "dette_par_logement"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "ecart_loyer_prive_shlmr_intermediaire"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.ecart_loyer_prive_shlmr_intermediaire)",
+              "nativeQueryRef": "ecart_loyer_prive_shlmr_intermediaire"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "ecart_loyer_prive_shlmr_social"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.ecart_loyer_prive_shlmr_social)",
+              "nativeQueryRef": "ecart_loyer_prive_shlmr_social"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "ecart_loyer_prive_social_m2"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.ecart_loyer_prive_social_m2)",
+              "nativeQueryRef": "ecart_loyer_prive_social_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "ecart_loyer_prive_shlmr_tres_social"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.ecart_loyer_prive_shlmr_tres_social)",
+              "nativeQueryRef": "ecart_loyer_prive_shlmr_tres_social"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "nombre_logement_mise_en_vente"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.nombre_logement_mise_en_vente)",
+              "nativeQueryRef": "nombre_logement_mise_en_vente"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_acces_axe_routier"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_acces_axe_routier)",
+              "nativeQueryRef": "note_acces_axe_routier"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_accessibilite_bus"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_accessibilite_bus)",
+              "nativeQueryRef": "note_accessibilite_bus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_agregee_accessibilite_equipements"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_agregee_accessibilite_equipements)",
+              "nativeQueryRef": "note_agregee_accessibilite_equipements"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_agregee_ecart_loyer"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_agregee_ecart_loyer)",
+              "nativeQueryRef": "note_agregee_ecart_loyer"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_accessibilite_relative_equipements"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_accessibilite_relative_equipements)",
+              "nativeQueryRef": "note_accessibilite_relative_equipements"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_armature_sar"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_armature_sar)",
+              "nativeQueryRef": "note_armature_sar"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "note_taux_pauvrete"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.note_taux_pauvrete)",
+              "nativeQueryRef": "note_taux_pauvrete"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "superficie"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.superficie)",
+              "nativeQueryRef": "superficie"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "taux_activite"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.taux_activite)",
+              "nativeQueryRef": "taux_activite"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "taux_de_vacance"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.taux_de_vacance)",
+              "nativeQueryRef": "taux_de_vacance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "stock_logement_en_vente"
+                }
+              },
+              "queryRef": "Sum(Scoring Patrimoine.stock_logement_en_vente)",
+              "nativeQueryRef": "stock_logement_en_vente"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "temps_acces_axe_routier"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.temps_acces_axe_routier",
+              "nativeQueryRef": "temps_acces_axe_routier"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "type_equip_10min"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.type_equip_10min",
+              "nativeQueryRef": "type_equip_10min"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "type_equip_15min"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.type_equip_15min",
+              "nativeQueryRef": "type_equip_15min"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "type_equip_5min"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.type_equip_5min",
+              "nativeQueryRef": "type_equip_5min"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "type_produit"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.type_produit",
+              "nativeQueryRef": "type_produit"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "lib_cluster"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.lib_cluster",
+              "nativeQueryRef": "lib_cluster"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "lib_typologie_6_clusters_2016_2022"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.lib_typologie_6_clusters_2016_2022",
+              "nativeQueryRef": "lib_typologie_6_clusters_2016_2022"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scoring Patrimoine"
+                    }
+                  },
+                  "Property": "libiris"
+                }
+              },
+              "queryRef": "Scoring Patrimoine.libiris",
+              "nativeQueryRef": "libiris"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "UG - Lib Patrimoine"
+                  }
+                },
+                "Property": "code_HP1"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "159.5496477269631D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Scoring Patrimoine.densite_batiments_ff24)"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "963c52aa55d13b65e258",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UG - Lib Patrimoine"
+              }
+            },
+            "Property": "code_HP1"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "u",
+              "Entity": "UG - Lib Patrimoine",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "u"
+                              }
+                            },
+                            "Property": "code_HP1"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "42989cda311a0d97f929",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MapTerritoire"
+              }
+            },
+            "Property": "xAgence"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "MapTerritoire",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "xAgence"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

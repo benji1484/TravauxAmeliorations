@@ -1,0 +1,280 @@
+table reglements
+	lineageTag: 2b70dc68-419a-4b87-acee-fc23522edcb9
+	sourceLineageTag: ef0a0aa7-f9db-4fc4-979f-3248540daad5
+
+	column unique_key
+		dataType: string
+		lineageTag: 23dcef67-f99c-444d-9749-8357d59f28d6
+		sourceLineageTag: c7533cfd-489e-449f-8fa4-b33ab5d31351
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: unique_key
+
+		annotation SummarizationSetBy = User
+
+	column locataire_key
+		dataType: string
+		lineageTag: 2d5b5f69-f1b3-4508-9a71-707584b25605
+		sourceLineageTag: 0d277144-bef8-4eee-837a-e35ce9afe707
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: locataire_key
+
+		annotation SummarizationSetBy = User
+
+	column periode
+		dataType: string
+		lineageTag: d6140c36-6883-4188-a23c-d4bfc1180bfe
+		sourceLineageTag: 1b2ef2cc-af98-40f6-9635-c33193c09ba4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = User
+
+	column code_orga
+		dataType: string
+		lineageTag: 459e35bf-d01b-4a82-b66a-a397cc539932
+		sourceLineageTag: 4ed9f3c2-bd87-44cf-9fe3-97c6e606a57c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_orga
+
+		annotation SummarizationSetBy = User
+
+	column code_hp1
+		dataType: string
+		lineageTag: 9f6fa281-455a-4fa1-b992-06e4fba827d4
+		sourceLineageTag: 491948b5-d49a-49f0-b5c1-c821bee39851
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = User
+
+	column code_ca
+		dataType: string
+		lineageTag: 0c06d339-12dc-41dd-bdb1-87db3413e144
+		sourceLineageTag: e463b01a-e1be-4514-9e0b-abe3d8795d83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = User
+
+	column lbl_ecriture_ca
+		dataType: string
+		lineageTag: a389bd33-df5b-4854-b938-9c5f2e0e1172
+		sourceLineageTag: 4c885f96-33be-4f11-aa0e-0d3c5a5c7821
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_ecriture_ca
+
+		annotation SummarizationSetBy = User
+
+	column montant_ecriture_ca
+		dataType: double
+		lineageTag: 333c57b6-4dd7-42fd-8ee8-baf82291f177
+		sourceLineageTag: 93a6e317-ecb8-4855-8aaa-4c23e870419d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: montant_ecriture_ca
+
+		annotation SummarizationSetBy = User
+
+	column dte_operation
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b27339e2-1012-427d-8838-4830ae9ae0f3
+		sourceLineageTag: 6a79cb09-4b3e-401c-b98b-e04d76ae15b2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: dte_operation
+
+		annotation SummarizationSetBy = User
+
+	column code_operation
+		dataType: string
+		lineageTag: b0e2987a-f38c-48e4-96ce-3641594f5121
+		sourceLineageTag: 87c3bd04-974f-4d25-920e-4b362e785842
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_operation
+
+		annotation SummarizationSetBy = User
+
+	column lbl_operation
+		dataType: string
+		lineageTag: f761bb81-7c9b-498a-8c36-7bd00538c9cc
+		sourceLineageTag: d42b17ce-1773-44ce-a404-f68597ab90a0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_operation
+
+		annotation SummarizationSetBy = User
+
+	column code_famille_operation
+		dataType: string
+		lineageTag: fd6035ba-24f9-4528-a892-e4ce2ff007dc
+		sourceLineageTag: 3840b5f0-cc53-477b-99b2-2b1640d4f809
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_famille_operation
+
+		annotation SummarizationSetBy = User
+
+	column lbl_famille_operation
+		dataType: string
+		lineageTag: 6a721979-ed76-461d-bde0-eec4b0183f89
+		sourceLineageTag: 9f9d00fc-aea5-4c1d-a953-52b7d888dcb8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_famille_operation
+
+		annotation SummarizationSetBy = User
+
+	column ind_type_operation
+		dataType: string
+		lineageTag: 8bd8754b-4c92-4e9e-8d2d-0e2b60332139
+		sourceLineageTag: d7d61677-dd28-4a4f-bba4-696f0cb49f2e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ind_type_operation
+
+		annotation SummarizationSetBy = User
+
+	column lbl_type_operation
+		dataType: string
+		lineageTag: f33bb193-fa09-4d25-860f-bea357cec38e
+		sourceLineageTag: 93c9ef30-d167-4b50-a7f5-736c4b437f00
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_type_operation
+
+		annotation SummarizationSetBy = User
+
+	column code_mode_paiement
+		dataType: string
+		lineageTag: 30a1adaf-2c6e-4d7e-b917-f99cea2be924
+		sourceLineageTag: 40aac4e2-5b74-4386-bdd5-418d80634a70
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_mode_paiement
+
+		annotation SummarizationSetBy = User
+
+	column lbl_mode_paiement
+		dataType: string
+		lineageTag: 6dc8c1eb-c6d1-4623-b1eb-c1b779465acd
+		sourceLineageTag: d7bcfce7-08f8-4a3d-b975-35b8182c0a83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lbl_mode_paiement
+
+		annotation SummarizationSetBy = User
+
+	column code_ho1
+		dataType: string
+		lineageTag: a18575dd-73ff-4a7d-b4a9-426d07e3002c
+		sourceLineageTag: dfeb56ca-2dc7-4f69-a493-33520d3768b7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ho1
+
+		annotation SummarizationSetBy = User
+
+	column code_ho2
+		dataType: string
+		lineageTag: e0195e98-46a5-4a7d-bd68-b514744263f6
+		sourceLineageTag: 8a2077f7-c8fe-4393-bf0f-8dbbc9abb43f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = User
+
+	column Categorie_Aide
+		dataType: string
+		lineageTag: b74a470d-0354-4fea-ac7e-6472036ef0d6
+		sourceLineageTag: 3a5c2e9d-6c17-4d57-9fa4-82b4ebe7d1f6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Categorie_Aide
+
+		annotation SummarizationSetBy = User
+
+	column 'Catégorie règlement'
+		dataType: string
+		lineageTag: 24abc496-552a-48f2-8beb-d3d775d85843
+		sourceLineageTag: 8b85ea01-0f06-443d-8093-9b5a890a6861
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie règlement
+
+		annotation SummarizationSetBy = User
+
+	column 'Catégorie règlement (groupes)'
+		dataType: string
+		lineageTag: 58708e63-829f-47b3-a359-a8c09bcac84d
+		sourceLineageTag: f57570a0-0134-4313-8c3a-57991a8d400d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie règlement (groupes)
+
+		annotation SummarizationSetBy = User
+
+	column Délégation
+		dataType: string
+		lineageTag: 52de79be-d121-41ee-acfc-005a8b899749
+		sourceLineageTag: c42497ee-c13c-44e4-b67d-bb71f89afc0c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Délégation
+
+		annotation SummarizationSetBy = User
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: ec80142c-0977-4083-b381-c9c4d29c6922
+		sourceLineageTag: bfcf194d-bd01-4a4d-941f-dc6da35d29d8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie opération'
+		lineageTag: 0e8f02d3-2547-4d6c-93c6-548a08c8e4f2
+		sourceLineageTag: cd56aa5c-76e1-4ef0-b67c-73ee733211d7
+
+		level 'Type d''opération'
+			lineageTag: dea5f3a1-4b38-4062-8c8b-076b83a4164b
+			sourceLineageTag: c9483ba5-0835-49db-9ef3-bb76d2384c8c
+			column: lbl_type_operation
+
+		level 'Famille d''opération'
+			lineageTag: 2781d932-3e31-4490-9c7f-e40dd24db8a8
+			sourceLineageTag: 440b2395-ad67-457a-8b87-9db6275cb517
+			column: lbl_famille_operation
+
+		level 'Mode paiement'
+			lineageTag: 36a5f7c8-4a71-4fc2-90c3-0d27284f6c3e
+			sourceLineageTag: 480ec351-90ee-493f-a60f-fff9372a9971
+			column: lbl_mode_paiement
+
+		level 'Libellé opération'
+			lineageTag: 1b8ecf78-7f19-48a9-b774-a9047dc27a7f
+			sourceLineageTag: 541c16aa-e738-4145-a777-2a83b4c7cf5b
+			column: lbl_operation
+
+		level Ecriture
+			lineageTag: e07578b8-59f2-4bc8-8b02-90a7229b95bf
+			sourceLineageTag: 193d5434-0409-4375-84c2-64e10c9bf03d
+			column: lbl_ecriture_ca
+
+	partition reglements = entity
+		mode: directQuery
+		source
+			entityName: reglements
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

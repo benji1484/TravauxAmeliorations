@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "22e5cd816debfd92d7ea",
+  "displayName": "Impayé commerces",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "198L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "65246d67ff9c489073b8",
+      "target": "aa83c7af417e6e4b8e3c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "65246d67ff9c489073b8",
+      "target": "0d8b2462c345789ce12d",
+      "type": "NoFilter"
+    }
+  ]
+}

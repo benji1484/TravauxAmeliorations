@@ -1,0 +1,118 @@
+table 'DDC - Livraisons'
+	lineageTag: bed8d337-faa0-40ca-9e03-23d17099331f
+
+	column periode
+		dataType: string
+		lineageTag: 709190be-1233-456e-aa54-0ffb29bc3d2a
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Livraisons hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: fc7ab7df-eb0a-4e97-9ce0-0bedb7756a58
+		summarizeBy: sum
+		sourceColumn: # Livraisons hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Livraisons logements hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 93b191af-78cd-444d-ac23-1b7b2ffef29b
+		summarizeBy: sum
+		sourceColumn: # Livraisons logements hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Livraisons structures collectives'
+		dataType: int64
+		formatString: 0
+		lineageTag: c79fb391-d827-4d8d-811e-49839c2e8323
+		summarizeBy: sum
+		sourceColumn: # Livraisons structures collectives
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# PSLA Livraisons'
+		dataType: int64
+		formatString: 0
+		lineageTag: d098e11e-68f0-4e29-9a84-a1da49dcacb0
+		summarizeBy: sum
+		sourceColumn: # PSLA Livraisons
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - Livraisons'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - Livraisons'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: df642c13-ae4b-47bb-875c-724da0b41251
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 48a1fec4-490c-428f-8efc-a8ad851587dd
+			defaultHierarchy: LocalDateTable_83b2a3bd-1731-4cd5-9d2a-62b2958e038d.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - Livraisons' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Trimestriel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{0}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Premières lignes supprimées",{"Column6", "Column7"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"# Livraisons hors PSLA", Int64.Type}, {"# Livraisons logements hors PSLA", Int64.Type}, {"# Livraisons structures collectives", Int64.Type}, {"# PSLA Livraisons", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

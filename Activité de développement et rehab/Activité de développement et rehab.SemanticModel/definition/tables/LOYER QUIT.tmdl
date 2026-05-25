@@ -1,0 +1,272 @@
+table 'LOYER QUIT'
+	lineageTag: a2837429-20e8-4231-bc0e-c8dc4c69100c
+
+	column ID
+		dataType: string
+		lineageTag: ab2c01ee-7a48-4262-83e1-2ad9912ed384
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column POT
+		dataType: string
+		lineageTag: d46d0235-1978-4678-aa57-32632e791dc8
+		summarizeBy: none
+		sourceColumn: POT
+
+		annotation SummarizationSetBy = Automatic
+
+	column LBU
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e09c901-fb98-4f07-b0eb-343f0405d143
+		summarizeBy: sum
+		sourceColumn: LBU
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROP
+		dataType: string
+		lineageTag: a69b126f-91af-4b7f-9cee-1d5deecde17a
+		summarizeBy: none
+		sourceColumn: ROP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRIORITE/IFABILITE
+		dataType: string
+		lineageTag: c41d93fd-2013-4703-bd85-454d0e3ce0b4
+		summarizeBy: none
+		sourceColumn: PRIORITE/IFABILITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column AGENCE
+		dataType: string
+		lineageTag: 23a72a47-5203-4ca6-b783-ae838fa05812
+		summarizeBy: none
+		sourceColumn: AGENCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOM OPERATION'
+		dataType: string
+		lineageTag: fa21afa1-1fed-4dd8-a351-2e63315759cc
+		summarizeBy: none
+		sourceColumn: NOM OPERATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMUNE
+		dataType: string
+		lineageTag: 1110451d-742b-4db3-a881-f06f8da388c9
+		summarizeBy: none
+		sourceColumn: COMMUNE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPCI
+		dataType: string
+		lineageTag: 668fcbe8-edb4-4b3e-b328-60ca37891d9b
+		summarizeBy: none
+		sourceColumn: EPCI
+
+		annotation SummarizationSetBy = Automatic
+
+	column INT/VEFA
+		dataType: string
+		lineageTag: de516b4f-462e-48d4-9719-08ee02cf2a09
+		summarizeBy: none
+		sourceColumn: INT/VEFA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NB LOGTS'
+		dataType: string
+		lineageTag: c9bfbb22-ae78-4b91-a6ea-0de60225977e
+		summarizeBy: none
+		sourceColumn: NB LOGTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUIT
+		dataType: string
+		lineageTag: 1ffa720b-9acf-458d-a94f-3b9ec9a64e78
+		summarizeBy: none
+		sourceColumn: PRODUIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE OS/ACTE REELLE'
+		dataType: string
+		lineageTag: 8717c281-50a1-4669-a828-098b8b05b2cc
+		summarizeBy: none
+		sourceColumn: DATE OS/ACTE REELLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE DE LIV CONTRACTUELLE'
+		dataType: string
+		lineageTag: 104d595f-9e48-42fd-a629-6409ceec1d7f
+		summarizeBy: none
+		sourceColumn: DATE DE LIV CONTRACTUELLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DATE DE LIV PREV'
+		dataType: string
+		lineageTag: 02a90406-3c5f-45ea-a39e-4bc33a3030d5
+		summarizeBy: none
+		sourceColumn: DATE DE LIV PREV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DERNIER COMITE'
+		dataType: string
+		lineageTag: 5c35847e-a2a0-443e-aa7a-379294d3eff2
+		summarizeBy: none
+		sourceColumn: DERNIER COMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHAB
+		dataType: string
+		lineageTag: 953cf75e-2983-41c0-9f84-cc52d412a994
+		summarizeBy: none
+		sourceColumn: SHAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOYER
+		dataType: string
+		lineageTag: 22c34623-fda6-4116-b746-dc3ee5a71367
+		summarizeBy: none
+		sourceColumn: LOYER
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LOYER MENSUEL'
+		dataType: string
+		lineageTag: 1397df6c-04dd-447b-a645-913deec0fe84
+		summarizeBy: none
+		sourceColumn: LOYER MENSUEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LOYER QUITTANCABLE'
+		dataType: string
+		lineageTag: ca057eed-2009-4cdd-8952-22cac4db4f2d
+		summarizeBy: none
+		sourceColumn: LOYER QUITTANCABLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VACANCE DE MEL'
+		dataType: string
+		lineageTag: d8a034f1-c1c6-4ed1-8c91-227d5cfc991a
+		summarizeBy: none
+		sourceColumn: VACANCE DE MEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LOYER QUITTANCE PREV'
+		dataType: string
+		lineageTag: 49601fa9-9b05-4d49-807f-83d00ed95728
+		summarizeBy: none
+		sourceColumn: LOYER QUITTANCE PREV
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMENTAIRES
+		dataType: string
+		lineageTag: 0c3faf2b-3e70-4af9-9a27-38d2d1e0330d
+		summarizeBy: none
+		sourceColumn: COMMENTAIRES
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune_Villes =
+			
+			SWITCH(
+			    TRUE(),
+			    'LOYER QUIT'[Commune] = "BRAS PANON", "Bras-Panon",
+			    'LOYER QUIT'[Commune] = "CILAOS", "Cilaos",
+			    'LOYER QUIT'[Commune] = "ENTRE DEUX", "Entre-Deux",
+			    'LOYER QUIT'[Commune] = "ETANG SALE", "L'Étang-Salé",
+			    'LOYER QUIT'[Commune] = "LA POSSESSION", "La Possession",
+			    'LOYER QUIT'[Commune] = "LE PORT", "Le Port",
+			    'LOYER QUIT'[Commune] = "LE TAMPON", "Le Tampon",
+			    'LOYER QUIT'[Commune] = "LES AVIRONS", "Les Avirons",
+			    'LOYER QUIT'[Commune] = "PETITE ILE", "Petite-Île",
+			    'LOYER QUIT'[Commune] = "PLAINE DES PALMISTES", "Plaine des palmistes",
+			    'LOYER QUIT'[Commune] = "SAINT ANDRE", "Saint-André",
+			    'LOYER QUIT'[Commune] = "SAINT BENOIT", "Saint-Benoît",
+			    'LOYER QUIT'[Commune] = "SAINT DENIS", "Saint-Denis",
+			    'LOYER QUIT'[Commune] = "SAINT JOSEPH", "Saint-Joseph",
+			    'LOYER QUIT'[Commune] = "SAINT LEU", "Saint-Leu",
+			    'LOYER QUIT'[Commune] = "SAINT LOUIS", "Saint-Louis",
+			    'LOYER QUIT'[Commune] = "SAINT PAUL", "Saint-Paul",
+			    'LOYER QUIT'[Commune] = "SAINT PHILIPPE", "Saint-Philippe",
+			    'LOYER QUIT'[Commune] = "SAINT PIERRE", "Saint-Pierre",
+			    'LOYER QUIT'[Commune] = "SAINTE MARIE", "Sainte-Marie",
+			    'LOYER QUIT'[Commune] = "SAINTE ROSE", "Sainte-Rose",
+			    'LOYER QUIT'[Commune] = "SAINTE SUZANNE", "Sainte-Suzanne",
+			    'LOYER QUIT'[Commune] = "SALAZIE", "Salazie",
+			    'LOYER QUIT'[Commune] = "TROIS BASSINS", "Trois-Bassins",
+			    BLANK()
+			)
+		lineageTag: d06d519b-8225-47c6-ad04-466e0d37d56f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'LOYER QUIT' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint Source
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/productionneuve/", [ApiVersion = 15]),
+				
+				    // 2. Filtrer les fichiers Excel
+				    #"Lignes filtrées" = Table.SelectRows(Source, each ([Extension] = ".xls" or [Extension] = ".xlsm" or [Extension] = ".xlsx")),
+				
+				    // 3. Trier par date de modif décroissante
+				    #"Lignes triées" = Table.Sort(#"Lignes filtrées", {{"Date modified", Order.Descending}}),
+				
+				    // 4. Filtrer uniquement TDB DES INDICATEURS PRODUCTION NEUVE.xlsx
+				    #"Lignes filtrées1" = Table.SelectRows(#"Lignes triées", each ([Name] = "TDB DES INDICATEURS PRODUCTION NEUVE.xlsx")),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Lignes filtrées1", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Prendre la dernière version
+				    DerniereVersion = Table.FirstN(#"Fichiers masqués filtrés1", 1),
+				
+				    // 7. Charger le fichier Excel et repérer l'onglet "PROGR"
+				    ExcelFile = Excel.Workbook(DerniereVersion{0}[Content], null, true),
+				    Loyer_Quit = Table.SelectRows(ExcelFile, each [Name] = "LOYER QUIT"){0}[Data],
+				
+				    // 8. Supprimer les 3 premières lignes (tableau commence ligne 4)
+				    #"Premières lignes supprimées" = Table.Skip(Loyer_Quit, 3),
+				
+				    // 9. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Premières lignes supprimées", [PromoteAllScalars=true]),
+				
+				    // 10. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(
+				        #"En-têtes promus",
+				        List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})
+				    ),
+				    #"Lignes filtrées2" = Table.SelectRows(#"Type modifié", each ([LBU] <> null and [LBU] <> 0 and [LBU] <> "" and [LBU] <> "XXXX")),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Lignes filtrées2",{{"LBU", type date}}),
+				    #"Année extraite" = Table.TransformColumns(#"Type modifié1",{{"LBU", Date.Year, Int64.Type}})
+				    //#"Lignes filtrées2" = Table.SelectRows(#"Type modifié", each ([LBU] <> null and [LBU] <> 0 and [LBU] <> "" and [LBU] <> "XXXX")),
+				    //#"Type modifié1" = Table.TransformColumnTypes(#"Lignes filtrées2",{{"LBU", type date}})
+				in
+				    #"Année extraite"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

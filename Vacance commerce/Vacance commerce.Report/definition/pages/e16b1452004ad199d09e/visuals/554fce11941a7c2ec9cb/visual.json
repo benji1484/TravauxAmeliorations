@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "554fce11941a7c2ec9cb",
+  "position": {
+    "x": 0,
+    "y": 85.920826161790018,
+    "z": 1000,
+    "height": 57.280550774526674,
+    "width": 500.10327022375213,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Vacance financière",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#18365c"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

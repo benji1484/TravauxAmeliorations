@@ -1,0 +1,234 @@
+expression 'DirectQuery à AS – Pilotage Mensuelv3' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Patrimoine", "Pilotage Mensuelv3"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 97d5d593-156b-4317-9cf0-4aad14810fd3
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+expression Paramètre1 = #"Exemple de fichier" meta [IsParameterQuery=true, BinaryIdentifier=#"Exemple de fichier", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: a2b23afc-7087-4af8-8f22-29f1f35593ca
+	queryGroup: 'Transformer le fichier à partir de Requête1\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer l''exemple de fichier' =
+		let
+		    Source = Excel.Workbook(Paramètre1, null, true),
+		    TII_Sheet = Source{[Item="TII",Kind="Sheet"]}[Data]
+		in
+		    TII_Sheet
+	lineageTag: 289ad7d2-5902-4cac-9fb3-d320bec996b1
+	queryGroup: 'Transformer le fichier à partir de Requête1'
+
+	annotation PBI_ResultType = Table
+
+expression 'Exemple de fichier' =
+		let
+		    // 1. Connexion au site SharePoint
+		    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+		
+		    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+		    FichierPMT = Table.SelectRows(Source, each [Name] = "PMT 2025 Déf.xlsx"),
+		
+		    // 3. Trier par date de modif décroissante
+		    TrierParDate = Table.Sort(FichierPMT, {{"Date modified", Order.Descending}}),
+		    DerniereVersion = Table.FirstN(TrierParDate, 1),
+		
+		    // 4. Élargir les métadonnées
+		    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+		
+		    // 5. Filtrer les fichiers masqués
+		    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+		    Navigation1 = #"Fichiers masqués filtrés1"{0}[Content]
+		in
+		    Navigation1
+	lineageTag: f2c17008-e5d1-46f2-9362-760d24d9fa5f
+	queryGroup: 'Transformer le fichier à partir de Requête1\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer le fichier' =
+		let
+		    Source = (Paramètre1 as binary) => let
+		    Source = Excel.Workbook(Paramètre1, null, true),
+		    TII_Sheet = Source{[Item="TII",Kind="Sheet"]}[Data]
+		in
+		    TII_Sheet
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformer l\u0027exemple de fichier""}" ]
+	lineageTag: 2ffdcec0-f79e-405b-977f-53a6a0c5c7c5
+	queryGroup: 'Transformer le fichier à partir de Requête1\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Function
+
+expression Paramètre2 = #"Exemple de fichier (2)" meta [IsParameterQuery=true, BinaryIdentifier=#"Exemple de fichier (2)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: f5b6a4a1-a762-412b-900f-c713b4913698
+	queryGroup: 'Transformer le fichier à partir de TII (2)\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer l''exemple de fichier (2)' =
+		let
+		    Source = Excel.Workbook(Paramètre2, null, true),
+		    #"TINI détaillé_Sheet" = Source{[Item="TINI détaillé",Kind="Sheet"]}[Data]
+		in
+		    #"TINI détaillé_Sheet"
+	lineageTag: f8dbbc7c-2a5a-4bb1-8a0f-45c135d41ee5
+	queryGroup: 'Transformer le fichier à partir de TII (2)'
+
+	annotation PBI_ResultType = Table
+
+expression 'Exemple de fichier (2)' =
+		let
+		    // 1. Connexion au site SharePoint
+		    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+		
+		    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+		    FichierPMT = Table.SelectRows(Source, each [Name] = "PMT 2025 Déf.xlsx"),
+		
+		    // 3. Trier par date de modif décroissante
+		    TrierParDate = Table.Sort(FichierPMT, {{"Date modified", Order.Descending}}),
+		    DerniereVersion = Table.FirstN(TrierParDate, 1),
+		
+		    // 4. Élargir les métadonnées
+		    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+		
+		    // 5. Filtrer les fichiers masqués
+		    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+		    #"Fichiers masqués filtrés2" = Table.SelectRows(#"Fichiers masqués filtrés1", each [Attributes]?[Hidden]? <> true),
+		    Navigation1 = #"Fichiers masqués filtrés2"{0}[Content]
+		in
+		    Navigation1
+	lineageTag: 9f5262a7-8d1c-4903-bfdb-820c4ea5cd08
+	queryGroup: 'Transformer le fichier à partir de TII (2)\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer le fichier (2)' =
+		let
+		    Source = (Paramètre2 as binary) => let
+		    Source = Excel.Workbook(Paramètre2, null, true),
+		    #"TINI détaillé_Sheet" = Source{[Item="TINI détaillé",Kind="Sheet"]}[Data]
+		in
+		    #"TINI détaillé_Sheet"
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformer l\u0027exemple de fichier (2)""}" ]
+	lineageTag: c6405a0a-84c3-4e92-a437-0b38a7bcd622
+	queryGroup: 'Transformer le fichier à partir de TII (2)\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Function
+
+expression Paramètre3 = #"Exemple de fichier (3)" meta [IsParameterQuery=true, BinaryIdentifier=#"Exemple de fichier (3)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 9a7af385-940b-4aa2-9568-b09ec925ca9a
+	queryGroup: 'Transformer le fichier à partir de TII\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer l''exemple de fichier (3)' =
+		let
+		    Source = Excel.Workbook(Paramètre3, null, true),
+		    DonnéesCarto_Sheet = Source{[Item="DonnéesCarto",Kind="Sheet"]}[Data],
+		    #"En-têtes promus" = Table.PromoteHeaders(DonnéesCarto_Sheet, [PromoteAllScalars=true])
+		in
+		    #"En-têtes promus"
+	lineageTag: 805a7bac-39fb-47b5-a159-f49b16ace275
+	queryGroup: 'Transformer le fichier à partir de TII'
+
+	annotation PBI_ResultType = Table
+
+expression 'Exemple de fichier (3)' =
+		let
+		    // 1. Connexion au site SharePoint
+		    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+		
+		    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+		    FichierPMT = Table.SelectRows(Source, each [Name] = "PMT 2025 Déf.xlsx"),
+		
+		    // 3. Trier par date de modif décroissante
+		    TrierParDate = Table.Sort(FichierPMT, {{"Date modified", Order.Descending}}),
+		    DerniereVersion = Table.FirstN(TrierParDate, 1),
+		
+		    // 4. Élargir les métadonnées
+		    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+		
+		    // 5. Filtrer les fichiers masqués
+		    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+		    #"Fichiers masqués filtrés2" = Table.SelectRows(#"Fichiers masqués filtrés1", each [Attributes]?[Hidden]? <> true),
+		    Navigation1 = #"Fichiers masqués filtrés2"{0}[Content]
+		in
+		    Navigation1
+	lineageTag: 570e2b56-3842-42df-b232-de65dbc026d8
+	queryGroup: 'Transformer le fichier à partir de TII\Requêtes d''assistance'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer le fichier (3)' =
+		let
+		    Source = (Paramètre3 as binary) => let
+		    Source = Excel.Workbook(Paramètre3, null, true),
+		    DonnéesCarto_Sheet = Source{[Item="DonnéesCarto",Kind="Sheet"]}[Data],
+		    #"En-têtes promus" = Table.PromoteHeaders(DonnéesCarto_Sheet, [PromoteAllScalars=true])
+		in
+		    #"En-têtes promus"
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformer l\u0027exemple de fichier (3)""}" ]
+	lineageTag: e4b2d976-49df-4657-8229-b0da9c84fc0a
+	queryGroup: 'Transformer le fichier à partir de TII\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Function
+
+expression Paramètre4 = #"Exemple de fichier (4)" meta [IsParameterQuery=true, BinaryIdentifier=#"Exemple de fichier (4)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 77b1bfd4-e12c-4fc6-a250-d57937e99da2
+	queryGroup: 'Transformer le fichier à partir de Requête3\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer l''exemple de fichier (4)' =
+		let
+		    Source = Excel.Workbook(Paramètre4, null, true),
+		    LIV_Sheet = Source{[Item="LIV",Kind="Sheet"]}[Data]
+		in
+		    LIV_Sheet
+	lineageTag: 012cc325-8232-4daa-a922-8397c9cf3bd5
+	queryGroup: 'Transformer le fichier à partir de Requête3'
+
+	annotation PBI_ResultType = Table
+
+expression 'Exemple de fichier (4)' =
+		let
+		    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/productionneuve/", [ApiVersion = 15]),
+		    #"Lignes filtrées" = Table.SelectRows(Source, each ([Extension] = ".xls" or [Extension] = ".xlsm" or [Extension] = ".xlsx")),
+		    #"Lignes triées" = Table.Sort(#"Lignes filtrées",{{"Name", Order.Descending}}),
+		    #"Lignes filtrées1" = Table.SelectRows(#"Lignes triées", each ([Name] = "TDB DES INDICATEURS PRODUCTION NEUVE.xlsx")),
+		    Navigation1 = #"Lignes filtrées1"{0}[Content]
+		in
+		    Navigation1
+	lineageTag: e7e61d17-f35d-4a55-8d22-b7c43cb1e30a
+	queryGroup: 'Transformer le fichier à partir de Requête3\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer le fichier (4)' =
+		let
+		    Source = (Paramètre4 as binary) => let
+		    Source = Excel.Workbook(Paramètre4, null, true),
+		    LIV_Sheet = Source{[Item="LIV",Kind="Sheet"]}[Data]
+		in
+		    LIV_Sheet
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformer l\u0027exemple de fichier (4)""}" ]
+	lineageTag: bb55cdf8-3ba1-4901-8592-33ed7c5b5fbd
+	queryGroup: 'Transformer le fichier à partir de Requête3\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Function
+

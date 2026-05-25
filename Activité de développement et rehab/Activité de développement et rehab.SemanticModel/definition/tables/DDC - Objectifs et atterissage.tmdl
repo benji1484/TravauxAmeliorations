@@ -1,0 +1,149 @@
+table 'DDC - Objectifs et atterissage'
+	lineageTag: 9564328d-e471-4f88-b5eb-2492e97672d2
+
+	column Periode
+		dataType: string
+		lineageTag: 40278744-bac4-4398-a1b5-dfbdd4d55cf2
+		summarizeBy: none
+		sourceColumn: Periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Objectif agréments reçus hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: c5d0abad-32ad-4d71-8ba1-7415d38b885c
+		summarizeBy: sum
+		sourceColumn: # Objectif agréments reçus hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Objectif - MEC hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ccc1800-9900-4e09-8cf6-bd1c73b260ee
+		summarizeBy: sum
+		sourceColumn: # Objectif - MEC hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Objectif - Logements livrés  hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 834cc301-5fc2-4363-a7c9-f413ac4a7c17
+		summarizeBy: sum
+		sourceColumn: # Objectif - Logements livrés  hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '€ Objectif Investissements neufs (k€) - engagement hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: c6710395-60df-4c89-82f9-f71248a20096
+		summarizeBy: sum
+		sourceColumn: € Objectif Investissements neufs (k€) - engagement hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Attérissage agréments reçus hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: aa1c6bd3-be93-425c-afe6-a128cfc230c1
+		summarizeBy: sum
+		sourceColumn: # Attérissage agréments reçus hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Attérissage - MEC hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 93c7d15f-f842-43d4-9120-e1eb65171ad9
+		summarizeBy: sum
+		sourceColumn: # Attérissage - MEC hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Attérissage - Logements livrés hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: d0c31f96-489b-4d2a-8be5-44a23490c892
+		summarizeBy: sum
+		sourceColumn: # Attérissage - Logements livrés hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '€ Atterrissage Investissements neufs (k€) - engagement hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2aba5348-a2b3-40d9-9055-b8c3e4fa52a8
+		summarizeBy: sum
+		sourceColumn: € Atterrissage Investissements neufs (k€) - engagement hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - Objectifs et atterissage'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - Objectifs et atterissage'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: e87ad895-8d74-4151-a860-6e87a23f3977
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - Objectifs et atterissage' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Mensuel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{3}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Premières lignes supprimées",{"Column10", "Column11"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"# Objectif agréments reçus hors PSLA", Int64.Type}, {"# Objectif - MEC hors PSLA", Int64.Type}, {"# Objectif - Logements livrés  hors PSLA", Int64.Type}, {"€ Objectif Investissements neufs (k€) - engagement hors PSLA", Int64.Type}, {"# Attérissage agréments reçus hors PSLA", Int64.Type}, {"# Attérissage - MEC hors PSLA", Int64.Type}, {"# Attérissage - Logements livrés hors PSLA", Int64.Type}, {"€ Atterrissage Investissements neufs (k€) - engagement hors PSLA", Int64.Type}})
+				in
+				    #"Type modifié1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

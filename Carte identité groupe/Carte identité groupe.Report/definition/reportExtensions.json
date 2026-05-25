@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Mesure",
+      "measures": [
+        {
+          "name": "Batiments",
+          "dataType": "Double",
+          "expression": "\nCALCULATE(\n    COUNTROWS(\n        SUMMARIZE(\n            PatrimoineSrhEnGestionDepuis2023,\n            PatrimoineSrhEnGestionDepuis2023[code_hp1],\n            PatrimoineSrhEnGestionDepuis2023[code_hp2]\n        )\n    ),\n    PatrimoineSrhEnGestionDepuis2023[code_nature_ug] IN {\"LGE\", \"LGH\", \"LGT\"},\n    PatrimoineSrhEnGestionDepuis2023[code_orga] = \"SHR\",\n    PatrimoineSrhEnGestionDepuis2023[position_de_gestion] = \"En Gestion\"\n)\n"
+        }
+      ]
+    }
+  ]
+}

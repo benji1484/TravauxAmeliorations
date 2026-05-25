@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "619fcb3063b03e68a760",
+  "displayName": "Analyse par CA - Facturation, encaissement, impayé",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

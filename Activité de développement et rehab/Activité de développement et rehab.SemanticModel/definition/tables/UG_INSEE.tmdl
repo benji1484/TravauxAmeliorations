@@ -1,0 +1,41 @@
+table UG_INSEE
+	lineageTag: 2ef80735-98a0-4f47-bcd9-6fbcb301db17
+	sourceLineageTag: b66f6bb0-c6e0-4f92-b7af-7ead229b2129
+
+	column code_ug
+		dataType: string
+		isNullable: false
+		lineageTag: 6290e6e8-a662-445a-a8e9-96c7fa59d5f8
+		sourceLineageTag: ab4171e9-338d-4d93-8a24-4f6f9662073b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = User
+
+	column code_insee
+		dataType: string
+		lineageTag: 50a1b320-7b51-4330-9b13-eb8618f5b372
+		sourceLineageTag: d877fffe-2da7-44f1-9955-052e34588f77
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_insee
+
+		annotation SummarizationSetBy = User
+
+	column Commune
+		dataType: string
+		lineageTag: 8dc54ca1-89ec-49a9-8390-bcab394929da
+		sourceLineageTag: fb0bd9bc-d160-4177-af8f-4ac160ec0b00
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Commune
+
+		annotation SummarizationSetBy = User
+
+	partition UG_INSEE = entity
+		mode: directQuery
+		source
+			entityName: UG_INSEE
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

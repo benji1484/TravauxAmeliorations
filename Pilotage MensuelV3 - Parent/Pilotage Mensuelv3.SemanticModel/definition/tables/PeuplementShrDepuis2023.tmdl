@@ -1,0 +1,343 @@
+table PeuplementShrDepuis2023
+	lineageTag: 163f1297-e3e7-46a6-af8e-16ddfd69194e
+
+	column unique_key
+		dataType: string
+		lineageTag: 239c37a6-f754-4483-8f2b-c18f0e817393
+		summarizeBy: none
+		sourceColumn: unique_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column patrimoine_key
+		dataType: string
+		lineageTag: 53dcacba-7d33-4759-b30c-d86f4cef0216
+		summarizeBy: none
+		sourceColumn: patrimoine_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column periode
+		dataType: string
+		lineageTag: 1551d05d-e4c0-481f-8c81-16ba3d07b72a
+		summarizeBy: none
+		sourceColumn: periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_orga
+		dataType: string
+		lineageTag: 01dd18e7-c9fb-4be6-8721-1944c3347251
+		summarizeBy: none
+		sourceColumn: code_orga
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ca
+		dataType: string
+		lineageTag: d65997d1-2a72-462d-99f5-231546348e26
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_ca
+		dataType: string
+		lineageTag: f4d9e32b-bb0e-480a-891a-707e35c3afb7
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_type_ca
+		dataType: string
+		lineageTag: 26a4db43-e710-4055-ad21-31558bc30844
+		summarizeBy: none
+		sourceColumn: lbl_type_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_caug
+		dataType: string
+		lineageTag: edb792f7-f0b3-4c8c-b518-9a216f5dcae3
+		summarizeBy: none
+		sourceColumn: statut_caug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ug
+		dataType: string
+		lineageTag: b374c2a4-59b1-42c0-9bb1-14040b336a05
+		summarizeBy: none
+		sourceColumn: code_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho1
+		dataType: string
+		lineageTag: df943926-09e4-45b9-8ee0-eff6c504c039
+		summarizeBy: none
+		sourceColumn: code_ho1
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_ho2
+		dataType: string
+		lineageTag: bd92de44-b749-4121-ab8a-c53193ef399f
+		summarizeBy: none
+		sourceColumn: code_ho2
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_hp1
+		dataType: string
+		lineageTag: 7ba1e8ba-9c3f-4733-94dd-cd3475ad88d0
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column batiment
+		dataType: string
+		lineageTag: 8a318cd2-afa6-47ea-b675-7bdf7818c5ba
+		summarizeBy: none
+		sourceColumn: batiment
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_patrimoine
+		dataType: string
+		lineageTag: 421fb14e-7f74-44fc-b983-db07a7019f1a
+		summarizeBy: none
+		sourceColumn: lbl_patrimoine
+
+		annotation SummarizationSetBy = Automatic
+
+	column localite
+		dataType: string
+		lineageTag: ace54315-06b7-41e2-82dc-8de95a46e9cc
+		summarizeBy: none
+		sourceColumn: localite
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_epci
+		dataType: string
+		lineageTag: c6ff1235-5c75-40f3-b380-eed75d7d80f1
+		summarizeBy: none
+		sourceColumn: lbl_epci
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_ug
+		dataType: string
+		lineageTag: 266ea417-a06a-4874-b84f-d23a0bb02a62
+		summarizeBy: none
+		sourceColumn: code_type_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_type_ug
+		dataType: string
+		lineageTag: 473823eb-b53f-45fe-ac0e-d65a8a26fbf1
+		summarizeBy: none
+		sourceColumn: lbl_type_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_nature_ug
+		dataType: string
+		lineageTag: 8601a2c0-af2d-47bd-838b-7319e2c515da
+		summarizeBy: none
+		sourceColumn: code_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column lbl_nature_ug
+		dataType: string
+		lineageTag: 25138857-2017-470d-a66b-9bce39b02fad
+		summarizeBy: none
+		sourceColumn: lbl_nature_ug
+
+		annotation SummarizationSetBy = Automatic
+
+	column financement_CSP
+		dataType: string
+		lineageTag: 0c166540-4c57-44e5-8d99-9713423e15dc
+		summarizeBy: none
+		sourceColumn: financement_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nature_CSP
+		dataType: string
+		lineageTag: f6c17f52-1597-47d3-80cd-0430aa7998f7
+		summarizeBy: none
+		sourceColumn: Nature_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type_CSP
+		dataType: string
+		lineageTag: 501632b3-c055-4170-b7fe-89bfb3affe76
+		summarizeBy: none
+		sourceColumn: Type_CSP
+
+		annotation SummarizationSetBy = Automatic
+
+	column NbPresent
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a208218-6230-4270-8282-1abda39e33b2
+		summarizeBy: sum
+		sourceColumn: NbPresent
+
+		annotation SummarizationSetBy = Automatic
+
+	column NbEntree
+		dataType: int64
+		formatString: 0
+		lineageTag: cf138516-e528-4995-a772-a57c5f25cc1d
+		summarizeBy: sum
+		sourceColumn: NbEntree
+
+		annotation SummarizationSetBy = Automatic
+
+	column NbSortie
+		dataType: int64
+		formatString: 0
+		lineageTag: 94d7f54f-f3ad-4ca8-99ee-ae851dcbbff4
+		summarizeBy: sum
+		sourceColumn: NbSortie
+
+		annotation SummarizationSetBy = Automatic
+
+	column NbSortie_autres
+		dataType: int64
+		formatString: 0
+		lineageTag: e0123937-9d90-4815-9e5a-9d2c674d778a
+		summarizeBy: sum
+		sourceColumn: NbSortie_autres
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_Emploi
+		dataType: int64
+		formatString: 0
+		lineageTag: 3de993c7-a506-4090-b558-35d6b29b028e
+		summarizeBy: sum
+		sourceColumn: ind_Emploi
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( PeuplementShrDepuis2023[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( PeuplementShrDepuis2023[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 6a211040-8279-4a8a-b6bd-43c0481f12ff
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Délégation = ```
+			
+			VAR hp = PeuplementShrDepuis2023[code_hp1]   -- ou [code_HP1] selon ton modèle
+			VAR deleg =
+			    SWITCH(
+			        TRUE(),
+			        hp = "VMLN", "RUIS",
+			        hp = "CTYS", "SPRE",
+			        hp = "TTRL", "ARCD",
+			        hp = "CSVL", "RUIS",
+			        hp = "IRIS", "RUIS",
+			        hp = "PCTS", "RUIS",
+			        hp = "YLYL", "RUIS",
+			        hp = "CIRC", "ANDR",
+			        hp = "ZILS", "CALB",
+			        hp = "JTRN", "RUIS",
+			        hp = "RSIN", "PORT",
+			        hp = "TCHM", "ARCD",
+			        hp = "MFTA", "CALB",
+			        hp = "BZZD", "ARCD",
+			        hp = "VBOT", "CALB",
+			        hp = "CLA1", "CALB",
+			        hp = "DBJS", "CALB",
+			        hp = "CLCE", "CALB",
+			        hp = "LJDU", "SPRE",
+			        hp = "CBLY", "RUIS",
+			        hp = "PSFL", "CALB",
+			        hp = "JDBS", "CALB",
+			        hp = "PCSO", "SPRE",
+			        hp = "CNP1", "CALB",
+			        hp = "LCO2", "RUIS",
+			        hp = "ATRM", "CALB",
+			        hp = "VNDA", "CALB",
+			        hp = "CNP2", "CALB",
+			        
+			        // Mises à jour basées sur l'image (Message vs Tableau)
+			        hp = "CLVE", "ANDR",  // Clos du Verger
+			        hp = "CTI5", "ARCD",  // Centaure Ilot 5
+			        hp = "FCHE", "PORT",  // Francis Hallé
+			        hp = "FLQE", "ARCD",  // Foulque
+			        hp = "JCTL", "RUIS",  // Res Jean Chatel
+			        hp = "JDGS", "CALB",  // Jardin des Gardenias
+			        hp = "LOBL", "CALB",  // Lobelie
+			        hp = "MPTO", "PORT",  // Maputo
+			        hp = "SRTL", "PORT",  // Serins et Tourterelles
+			        hp = "TRG2", "CALB",  // Tregor 2
+			        
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    NOT ISBLANK(deleg),
+			    deleg,                                        -- si on a trouvé un matching sur code_hp1
+			    PeuplementShrDepuis2023[code_HO2]    -- sinon on reprend code_HO2
+			)
+			
+			```
+		lineageTag: 37fb981e-fc4b-4433-be4b-c6db1a84c49a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column delegation_dixit
+		dataType: string
+		lineageTag: 349a14d7-81a0-400e-aa40-39f1e245f3ce
+		summarizeBy: none
+		sourceColumn: delegation_dixit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PeuplementShrDepuis2023-97c8d14c-691b-4bb3-80fb-5ca07d24f0b1 = m
+		mode: import
+		source =
+				let
+				Source = DremioCloud.DatabasesByServerV370("sql.eu.dremio.cloud", "bb13fbc3-7445-4b39-a699-0f45a59226b2", null, null, null, null, []),
+				    #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema" = Source{[Name="ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel",Kind="Schema"]}[Data],
+				    PeuplementShrDepuis1 = #"ArticSpace.3_Business_Apps.DEV - Benjamin.Pilotage Mensuel_Schema"{[Name="PeuplementShrDepuis2023",Kind="View"]}[Data],
+				
+				    #"Autres colonnes supprimées" = Table.SelectColumns(PeuplementShrDepuis1,{"delegation_dixit","unique_key", "patrimoine_key", "periode", "code_orga", "code_ca", "code_type_ca", "lbl_type_ca", "statut_caug", "code_ug", "code_ho1", "code_ho2", "code_hp1", "batiment", "lbl_patrimoine", "localite", "lbl_epci", "code_type_ug", "lbl_type_ug", "code_nature_ug", "lbl_nature_ug", "financement_CSP", "Nature_CSP", "Type_CSP", "NbPresent", "NbEntree", "NbSortie", "ind_Emploi", "NbSortie_autres"})
+				in
+				    #"Autres colonnes supprimées"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

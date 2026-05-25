@@ -1,0 +1,327 @@
+table Data
+	lineageTag: 4f40cc21-def5-4540-9836-38c1670e7aa3
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d12a492-6f0b-4e49-8e19-a70d01f336c9
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	column N°
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f4df0df-8cda-4850-83aa-273708957679
+		summarizeBy: sum
+		sourceColumn: N°
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inspecteurs/Expert
+		dataType: string
+		lineageTag: 1bb870b8-10a0-4177-b334-4c43842081bb
+		summarizeBy: none
+		sourceColumn: Inspecteurs/Expert
+
+		annotation SummarizationSetBy = Automatic
+
+	column Etat
+		dataType: string
+		lineageTag: 059eb204-c1af-47a6-b104-0ab3e2e2850e
+		summarizeBy: none
+		sourceColumn: Etat
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date signature compromis'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c6a7a777-af68-40f0-a707-9444111d7a95
+		summarizeBy: none
+		sourceColumn: Date signature compromis
+
+		variation Variation
+			isDefault
+			relationship: 3b3f4efa-25d3-4f2d-bc8d-ac97484b447d
+			defaultHierarchy: LocalDateTable_c7963513-07e3-4391-93a0-34661d4d155a.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Signature effective acte et convention'
+		dataType: string
+		lineageTag: a63cb83a-10fa-4d22-ab01-5764d22d92af
+		summarizeBy: none
+		sourceColumn: Signature effective acte et convention
+
+		annotation SummarizationSetBy = Automatic
+
+	column Origine
+		dataType: string
+		lineageTag: 99fe0754-3e42-4b16-901e-d3f3a7c4c0ac
+		summarizeBy: none
+		sourceColumn: Origine
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Situation RF'
+		dataType: string
+		lineageTag: d7768d1d-18e5-4cf5-bcf5-e00dbda27e66
+		summarizeBy: none
+		sourceColumn: Situation RF
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPCI
+		dataType: string
+		lineageTag: 3b57b8f3-4653-427e-ad32-c6a06d04d423
+		summarizeBy: none
+		sourceColumn: EPCI
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune
+		dataType: string
+		lineageTag: d137090c-c00b-4db7-b406-542d08f98abc
+		summarizeBy: none
+		sourceColumn: Commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column Localisation
+		dataType: string
+		lineageTag: 777223cc-7995-44bf-b7e2-4a1b645222f0
+		summarizeBy: none
+		sourceColumn: Localisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Références cadastrales'
+		dataType: string
+		lineageTag: c33b51de-217a-4955-a665-5c4866d28fad
+		summarizeBy: none
+		sourceColumn: Références cadastrales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Opérations
+		dataType: string
+		lineageTag: 8bbc69f4-fb47-4c87-a7c2-9078932c8147
+		summarizeBy: none
+		sourceColumn: Opérations
+
+		annotation SummarizationSetBy = Automatic
+
+	column Affectation
+		dataType: string
+		lineageTag: 29c63d8c-e7b4-4c72-9b0d-c1b0e5137bf5
+		summarizeBy: none
+		sourceColumn: Affectation
+
+		annotation SummarizationSetBy = Automatic
+
+	column SPF
+		dataType: int64
+		formatString: 0
+		lineageTag: 3922be5c-5fa7-493f-93aa-d470bc794f3f
+		summarizeBy: sum
+		sourceColumn: SPF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nbre de logts'
+		dataType: int64
+		formatString: 0
+		lineageTag: c8a5c8f2-c5b8-429c-86b1-ea0ff6035e7c
+		summarizeBy: sum
+		sourceColumn: Nbre de logts
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prix d''acquisition'
+		dataType: double
+		lineageTag: 7420a95f-9ce3-454f-b18b-052d6170537a
+		summarizeBy: sum
+		sourceColumn: Prix d'acquisition
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ratio €/m²'
+		dataType: double
+		lineageTag: 8d4c27c5-74e4-443f-aca9-461d4e558dc4
+		summarizeBy: sum
+		sourceColumn: ratio €/m²
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Frais d''acquisition prévisionnelle'
+		dataType: double
+		lineageTag: e1768a10-0386-4b42-992b-98b2ab076f5f
+		summarizeBy: sum
+		sourceColumn: Frais d'acquisition prévisionnelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Frais Fi de portage EPFR prévisionnelle'
+		dataType: double
+		lineageTag: b46eff4f-3c0b-4c5b-81a2-0fe5d34939fa
+		summarizeBy: sum
+		sourceColumn: Frais Fi de portage EPFR prévisionnelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Honoraires intermédiaires'
+		dataType: int64
+		formatString: 0
+		lineageTag: e6ffaf20-d995-4a1f-95c5-e7f85807be98
+		summarizeBy: sum
+		sourceColumn: Honoraires intermédiaires
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Honoraires intermédiaires (pour info)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3418ebb9-d081-4f88-92f4-af28c51798cc
+		summarizeBy: sum
+		sourceColumn: Honoraires intermédiaires (pour info)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column23
+		dataType: string
+		lineageTag: 4e5cbfda-5de4-469b-a7dc-39d9f025ef83
+		summarizeBy: none
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Villes.Commune'
+		dataType: string
+		lineageTag: 862e36af-143a-4e73-84ff-cb25a1445be9
+		summarizeBy: none
+		sourceColumn: Villes.Commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Villes.Latitude'
+		dataType: string
+		lineageTag: 8f34b58f-4d8a-4270-888f-82430d80bce2
+		summarizeBy: none
+		sourceColumn: Villes.Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Villes.Longitude'
+		dataType: string
+		lineageTag: dcfaaffe-e138-4708-b704-3ac55c99c333
+		summarizeBy: none
+		sourceColumn: Villes.Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre de Logements' = ```
+			
+			IF(
+			    'Data'[Etat] = "ACQUISITION" &&
+			    NOT(ISBLANK('Data'[Signature effective acte et convention])) &&
+			    'Data'[Situation RF] = "Acte signé",
+			    'Data'[Nbre de logts],
+			  --  IF(
+			  --      'Data'[Etat] = "ACQUISITION" &&
+			  --      NOT(ISBLANK('Data'[Date signature compromis])) &&
+			  --      'Data'[Situation RF] = "Compromis signé",
+			  --      'Data'[Nbre de logts],
+			       IF(
+			            'Data'[Etat] = "ACQUISITION" &&
+			            NOT(ISBLANK('Data'[Signature effective acte et convention])) &&
+			            'Data'[Situation RF] = "Convention EPFR signée",
+			            'Data'[Nbre de logts],
+			            0
+			        )
+			    )
+			
+			
+			```
+		formatString: 0
+		lineageTag: d331e792-6be0-44d1-b0f2-d220d49f0c94
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type de Situation' = ```
+			
+			IF(
+			    'Data'[Etat] = "ACQUISITION" &&
+			    NOT(ISBLANK('Data'[Signature effective acte et convention])) &&
+			    'Data'[Situation RF] = "Acte signé",
+			    "Acquis",
+			    IF(
+			        'Data'[Etat] = "ACQUISITION" &&
+			        NOT(ISBLANK('Data'[Date signature compromis])) &&
+			        'Data'[Situation RF] = "Compromis signé",
+			        "Compromis",
+			        IF(
+			            'Data'[Etat] = "ACQUISITION" &&
+			            NOT(ISBLANK('Data'[Signature effective acte et convention])) &&
+			            'Data'[Situation RF] = "Convention EPFR signée",
+			            "EPFR",
+			            BLANK()
+			        )
+			    )
+			)
+			
+			```
+		lineageTag: 640b2fdd-eae8-4971-b7e5-021d094da133
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Data = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion à SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement le fichier ciblé
+				    FichierSuiviFoncier = Table.SelectRows(Source, each [Name] = "Suivi Compromis - Actes - Conventions.xlsx"),
+				
+				    // 3. Trier pour récupérer la version la plus récente
+				    TrierParDate = Table.Sort(FichierSuiviFoncier, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Étendre les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et prendre le premier onglet (index 0)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    PremierOnglet = ExcelFile{0}[Data],
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(PremierOnglet, [PromoteAllScalars=true]),
+				
+				#"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Année", Int64.Type}, {"N°", Int64.Type}, {"Inspecteurs/Expert", type text}, {"Etat", type text}, {"Date signature compromis", type date}, {"Signature effective acte et convention", type any}, {"Origine", type text}, {"Situation RF", type text}, {"EPCI", type text}, {"Commune", type text}, {"Localisation", type text}, {"Références cadastrales", type text}, {"Opérations", type text}, {"Affectation", type text}, {"SPF", Int64.Type}, {"Nbre de logts", Int64.Type}, {"Prix d'acquisition", type number}, {"ratio €/m²", type number}, {"Frais d'acquisition prévisionnelle", type number}, {"Frais Fi de portage EPFR prévisionnelle", type number}, {"Honoraires intermédiaires", Int64.Type}, {"Honoraires intermédiaires (pour info)", Int64.Type}, {"Column23", type any}}),
+				    #"Requêtes fusionnées" = Table.NestedJoin(#"Type modifié", {"Commune"}, Villes, {"Commune"}, "Villes", JoinKind.LeftOuter),
+				    #"Villes développé" = Table.ExpandTableColumn(#"Requêtes fusionnées", "Villes", {"Commune", "Latitude", "Longitude"}, {"Villes.Commune", "Villes.Latitude", "Villes.Longitude"})
+				in
+				    #"Villes développé"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

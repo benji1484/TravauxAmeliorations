@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Carte identité groupe"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eba2a442-e3f1-4710-bce9-2e03f250e62f"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "28f9659ce97ac6879153",
+  "position": {
+    "x": 8.57262452909167,
+    "y": 54.007534533277521,
+    "z": 3000,
+    "height": 96.0133947258267,
+    "width": 473.2088740058602,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Détail mensuel de la vacance financière des commerces et bureaux",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#18365c"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

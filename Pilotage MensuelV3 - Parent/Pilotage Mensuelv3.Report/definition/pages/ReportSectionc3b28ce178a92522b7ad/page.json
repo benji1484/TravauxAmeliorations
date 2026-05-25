@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "ReportSectionc3b28ce178a92522b7ad",
+  "displayName": "Patrimoine",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "29d4a4038e1340ed243e",
+    "type": "Default",
+    "parameters": []
+  },
+  "visualInteractions": [
+    {
+      "source": "40414dbb0ce774adbfce",
+      "target": "cd85a12f82f3db0e7c4d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "40414dbb0ce774adbfce",
+      "target": "0e6e7f332b4556d49b00",
+      "type": "NoFilter"
+    },
+    {
+      "source": "40414dbb0ce774adbfce",
+      "target": "9f136abc5da245c86e16",
+      "type": "NoFilter"
+    },
+    {
+      "source": "29a09d141e3ac3d5901b",
+      "target": "e8b391bb2348bce467cc",
+      "type": "NoFilter"
+    }
+  ]
+}

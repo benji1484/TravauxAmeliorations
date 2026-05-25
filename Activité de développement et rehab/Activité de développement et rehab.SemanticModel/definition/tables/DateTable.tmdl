@@ -1,0 +1,130 @@
+table DateTable
+	lineageTag: d4f615b0-5312-4d2e-8d3b-54215ebfce6d
+	sourceLineageTag: 21d05f5d-0674-4950-95eb-3a058bca842d
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: General Number
+		lineageTag: d451c93e-33b7-4999-a1cf-ff3d72dd8a9d
+		sourceLineageTag: 74062709-6a84-4696-92aa-81f9237eda9c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: dd2f386d-a821-4ae7-9ea8-7e3cc57336e9
+		sourceLineageTag: 46ef1f34-1115-4777-8bfc-d307067ed8fc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column Month
+		dataType: string
+		lineageTag: 7bc5d729-71f7-4fa7-92cc-51d83475edbb
+		sourceLineageTag: 8e2e2c99-839c-4ea1-a542-a5d44590099d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 197f47c7-d2d2-4c66-9dab-f6e84f4f71aa
+		sourceLineageTag: a97c9859-a664-4018-bb42-2ed5f71d0a08
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = User
+
+	column MonthEnd
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 6c27c803-0f25-4d9c-806f-d08416a9dfb3
+		sourceLineageTag: 6fca10a9-7cc9-4b21-aa8f-2c1749104a8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MonthEnd
+
+		annotation SummarizationSetBy = User
+
+	column Quarter
+		dataType: string
+		lineageTag: b2cac624-9e98-459f-9f68-cf952ede2bf2
+		sourceLineageTag: db45f961-ea29-4b91-9746-986858b91957
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = User
+
+	column Weekday
+		dataType: string
+		lineageTag: ab869f7b-caa8-4a2a-9e91-4b759039794e
+		sourceLineageTag: e9b4ac69-19ac-4fa7-8926-a4302c60e491
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Weekday
+
+		annotation SummarizationSetBy = User
+
+	column 'Weekday Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b71e114-4359-40ec-9f72-264538c8bcc1
+		sourceLineageTag: ed62c854-b0c4-4a17-b313-e3bb1da3a72d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Weekday Number
+
+		annotation SummarizationSetBy = User
+
+	column IsWeekend
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1a63c139-22dc-45e0-b6d5-57630b5f9397
+		sourceLineageTag: e0a2a32e-4df7-4e98-a283-e6113f123808
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IsWeekend
+
+		annotation SummarizationSetBy = User
+
+	column Periode
+		dataType: string
+		lineageTag: 603a31b1-e32d-4649-8fba-736291968041
+		sourceLineageTag: fe9c4c9d-6328-4595-9bd3-77c949c7d8b2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Periode
+		sortByColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column EstMoisValide
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e46afb0-aae7-4365-9887-4b8b0eba804d
+		sourceLineageTag: 28c9e2c4-ef0e-4c40-9127-4de7f3f50fd3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: EstMoisValide
+
+		annotation SummarizationSetBy = User
+
+	partition DateTable = entity
+		mode: directQuery
+		source
+			entityName: DateTable
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+

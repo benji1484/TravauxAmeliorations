@@ -1,0 +1,128 @@
+table DateTable
+	lineageTag: 21d05f5d-0674-4950-95eb-3a058bca842d
+
+	column Date
+		formatString: General Date
+		lineageTag: 74062709-6a84-4696-92aa-81f9237eda9c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 46ef1f34-1115-4777-8bfc-d307067ed8fc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = User
+
+	column Month
+		lineageTag: 8e2e2c99-839c-4ea1-a542-a5d44590099d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: a97c9859-a664-4018-bb42-2ed5f71d0a08
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthEnd
+		formatString: General Date
+		lineageTag: 6fca10a9-7cc9-4b21-aa8f-2c1749104a8f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthEnd]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: db45f961-ea29-4b91-9746-986858b91957
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weekday
+		lineageTag: e9b4ac69-19ac-4fa7-8926-a4302c60e491
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Weekday]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Weekday Number'
+		formatString: 0
+		lineageTag: ed62c854-b0c4-4a17-b313-e3bb1da3a72d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Weekday Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWeekend
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e0a2a32e-4df7-4e98-a283-e6113f123808
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [IsWeekend]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Periode
+		lineageTag: fe9c4c9d-6328-4595-9bd3-77c949c7d8b2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Periode]
+		sortByColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstMoisValide =
+			
+			IF (
+			    YEAR ( DateTable[Date] ) < YEAR ( TODAY() )
+			        || ( YEAR ( DateTable[Date] ) = YEAR ( TODAY() )
+			            && MONTH ( DateTable[Date] ) < MONTH ( TODAY() ) ),
+			    1,
+			    0
+			)
+		formatString: 0
+		lineageTag: 28c9e2c4-ef0e-4c40-9127-4de7f3f50fd3
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DateTable = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS(
+				    CALENDAR(DATE(2020, 1, 1), today()), -- Adjust the date range as needed
+				    "Year", YEAR([Date]),
+				    "Month", FORMAT([Date], "MMMM"),
+				    "Month Number", MONTH([Date]),
+				    "MonthEnd", EOMONTH([Date], 0),
+				    "Quarter", "Q" & FORMAT([Date], "Q"),
+				    "Weekday", FORMAT([Date], "dddd"),
+				    "Weekday Number", WEEKDAY([Date], 2), -- 2 makes Monday = 1
+				    "Periode", FORMAT([Date], "YYYY-MM"),
+				    
+				    "IsWeekend", IF(WEEKDAY([Date], 2) > 5, TRUE, FALSE)
+				)
+				
+				```
+
+	annotation PBI_Id = 36e41cdec5c641629ced60476473f1b9
+

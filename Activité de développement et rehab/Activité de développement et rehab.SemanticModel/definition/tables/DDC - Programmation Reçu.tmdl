@@ -1,0 +1,191 @@
+table 'DDC - Programmation Reçu'
+	lineageTag: 0bb8a3dd-258e-4e61-a2d7-9df6980ca62d
+
+	column Periode
+		dataType: string
+		lineageTag: 0a3067ee-aca6-4660-aecb-50c9ede5c067
+		summarizeBy: none
+		sourceColumn: Periode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projection annuelle programmation'
+		dataType: int64
+		formatString: 0
+		lineageTag: 82ef9ba2-814e-4d02-a827-e6ace12290c9
+		summarizeBy: sum
+		sourceColumn: # Projection annuelle programmation
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projection annuelle programmation LLS'
+		dataType: int64
+		formatString: 0
+		lineageTag: ae63d882-1735-4085-b5df-adf07769f78d
+		summarizeBy: sum
+		sourceColumn: # Projection annuelle programmation LLS
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Projection annuelle programmation LLS_1'
+		dataType: int64
+		formatString: 0
+		lineageTag: d0d9d6ee-1c60-4adb-8760-cc9a68c52479
+		summarizeBy: sum
+		sourceColumn: # Projection annuelle programmation LLS_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OLD ! # Logements agrément reçu hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 15a49c17-3404-4ccf-b01a-12011880fae8
+		summarizeBy: sum
+		sourceColumn: OLD ! # Logements agrément reçu hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements familiaux agrément reçu hors PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8f9be1a8-e026-4d52-88c5-8811f460051a
+		summarizeBy: sum
+		sourceColumn: # Logements familiaux agrément reçu hors PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Structures collectives agrément reçu'
+		dataType: int64
+		formatString: 0
+		lineageTag: c38d31f5-6abe-4130-a550-4a8e06e14472
+		summarizeBy: sum
+		sourceColumn: # Structures collectives agrément reçu
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements LLS agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 58fedf66-ef5d-40fa-8934-834eaf26a494
+		summarizeBy: sum
+		sourceColumn: "# Logements LLS agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements LLS ANRU agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 7cf097d9-adcc-49e1-bf7b-687efb7b08ed
+		summarizeBy: sum
+		sourceColumn: "# Logements LLS ANRU agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements LLI agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f4bb96d-6423-4a46-8799-f8027f6a3681
+		summarizeBy: sum
+		sourceColumn: "# Logements LLI agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements Libre PLI agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 7aa01bcc-feb7-4202-9e86-fa2bf246a7b2
+		summarizeBy: sum
+		sourceColumn: "# Logements Libre PLI agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements RHVS/PLU/PHARE agrément reçu '
+		dataType: int64
+		formatString: 0
+		lineageTag: 749ffbbe-45ec-4443-9e55-9b4d3c60711a
+		summarizeBy: sum
+		sourceColumn: "# Logements RHVS/PLU/PHARE agrément reçu "
+
+		annotation SummarizationSetBy = Automatic
+
+	column dte_fin_mois = ```
+			
+			VAR PeriodeDate =
+			    DATE (
+			        VALUE ( LEFT ( 'DDC - Programmation Reçu'[periode], 4 ) ),   -- Année
+			        VALUE ( RIGHT ( 'DDC - Programmation Reçu'[periode], 2 ) ), -- Mois
+			        1
+			    )
+			VAR Hier =
+			    TODAY() - 1
+			RETURN
+			    IF (
+			        YEAR ( PeriodeDate ) = YEAR ( TODAY () )
+			            && MONTH ( PeriodeDate ) = MONTH ( TODAY () ),
+			        Hier,
+			        EOMONTH ( PeriodeDate, 0 )
+			    )
+			
+			```
+		formatString: General Date
+		lineageTag: 44875aab-60bb-4f33-86e4-074882bd0a8a
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: aab503d6-8db2-4b61-8a69-322bdd4c6411
+			defaultHierarchy: LocalDateTable_a8f447c0-0b4c-46f3-8f38-96480e2f292b.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column '# Logements familiaux agrément reçu PSLA'
+		dataType: int64
+		formatString: 0
+		lineageTag: f467cc9d-c959-43e4-8eeb-45eb505ec0a0
+		summarizeBy: sum
+		sourceColumn: # Logements familiaux agrément reçu PSLA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DDC - Programmation Reçu' = m
+		mode: import
+		source =
+				let
+				    // 1. Connexion au site SharePoint
+				    Source = SharePoint.Files("https://shlmrfr.sharepoint.com/sites/EnquteReportingexterne-TableaudebordCODIR", [ApiVersion = 15]),
+				
+				    // 2. Filtrer uniquement DDC - Mensuel.xlsx
+				    FichierDDC = Table.SelectRows(Source, each [Name] = "DDC - Mensuel.xlsx"),
+				
+				    // 3. Trier par date de modif décroissante
+				    TrierParDate = Table.Sort(FichierDDC, {{"Date modified", Order.Descending}}),
+				    DerniereVersion = Table.FirstN(TrierParDate, 1),
+				
+				    // 4. Élargir les métadonnées
+				    #"Attributes développé" = Table.ExpandRecordColumn(DerniereVersion, "Attributes", {"Size", "Content Type", "Kind"}, {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}),
+				
+				    // 5. Filtrer les fichiers masqués
+				    #"Fichiers masqués filtrés1" = Table.SelectRows(#"Attributes développé", each [Attributes]?[Hidden]? <> true),
+				
+				    // 6. Charger le fichier Excel et repérer le 2ᵉ onglet (index 1)
+				    ExcelFile = Excel.Workbook(#"Fichiers masqués filtrés1"{0}[Content], null, true),
+				    DeuxiemeOnglet = ExcelFile{2}[Data],  // ← index 1 = deuxième onglet
+				
+				    // 7. Promouvoir les en-têtes
+				    #"En-têtes promus" = Table.PromoteHeaders(DeuxiemeOnglet, [PromoteAllScalars=true]),
+				
+				    // 8. Typage générique
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus", List.Transform(Table.ColumnNames(#"En-têtes promus"), each {_, type any})),
+				
+				    // 9. Supprimer les 5 premières lignes
+				    #"Premières lignes supprimées" = Table.Skip(#"Type modifié", 5),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Premières lignes supprimées",{"Column14", "Column15", "Column16"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"# Projection annuelle programmation", Int64.Type}, {"# Projection annuelle programmation LLS", Int64.Type}, {"# Projection annuelle programmation LLS_1", Int64.Type}, {"# Logements agrément reçu hors PSLA", Int64.Type}, {"# Logements familiaux agrément reçu hors PSLA", Int64.Type}, {"# Structures collectives agrément reçu", Int64.Type}, {"# Logements LLS agrément reçu ", Int64.Type}, {"# Logements LLS ANRU agrément reçu ", Int64.Type}, {"# Logements LLI agrément reçu ", Int64.Type}, {"# Logements Libre PLI agrément reçu ", Int64.Type}, {"# Logements RHVS/PLU/PHARE agrément reçu ", Int64.Type}, {"# Logements familiaux agrément reçu PSLA", Int64.Type}}),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Type modifié1",{{"# Logements agrément reçu hors PSLA", "OLD ! # Logements agrément reçu hors PSLA"}})
+				in
+				    #"Colonnes renommées"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

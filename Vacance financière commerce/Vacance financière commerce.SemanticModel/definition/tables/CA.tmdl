@@ -1,0 +1,25 @@
+table CA
+	lineageTag: 14d49e54-cc92-4b21-bbef-3771b90b147c
+
+	column code_ca
+		dataType: string
+		lineageTag: 131447cd-41b4-48de-9688-554584cdc945
+		summarizeBy: none
+		sourceColumn: code_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CA = m
+		mode: import
+		source =
+				let
+				    Source = LocatairesShrEnGestionDepuis2023,
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source,{"code_ca"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées")
+				in
+				    #"Doublons supprimés"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

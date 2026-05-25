@@ -1,0 +1,80 @@
+table code_type_ca
+	lineageTag: 4cb4bdd8-2e51-4c03-b16b-6ce237ffdd59
+
+	column code_type_ca
+		dataType: string
+		lineageTag: 97d022de-4477-4f19-9011-ca9b8da4e891
+		summarizeBy: none
+		sourceColumn: code_type_ca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type_Locataire
+		dataType: string
+		lineageTag: da5367be-ccb4-4bd3-89cf-a667ff8b6f09
+		summarizeBy: none
+		sourceColumn: Type_Locataire
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"code_type_ca","TableItemName":"Type_Locataire (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Type_Locataire (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('code_type_ca'[Type_Locataire]),
+				"(Vide)",
+				'code_type_ca'[Type_Locataire] IN {"Administrations",
+					"Locataires Ordinaires"},
+				"Administrations & Locataires Ordinaires",
+				'code_type_ca'[Type_Locataire]
+			)
+		lineageTag: 26b9440f-f39b-44e4-9699-71b01bb50b9a
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "code_type_ca"
+				          }
+				        },
+				        "Property": "Type_Locataire"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"c","Entity":"code_type_ca"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Type_Locataire"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Administrations & Locataires Ordinaires","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Type_Locataire"}}],"Values":[[{"Literal":{"Value":"'Administrations'"}}],[{"Literal":{"Value":"'Locataires Ordinaires'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition code_type_ca = m
+		mode: import
+		source = ```
+				let
+				    Source = IndicateursFinanciersShrEnGestionDepuis2023,
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source, {"code_type_ca"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées"),
+				    #"Colonne Type_Locataire ajoutée" = Table.AddColumn(#"Doublons supprimés", "Type_Locataire", each 
+				        if [code_type_ca] = "SOC" then "Entreprises"
+				        else if [code_type_ca] = "ADM" then "Administrations"
+				        else if [code_type_ca] = "ACC" then "Accédants"
+				        else if [code_type_ca] = "ASS" or [code_type_ca] = "LCT" or [code_type_ca] = "PSL" or [code_type_ca] = "CRE" or [code_type_ca] = "LOC" then "Locataires Ordinaires"
+				        else if [code_type_ca] = "FOY" then "Foyers"
+				
+				        else null
+				    ),
+				    #"Lignes filtrées" = Table.SelectRows(#"Colonne Type_Locataire ajoutée", each ([code_type_ca] <> null and [code_type_ca] <> ""))
+				in
+				    #"Lignes filtrées"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

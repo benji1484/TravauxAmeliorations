@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Probable - tx d'encaissement mensuels"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3a52cb3d-6cd7-449e-b71e-cbb1c32bbdd2"
+  }
+}

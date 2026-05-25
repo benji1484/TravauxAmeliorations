@@ -1,0 +1,478 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "c84173882ea5c0ee634b",
+  "position": {
+    "x": 0,
+    "y": 132.11822660098517,
+    "z": 5000,
+    "height": 587.88177339901483,
+    "width": 1280.3940886699509,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG_INSEE"
+                    }
+                  },
+                  "Property": "code_insee"
+                }
+              },
+              "queryRef": "UG_INSEE.code_insee",
+              "nativeQueryRef": "code_insee"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "UG_INSEE"
+                    }
+                  },
+                  "Property": "Commune"
+                }
+              },
+              "queryRef": "UG_INSEE.Commune",
+              "nativeQueryRef": "Commune"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Armos Quittancement Théorique"
+                }
+              },
+              "queryRef": "Mesure.Armos Quittancement Théorique",
+              "nativeQueryRef": "Quittancement Théorique",
+              "displayName": "Quittancement Théorique"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "VacanceFinanciereYTDRecalcule"
+                }
+              },
+              "queryRef": "Mesure.VacanceFinanciereYTDRecalcule",
+              "nativeQueryRef": "Pertes totales (loyer+charges)",
+              "displayName": "Pertes totales (loyer+charges)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance < 3M"
+                }
+              },
+              "queryRef": "Mesure.Vacance < 3M",
+              "nativeQueryRef": "Dont à moins de 3 mois ",
+              "displayName": "Dont à moins de 3 mois "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "MontantTotal3*vacance_SUMX"
+                }
+              },
+              "queryRef": "Mesure.MontantTotal3*vacance_SUMX",
+              "nativeQueryRef": "Dont à plus de 3 mois ",
+              "displayName": "Dont à plus de 3 mois "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "VacanceVolontaireYTD"
+                }
+              },
+              "queryRef": "Mesure.VacanceVolontaireYTD",
+              "nativeQueryRef": "Dont travaux lourds (rehab. Restructuration)",
+              "displayName": "Dont travaux lourds (rehab. Restructuration)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements"
+                }
+              },
+              "queryRef": "Mesure.# Logements",
+              "nativeQueryRef": "Nombre total logements en gestion1",
+              "displayName": "Nombre total logements en gestion"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# Logements Vacants"
+                }
+              },
+              "queryRef": "Mesure.# Logements Vacants",
+              "nativeQueryRef": "# Logements Vacants"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Vacance moins de trois mois"
+                }
+              },
+              "queryRef": "Mesure.Vacance moins de trois mois",
+              "nativeQueryRef": "Dont à moins de 3 mois 1",
+              "displayName": "Dont à moins de 3 mois "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Nb UG Vac Plus 3 Mois"
+                }
+              },
+              "queryRef": "Mesure.Nb Jour Vac Plus 3 Mois",
+              "nativeQueryRef": "Dont à plus de 3 mois 1",
+              "displayName": "Dont à plus de 3 mois "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "# UG Vacants VVO"
+                }
+              },
+              "queryRef": "Mesure.# UG Vacants VVO",
+              "nativeQueryRef": "Dont travaux lourds (rehab. Restructuration)1",
+              "displayName": "Dont travaux lourds (rehab. Restructuration)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesure"
+                    }
+                  },
+                  "Property": "Sorties_YTD"
+                }
+              },
+              "queryRef": "Mesure.Sorties_YTD",
+              "nativeQueryRef": "Nombre de départs",
+              "displayName": "Nombre de départs"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mesure"
+                  }
+                },
+                "Property": "VacanceVolontaireYTD"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "117.32286024906732D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.Armos Quittancement Théorique"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120.21814411928389D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.VacanceFinanciereYTDRecalcule"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "97.38742729364057D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.Vacance < 3M"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "95.32287300673319D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.MontantTotal3*vacance_SUMX"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "134.9685795939945D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.VacanceVolontaireYTD"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "108.08456329783732D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.# Logements"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "86.02756838176845D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.Vacance moins de trois mois"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "78.02774223942741D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.Nb Jour Vac Plus 3 Mois"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76.46673018127629D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.# UG Vacants VVO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "81.66501701339166D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesure.Sorties_YTD"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "109.09852353627396D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "UG_INSEE.Commune"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c5c1507a10ba4695157f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "UG_INSEE"
+              }
+            },
+            "Property": "code_insee"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+table 'Scoring Patrimoine dépiv'
+	lineageTag: 23ab3a2f-e498-42b5-a0ac-c3ba4f641b3f
+
+	column code_hp1
+		dataType: string
+		lineageTag: 6ec90bd9-e6f7-45fb-9c96-b5c0083d940b
+		summarizeBy: none
+		sourceColumn: code_hp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Attribut
+		dataType: string
+		lineageTag: ba8dce5b-a715-4d5b-973e-c8c996d7befb
+		summarizeBy: none
+		sourceColumn: Attribut
+
+		annotation SummarizationSetBy = Automatic
+
+	column Valeur
+		dataType: double
+		lineageTag: 1de2e877-bef5-41f6-add2-d0f49237b1bf
+		summarizeBy: sum
+		sourceColumn: Valeur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Scoring Patrimoine dépiv' = m
+		mode: import
+		source =
+				let
+				    Source = #"Scoring Patrimoine",
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source,{"taux_activite", "densite_logements_ff24", "tx_rev21_dispo_60", "note_accessibilite_bus", "note_volume_equipements", "note_agregee_accessibilite_equipements", "note_acces_axe_routier", "code_hp1"}),
+				    #"Colonnes permutées" = Table.ReorderColumns(#"Autres colonnes supprimées",{"code_hp1", "taux_activite", "densite_logements_ff24", "tx_rev21_dispo_60", "note_accessibilite_bus", "note_volume_equipements", "note_agregee_accessibilite_equipements", "note_acces_axe_routier"}),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Colonnes permutées",{{"densite_logements_ff24", "Densité urbaine"}, {"tx_rev21_dispo_60", "Note de pauvreté"}, {"note_accessibilite_bus", "Accessibilité bus"}, {"note_volume_equipements", "Volume d'équipement"}}),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Colonnes renommées",{"Accessibilité bus"}),
+				    #"Colonnes renommées1" = Table.RenameColumns(#"Colonnes supprimées",{{"note_agregee_accessibilite_equipements", "Accessibilité services urbains"}, {"note_acces_axe_routier", "Accessibilité route"}, {"taux_activite", "Taux d'activité"}, {"Note de pauvreté", "Indice de niveau de ressources"}}),
+				    #"Supprimer le tableau croisé dynamique des autres colonnes" = Table.UnpivotOtherColumns(#"Colonnes renommées1", {"code_hp1"}, "Attribut", "Valeur")
+				in
+				    #"Supprimer le tableau croisé dynamique des autres colonnes"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

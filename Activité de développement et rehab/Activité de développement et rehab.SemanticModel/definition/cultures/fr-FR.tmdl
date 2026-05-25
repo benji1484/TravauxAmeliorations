@@ -1,0 +1,1302 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "mapterritoire.xagence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MapTerritoire",
+			          "ConceptualProperty": "xAgence"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agences": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.acquis1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# Acquis1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Acquisitions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.epfr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# EPFR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EPFR": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.compromis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# Compromis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Compromis": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mapterritoire.code_ho2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MapTerritoire",
+			          "ConceptualProperty": "Code_ho2"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ug__lib_patrimoine.lbl_patrimoine_ptm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "UG - Lib Patrimoine",
+			          "ConceptualProperty": "lbl_patrimoine_ptm"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "code_type_ca.type_locataire": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "code_type_ca",
+			          "ConceptualProperty": "Type_Locataire"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "code_type_ca.code_type_ca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "code_type_ca",
+			          "ConceptualProperty": "code_type_ca"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.logements_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Logements"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.commerces": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# Commerces"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Commerces": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.structures_collectives_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Structures collectives 2024"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.mesure_mec_hors_psla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Mesure_MEC_hors_PSLA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.mesure_agréments_hors_psla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Mesure_Agréments_hors_PSLA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.equivalents_logements_fonciers": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Equivalents logements fonciers"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ddc__livraisons.mesure_livraisons_psla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DDC - Livraisons",
+			          "ConceptualProperty": "Mesure_Livraisons_PSLA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ddc__mec.mec_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DDC - MEC",
+			          "ConceptualProperty": "# MEC Cumul Annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mises en chantier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_logements_agrées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre logements agrées"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.livraisons_cumulées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# Livraisons M"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.vacance_fi_ytd_recalcul": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "vacance fi YTD recalcul"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.ventes_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Ventes 2024"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.etp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "ETP"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.cumulquittancementsannuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "CumulQuittancementsAnnuel"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.entrées_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Entrées 2024"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.ddc_livraisons": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "DDC Livraisons"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.satisfaction_annuelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Satisfaction annuelle"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.heures_dinsertion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "heures d'insertion"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.daf_financements_obtenus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "DAF Financements obtenus"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# Logements"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.nombre_os_réhab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre OS Réhab"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mises en chantier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_livraisons_rehab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de livraisons rehab"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.nombre_dagréments_réhab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'OS Réhab"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ug__lib_patrimoine.lbl_commune": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "UG - Lib Patrimoine",
+			          "ConceptualProperty": "lbl_commune"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ville": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tii.année_os": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TII",
+			          "ConceptualProperty": "Année OS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Année de mise en chantier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.surface_os_réhab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Surface OS Réhab"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.investissement": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Investissement"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.fonds_propres_par_logement_rehab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Coût / lgt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Coût moyen / lgt": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.affaires_non_terminées_ou_annulées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Affaires non terminées ou annulées"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.affairestraitées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# AffairesTraitées"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.affaires": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "# Affaires"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.affaires_indécence_en_instance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Affaires Indécence en instance"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.affaires_indécence_traitées_ou_closes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Affaires Indécence traitées ou closes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Indéc. Traitées Ann.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "dont traitées ou closes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.rehab__aménagements_pmr_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Rehab - Aménagements PMR :"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Aménagements PMR": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.rehab__réhabilitations_livrées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Rehab - Réhabilitations livrées"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Livraisons": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.rehab__mises_en_chantier_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Rehab - Mises en chantier"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mises en chantier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.rehab__agréments_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Rehab - Agréments :"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agrément": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ddc__mises_en_chantier_à_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "DDC - Mises en chantier à date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.ddc__agréments_à_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "DDC - Agréments à date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.ddc__livraisons_à_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "DDC - Livraisons à date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.ddc__agréments_reçus_hors_psla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "DDC - Agréments reçus"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.affaires_indécence_en_cours": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Affaires Indécence en cours"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Affaires Indécence": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "datetable.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateTable",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "villes.commune_correspondance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Villes",
+			          "ConceptualProperty": "Commune_Correspondance"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "livraisons.commune": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "LIVRAISONS",
+			          "ConceptualProperty": "COMMUNE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Commune": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "livraisons.produit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "LIVRAISONS",
+			          "ConceptualProperty": "PRODUIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Financement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "livraisons.date_de_liv_prev": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "LIVRAISONS",
+			          "ConceptualProperty": "DATE DE LIV PREV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Date prévisionnelle": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "livraisons.nom_operation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "LIVRAISONS",
+			          "ConceptualProperty": "NOM OPERATION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Opération": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mec.nom_operation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEC",
+			          "ConceptualProperty": "NOM OPERATION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Opération": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mec.commune": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEC",
+			          "ConceptualProperty": "COMMUNE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Commune": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "progr.commune": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PROGR",
+			          "ConceptualProperty": "COMMUNE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Commune": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "progr.lbu_en_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PROGR",
+			          "ConceptualProperty": "LBU EN €"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "progr.statut_lbu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PROGR",
+			          "ConceptualProperty": "STATUT LBU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Statut LBU": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "progr.nom_operation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PROGR",
+			          "ConceptualProperty": "NOM OPERATION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Opération": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mec.produit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEC",
+			          "ConceptualProperty": "PRODUIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Financement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mec.date_os_acte_prev": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEC",
+			          "ConceptualProperty": "DATE OS/ACTE PREV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "OS / Acte prévisionnel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mec.nb_logts": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEC",
+			          "ConceptualProperty": "NB LOGTS"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "progr.pdt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PROGR",
+			          "ConceptualProperty": "PDT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Financement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "progr.statut_pc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PROGR",
+			          "ConceptualProperty": "STATUT PC"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "montant_atfpb.libellé_court_axe_tfpb": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "montant_atfpb",
+			          "ConceptualProperty": "Libellé court Axe TFPB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Libellé": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "montant_atfpb.ordreaxe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "montant_atfpb",
+			          "ConceptualProperty": "OrdreAxe"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "data.villes_commune": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Data",
+			          "ConceptualProperty": "Villes.Commune"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Commune": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.prévisionnel_cumulé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Prévisionnel cumulé"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Livraisons prévisionnelles": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.réel_cumulé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Réel cumulé"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Livraisons réalisées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.réel_mec_cumulé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Réel MEC cumulé"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "MEC réalisées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.prévisionnel_cumulé_mise_en_chantier": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Prévisionnel cumulé mise en chantier"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "MEC prévsionnelles": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "produit.produit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Produit",
+			          "ConceptualProperty": "PRODUIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Produit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.cible_agréments": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Cible mises en chantiers"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mises en chantiers": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.agréments_déposés_cumulés": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Agréments déposés cumulés"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agréments déposés": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_dopé_déposées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'opé déposées"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.nombre_dopérations_reçus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'opérations reçus"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesure.nombre_agréments_en_cours": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre agréments en cours"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agréments en attentes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.cible_agréments1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Cible agréments"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agréments reçus": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.livraisons_i": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Livraisons I"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Interne": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.livraisons_v": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Livraisons V"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "VEFA": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mec.date_os_acte_reelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEC",
+			          "ConceptualProperty": "DATE OS/ACTE REELLE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Acte réel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.cible_livraisons": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Cible livraisons"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Livraisons": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+
