@@ -36,5 +36,5 @@ table 'Scoring Patrimoine dépiv'
 		mode: directQuery
 		source
 			entityName: Scoring Patrimoine dépiv
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

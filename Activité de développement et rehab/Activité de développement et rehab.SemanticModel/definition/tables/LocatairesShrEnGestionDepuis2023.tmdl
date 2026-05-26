@@ -290,5 +290,5 @@ table LocatairesShrEnGestionDepuis2023
 		mode: directQuery
 		source
 			entityName: LocatairesShrEnGestionDepuis2023
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

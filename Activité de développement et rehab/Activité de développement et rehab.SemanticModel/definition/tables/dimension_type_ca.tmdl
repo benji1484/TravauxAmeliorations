@@ -27,5 +27,5 @@ table dimension_type_ca
 		mode: directQuery
 		source
 			entityName: dimension_type_ca
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

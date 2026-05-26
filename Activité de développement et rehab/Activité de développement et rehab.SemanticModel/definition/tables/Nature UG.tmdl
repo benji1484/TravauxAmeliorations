@@ -38,5 +38,5 @@ table 'Nature UG'
 		mode: directQuery
 		source
 			entityName: Nature UG
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

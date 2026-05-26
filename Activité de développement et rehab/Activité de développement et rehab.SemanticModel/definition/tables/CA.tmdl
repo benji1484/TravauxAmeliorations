@@ -17,5 +17,5 @@ table CA
 		mode: directQuery
 		source
 			entityName: CA
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

@@ -107,5 +107,5 @@ table Obj_2024
 		mode: directQuery
 		source
 			entityName: Obj_2024
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

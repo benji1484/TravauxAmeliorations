@@ -10033,26 +10033,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "dont Vacants": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Logements vacants": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -10864,16 +10844,6 @@ cultureInfo fr-FR
 			          "€ Quitm_ca_operation": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Quittancement": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -11128,16 +11098,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Dont salariés": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -11184,16 +11144,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.582
 			          }
-			        },
-			        {
-			          "Entrées": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -11239,16 +11189,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "Sorties": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11393,16 +11333,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "dont vacance ordinaire": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11612,16 +11542,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.582
 			          }
-			        },
-			        {
-			          "Logements": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -11667,16 +11587,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "Commerces": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -12137,16 +12047,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "Entrées Salariés YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -12434,16 +12334,6 @@ cultureInfo fr-FR
 			          "encaissement + alloc": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Encaissement": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -12682,16 +12572,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.605
 			          }
-			        },
-			        {
-			          "Ratio": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -12707,16 +12587,6 @@ cultureInfo fr-FR
 			        {
 			          "% dép objectif dette loc YTD": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Ratio": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -13190,7 +13060,7 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "Agence": {
+			          "Agences": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13200,7 +13070,7 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "Agences": {
+			          "Agence": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13895,16 +13765,6 @@ cultureInfo fr-FR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Plafond à date": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -13927,16 +13787,6 @@ cultureInfo fr-FR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Plafond à date": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -14541,16 +14391,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Plafond annuel": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14593,16 +14433,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "Plafond annuel": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -14697,16 +14527,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.492
 			          }
-			        },
-			        {
-			          "Plancher": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14800,16 +14620,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.492
 			          }
-			        },
-			        {
-			          "Ratio": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14826,16 +14636,6 @@ cultureInfo fr-FR
 			          "objectif intéressement tx encaissement": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Plancher": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14851,16 +14651,6 @@ cultureInfo fr-FR
 			        {
 			          "objectif intéressement tx vac fi com lgt": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Plafond": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -14903,16 +14693,6 @@ cultureInfo fr-FR
 			        {
 			          "ratio intéressement vac fi com": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Ratio": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -15006,16 +14786,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.582
 			          }
-			        },
-			        {
-			          "Loges": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -15104,26 +14874,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "% Vacance commerciale": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Vacance commerciale": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -17934,16 +17684,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "Livraisons": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -25175,16 +24915,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.643
 			          }
-			        },
-			        {
-			          "% mutation YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -25246,16 +24976,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "Clients locataires": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -25784,16 +25504,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "Plafond": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -28083,16 +27793,6 @@ cultureInfo fr-FR
 			          "€ quittancement": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Quittancement": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -28134,26 +27834,6 @@ cultureInfo fr-FR
 			        {
 			          "€ croissance annuelle dette": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Variation YTD Dette": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Variation Dette YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -28213,16 +27893,6 @@ cultureInfo fr-FR
 			          "€ croissance dette": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Variation mensuelle dette": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -28258,16 +27928,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "Encaissement Mensuel": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -28315,16 +27975,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.528
 			          }
-			        },
-			        {
-			          "Taux Encaissement YTD N-1": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -28360,16 +28010,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.605
-			          }
-			        },
-			        {
-			          "Encaissement Mensuel N-1": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29001,16 +28641,6 @@ cultureInfo fr-FR
 			          "impayé des présents": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Impayé présents": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29026,16 +28656,6 @@ cultureInfo fr-FR
 			        {
 			          "impayé des partis": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Impayé partis": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29069,16 +28689,6 @@ cultureInfo fr-FR
 			          "mobilité 1a": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Mobilité": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29104,16 +28714,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.623
-			          }
-			        },
-			        {
-			          "Mobilité YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29171,16 +28771,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Mutations YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29236,16 +28826,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "Entrées YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29359,16 +28939,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "Entrées Salariés YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29411,36 +28981,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.643
 			          }
-			        },
-			        {
-			          "Vacance Financière Logements N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "VF Logement YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Vacance totale YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29466,16 +29006,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.528
-			          }
-			        },
-			        {
-			          "Vacance Financière Logements N-1": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29549,16 +29079,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.605
 			          }
-			        },
-			        {
-			          "Taux VF global YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29627,16 +29147,6 @@ cultureInfo fr-FR
 			          "vacance financière commerciale LGT": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Vacance commerciale": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29663,16 +29173,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.66
 			          }
-			        },
-			        {
-			          "Vacance commerciale YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29688,16 +29188,6 @@ cultureInfo fr-FR
 			        {
 			          "vacance financière stratégique LGT": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Vacance Stratégique": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29724,16 +29214,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.66
-			          }
-			        },
-			        {
-			          "Vacance Stratégique YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29851,26 +29331,6 @@ cultureInfo fr-FR
 			          "% vacance financière commerciale logements YTD": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "% VF Commerciale Logements YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "VF Commerciale YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -29886,16 +29346,6 @@ cultureInfo fr-FR
 			        {
 			          "% vacance financière stratégique logements YTD": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "% VF Stratégique Logements YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -30141,16 +29591,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "% Croissance mensuel dette": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -30187,16 +29627,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "% Croissance YTD Dette": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -30212,16 +29642,6 @@ cultureInfo fr-FR
 			        {
 			          "vacance financière technique LGT": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Vacance technique": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -30248,16 +29668,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.66
-			          }
-			        },
-			        {
-			          "Vacance technique YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -30469,16 +29879,6 @@ cultureInfo fr-FR
 			          "vacance financière MEL LGT": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Dont MEL": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -30504,16 +29904,6 @@ cultureInfo fr-FR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.66
-			          }
-			        },
-			        {
-			          "Dont MEL YTD": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -35699,6 +35089,1252 @@ cultureInfo fr-FR
 			          "en 2025": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_dug_en_vacance_ordinaire": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'UG en vacance ordinaire"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dont vacance ordinaire": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de logements"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Logements": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_logements_vacants": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de logements vacants"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dont Vacants": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Logements vacants": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_commerces": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de commerces"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Commerces": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_livraisons_logements_mensuelles": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de livraisons logements mensuelles"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Livraisons": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_loges": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de loges"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Loges": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_vac_commerces": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux Vac commerces"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% Vacance commerciale": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Nombre de logements en vacance commerciale": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_de_vacance_financière_logements_cumulé_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux de vacance financière logements cumulé annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Taux VF global YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_vacance_financière_commerciale_logements_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux Vacance Financière Commerciale Logements cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% VF Commerciale Logements YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "VF Commerciale YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_vacance_financière_stratégique_logements_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux Vacance Financière Stratégique Logements cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% VF Stratégique Logements YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_logements_cumulée_annuelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière logements cumulée annuelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance Financière Logements N": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "VF Logement YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Vacance totale YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_logements_cumulée_annuelle_précédente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière logements cumulée annuelle précédente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance Financière Logements N-1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_dencaissement_mensuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'encaissement mensuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Encaissement Mensuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_dencaissement_mensuel_année_précédente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'encaissement mensuel année précédente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Encaissement Mensuel N-1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_dencaissement_cumulé_annuel_année_précédente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'encaissement cumulé annuel année précédente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Taux Encaissement YTD N-1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.encaissement_avec_allocations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Encaissement avec allocations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Encaissement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.quittancement1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Quittancement"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Quittancement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.variation_mensuelle_de_la_dette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Variation mensuelle de la dette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Variation mensuelle dette": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.variation_annuelle_de_la_dette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Variation annuelle de la dette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Variation YTD Dette": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Variation Dette YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_de_croissance_mensuelle_de_la_dette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux de croissance mensuelle de la dette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% Croissance mensuel dette": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_de_croissance_annuelle_de_la_dette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux de croissance annuelle de la dette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% Croissance YTD Dette": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_dentrées_cumulées_annuelles": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'entrées cumulées annuelles"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Entrées cumulées annuelles historiques": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_dentrées_de_salariés_cumulées_annuelles": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'entrées de salariés cumulées annuelles"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Entrées Salariés YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.mobilité_cumulée_annuelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Mobilité cumulée annuelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mobilité cumul annuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_contrats_principaux": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de contrats principaux"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Clients locataires": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_de_sorties": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre de sorties"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Sorties": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nombre_dentrées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Nombre d'entrées"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Entrées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.mutations_cumulées_annuelles": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Mutations cumulées annuelles"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mutations cumul annuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.sorties_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Sorties cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Sorties cumul annuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_de_mutation_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux de mutation cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% mutation YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_2024_de_vacance_financière": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif 2024 de vacance financière"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plafond à date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_total_de_vacance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif total de vacance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plafond annuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_datteinte_de_lobjectif_vacance_logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'atteinte de l'objectif vacance logements"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ratio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.plafond_mutation1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Plafond mutation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plafond": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_entrées_salariés_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux Entrées Salariés cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Entrées Salariés YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Dont salariés": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_dentrées_de_salariés": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif d'entrées de salariés"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plancher": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_datteinte_de_lobjectif_dentrées_de_salariés": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'atteinte de l'objectif d'entrées de salariés"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ratio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_2024_de_dette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif 2024 de dette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plafond à date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_total_de_dette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif total de dette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plafond annuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_datteinte_de_lobjectif_dette_locataires_cumulé_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'atteinte de l'objectif dette locataires cumulé annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ratio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_intéressement_taux_vacance_financière_commerces_logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif intéressement Taux vacance financière commerces logements"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plafond": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ratio_intéressement_vacance_financière_commerces": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Ratio intéressement vacance financière commerces"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ratio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_dencaissement_cumulé_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Taux d'encaissement cumulé annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Taux d'encaissement cumulé annuel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.objectif_intéressement_taux_encaissement": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Objectif intéressement Taux encaissement"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Plancher": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.quittancement_mensuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Quittancement mensuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Quittancement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_stratégique_logements_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance Financière Stratégique logements cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance Stratégique YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_commerciale_logements_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière commerciale logements cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance commerciale YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_technique_logements_cumul_annuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière technique logements cumul annuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance technique YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_logements_en_mise_en_location_cumulée_annuelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière logements en mise en location cumulée annuelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Dont MEL YTD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_stratégique_logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance Financière Stratégique logements"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance Stratégique": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_commerciale_logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière commerciale logements"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nombre de logements en vacance commerciale": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_technique_logements": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière technique logements"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vacance technique": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.vacance_financière_logements_en_mise_en_location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Vacance financière logements en mise en location"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Dont MEL": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.dette_des_locataires_présents": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Dette des locataires présents"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Impayé présents": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.dette_des_locataires_partis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Dette des locataires partis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Impayé partis": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.mobilité_sur_un_an": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesure",
+			          "ConceptualProperty": "Mobilité sur un an"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mobilité": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]

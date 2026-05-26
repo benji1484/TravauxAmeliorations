@@ -414,5 +414,5 @@ table indicateurs_affaires_v2
 		mode: directQuery
 		source
 			entityName: indicateurs_affaires_v2
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

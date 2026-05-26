@@ -1,6 +1,6 @@
-expression 'DirectQuery à AS – Pilotage Mensuelv3' =
+expression 'DirectQuery à AS – Pilotage Mensuelv4' =
 		let
-		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Patrimoine", "Pilotage Mensuelv3"),
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Patrimoine", "Pilotage Mensuelv4"),
 		    Cubes = Table.Combine(Source[Data]),
 		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
 		in

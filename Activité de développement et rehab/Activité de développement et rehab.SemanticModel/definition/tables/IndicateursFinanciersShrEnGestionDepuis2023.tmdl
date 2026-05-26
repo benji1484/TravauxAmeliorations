@@ -378,5 +378,5 @@ table IndicateursFinanciersShrEnGestionDepuis2023
 		mode: directQuery
 		source
 			entityName: IndicateursFinanciersShrEnGestionDepuis2023
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

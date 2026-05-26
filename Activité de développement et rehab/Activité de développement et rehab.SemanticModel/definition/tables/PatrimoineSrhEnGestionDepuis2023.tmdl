@@ -1122,5 +1122,5 @@ table PatrimoineSrhEnGestionDepuis2023
 		mode: directQuery
 		source
 			entityName: PatrimoineSrhEnGestionDepuis2023
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

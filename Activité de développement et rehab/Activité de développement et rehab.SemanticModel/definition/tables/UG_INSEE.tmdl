@@ -37,5 +37,5 @@ table UG_INSEE
 		mode: directQuery
 		source
 			entityName: UG_INSEE
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

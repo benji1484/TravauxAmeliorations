@@ -1103,5 +1103,5 @@ table 'Scoring Patrimoine'
 		mode: directQuery
 		source
 			entityName: Scoring Patrimoine
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

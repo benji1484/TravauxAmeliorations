@@ -95,5 +95,5 @@ table 'UG - Lib Patrimoine'
 		mode: directQuery
 		source
 			entityName: UG - Lib Patrimoine
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

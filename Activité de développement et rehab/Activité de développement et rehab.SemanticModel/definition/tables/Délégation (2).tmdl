@@ -17,5 +17,5 @@ table 'Délégation (2)'
 		mode: directQuery
 		source
 			entityName: Délégation (2)
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

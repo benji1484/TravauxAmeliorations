@@ -27,5 +27,5 @@ table catégorie
 		mode: directQuery
 		source
 			entityName: catégorie
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

@@ -47,5 +47,5 @@ table MapTerritoire
 		mode: directQuery
 		source
 			entityName: MapTerritoire
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

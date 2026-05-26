@@ -44,5 +44,5 @@ table Paramètre
 		mode: directQuery
 		source
 			entityName: Paramètre
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

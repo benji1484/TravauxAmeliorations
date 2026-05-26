@@ -140,5 +140,5 @@ table Coordonnees
 		mode: directQuery
 		source
 			entityName: Coordonnees
-			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv3'
+			expressionSource: 'DirectQuery à AS – Pilotage Mensuelv4'
 

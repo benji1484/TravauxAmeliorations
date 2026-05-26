@@ -48,7 +48,7 @@ queryGroup 'Transformer le fichier à partir de Requête3\Requêtes d''assistanc
 
 	annotation PBI_QueryGroupOrder = 0
 
-annotation PBI_QueryOrder = ["DirectQuery à AS – Pilotage Mensuelv3","DDC - Engagements promoteurs","DDC - Programmation en cours","DDC - Programmation Reçu","DDC - Objectifs et atterissage","DDC - Livraisons","DDC - MEC","DDC - Programmation en cours - suite","DDC - Programmation Reçu - suite","Data","Villes","PROGR","Paramètre1","Transformer l'exemple de fichier","Exemple de fichier","Transformer le fichier","TII","Paramètre2","Transformer l'exemple de fichier (2)","Exemple de fichier (2)","Transformer le fichier (2)","Paramètre3","Transformer l'exemple de fichier (3)","Exemple de fichier (3)","Transformer le fichier (3)","Table","LIVRAISONS","Paramètre4","Transformer l'exemple de fichier (4)","Exemple de fichier (4)","Transformer le fichier (4)","LOYER QUIT","MEC","montant_atfpb","Produit"]
+annotation PBI_QueryOrder = ["DirectQuery à AS – Pilotage Mensuelv4","DDC - Engagements promoteurs","DDC - Programmation en cours","DDC - Programmation Reçu","DDC - Objectifs et atterissage","DDC - Livraisons","DDC - MEC","DDC - Programmation en cours - suite","DDC - Programmation Reçu - suite","Data","Villes","PROGR","Paramètre1","Transformer l'exemple de fichier","Exemple de fichier","Transformer le fichier","TII","Paramètre2","Transformer l'exemple de fichier (2)","Exemple de fichier (2)","Transformer le fichier (2)","Paramètre3","Transformer l'exemple de fichier (3)","Exemple de fichier (3)","Transformer le fichier (3)","Table","LIVRAISONS","Paramètre4","Transformer l'exemple de fichier (4)","Exemple de fichier (4)","Transformer le fichier (4)","LOYER QUIT","MEC","montant_atfpb","Produit"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
